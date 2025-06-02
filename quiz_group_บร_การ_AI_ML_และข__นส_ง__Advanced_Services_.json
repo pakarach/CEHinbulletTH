@@ -1,0 +1,418 @@
+{
+  "quizTitle": "บริการ AI/ML และขั้นสูง (Advanced Services) - 21 ข้อ",
+  "questions": [
+    {
+      "question": "A company wants to create a chatbot and integrate the chatbot with its current web application. Which AWS service will meet these requirements?",
+      "options": [
+        "AmazonKendra",
+        "Amazon Lex",
+        "AmazonTextract",
+        "AmazonPolly"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"แชทบอท\" มาคู่กับ \"Lex\" เสมอ! นึกถึง Lex Luthor ที่ฉลาดล้ำเหมือนแชทบอท",
+      "keywords_for_highlighting": [
+        "chatbot",
+        "integrate",
+        "web application"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ Amazon Lex ซึ่งเป็นบริการ AI/ML ที่ใช้สร้าง chatbot ดังนั้นจึงจัดอยู่ในหมวดหมู่บริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "A company has a social media platform in which users upload and share photos with other users. The company wants to identify and remove inappropriate photos. The company has no machine learning (ML) scientists and must build this detection capability with no ML expertise. Which AWS service should the company use to build this capability?",
+      "options": [
+        "Amazon SageMaker",
+        "Amazon Textract",
+        "Amazon Rekognition",
+        "Amazon Comprehend"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"รูปภาพที่ไม่เหมาะสม\" และ \"ไม่มีความเชี่ยวชาญ ML\" ให้คิดถึง `Rekognition` ที่ช่วยตรวจจับสิ่งต่างๆ ในรูปภาพได้เลยโดยไม่ต้องเขียนโค้ด ML เอง",
+      "keywords_for_highlighting": [
+        "social media platform",
+        "photos",
+        "inappropriate photos",
+        "no ML expertise"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ AWS ที่ใช้ในการตรวจจับและลบรูปภาพที่ไม่เหมาะสม โดยเน้นที่การใช้บริการ AI/ML โดยไม่ต้องมีความเชี่ยวชาญด้าน ML ซึ่งสอดคล้องกับหมวดหมู่บริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "Which AWS service provides a highly accurate and easy-to-use enterprise search service that is powered by machine learning (ML)?",
+      "options": [
+        "Amazon Kendra",
+        "Amazon SageMaker",
+        "Amazon Augmented Al (Amazon A2I)",
+        "Amazon Polly"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Search\" ที่ฉลาดต้องใช้ \"Kendra\" (ชื่อเหมือนคนฉลาดๆ)",
+      "keywords_for_highlighting": [
+        "enterprise search",
+        "machine learning (ML)"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้ machine learning (ML) ซึ่งเป็นคุณสมบัติหลักของบริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "A company wants an AWS service to provide product recommendations based on its customer data. Which AWS service will meet this requirement?",
+      "options": [
+        "Amazon Polly",
+        "Amazon Personalize",
+        "Amazon Comprehend",
+        "Amazon Rekognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Personalize\" ชื่อก็บอกอยู่แล้วว่า \"ทำให้เป็นส่วนตัว\" ดังนั้นเมื่อพูดถึง \"product recommendations\" (คำแนะนำผลิตภัณฑ์) ที่เหมาะกับลูกค้าแต่ละคน ให้เลือก Personalize เลย",
+      "keywords_for_highlighting": [
+        "product recommendations",
+        "customer data"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับบริการ Amazon Personalize ซึ่งเป็นบริการ AI/ML ที่ใช้ในการสร้างระบบแนะนำผลิตภัณฑ์ ซึ่งเป็นบริการขั้นสูงของ AWS"
+    },
+    {
+      "question": "A company is looking for a managed machine learning (ML) service that can recommend products based on a customer's previous behaviors. Which AWS service meets this requirement?",
+      "options": [
+        "Amazon Personalize",
+        "Amazon SageMaker",
+        "Amazon Pinpoint",
+        "Amazon Comprehend"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"แนะนำสินค้า\" และ \"พฤติกรรมลูกค้า\" ให้จำว่าต้องใช้ **Personalize** เพื่อสร้างประสบการณ์เฉพาะบุคคล",
+      "keywords_for_highlighting": [
+        "managed machine learning",
+        "recommend products",
+        "customer\\'s previous behaviors"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เกี่ยวข้องกับ Machine Learning (ML) ซึ่งเป็นบริการขั้นสูง และ Amazon Personalize เป็นบริการ ML ที่เฉพาะเจาะจงสำหรับการแนะนำผลิตภัณฑ์"
+    },
+    {
+      "question": "A company wants to integrate natural language processing (NLP) into business intelligence (Bl) dashboards. The company wants to ask questions and receive answers with relevant visualizations. Which AWS service or tool will meet these requirements?",
+      "options": [
+        "Amazon Macie",
+        "Amazon Rekognition",
+        "Amazon QuickSight Q",
+        "Amazon Lex"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**แดชบอร์ด BI ที่ถามตอบได้ด้วยภาษาธรรมชาติ (NLP) ต้อง QuickSight Q เท่านั้น!**",
+      "keywords_for_highlighting": [
+        "natural language processing (NLP)",
+        "business intelligence (BI)",
+        "dashboards",
+        "questions and receive answers",
+        "visualizations"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการใช้บริการ AWS ที่เกี่ยวข้องกับ Natural Language Processing (NLP) ซึ่งเป็นส่วนหนึ่งของ AI/ML และบริการขั้นสูงอื่นๆ"
+    },
+    {
+      "question": "An ecommerce company wants to provide relevant product recommendations to its customers. The recommendations will include products that are frequently purchased with other products that the customer already purchased. The recommendations also will include products of a specific color and products from the customer’s favorite brand. Which AWS service or feature should the company use to meet these requirements with the LEAST development effort?",
+      "options": [
+        "Amazon Comprehend   227",
+        "Amazon Forecast",
+        "Amazon Personalize",
+        "Amazon SageMaker Studio"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ต้องการ **แนะนำสินค้า** ที่ตรงใจลูกค้า (สี, ยี่ห้อ, สินค้าที่ซื้อด้วยกัน) แบบไม่ต้องเขียนโค้ดเยอะ ให้เลือก **Personalize** เพราะชื่อก็บอกอยู่แล้วว่า \"ปรับให้เป็นส่วนตัว\"",
+      "keywords_for_highlighting": [
+        "product recommendations",
+        "least development effort",
+        "frequently purchased",
+        "specific color",
+        "favorite brand"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการที่ใช้ในการสร้างระบบแนะนำสินค้า ซึ่งเป็นบริการ AI/ML ขั้นสูงของ AWS"
+    },
+    {
+      "question": "A company is using a central data platform to manage multiple types of data for its customers. The company wants to use AWS services to discover, transform, and visualize the data. Which combination of AWS services should the company use to meet these requirements? (Select TWO.)",
+      "options": [
+        "AWS Glue",
+        "Amazon Elastic File System (Amazon EFS)   229",
+        "Amazon Redshift",
+        "Amazon QuickSight",
+        "Amazon Quantum Ledger Database (Amazon QLDB)"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "\"จัดการข้อมูลลูกค้าหลากหลายรูปแบบ\" นึกถึง Glue (กาว) ที่เชื่อมข้อมูล และ Redshift (คลังข้อมูล) สำหรับเก็บและวิเคราะห์",
+      "keywords_for_highlighting": [
+        "data platform",
+        "discover",
+        "transform",
+        "visualize"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการใช้บริการ AWS ขั้นสูง เช่น AWS Glue, Amazon Redshift และ Amazon QuickSight ซึ่งเป็นบริการที่เกี่ยวข้องกับการจัดการ, วิเคราะห์ และแสดงผลข้อมูล ซึ่งจัดอยู่ในหมวดหมู่บริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "A company has an Amazon S3 bucket containing images of scanned financial invoices. The company is building an artificial intelligence (Al)-based application on AWS. The company wants the application to identify and read total balance amounts on the invoices. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon Forecast",
+        "Amazon Textract",
+        "Amazon Rekognition",
+        "Amazon Lex   258"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ใบแจ้งหนี้\" กับ \"อ่านข้อความ\" ให้คิดถึง Textract ทันที เพราะ Textract คือบริการที่ใช้ดึงข้อความจากเอกสาร",
+      "keywords_for_highlighting": [
+        "invoices",
+        "read",
+        "total balance amounts"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการใช้บริการ AI/ML ของ AWS เพื่อแก้ปัญหาเฉพาะเจาะจง ซึ่งก็คือการดึงข้อมูลจากรูปภาพใบแจ้งหนี้โดยใช้ AI ดังนั้นจึงจัดอยู่ในหมวดบริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "A company needs to search for text in documents that are stored in Amazon S3. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon Kendra",
+        "Amazon Rekognition",
+        "Amazon Polly",
+        "Amazon Lex"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ค้นหาข้อความในเอกสาร\" นึกถึง Kendra เพราะ Kendra คือบริการค้นหาข้อมูลภายในองค์กร (enterprise search)",
+      "keywords_for_highlighting": [
+        "search",
+        "text",
+        "documents",
+        "Amazon S3"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการใช้บริการ Amazon Kendra ซึ่งเป็นบริการ AI/ML ขั้นสูงของ AWS ที่ใช้สำหรับการค้นหาข้อมูลในเอกสาร ดังนั้นจึงจัดอยู่ในหมวดหมู่บริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "Which AWS service converts text to lifelike voices?",
+      "options": [
+        "Amazon Transcribe",
+        "Amazon Rekognition",
+        "Amazon Polly",
+        "Amazon Textract"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Polly เหมือนนกแก้วที่พูดได้ เปลี่ยน \"text\" เป็นเสียงพูดที่ \"lifelike\"",
+      "keywords_for_highlighting": [
+        "text",
+        "lifelike voices"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เกี่ยวข้องกับ AI/ML ซึ่งก็คือ Amazon Polly ที่แปลงข้อความเป็นเสียงพูดได้"
+    },
+    {
+      "question": "Which AWS service is designed to help users build conversational interfaces into applications using voice and text?",
+      "options": [
+        "Amazon Lex",
+        "Amazon Transcribe",
+        "Amazon Comprehend",
+        "Amazon Timestream"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Lex\" คล้าย \"Alexa\" ซึ่งเป็นผู้ช่วยเสียง ดังนั้น Amazon Lex จึงเกี่ยวกับอินเทอร์เฟซการสนทนาด้วยเสียงและข้อความ",
+      "keywords_for_highlighting": [
+        "conversational interfaces",
+        "voice",
+        "text"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ Amazon Lex ซึ่งเป็นบริการ AI/ML ที่ใช้สร้าง conversational interfaces ดังนั้นจึงจัดอยู่ในหมวดหมู่บริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "A company wants to build graph queries for real-time fraud pattern detection. Which AWS service will meet this requirement?",
+      "options": [
+        "Amazon Neptune",
+        "Amazon DynamoDB",
+        "Amazon Timestream",
+        "Amazon Forecast"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Graph queries\" และ \"fraud pattern detection\" ให้จำว่าคือ Amazon Neptune เพราะ Neptune คือ database ที่เหมาะกับ Graph data.",
+      "keywords_for_highlighting": [
+        "graph queries",
+        "fraud pattern detection"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ Amazon Neptune ซึ่งเป็นบริการฐานข้อมูลกราฟ (graph database) ที่ใช้สำหรับวิเคราะห์ความสัมพันธ์ของข้อมูล ซึ่งจัดอยู่ในหมวดบริการ AI/ML และขั้นสูง เนื่องจากเป็นบริการเฉพาะทางที่นอกเหนือจากบริการพื้นฐานทั่วไป"
+    },
+    {
+      "question": "A company wants to discover, prepare, move, and integrate data from multiple sources for data analytics and machine learning. Which AWS serverless data integration service should the company use to meet these requirements?",
+      "options": [
+        "AWS Glue",
+        "AWS Data Exchange",
+        "Amazon Athena",
+        "Amazon EMR"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"เตรียมย้ายรวมข้อมูลแบบไม่ต้องเซิร์ฟเวอร์\" ให้คิดถึง \"กาว\" (Glue) ที่ใช้เชื่อมติดทุกอย่างเข้าด้วยกัน",
+      "keywords_for_highlighting": [
+        "discover",
+        "prepare",
+        "move",
+        "integrate",
+        "data",
+        "multiple sources",
+        "serverless"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ AWS ที่ใช้ในการรวมข้อมูลสำหรับ data analytics และ machine learning ซึ่งเป็นบริการขั้นสูงที่เกี่ยวข้องกับ AI/ML และการจัดการข้อมูลขนาดใหญ่"
+    },
+    {
+      "question": "A company needs to convert video files and audio files to a format that will play on smartphones. Which AWS service will meet this requirement?",
+      "options": [
+        "Amazon Comprehend",
+        "Amazon Rekognition",
+        "Amazon Elastic Transcoder",
+        "Amazon Polly"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"แปลงไฟล์วิดีโอและเสียง\" นึกถึง \"Transcoder\" ที่ช่วยแปลงรูปแบบไฟล์ให้เล่นบนมือถือได้",
+      "keywords_for_highlighting": [
+        "convert",
+        "video files",
+        "audio files",
+        "smartphones"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "Amazon Elastic Transcoder เป็นบริการที่เกี่ยวข้องกับการแปลงไฟล์วิดีโอและเสียง ซึ่งเป็นบริการขั้นสูงที่อยู่ในหมวดหมู่ AI/ML และบริการขั้นสูง (Advanced Services) เนื่องจากเกี่ยวข้องกับการประมวลผลสื่อ (Media Processing) ที่ซับซ้อนกว่าบริการพื้นฐานทั่วไป"
+    },
+    {
+      "question": "A company wants to build, tram, and deploy machine learning (ML) models. Which AWS service can the company use to meet this requirement?",
+      "options": [
+        "Amazon Personalize",
+        "Amazon Comprehend",
+        "Amazon Forecast",
+        "Amazon SageMaker"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**\"ML models\" (Machine Learning Models) นึกถึง \"SageMaker\" ที่เป็นเหมือน \"ผู้สร้าง\" (Maker) โมเดล ML**",
+      "keywords_for_highlighting": [
+        "machine learning",
+        "ML models",
+        "build",
+        "train",
+        "deploy"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้สร้าง ฝึกฝน และใช้งานโมเดล Machine Learning ซึ่งเป็นบริการที่อยู่ในหมวดหมู่ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "A company needs to create and publish interactive business intelligence dashboards. The dashboards require insights that are powered by machine learning. Which AWS service or tool will meet these requirements?",
+      "options": [
+        "AWS Glue Studio",
+        "Amazon QuickSight",
+        "Amazon Redshift",
+        "Amazon Athena"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"แดชบอร์ด\" ที่ต้องการ \"Machine Learning\" ให้มองหา \"QuickSight\"** เพราะ QuickSight คือบริการสร้างแดชบอร์ดที่ AWS เน้นเรื่องการวิเคราะห์ข้อมูลด้วย ML",
+      "keywords_for_highlighting": [
+        "interactive business intelligence dashboards",
+        "machine learning"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการสร้าง dashboards ที่ขับเคลื่อนด้วย machine learning ซึ่งเป็นหัวข้อที่อยู่ในหมวดหมู่บริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "A company wants to add a conversational chatbot to its website. Which AWS service can the company use to meet this requirement?",
+      "options": [
+        "Amazon Textract",
+        "Amazon Lex",
+        "AWS Glue",
+        "Amazon Rekognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**Lex** เหมือน **L**anguage e**X**change หรือการแลกเปลี่ยนภาษา ซึ่งเป็นหัวใจของการสนทนาของ Chatbot",
+      "keywords_for_highlighting": [
+        "conversational chatbot",
+        "website"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ Amazon Lex ซึ่งเป็นบริการ AI/ML ที่ใช้สร้าง chatbot จึงจัดอยู่ในหมวดหมู่บริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "Which AWS service can a company use to build conversational chatbots for customer service?",
+      "options": [
+        "Amazon Lex",
+        "AWS Amplify",
+        "Amazon Comprehend",
+        "Amazon Polly"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Lex\" คล้าย \"Lexicon\" ซึ่งหมายถึงคลังคำศัพท์ที่ใช้ในการสนทนา ดังนั้น Amazon Lex จึงเหมาะกับการสร้าง Chatbot",
+      "keywords_for_highlighting": [
+        "conversational chatbots",
+        "customer service"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการของ AWS ที่ใช้สร้างแชทบอท ซึ่งเป็นบริการที่เกี่ยวข้องกับ AI/ML และเป็นบริการขั้นสูง"
+    },
+    {
+      "question": "Which AWS service provides machine learning capability to detect and analyze content in images and videos?",
+      "options": [
+        "Amazon Connect",
+        "Amazon Lightsail",
+        "Amazon Personalize",
+        "Amazon Rekognition"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Rekognition\" พ้องเสียงกับ \"Recognize\" ซึ่งแปลว่า \"จดจำ\" หรือ \"วิเคราะห์\" ดังนั้นเมื่อเจอคำถามเกี่ยวกับวิเคราะห์ภาพและวิดีโอ ให้เลือก Rekognition",
+      "keywords_for_highlighting": [
+        "machine learning",
+        "detect",
+        "analyze",
+        "images",
+        "videos"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ให้บริการด้าน Machine Learning เพื่อตรวจจับและวิเคราะห์เนื้อหาในรูปภาพและวิดีโอ ซึ่งเป็นลักษณะของบริการ AI/ML และขั้นสูง"
+    },
+    {
+      "question": "Which AWS service should a company use to organize characterize, and search large numbers of images?",
+      "options": [
+        "Amazon Transcribe",
+        "Amazon Rekognition",
+        "Amazon Aurora",
+        "Amazon QuickSight"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"Rekognition\" พ้องเสียงกับ \"Recognize\" ซึ่งแปลว่า \"จดจำ\" เหมาะกับการจัดการรูปภาพจำนวนมาก**",
+      "keywords_for_highlighting": [
+        "organize",
+        "characterize",
+        "search",
+        "images"
+      ],
+      "assigned_category_id_by_gemini": 10,
+      "assigned_category_name_by_gemini": "บริการ AI/ML และขั้นสูง (Advanced Services)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ Amazon Rekognition ซึ่งเป็นบริการ AI/ML ที่ใช้ในการวิเคราะห์และจัดการรูปภาพจำนวนมาก จัดเป็นบริการขั้นสูงของ AWS"
+    }
+  ]
+}

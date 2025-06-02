@@ -1,0 +1,1035 @@
+{
+  "quizTitle": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model) (ข้อประมาณ 266 - 311 จาก Dump เดิม) - 52 ข้อ",
+  "questions": [
+    {
+      "question": "Which tasks are customer responsibilities according to the AWS shared responsibility model? (Select\nTWO.)",
+      "options": [
+        "Determine application dependencies with operating systems.",
+        "Provide user access with AWS Identity and Access Management (IAM).",
+        "Secure the data center in an Availability Zone.",
+        "Patch the hypervisor.",
+        "Provide network availability in Availability Zones."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Shared Responsibility Model\" เน้นที่ \"ลูกค้า\" ดูแล \"IAM\" (การจัดการสิทธิ์การเข้าถึง) และสิ่งที่อยู่บน Cloud ส่วน AWS ดูแล \"Cloud\"",
+      "keywords_for_highlighting": [
+        "customer responsibilities",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "Which tasks are the responsibility of AWS according to the AWS shared responsibility model? (Select\nTWO.)",
+      "options": [
+        "Configure AWS Identity and Access Management (IAM).",
+        "Configure security groups on Amazon EC2 instances.",
+        "Secure the access of physical AWS facilities.",
+        "Patch applications that run on Amazon EC2 instances.",
+        "Perform infrastructure patching and maintenance."
+      ],
+      "correctAnswer": [
+        2,
+        4
+      ],
+      "explanation": "AWS รับผิดชอบ \"กายภาพ\" และ \"โครงสร้างพื้นฐาน\" ส่วน \"การตั้งค่า\" ต่างๆ เป็นหน้าที่ของเรา",
+      "keywords_for_highlighting": [
+        "responsibility",
+        "AWS shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ตามโมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "Which controls are the responsibility of both AWS and AWS customers, according to the AWS shared responsibility model? (Select TWO.)",
+      "options": [
+        "Physical and environmental controls",
+        "Patch management",
+        "Configuration management",
+        "Account structures",
+        "Choice of the AWS Region where data is stored"
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "\"Patch\" และ \"Config\" เหมือนการดูแลบ้านร่วมกัน AWS ดูแลโครงสร้างหลัก ลูกค้าดูแลรายละเอียดภายในและการปรับแต่ง",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "AWS",
+        "customers",
+        "controls"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบที่ AWS และลูกค้ามีร่วมกัน ซึ่งเป็นใจความสำคัญของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model) ของ AWS"
+    },
+    {
+      "question": "Which of the following are customer responsibilities under the AWS shared responsibility model? (Select\nTWO.)",
+      "options": [
+        "Physical security of AWS facilities",
+        "Configuration of security groupsQ",
+        "Encryption of customer data on AWS",
+        "Management of AWS Lambda infrastructureQ",
+        "Management of network throughput of each AWS Region"
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "**\"ลูกค้าคุม Security & Data\"** จำว่าลูกค้าต้องดูแลเรื่องความปลอดภัย (Security Groups) และข้อมูล (Encryption) ของตัวเองใน AWS",
+      "keywords_for_highlighting": [
+        "customer responsibilities",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าภายใต้โมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "Which task is the responsibility of AWS, according to the AWS shared responsibility model?",
+      "options": [
+        "Set up multi-factor authentication (MFA) for each Workspaces user account.",
+        "Ensure the environmental safety and security of the AWS infrastructure that hosts Workspaces.",
+        "Provide security for Workspaces user accounts through AWS Identity and Access Management(IAM).   125",
+        "Configure AWS CloudTrail to log API calls and user activity.A company stores data in an Amazon S3 bucket. The company must control who has permission to read, write,or delete objects that the company stores in the S3 bucket."
+      ],
+      "correctAnswer": 1,
+      "explanation": "AWS รับผิดชอบ \"ความปลอดภัยทางกายภาพ\" ของโครงสร้างพื้นฐาน (infrastructure) ส่วนเรื่องอื่นๆ เป็นของผู้ใช้",
+      "keywords_for_highlighting": [
+        "responsibility",
+        "AWS shared responsibility model",
+        "infrastructure"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามเกี่ยวกับความรับผิดชอบของ AWS ตามโมเดลความรับผิดชอบร่วม (Shared Responsibility Model) โดยตรง"
+    },
+    {
+      "question": "Which AWS service requires the customer to patch the guest operating system?",
+      "options": [
+        "AWS Lambda",
+        "Amazon OpenSearch Service",
+        "Amazon EC2",
+        "Amazon ElastiCache"
+      ],
+      "correctAnswer": 2,
+      "explanation": "EC2 คือเครื่องเสมือนที่เราต้องดูแลเองทั้งหมด รวมถึงการ patch OS ด้วย",
+      "keywords_for_highlighting": [
+        "patch",
+        "guest operating system",
+        "service"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบในการจัดการระบบปฏิบัติการ ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วมของ AWS ที่ระบุว่าลูกค้าต้องรับผิดชอบในการจัดการบางส่วนของระบบปฏิบัติการบนบางบริการ"
+    },
+    {
+      "question": "Which of the following is entirely the responsibility of AWS, according to the AWS shared responsibility model?",
+      "options": [
+        "Security awareness and training",
+        "Development of an IAM password policy",
+        "Patching of the guest operating system",
+        "Physical and environmental controls"
+      ],
+      "correctAnswer": 3,
+      "explanation": "AWS ดูแล \"กายภาพ\" และ \"สิ่งแวดล้อม\" ของศูนย์ข้อมูลทั้งหมด เราแค่ใช้บริการบนนั้น",
+      "keywords_for_highlighting": [
+        "responsibility",
+        "AWS shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ตามโมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่โมเดลความรับผิดชอบร่วม"
+    },
+    {
+      "question": "A company is hosting a web application in a Docker container on Amazon EC2. AWS is responsible for which of the following tasks?",
+      "options": [
+        "Scaling the web application and services developed with Docker",
+        "Provisioning or scheduling containers to run on clusters and maintain their availability   138",
+        "Performing hardware maintenance in the AWS facilities that run the AWS Cloud",
+        "Managing the guest operating system, including updates and security patches"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Docker บน EC2\" นึกถึง \"Hardware\" เพราะ AWS ดูแลโครงสร้างพื้นฐานเบื้องล่าง",
+      "keywords_for_highlighting": [
+        "Docker container",
+        "Amazon EC2",
+        "AWS responsible",
+        "hardware maintenance"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบระหว่าง AWS และลูกค้าในการจัดการ EC2 instance ซึ่งเป็นหัวใจหลักของโมเดลความรับผิดชอบร่วมกัน (Shared Responsibility Model)"
+    },
+    {
+      "question": "According to the AWS shared responsibility model, which of the following are AWS responsibilities? (Select\nTWO.)",
+      "options": [
+        "Network infrastructure and virtualization of infrastructure",
+        "Security of application data",
+        "Guest operating systems",
+        "Physical security of hardware",
+        "Credentials and policies"
+      ],
+      "correctAnswer": [
+        0,
+        3
+      ],
+      "explanation": "AWS ดูแล \"โครงสร้างพื้นฐาน\" และ \"ความปลอดภัยทางกายภาพ\" ของฮาร์ดแวร์ ส่วนที่เหลือเป็นความรับผิดชอบของผู้ใช้",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "AWS responsibilities"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ตามโมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "Which activity is a customer responsibility in the AWS Cloud according to the AWS shared responsibility model?",
+      "options": [
+        "Ensuring network connectivity from AWS to the internet",
+        "Patching and fixing flaws within the AWS Cloud infrastructure",
+        "Ensuring the physical security of cloud data centers",
+        "Ensuring Amazon EBS volumes are backed up"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Shared Responsibility Model\" ใน AWS ลูกค้าต้องดูแล \"ข้อมูล\" ของตัวเอง ดังนั้นจำไว้ว่าการสำรองข้อมูล (backup) เป็นหน้าที่ของลูกค้า",
+      "keywords_for_highlighting": [
+        "customer responsibility",
+        "AWS shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "Which task is a customer's responsibility, according to the AWS shared responsibility model?",
+      "options": [
+        "Management of the guest operating systems",
+        "Maintenance of the configuration of infrastructure devices",
+        "Management of the host operating systems and virtualization",
+        "Maintenance of the software that powers Availability ZonesA company has refined its workload to use specific AWS services to improve efficiency and reduce cost."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Shared Responsibility Model\" และ \"Customer Responsibility\" ให้จำว่าลูกค้าดูแล \"Guest OS\" (ระบบปฏิบัติการที่อยู่บน VM) ส่วน AWS ดูแลส่วนที่อยู่ลึกลงไป",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "customer’s responsibility"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่นี้"
+    },
+    {
+      "question": "Which tasks are customer responsibilities, according to the AWS shared responsibility model? (Select\nTWO.)",
+      "options": [
+        "Configure the AWS provided security group firewall.",
+        "Classify company assets in the AWS Cloud.",
+        "Determine which Availability Zones to use for Amazon S3 buckets.",
+        "Patch or upgrade Amazon DynamoDB.",
+        "Select Amazon EC2 instances to run AWS Lambda on.",
+        "AWS Config"
+      ],
+      "correctAnswer": [
+        0,
+        1
+      ],
+      "explanation": "ความปลอดภัยของไฟร์วอลล์ (Security Group) และการจัดการข้อมูล (Classify assets) เป็นสิ่งที่ลูกค้าต้องดูแลเองเสมอใน AWS Cloud.",
+      "keywords_for_highlighting": [
+        "customer responsibilities",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "Which option is a customer responsibility under the AWS shared responsibility model?",
+      "options": [
+        "Maintenance of underlying hardware of Amazon EC2 instances",
+        "Application data security",
+        "Physical security of data centers",
+        "Maintenance of VPC components"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Shared Responsibility\" คือความรับผิดชอบร่วมกัน AWS ดูแล \"Cloud\", ลูกค้าดูแล \"Data\" และ \"Security\" ของตัวเองบน Cloud",
+      "keywords_for_highlighting": [
+        "customer responsibility",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าภายใต้โมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "Which AWS service requires the customer to be fully responsible for applying operating system patches?",
+      "options": [
+        "Amazon DynamoDB",
+        "AWS Lambda",
+        "AWS Fargate",
+        "Amazon EC2"
+      ],
+      "correctAnswer": 3,
+      "explanation": "EC2 คือเครื่องเสมือนที่เราต้องจัดการเองทั้งหมด รวมถึงการอัปเดต patch ระบบปฏิบัติการด้วย จำว่า \"EC2 = ดูแลเองเต็มที่\"",
+      "keywords_for_highlighting": [
+        "operating system patches",
+        "fully responsible"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของผู้ใช้งานในการจัดการระบบปฏิบัติการ ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วมของ AWS ที่ระบุว่าส่วนใดที่ AWS รับผิดชอบ และส่วนใดที่ลูกค้าต้องรับผิดชอบ"
+    },
+    {
+      "question": "A company is hosting an application in the AWS Cloud. The company wants to verify that underlying AWS services and general AWS infrastructure are operating normally. Which combination of AWS services can the company use to gather the required information?    180 (Select\nTWO.)",
+      "options": [
+        "AWS Personal Health Dashboard",
+        "AWS Systems Manager",
+        "AWS Trusted Advisor",
+        "AWS Service Health Dashboard",
+        "AWS Service Catalog"
+      ],
+      "correctAnswer": [
+        0,
+        3
+      ],
+      "explanation": "\"สุขภาพ\" ของ AWS ต้องดูทั้ง \"สุขภาพส่วนตัว\" (Personal) ของ account เรา และ \"สุขภาพโดยรวม\" (Service) ของ AWS เอง",
+      "keywords_for_highlighting": [
+        "operating normally",
+        "AWS services",
+        "AWS infrastructure"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการตรวจสอบสถานะของบริการ AWS ซึ่งเป็นส่วนหนึ่งของความรับผิดชอบร่วมกันระหว่าง AWS และลูกค้า โดย AWS รับผิดชอบต่อการทำงานของโครงสร้างพื้นฐาน และลูกค้าต้องตรวจสอบสถานะเพื่อให้แน่ใจว่าแอปพลิเคชันทำงานได้อย่างถูกต้อง"
+    },
+    {
+      "question": "Which pillar of the AWS Well-Architected Framework includes the AWS shared responsibility model?",
+      "options": [
+        "Operational excellence",
+        "Performance efficiency",
+        "Reliability",
+        "Security"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Shared responsibility\" (ความรับผิดชอบร่วมกัน) คือหัวใจสำคัญของ \"Security\" (ความปลอดภัย) ใน AWS",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงเสาหลักของ AWS Well-Architected Framework ที่รวมถึงโมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวข้อหลักของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model)"
+    },
+    {
+      "question": "A company is building an application on AWS. The application needs to comply with credit card regulatory   190 requirements. The company needs proof that the AWS services and deployment are in compliance. Which actions should the company take to meet these requirements? (Select TWO.)",
+      "options": [
+        "Use Amazon Inspector to submit the application for certification.",
+        "Ensure that the application's underlying hardware components comply with requirements.",
+        "Use AWS Artifact to access AWS documents about the compliance of the services.",
+        "Get the compliance of the application certified by a company assessor.",
+        "Use AWS Security Hub to certify the compliance of the application."
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "\"Compliance\" ในโจทย์ คู่กับ \"AWS Artifact\" ที่เก็บเอกสาร compliance และต้องมี \"company assessor\" มาช่วย certify application",
+      "keywords_for_highlighting": [
+        "credit card regulatory requirements",
+        "proof",
+        "compliance",
+        "AWS services",
+        "deployment"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับความรับผิดชอบของลูกค้าและ AWS ในการปฏิบัติตามข้อกำหนดด้านกฎระเบียบ ซึ่งเป็นหัวใจสำคัญของโมเดลความรับผิดชอบร่วม"
+    },
+    {
+      "question": "What is an AWS responsibility under the AWS shared responsibility model?",
+      "options": [
+        "Configure the security group rules that determine which ports are open on an Amazon EC2 Linux instance.",
+        "Ensure the security of the internal network in the AWS data centers.",
+        "Patch the guest operating system with the latest security patches on Amazon EC2.",
+        "Turn on server-side encryption for Amazon S3 buckets.A company wants to deploy its critical application on AWS and maintain high availability."
+      ],
+      "correctAnswer": 1,
+      "explanation": "AWS รับผิดชอบ \"ภายใน\" Data Center, ลูกค้าดูแล \"ภายนอก\" Instance",
+      "keywords_for_highlighting": [
+        "AWS responsibility",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ภายใต้โมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "A company is planning to host its workloads on AWS. Which AWS service requires the company to update and patch the guest operating system?",
+      "options": [
+        "Amazon DynamoDB",
+        "Amazon S3",
+        "Amazon EC2",
+        "Amazon Aurora"
+      ],
+      "correctAnswer": 2,
+      "explanation": "EC2 คือเครื่องเสมือนที่เราต้องจัดการเองทั้งหมด รวมถึง OS ด้วย จำว่า \"EC2 เหมือนคอมพิวเตอร์ส่วนตัว ต้องดูแลเอง\"",
+      "keywords_for_highlighting": [
+        "workloads",
+        "AWS",
+        "service",
+        "update",
+        "patch",
+        "guest operating system"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบในการจัดการระบบปฏิบัติการ ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วมของ AWS ที่ระบุว่าลูกค้าต้องรับผิดชอบในการจัดการระบบปฏิบัติการของ EC2 instances"
+    },
+    {
+      "question": "According to the AWS shared responsibility model, who is responsible for the virtualization layer down to the physical security of the facilities in which AWS services operate?",
+      "options": [
+        "It is the sole responsibility of the customer.   217",
+        "It is the sole responsibility of AWS.",
+        "It is a shared responsibility between AWS and the customer.",
+        "The customer's AWS Support plan tier determines who manages the configuration."
+      ],
+      "correctAnswer": 1,
+      "explanation": "AWS รับผิดชอบ \"ใต้\" virtualization layer ลงไปถึงความปลอดภัยทางกายภาพของศูนย์ข้อมูล (physical security). นึกภาพ AWS เป็นเจ้าของตึกและโครงสร้างพื้นฐานทั้งหมด",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "virtualization layer",
+        "physical security",
+        "facilities"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบในการจัดการส่วนต่างๆ ของโครงสร้างพื้นฐาน AWS ซึ่งเป็นหัวใจหลักของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model)"
+    },
+    {
+      "question": "An ecommerce company has migrated its IT infrastructure from an on-premises data center to the AWS Cloud. Which cost is the company's direct responsibility?",
+      "options": [
+        "Cost of application software licenses",
+        "Cost of the hardware infrastructure on AWS",
+        "Cost of power for the AWS servers",
+        "Cost of physical security for the AWS data center   234"
+      ],
+      "correctAnswer": 0,
+      "explanation": "บริษัทใช้ AWS แล้ว ค่าลิขสิทธิ์ซอฟต์แวร์แอปพลิเคชันเป็นสิ่งที่บริษัทต้องรับผิดชอบเองเสมอ",
+      "keywords_for_highlighting": [
+        "ecommerce company",
+        "AWS Cloud",
+        "direct responsibility",
+        "cost"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบของลูกค้าในการจัดการต้นทุนบางอย่างเมื่อใช้ AWS ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วมกันระหว่าง AWS และลูกค้า"
+    },
+    {
+      "question": "A company is migrating its workloads to the AWS Cloud. The company must retain full control of patch management for the guest operating systems that host its applications. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "Amazon DynamoDB",
+        "Amazon EC2",
+        "AWS Lambda",
+        "Amazon RDS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ควบคุม Patch\" + \"OS\" = EC2 เพราะ EC2 ให้สิทธิ์ควบคุมระบบปฏิบัติการ (OS) เต็มที่",
+      "keywords_for_highlighting": [
+        "full control",
+        "patch management",
+        "guest operating systems"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การควบคุมการจัดการแพตช์ ซึ่งเป็นส่วนหนึ่งของความรับผิดชอบของผู้ใช้งานในโมเดลความรับผิดชอบร่วมของ AWS โดยเฉพาะอย่างยิ่งเมื่อใช้ Amazon EC2 ที่ผู้ใช้งานต้องดูแลระบบปฏิบัติการเอง"
+    },
+    {
+      "question": "266 Which task does AWS perform automatically?",
+      "options": [
+        "Encrypt data that is stored in Amazon DynamoDB.",
+        "Patch Amazon EC2 instances.",
+        "Encrypt user network traffic.",
+        "Create TLS certificates for users' websites."
+      ],
+      "correctAnswer": 1,
+      "explanation": "AWS ดูแลเรื่องพื้นฐานให้ EC2 ทำงานได้ปกติ การ \"Patch\" คือหนึ่งในงานพื้นฐานที่ AWS จัดการให้เอง",
+      "keywords_for_highlighting": [
+        "task",
+        "AWS",
+        "automatically",
+        "EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบของ AWS ในการจัดการบริการต่างๆ ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model) ที่ AWS และลูกค้าแบ่งความรับผิดชอบในการรักษาความปลอดภัยและความพร้อมใช้งานของระบบคลาวด์"
+    },
+    {
+      "question": "A company wants to migrate a database from an on-premises environment to Amazon RDS. After the migration is complete, which management task will the company still be responsible for?",
+      "options": [
+        "Hardware lifecycle management",
+        "Application optimization",
+        "Server maintenance",
+        "Power, network, and cooling provisioning"
+      ],
+      "correctAnswer": 1,
+      "explanation": "RDS ดูแลเรื่อง infrastructure ให้ แต่เราต้องดูแล application เองเสมอ เน้น \"optimization\" เพราะเป็นหน้าที่เราปรับปรุงให้ดีขึ้น",
+      "keywords_for_highlighting": [
+        "migrate database",
+        "Amazon RDS",
+        "management task",
+        "responsible"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบที่บริษัทต้องรับผิดชอบหลังจากย้ายฐานข้อมูลไปที่ Amazon RDS ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วมของ AWS ที่ระบุว่า AWS รับผิดชอบอะไร และลูกค้าต้องรับผิดชอบอะไร"
+    },
+    {
+      "question": "For which AWS service is the customer responsible for maintaining the underlying operating system?",
+      "options": [
+        "Amazon DynamoDB",
+        "Amazon S3",
+        "Amazon EC2",
+        "AWS Lambda"
+      ],
+      "correctAnswer": 2,
+      "explanation": "EC2 คือ \"เครื่อง\" ที่เราต้องดูแลเองทั้งหมด (OS, software) ส่วนบริการอื่น AWS ดูแลให้",
+      "keywords_for_highlighting": [
+        "operating system",
+        "responsible",
+        "maintaining"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าในการดูแลระบบปฏิบัติการ ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วมของ AWS ที่ระบุว่าใครรับผิดชอบอะไรบ้าง"
+    },
+    {
+      "question": "In the AWS shared responsibility model, which tasks are the responsibility of AWS? (Select TWO.)",
+      "options": [
+        "Patch an Amazon EC2 instance operating system.",
+        "Configure a security group.",
+        "Monitor the health of an Availability Zone.",
+        "Protect the infrastructure that runs Amazon EC2 instances.",
+        "Manage access to the data in an Amazon S3 bucket   295"
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "AWS ดูแล \"Availability Zone\" และโครงสร้างพื้นฐาน (Infrastructure) ทั้งหมด ส่วนเรื่องภายในเครื่อง (OS, Security Group, Data Access) เป็นหน้าที่ของผู้ใช้",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "AWS",
+        "tasks"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ภายใต้โมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "Which tasks are the responsibility of the customer, according to the AWS shared responsibility model?",
+      "options": [
+        "Patch the Amazon RDS operating system.",
+        "Upgrade the firmware of the network infrastructure.",
+        "Manage data encryption.",
+        "Maintain physical access control in an AWS Region.",
+        "Grant least privilege access to IAM users."
+      ],
+      "correctAnswer": [
+        2,
+        4
+      ],
+      "explanation": "\"ข้อมูล\" และ \"สิทธิ์\" เป็นสิ่งที่ลูกค้าต้อง \"จัดการ\" เองใน AWS shared responsibility model ส่วนเรื่องระบบปฏิบัติการ, เฟิร์มแวร์, และ physical access เป็นหน้าที่ของ AWS",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "customer",
+        "tasks"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "According to the AWS shared responsibility model, which task is the customer's responsibility?",
+      "options": [
+        "Maintaining the infrastructure needed to run AWS Lambda",
+        "Updating the operating system of Amazon DynamoDB instances",
+        "Maintaining Amazon S3 infrastructure",
+        "Updating the guest operating system on Amazon EC2 instances"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ลูกค้าดูแล \"แขก\" (Guest OS) บน EC2 เพราะ EC2 คือเครื่องเสมือนที่เราควบคุมเอง ส่วนบริการอื่นๆ AWS ดูแลให้",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "customer’s responsibility"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "311 Which option is AWS responsible for under the AWS shared responsibility model?",
+      "options": [
+        "Network and firewall configuration",
+        "Client-side data encryption",
+        "Management of user permissions",
+        "Hardware and infrastructure"
+      ],
+      "correctAnswer": 3,
+      "explanation": "AWS รับผิดชอบ \"Hardware\" และ \"Infrastructure\" พื้นฐานของ Cloud ส่วนเรื่องอื่นๆ เป็นหน้าที่ของผู้ใช้งาน",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "AWS responsible"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ภายใต้โมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "A company is moving to the AWS Cloud to reduce operational overhead for its application infrastructure. Which IT operation will the company still be responsible for after the migration to AWS?",
+      "options": [
+        "Security patching of AWS Elastic Beanstalk",
+        "Backups of data that is stored in Amazon Aurora",
+        "Termination of Amazon EC2 instances that are managed by AWS Auto Scaling",
+        "Configuration of IAM access controls"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ลดภาระ\" แต่ \"IAM\" คือความรับผิดชอบเราเสมอ เพราะเรื่อง \"สิทธิ์\" เราต้องคุมเอง",
+      "keywords_for_highlighting": [
+        "reducing operational overhead",
+        "responsible for"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบที่บริษัทต้องรับผิดชอบหลังจากการย้ายไปใช้ AWS ซึ่งเป็นประเด็นหลักของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model) ที่ AWS กำหนด"
+    },
+    {
+      "question": "Which aspect of security is the customer's responsibility, according to the AWS shared responsibility model?",
+      "options": [
+        "Patch and configuration management",
+        "Service and communications protection or zone security",
+        "Physical and environmental controls",
+        "Awareness and training"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ลูกค้าต้อง \"ปะ\" (Patch) และ \"ปรับ\" (Configuration) เอง ส่วน AWS ดูแล \"ฐาน\" (Infrastructure)",
+      "keywords_for_highlighting": [
+        "security",
+        "customer\\'s responsibility",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "A company wants to run a NoSQL database on Amazon EC2 instances. Which task is the responsibility of AWS in this scenario\"?",
+      "options": [
+        "Update the guest operating system of the EC2 instances   342",
+        "Maintain high availability at the database layer",
+        "Patch the physical infrastructure that hosts the EC2 instances",
+        "Configure the security group firewall"
+      ],
+      "correctAnswer": 2,
+      "explanation": "EC2 คือ IaaS (Infrastructure as a Service) AWS ดูแลโครงสร้างพื้นฐาน (physical infrastructure) ให้เรา ส่วนเราดูแล OS และ Database เอง",
+      "keywords_for_highlighting": [
+        "EC2",
+        "physical infrastructure"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบระหว่าง AWS และลูกค้าในการจัดการ EC2 instances ซึ่งเป็นหัวใจหลักของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model)"
+    },
+    {
+      "question": "Which tasks are responsibilities of the customer, according to the AWS shared responsibility model?",
+      "options": [
+        "Secure the virilization layer.",
+        "Encrypt data and maintain data integrity.",
+        "Patch the Amazon RDS operating system.",
+        "Maintain identity and access management controls.",
+        "Secure Availability Zones."
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "ลูกค้าดูแล \"ข้อมูล\" และ \"การเข้าถึง\" (Data & Access) เสมอ เพราะเป็นข้อมูลของลูกค้าเอง",
+      "keywords_for_highlighting": [
+        "responsibilities",
+        "customer",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "A company is using Amazon DynamoDB. Which task is the company's responsibility, according to the AWS shared responsibility model?",
+      "options": [
+        "Patch the operating system",
+        "Provision hosts",
+        "Manage database access permissions.",
+        "Secure the operating system"
+      ],
+      "correctAnswer": 2,
+      "explanation": "DynamoDB คือ Managed Service ดังนั้น AWS ดูแลเรื่อง OS และ Hardware ส่วน **การเข้าถึงข้อมูล (Access Permissions)** เป็นหน้าที่ของเราเสมอ",
+      "keywords_for_highlighting": [
+        "DynamoDB",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของบริษัทในการใช้ Amazon DynamoDB ภายใต้โมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "Which task is the customer's responsibility, according to the AWS shared responsibility model?",
+      "options": [
+        "Maintain the security of the AWS Cloud.",
+        "Configure firewalls and networks.",
+        "Patch the operating system of Amazon RDS instances.",
+        "Implement physical and environmental controls."
+      ],
+      "correctAnswer": 1,
+      "explanation": "ลูกค้าดูแล \"ไฟร์วอลล์และเครือข่าย\" เปรียบเสมือนรั้วบ้านของเราบนคลาวด์ AWS ที่เราต้องจัดการเอง",
+      "keywords_for_highlighting": [
+        "customer\\'s responsibility",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าภายใต้โมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหัวข้อนี้"
+    },
+    {
+      "question": "A company is using Amazon DynamoDB for its application database. Which tasks are the responsibility of AWS, according to the AWS shared responsibility model? (Select\nTWO.)",
+      "options": [
+        "Classify data.",
+        "Configure access permissions.",
+        "Manage encryption options.",
+        "Provide public endpoints to store and retrieve data.",
+        "Manage the infrastructure layer and the operating system."
+      ],
+      "correctAnswer": [
+        3,
+        4
+      ],
+      "explanation": "AWS ดูแล \"โครงสร้างพื้นฐาน\" (infrastructure) และ \"การเข้าถึงข้อมูล\" (endpoints) ส่วนการจัดการข้อมูลภายในเป็นหน้าที่ของผู้ใช้",
+      "keywords_for_highlighting": [
+        "DynamoDB",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ตามโมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่นี้"
+    },
+    {
+      "question": "Which task is the customer's responsibility, according to the AWS shared responsibility model?",
+      "options": [
+        "Patch a guest operating system that is deployed on an Amazon EC2 instance.",
+        "Control physical access to an AWS data center",
+        "Control access to AWS underlying hardware.",
+        "Patch a host operating system that is deployed on Amazon S3."
+      ],
+      "correctAnswer": 0,
+      "explanation": "ลูกค้าดูแล OS บน EC2 (Guest OS) เพราะ EC2 คือเครื่องเสมือนที่เราจัดการเอง ส่วน AWS ดูแล Infrastructure (Hardware, Data Center, Host OS).",
+      "keywords_for_highlighting": [
+        "customer’s responsibility",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "A company has deployed an Amazon EC2 instance. Which option is an AWS responsibility under the AWS shared responsibility model?",
+      "options": [
+        "Managing and encrypting application data",
+        "Installing updates and security patches of guest operating system",
+        "Configuration of infrastructure devices",
+        "Configuration of security groups on each instance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "AWS ดูแล \"โครงสร้างพื้นฐาน\" (Infrastructure) ส่วนเราดูแล \"ข้อมูล\" และ \"การตั้งค่า\" บน EC2",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "AWS responsibility",
+        "infrastructure"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ภายใต้โมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของโมเดลนี้"
+    },
+    {
+      "question": "Which responsibility belongs to AWS when a company hosts its databases on Amazon EC2 instances?",
+      "options": [
+        "Database backups",
+        "Database software patches",
+        "Operating system patches",
+        "Operating system installations"
+      ],
+      "correctAnswer": 2,
+      "explanation": "EC2 คือเครื่องเสมือน (VM) ที่ลูกค้าดูแลเองเกือบทั้งหมด AWS จึงรับผิดชอบแค่ส่วนพื้นฐานคือ OS patches เท่านั้น",
+      "keywords_for_highlighting": [
+        "Amazon EC2",
+        "responsibility",
+        "AWS"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความรับผิดชอบระหว่าง AWS และลูกค้าเมื่อใช้ Amazon EC2 ซึ่งเป็นหัวใจหลักของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model)"
+    },
+    {
+      "question": "A company stores data in an Amazon S3 bucket. Which task is the responsibility of AWS?",
+      "options": [
+        "Configure an S3 Lifecycle policy.",
+        "Activate S3 Versioning.",
+        "Configure S3 bucket policies.",
+        "Protect the infrastructure that supports S3 storage."
+      ],
+      "correctAnswer": 3,
+      "explanation": "AWS ดูแล \"โครงสร้างพื้นฐาน\" (Infrastructure) เสมอ, เราดูแล \"ข้อมูล\" และการตั้งค่าต่างๆ บนนั้น",
+      "keywords_for_highlighting": [
+        "data",
+        "Amazon S3 bucket",
+        "responsibility of AWS"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของ AWS ในการดูแลรักษา S3 ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model) ที่ AWS รับผิดชอบโครงสร้างพื้นฐาน และลูกค้าดูแลเรื่องการตั้งค่าและการจัดการข้อมูล"
+    },
+    {
+      "question": "Which task is the responsibility of the customer, according to the AWS shared responsibility model?",
+      "options": [
+        "Patch the Amazon DynamoDB operating system.",
+        "Secure Amazon CloudFront edge locations by allowing physical access according to the principle of least privilege.",
+        "Protect the hardware that runs AWS services.",
+        "Use AWS Identity and Access Management (1AM) according to the principle of least privilege."
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Shared Responsibility Model\" กับ \"Customer\" ให้คิดถึงเรื่อง \"Security in the Cloud\" ซึ่งลูกค้าต้องดูแลเรื่องการเข้าถึงและการจัดการสิทธิ์ (IAM)",
+      "keywords_for_highlighting": [
+        "responsibility",
+        "customer",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "Which option is a customer responsibility when using Amazon DynamoDB under the AWS Shared Responsibility Model?",
+      "options": [
+        "Physical security of DynamoDB",
+        "Patching of DynamoDB",
+        "Access to DynamoDB tables",
+        "Encryption of data at rest in DynamoDB"
+      ],
+      "correctAnswer": 2,
+      "explanation": "DynamoDB เป็นบริการ managed service ดังนั้น AWS ดูแลเรื่อง physical และ patching แต่ลูกค้าต้องจัดการเรื่องการเข้าถึงข้อมูล (access) เอง",
+      "keywords_for_highlighting": [
+        "DynamoDB",
+        "Shared Responsibility Model",
+        "customer responsibility"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าภายใต้โมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "What is a customer responsibility when using AWS Lambda according to the AWS shared responsibility model?",
+      "options": [
+        "Managing the code within the Lambda function",
+        "Confirming that the hardware is working in the data center",
+        "Patching the operating system",
+        "Shutting down Lambda functions when they are no longer in use"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lambda คือ Serverless เราไม่ต้องดูแลเรื่อง infrastructure แต่ต้องดูแลโค้ดที่เราเขียนเอง",
+      "keywords_for_highlighting": [
+        "AWS Lambda",
+        "shared responsibility model",
+        "customer responsibility"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงความรับผิดชอบของลูกค้าในการใช้ AWS Lambda ตามโมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "Which of the following is a customer responsibility according to the AWS shared responsibility model?   448",
+      "options": [
+        "Apply security patches for Amazon S3 infrastructure devices.",
+        "Provide physical security for AWS datacenters.",
+        "Install operating system updates on Lambda@Edge.",
+        "Implement multi-factor authentication (MFA) for 1AM user accounts."
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Shared Responsibility Model\" เน้นที่ \"ลูกค้า\" ต้องดูแลเรื่องการเข้าถึงและความปลอดภัยของบัญชีผู้ใช้ของตนเอง (IAM)",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "customer responsibility"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS โดยตรง ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "Which maintenance task is the customer's responsibility, according to the AWS shared responsibility model?",
+      "options": [
+        "Physical connectivity among Availability Zones",
+        "Network switch maintenance",
+        "Hardware updates and firmware patches",
+        "Amazon EC2 updates and security patches"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ลูกค้าดูแล \"EC2\" (เครื่องเสมือน) ของตัวเอง, AWS ดูแล \"กายภาพ\"",
+      "keywords_for_highlighting": [
+        "maintenance task",
+        "customer\\'s responsibility",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "Under the AWS shared responsibility model, which of the following is a responsibility of the customer?",
+      "options": [
+        "Shred disk drives before they leave a data center.",
+        "Prevent customers from gathering packets or collecting traffic at the hypervisor level.",
+        "Patch the guest operating system with the latest security patches.",
+        "Maintain security systems that provide physical monitoring of data centers."
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Shared Responsibility Model\" เน้นที่ \"Guest OS\" คือสิ่งที่ลูกค้าต้องดูแลเรื่อง Patch Security",
+      "keywords_for_highlighting": [
+        "shared responsibility model",
+        "customer"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าภายใต้โมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดนี้"
+    },
+    {
+      "question": "Which tasks are the customer's responsibility, according to the AWS shared responsibility model? (Select\nTWO.)",
+      "options": [
+        "Establish the global infrastructure.",
+        "Perform client-side data encryption.",
+        "Configure 1AM credentials.",
+        "Secure edge locations.   474",
+        "Patch Amazon RDS DB instances."
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "\"ข้อมูล\" และ \"สิทธิ์\" อยู่ในมือลูกค้าเสมอ! จำไว้ว่า AWS ดูแล \"ระบบ\" ส่วนลูกค้าดูแล \"ข้อมูล\" และ \"สิทธิ์\" เข้าถึงข้อมูล",
+      "keywords_for_highlighting": [
+        "responsibility",
+        "customer",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของลูกค้าตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    },
+    {
+      "question": "A company has a client that uses an Amazon RDS database. The client requests Information about operating system-level upgrades on the AWS resources that host the RDS database. The company employs a third-party provider to monitor the RDS database. Who is responsible for upgrading the operating systems for Amazon RDS under the AWS shared responsibility model?   489",
+      "options": [
+        "The client",
+        "The company",
+        "AWS",
+        "The third-party provider"
+      ],
+      "correctAnswer": 2,
+      "explanation": "RDS เป็นบริการ managed service ของ AWS ดังนั้น AWS รับผิดชอบเรื่อง OS level upgrades",
+      "keywords_for_highlighting": [
+        "RDS database",
+        "operating system-level upgrades",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบในการอัปเกรดระบบปฏิบัติการของ Amazon RDS ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วมของ AWS ที่ระบุว่าใครรับผิดชอบอะไรบ้างระหว่าง AWS และลูกค้า"
+    },
+    {
+      "question": "Which option is a shared responsibility between AWS and its customers under the AWS shared responsibility model?",
+      "options": [
+        "Configuration of Amazon EC2 instance operating systems",
+        "Application file system server-side encryption",
+        "Patch management",
+        "Security of the physical infrastructure"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Shared Responsibility\" และ \"Patch\" มาด้วยกันเสมอ AWS ดูแล Patch ระดับ Infrastructure ส่วนเราดูแล Patch OS และ Application",
+      "keywords_for_highlighting": [
+        "shared responsibility",
+        "AWS",
+        "customers"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงความรับผิดชอบร่วมกันระหว่าง AWS และลูกค้า ซึ่งเป็นหัวใจหลักของโมเดลความรับผิดชอบร่วม (Shared Responsibility Model)"
+    },
+    {
+      "question": "A company is learning about its responsibilities that are related to the management of Amazon EC2 instances. Which tasks for EC2 instances are the company's responsibility, according to the AWS shared responsibility model? (Select TWO.)",
+      "options": [
+        "Install and patch the machine hypervisor.",
+        "Patch the guest operating system.",
+        "Encrypt data at rest on associated storage.",
+        "Install the physical hardware and cabling.",
+        "Provide physical security for the EC2 instances."
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "EC2 คือเครื่องที่เราเช่ามา เราต้องดูแล OS และข้อมูลข้างใน ส่วน AWS ดูแลโครงสร้างพื้นฐาน",
+      "keywords_for_highlighting": [
+        "responsibilities",
+        "EC2 instances",
+        "shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความรับผิดชอบของบริษัทในการจัดการ EC2 instances ตามโมเดลความรับผิดชอบร่วมของ AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ที่ 2"
+    },
+    {
+      "question": "Which AWS service gives users on-demand, sell-service access to AWS compliance control reports?",
+      "options": [
+        "AWS Config",
+        "Amazon GuardDuty",
+        "AWS Trusted Advisor",
+        "AWS Artifact"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**\"Artifact\" เหมือน \"เอกสาร\" ที่ให้ \"รายงาน\" การควบคุมตามข้อกำหนด (compliance).**",
+      "keywords_for_highlighting": [
+        "compliance control reports",
+        "on-demand",
+        "self-service access"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามเกี่ยวกับรายงานการควบคุมการปฏิบัติตามข้อกำหนด (compliance control reports) เกี่ยวข้องโดยตรงกับความรับผิดชอบของลูกค้าและ AWS ในการรักษาความปลอดภัยและการปฏิบัติตามข้อกำหนด ซึ่งเป็นส่วนหนึ่งของโมเดลความรับผิดชอบร่วม"
+    },
+    {
+      "question": "Which task is a responsibility of AWS, according to the AWS shared responsibility model?",
+      "options": [
+        "Configure identity and access management for applications.",
+        "Manage encryption options for data that is stored on AWS.",
+        "Configure security groups for Amazon EC2 instances.",
+        "Maintain the physical hardware of the infrastructure."
+      ],
+      "correctAnswer": 1,
+      "explanation": "AWS ดูแล \"ของ\" ที่เก็บไว้บน AWS (เช่น การเข้ารหัสข้อมูล) ส่วน \"การตั้งค่า\" เป็นหน้าที่ของเรา",
+      "keywords_for_highlighting": [
+        "responsibility",
+        "AWS shared responsibility model"
+      ],
+      "assigned_category_id_by_gemini": 2,
+      "assigned_category_name_by_gemini": "โมเดลความรับผิดชอบร่วม (Shared Responsibility Model)",
+      "gemini_category_justification": "คำถามถามถึงความรับผิดชอบของ AWS ตามโมเดลความรับผิดชอบร่วม ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"โมเดลความรับผิดชอบร่วม\""
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "quizTitle": "การย้ายระบบสู่ AWS (Migration to AWS) - 29 ข้อ",
+  "questions": [
+    {
+      "question": "A company wants to migrate its on-premises data warehouse to AWS. The information in the data warehouse is used to populate analytics dashboards. Which AWS service should the company use for the data warehouse?",
+      "options": [
+        "Amazon ElastiCache",
+        "Amazon Aurora",
+        "Amazon RDS",
+        "Amazon Redshift"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Data warehouse\" และ \"analytics dashboards\" สองสิ่งนี้บ่งบอกถึง Redshift ทันที!",
+      "keywords_for_highlighting": [
+        "data warehouse",
+        "analytics dashboards"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายระบบ data warehouse จาก on-premises ไปยัง AWS ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS (Migration to AWS)"
+    },
+    {
+      "question": "A company is moving an on-premises data center to the AWS Cloud. The company must migrate 50 petabytes of file storage data to AWS with the least possible operational overhead. Which AWS service or resource should the company use to meet these requirements?",
+      "options": [
+        "AWS Snowmobile",
+        "AWS Snowball Edge",
+        "AWS Data Exchange",
+        "AWS Database Migration Service (AWS DMS)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"50 Petabytes\" เยอะขนาดนี้ ต้องใช้ \"Snowmobile\" รถบรรทุกขนย้ายข้อมูลขนาดใหญ่ที่สุดของ AWS เท่านั้น!",
+      "keywords_for_highlighting": [
+        "50 petabytes",
+        "file storage",
+        "least possible operational overhead"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายข้อมูลจากศูนย์ข้อมูลภายในองค์กรไปยัง AWS ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS (Migration to AWS)"
+    },
+    {
+      "question": "A user is moving a workload from a local data center to an architecture that is distributed between the local data center and the AWS Cloud. Which type of migration is this?",
+      "options": [
+        "On-premises to cloud native",
+        "Hybrid to cloud native",
+        "On-premises to hybrid",
+        "Cloud native to hybrid"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ย้ายจาก \"local data center\" ไป \"ระหว่าง local data center และ AWS Cloud\" คือการสร้างสภาพแวดล้อม \"hybrid\" (ลูกผสม)",
+      "keywords_for_highlighting": [
+        "local data center",
+        "distributed between",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับการย้าย workload จาก data center ภายในองค์กรไปยังสถาปัตยกรรมที่กระจายตัวระหว่าง data center ภายในองค์กรและ AWS Cloud ซึ่งเป็นการย้ายระบบสู่ AWS (Migration to AWS) โดยตรง"
+    },
+    {
+      "question": "A company wants to migrate its on-premises application to the AWS Cloud. The company is legally obligated to retain certain data in its onpremises data center. Which AWS service or feature will support this requirement?",
+      "options": [
+        "AWS Wavelength",
+        "AWS Local Zones",
+        "VMware Cloud on AWS",
+        "AWS Outposts"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ข้อมูลต้องอยู่ On-Premises แต่ใช้ AWS ได้ด้วย\" นึกถึง Outposts ที่เอา AWS ไปตั้งที่ On-Premises เลย",
+      "keywords_for_highlighting": [
+        "on-premises",
+        "retain",
+        "data center"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายแอปพลิเคชันจาก On-Premise ไปยัง AWS Cloud โดยมีข้อกำหนดให้เก็บข้อมูลบางส่วนไว้ใน On-Premise ซึ่งเป็นสถานการณ์ทั่วไปในการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "Which AWS service provides a single location to track the progress of application migrations?",
+      "options": [
+        "AWS Application Discovery Service",
+        "AWS Application Migration Service   241",
+        "AWS Service Catalog",
+        "AWS Migration Hub"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Migration\" ในชื่อบริการ \"Migration Hub\" ตรงกับคำว่า \"migrations\" ในคำถาม ช่วยให้จำได้ว่าบริการนี้เกี่ยวข้องกับการติดตามความคืบหน้าของการย้ายข้อมูล",
+      "keywords_for_highlighting": [
+        "track",
+        "progress",
+        "application migrations",
+        "single location"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ติดตามความคืบหน้าของการย้ายแอปพลิเคชัน ซึ่งเกี่ยวข้องโดยตรงกับการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "A company needs to migrate a PostgreSQL database from on-premises to Amazon RDS. Which AWS service or tool should the company use to meet this requirement?",
+      "options": [
+        "Cloud Adoption Readiness Tool",
+        "AWS Migration Hub",
+        "AWS Database Migration Service (AWS DMS)",
+        "AWS Application Migration Service"
+      ],
+      "correctAnswer": 2,
+      "explanation": "โจทย์ถามถึงการย้ายฐานข้อมูล (database) ไป RDS ให้มองหาบริการที่มีคำว่า \"Migration Service\" และเน้นที่ \"Database\" เป็นหลัก",
+      "keywords_for_highlighting": [
+        "PostgreSQL",
+        "on-premises",
+        "Amazon RDS",
+        "migrate",
+        "database"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการย้ายฐานข้อมูลจาก on-premises ไปยัง AWS ซึ่งเป็นหัวข้อหลักของการย้ายระบบสู่ AWS (Migration to AWS)"
+    },
+    {
+      "question": "A company wants to migrate its workloads to AWS, but it lacks expertise in AWS Cloud computing. Which AWS service or feature will help the company with its migration?",
+      "options": [
+        "AWS Trusted Advisor",
+        "AWS Consulting Partners",
+        "AWS Artifacts",
+        "AWS Managed Services"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ขาดความเชี่ยวชาญ\" + \"ย้ายไป AWS\" ให้คิดถึงบริการ \"Managed Services\" ที่ช่วยจัดการให้เบ็ดเสร็จ",
+      "keywords_for_highlighting": [
+        "lacks expertise",
+        "migrate",
+        "AWS Cloud computing"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการหรือฟีเจอร์ที่ช่วยบริษัทในการย้ายระบบ (migration) ไปยัง AWS ซึ่งตรงกับหมวดหมู่ \"การย้ายระบบสู่ AWS\""
+    },
+    {
+      "question": "A company plans to migrate to the AWS Cloud. The company is gathering information about its on-premises infrastructure and requires information such as the hostname, IP address, and MAC address. Which AWS service will meet these requirements?",
+      "options": [
+        "AWS DataSync",
+        "AWS Application Migration Service",
+        "AWS Application Discovery Service",
+        "AWS Database Migration Service (AWS DMS)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Gathering information\" เกี่ยวกับ infrastructure on-premises (hostname, IP, MAC) ให้คิดถึง \"Discovery\" เพื่อค้นหาข้อมูลเหล่านั้น",
+      "keywords_for_highlighting": [
+        "on-premises infrastructure",
+        "hostname",
+        "IP address",
+        "MAC address"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการวางแผนและดำเนินการย้ายระบบจาก On-Premises ไปยัง AWS Cloud โดยเฉพาะการรวบรวมข้อมูลเกี่ยวกับโครงสร้างพื้นฐานเดิม ซึ่งเป็นขั้นตอนสำคัญในการย้ายระบบ"
+    },
+    {
+      "question": "A company is using AWS Organizations to configure AWS accounts. A company is planning its migration to the AWS Cloud. The company is identifying its capability gaps by using the AWS Cloud Adoption Framework (AWS CAF) perspectives. Which phase of the cloud transformation journey includes these identification activities?",
+      "options": [
+        "Envision",
+        "Align",
+        "Scale",
+        "Launch"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Migration\" และ \"capability gaps\" คือจุดเริ่มต้นของการวางแผน (Envision) ก่อนลงมือทำจริง",
+      "keywords_for_highlighting": [
+        "migration",
+        "capability gaps",
+        "AWS Cloud Adoption Framework (AWS CAF)",
+        "perspectives"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการวางแผนการย้ายระบบสู่ AWS และการใช้ AWS CAF เพื่อระบุช่องว่าง ซึ่งเป็นส่วนหนึ่งของกระบวนการย้ายระบบสู่ AWS โดยตรง"
+    },
+    {
+      "question": "A company is considering migration to the AWS Cloud. The company wants a fully managed service or feature that can transfer streaming data from multiple sources to an Amazon S3 bucket. Which AWS service or feature should the company use to meet these requirements?",
+      "options": [
+        "AWS DataSync",
+        "Amazon Kinesis Data Firehose",
+        "S3 Select",
+        "AWS Transfer Family"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"สตรีมมิ่ง\" และ \"S3\" คู่กัน Kinesis Data Firehose คือคำตอบ เพราะ Firehose ส่งข้อมูลสตรีมมิ่งไป S3 ได้แบบจัดการให้เสร็จสรรพ",
+      "keywords_for_highlighting": [
+        "streaming data",
+        "multiple sources",
+        "Amazon S3 bucket",
+        "fully managed service"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายระบบของบริษัทไปยัง AWS Cloud และการเลือกบริการที่เหมาะสมสำหรับการถ่ายโอนข้อมูล ซึ่งเป็นส่วนหนึ่งของกระบวนการย้ายระบบ (Migration to AWS)"
+    },
+    {
+      "question": "A company is planning to migrate its application to the AWS Cloud. Which AWS tool or set of resources should the company use to analyze and asses its readiness for migration?",
+      "options": [
+        "AWS Cloud Adoption Framework (AWS CAF)",
+        "AWS Pricing Calculator",
+        "AWS Well-Architected Framework",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Migration\" (การย้ายระบบ) ต้องใช้ \"Framework\" (กรอบโครงสร้าง) เพื่อวางแผนและประเมินความพร้อม",
+      "keywords_for_highlighting": [
+        "migrate",
+        "application",
+        "AWS Cloud",
+        "analyze",
+        "assess",
+        "readiness",
+        "migration"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการวิเคราะห์และประเมินความพร้อมในการย้ายแอปพลิเคชันไปยัง AWS Cloud ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "Which AWS service can migrate Amazon EC2 instances from one AWS Region to another?",
+      "options": [
+        "AWS Application Migration Service",
+        "AWS Database Migration Service (AWS DMS)",
+        "AWS DataSync",
+        "AWS Migration Hub"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**EC2 ข้าม Region ต้องใช้ Application Migration Service เพราะเน้นย้าย \"แอปพลิเคชัน\" ที่รันบน EC2**",
+      "keywords_for_highlighting": [
+        "EC2",
+        "migrate",
+        "AWS Region"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้ในการย้าย EC2 instances ซึ่งเป็นการย้ายระบบสู่ AWS โดยตรง"
+    },
+    {
+      "question": "A company is planning to migrate applications to the AWS Cloud. During a system audit, the company finds that its content management system (CMS) application is incompatible with cloud environments. Which migration strategies will help the company to migrate the CMS application with the LEAST effort?",
+      "options": [
+        "Retire",
+        "Rehost",
+        "Repurchase",
+        "Replatform",
+        "Refactor"
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "\"CMS ไม่ compatible แต่ต้องการย้ายแบบ **effort น้อยสุด** ให้จำ Rehost คือ 'ยกไปทั้งดุ้น' ไม่ต้องแก้เยอะ\" และ \"ถ้า CMS ไม่ compatible แต่ไม่อยากแก้เยอะ ก็ซื้อใหม่ไปเลย (Repurchase)\"",
+      "keywords_for_highlighting": [
+        "CMS incompatible",
+        "migrate",
+        "LEAST effort"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงกลยุทธ์การย้ายระบบ (migration strategies) ไปยัง AWS Cloud โดยเฉพาะการย้ายระบบ CMS ที่ไม่เข้ากันกับสภาพแวดล้อมคลาวด์ ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "A company wants to move its on-premises databases to managed cloud database services by using a simplified migration process. Which AWS service or tool can help the company meet this requirement?",
+      "options": [
+        "AWS Storage Gateway",
+        "AWS Application Migration Service",
+        "AWS DataSync",
+        "AWS Database Migration Service (AWS DMS)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Database\" ในโจทย์ นำไปสู่ \"Database Migration Service (DMS)\" ในคำตอบ เพื่อย้ายฐานข้อมูลอย่างง่ายดาย",
+      "keywords_for_highlighting": [
+        "on-premises databases",
+        "managed cloud database services",
+        "migration process"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการย้ายฐานข้อมูลจาก on-premises ไปยัง AWS ซึ่งเป็นหัวข้อหลักของการย้ายระบบสู่ AWS (Migration to AWS)"
+    },
+    {
+      "question": "A company wants to migrate its PostgreSQL database to AWS. The company does not use the database frequently. Which AWS service or resource will meet these requirements with the LEAST management overhead?",
+      "options": [
+        "PostgreSQL on Amazon EC2",
+        "Amazon RDS for PostgreSQL",
+        "Amazon Aurora PostgreSQL-Compatible Edition",
+        "Amazon Aurora Serverless"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ไม่บ่อย + น้อยสุด\" = Serverless (ไม่ต้องดูแลเยอะ)",
+      "keywords_for_highlighting": [
+        "not use database frequently",
+        "LEAST management overhead"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายฐานข้อมูล PostgreSQL ไปยัง AWS ซึ่งเป็นส่วนหนึ่งของกระบวนการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "A company wants to migrate a company's on-premises container Infrastructure to the AWS Cloud. The   374 company wants to prevent unplanned administration and operation cost and adapt to a serverless architecture. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon Connect",
+        "AWS Fargate",
+        "Amazon Lightsail",
+        "Amazon EC2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Container + Serverless = Fargate\" จำไว้ว่า Fargate คือทางออกสำหรับ container ที่ไม่ต้องดูแล server เอง",
+      "keywords_for_highlighting": [
+        "on-premises container",
+        "serverless architecture",
+        "unplanned administration and operation cost"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายโครงสร้างพื้นฐานคอนเทนเนอร์จาก On-Premise ไปยัง AWS Cloud ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "Which combination of AWS services can be used to move a commercial relational database to an Amazon-managed open-source database? (Select TWO.)",
+      "options": [
+        "AWS Database Migration Service (AWS DMS)",
+        "AWS software development kits (SDKs)",
+        "AWS Schema Conversion Tool",
+        "AWS Systems Manager",
+        "Amazon EMR"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "**\"ย้ายฐานข้อมูล\" ต้องใช้ DMS ช่วย \"ย้าย\" และ SCT ช่วย \"แปลง\" โครงสร้าง**",
+      "keywords_for_highlighting": [
+        "move",
+        "relational database",
+        "Amazon-managed open-source database"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการย้ายฐานข้อมูลเชิงพาณิชย์ไปยังฐานข้อมูลโอเพนซอร์สที่จัดการโดย Amazon ซึ่งเป็นหัวข้อหลักของการย้ายระบบสู่ AWS (Migration to AWS)"
+    },
+    {
+      "question": "A company has multiple SQL-based databases located in a data center. The company needs to migrate all database servers to the AWS Cloud to reduce the cost of operating physical servers. Which AWS service or resource will meet these requirements with the LEAST operational overhead?",
+      "options": [
+        "Amazon EC2 instances",
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "OpenSearch"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SQL ฐานข้อมูล + ลดภาระการจัดการ = RDS (Relational Database Service)",
+      "keywords_for_highlighting": [
+        "SQL-based databases",
+        "migrate",
+        "reduce the cost",
+        "LEAST operational overhead"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายฐานข้อมูลจากศูนย์ข้อมูลภายในองค์กรไปยัง AWS Cloud ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS (Migration to AWS)"
+    },
+    {
+      "question": "A company has a physical tape library to store data backups. The tape library is running out of space. The company needs to extend the tape library's capacity to the AWS Cloud. Which AWS service should the company use to meet this requirement?",
+      "options": [
+        "Amazon Elastic File System (Amazon EFS)",
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon S3",
+        "AWS Storage Gateway"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"เทปหมดพื้นที่\" ให้คิดถึง `Storage Gateway` ที่ช่วยเชื่อมต่อพื้นที่เก็บข้อมูลเดิมกับ AWS Cloud",
+      "keywords_for_highlighting": [
+        "tape library",
+        "data backups",
+        "extend capacity",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายข้อมูลสำรองจากระบบเทปที่มีอยู่เดิมไปยัง AWS Cloud ซึ่งเป็นส่วนหนึ่งของการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "A company wants to migrate its applications to the AWS Cloud. The company plans to identity and prioritize any business transformation opportunities and evaluate its AWS Cloud readiness. Which AWS service or tool should the company use to meet these requirements?",
+      "options": [
+        "AWS Cloud Adoption Framework (AWS CAF)",
+        "AWS Managed Services (AMS)",
+        "AWS Well-Architected Framework   476",
+        "AWS Migration Hub"
+      ],
+      "correctAnswer": 0,
+      "explanation": "มองหาคำว่า \"business transformation\" (การเปลี่ยนแปลงทางธุรกิจ) และ \"AWS Cloud readiness\" (ความพร้อมใช้งาน AWS Cloud) ในโจทย์ ถ้าเจอคำเหล่านี้ ให้ตอบ AWS CAF เพราะเป็น Framework ที่ช่วยในการวางแผนและประเมินความพร้อมในการย้ายไป Cloud",
+      "keywords_for_highlighting": [
+        "business transformation",
+        "AWS Cloud readiness",
+        "migrate applications",
+        "prioritize opportunities"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การย้ายระบบ (migration) ไปยัง AWS Cloud โดยเฉพาะการประเมินความพร้อมและการระบุโอกาสในการเปลี่ยนแปลงทางธุรกิจ ซึ่งเป็นส่วนสำคัญของกระบวนการย้ายระบบ"
+    },
+    {
+      "question": "Which AWS service helps users plan and track their server and application inventory migration data to AWS?",
+      "options": [
+        "Amazon CloudWatch",
+        "AWS DataSync",
+        "AWS Migration Hub",
+        "AWS Application Migration Service"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Hub แปลว่า ศูนย์กลาง, Migration Hub จึงเป็นศูนย์กลางในการวางแผนและติดตามการย้ายข้อมูล",
+      "keywords_for_highlighting": [
+        "plan and track",
+        "migration data"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามถามถึงบริการที่ช่วยในการวางแผนและติดตามข้อมูลการย้ายระบบไปยัง AWS ซึ่งตรงกับหัวข้อการย้ายระบบสู่ AWS โดยตรง"
+    },
+    {
+      "question": "A company is planning to migrate a monolithic application to AWS. The company wants to modernize the application by splitting it into microservices. The company will deploy the microservices on AWS. Which migration strategy should the company use?",
+      "options": [
+        "Rehost",
+        "Repurchase",
+        "Replatform",
+        "Refactor"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Monolithic\" เปลี่ยนเป็น \"Microservices\" คือการ \"Refactor\" ปรับโครงสร้างใหม่ทั้งหมด",
+      "keywords_for_highlighting": [
+        "monolithic application",
+        "microservices",
+        "modernize"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการวางแผนและเลือกกลยุทธ์ในการย้ายระบบ (migration) จาก monolithic application ไปสู่ microservices บน AWS ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "A company plans to migrate to the AWS Cloud. The company wants to gather information about its on-premises data center. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "AWS Application Discovery Service   487",
+        "AWS DataSync",
+        "AWS Storage Gateway",
+        "AWS Database Migration Service (AWS DMS)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ต้องการข้อมูลเกี่ยวกับ data center เดิมก่อนย้ายขึ้น Cloud ให้มองหาบริการที่ช่วย \"ค้นหา\" หรือ \"สำรวจ\" ข้อมูล (Discovery).",
+      "keywords_for_highlighting": [
+        "migrate",
+        "on-premises data center",
+        "gather information"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการวางแผนการย้ายระบบจาก on-premises ไปยัง AWS Cloud ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS (Migration to AWS)"
+    },
+    {
+      "question": "A company plans to perform a one-time migration of a large dataset with millions of files from its on-premises data center to the AWS Cloud.   490 Which AWS service should the company use for the migration?",
+      "options": [
+        "AWS Database Migration Service (AWS DMS)",
+        "AWS DataSync",
+        "AWS Migration Hub",
+        "AWS Application Migration Service"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ข้อมูลจำนวนมาก\" (large dataset) และ \"ย้ายครั้งเดียว\" (one-time migration) ให้คิดถึง DataSync ที่เหมาะกับการย้ายข้อมูลขนาดใหญ่แบบครั้งเดียว",
+      "keywords_for_highlighting": [
+        "large dataset",
+        "one-time migration",
+        "on-premises data center"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายข้อมูลจาก on-premises ไปยัง AWS Cloud ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS (Migration to AWS)"
+    },
+    {
+      "question": "A company has a MariaDB database on premises. The company wants to move the data to the AWS Cloud. Which AWS service will host this database with the LEAST amount of operational overhead?",
+      "options": [
+        "Amazon RDS",
+        "Amazon Neptune",
+        "Amazon S3",
+        "Amazon DynamoDB"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"MariaDB\" และ \"operational overhead น้อยสุด\" ให้คิดถึง RDS เพราะเป็นบริการจัดการฐานข้อมูลที่ง่ายที่สุด",
+      "keywords_for_highlighting": [
+        "MariaDB database",
+        "move the data",
+        "AWS Cloud",
+        "LEAST amount of operational overhead"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายฐานข้อมูลจาก On-Premise ไปยัง AWS Cloud ซึ่งเป็นหัวใจหลักของการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "A company needs a hybrid cloud storage service to connect its on-premises environment to scalable AWS Cloud storage. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon S3",
+        "Amazon FSx",
+        "AWS Storage Gateway",
+        "AWS Fargate"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Hybrid cloud\" กับ \"on-premises\" สองคำนี้เจอปุ๊บ นึกถึง \"Gateway\" ที่เป็นประตูเชื่อมโลกสองใบเข้าด้วยกันทันที!",
+      "keywords_for_highlighting": [
+        "hybrid cloud",
+        "on-premises",
+        "connect",
+        "scalable"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการใช้บริการ AWS เพื่อเชื่อมต่อสภาพแวดล้อม on-premises กับ AWS Cloud ซึ่งเป็นส่วนหนึ่งของการย้ายระบบ (migration) ไปสู่ AWS หรือการสร้างสภาพแวดล้อม hybrid cloud"
+    },
+    {
+      "question": "A company wants to securely rehost databases to AWS with minimal downtime. Which AWS service will meet these requirements?",
+      "options": [
+        "AWS Database Migration Service (AWS DMS)",
+        "AWS Snow Family",
+        "AWSDataSync",
+        "AWS Mainframe Modernization"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Rehost ฐานข้อมูล\" และ \"Downtime น้อยที่สุด\" ให้คิดถึงบริการที่ \"Migration\" โดยเฉพาะ",
+      "keywords_for_highlighting": [
+        "rehost databases",
+        "minimal downtime"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการย้ายฐานข้อมูลไปยัง AWS ซึ่งเป็นหัวข้อหลักของการย้ายระบบสู่ AWS (Migration to AWS) และตัวเลือก AWS DMS เป็นบริการที่ใช้สำหรับการย้ายฐานข้อมูลโดยเฉพาะ"
+    },
+    {
+      "question": "A company wants to transport 100 TB of data from its data center to AWS without using internet. Which AWS service will meet this requirement?",
+      "options": [
+        "AWS Snowcone   510",
+        "AWS Snowball Edge",
+        "AWS Data Exchange",
+        "AWS DataSync"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ข้อมูลเยอะ (TB) ไม่ใช้อินเทอร์เน็ต ให้คิดถึง \"Snowball\" ที่ต้องขนส่งข้อมูลเป็นก้อนใหญ่ๆ",
+      "keywords_for_highlighting": [
+        "100 TB",
+        "data center",
+        "without using internet"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการย้ายข้อมูลจำนวนมากจากศูนย์ข้อมูลของบริษัทไปยัง AWS โดยไม่ใช้อินเทอร์เน็ต ซึ่งเป็นส่วนหนึ่งของการย้ายระบบสู่ AWS"
+    },
+    {
+      "question": "A company runs a legacy workload in an on-premises data center. The company wants to migrate the workload to AWS. The company does not want to make any changes to the workload.   528 Which migration strategy should the company use?",
+      "options": [
+        "Repurchase",
+        "Replatform",
+        "Rehost",
+        "Refactor"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Legacy workload\" และ \"ไม่ต้องการเปลี่ยนแปลง\" ให้คิดถึง \"Rehost\" เหมือนยกเครื่องไปทั้งดุ้น ไม่ต้องปรับแต่งอะไร",
+      "keywords_for_highlighting": [
+        "legacy workload",
+        "on-premises",
+        "migrate",
+        "no changes"
+      ],
+      "assigned_category_id_by_gemini": 6,
+      "assigned_category_name_by_gemini": "การย้ายระบบสู่ AWS (Migration to AWS)",
+      "gemini_category_justification": "คำถามนี้ถามถึงกลยุทธ์การย้ายระบบ (migration strategy) ไปยัง AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"การย้ายระบบสู่ AWS\""
+    }
+  ]
+}

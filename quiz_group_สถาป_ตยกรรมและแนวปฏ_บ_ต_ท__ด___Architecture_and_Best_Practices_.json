@@ -1,0 +1,1493 @@
+{
+  "quizTitle": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices) (ข้อประมาณ 187 - 406 จาก Dump เดิม) - 76 ข้อ",
+  "questions": [
+    {
+      "question": "Which options are common stakeholders for the AWS Cloud Adoption Framework (AWS CAF) platform perspective? (Select TWO.)",
+      "options": [
+        "Chief financial officers (CFOs)",
+        "IT architects",
+        "Chief information officers (CIOs)",
+        "Chief data officers (CDOs)",
+        "Engineers"
+      ],
+      "correctAnswer": [
+        1,
+        4
+      ],
+      "explanation": "\"Platform\" ใน CAF เน้นเรื่องการสร้างและจัดการระบบ IT ดังนั้นมองหาบทบาทที่เกี่ยวข้องกับการออกแบบและลงมือทำจริง คือสถาปนิกและวิศวกร",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "platform perspective",
+        "stakeholders"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (CAF) และผู้มีส่วนได้ส่วนเสีย (stakeholders) เกี่ยวข้องกับสถาปัตยกรรมและแนวปฏิบัติที่ดีในการนำ AWS ไปใช้"
+    },
+    {
+      "question": "Which of the following is a benefit of decoupling an AWS Cloud architecture?   123",
+      "options": [
+        "Reduced latency",
+        "Ability to upgrade components independently",
+        "Decreased costs",
+        "Fewer components to manage"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Decoupling\" (การแยกส่วน) ทำให้ \"upgrade independently\" (อัพเกรดแยกส่วน) ได้ จำว่าแยกส่วน = อัพเกรดแยก",
+      "keywords_for_highlighting": [
+        "decoupling",
+        "benefit",
+        "architecture"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงประโยชน์ของการ decoupling ซึ่งเป็นแนวปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบน AWS Cloud"
+    },
+    {
+      "question": "Which pillar of the AWS Well-Architected Framework includes a design principle about measuring the overall efficiency of workloads in terms of business value?",
+      "options": [
+        "Operational excellence",
+        "Security",
+        "Reliability",
+        "Cost optimization"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"Operational excellence\" เน้นการวัดผลลัพธ์ทางธุรกิจ (business value) และประสิทธิภาพโดยรวมของการทำงาน** มองหาคำที่สื่อถึงประสิทธิภาพและการวัดผล",
+      "keywords_for_highlighting": [
+        "Well-Architected Framework",
+        "efficiency",
+        "workloads",
+        "business value"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับเสาหลักของ AWS Well-Architected Framework ซึ่งเป็นแนวทางปฏิบัติที่ดีในการออกแบบและใช้งานระบบบน AWS จึงจัดอยู่ในหมวดสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Which design principle is achieved by following the reliability pillar of the AWS Well- Architected Framework?",
+      "options": [
+        "Vertical scaling",
+        "Manual failure recovery",
+        "Testing recovery procedures",
+        "Changing infrastructure manually"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Reliability\" (ความน่าเชื่อถือ) ต้องมาคู่กับการ \"Testing recovery\" (ทดสอบการกู้คืน) เสมอ เพราะการทดสอบคือหัวใจของการทำให้ระบบเชื่อถือได้",
+      "keywords_for_highlighting": [
+        "reliability",
+        "Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับหลักการออกแบบที่สอดคล้องกับเสาหลักความน่าเชื่อถือ (Reliability pillar) ของ AWS Well-Architected Framework จัดอยู่ในหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดีที่สุด"
+    },
+    {
+      "question": "Which of the following is a recommended design principle of the AWS Well-Architected Framework?",
+      "options": [
+        "Reduce downtime by making infrastructure changes infrequently and in large increments.",
+        "Invest the time to configure infrastructure manually.",
+        "Learn to improve from operational failures.",
+        "Use monolithic application design for centralization."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Well-Architected Framework เน้นการเรียนรู้และปรับปรุงอยู่เสมอ มองหาคำตอบที่เกี่ยวกับการเรียนรู้จากความผิดพลาด",
+      "keywords_for_highlighting": [
+        "design principle",
+        "Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับหลักการออกแบบของ AWS Well-Architected Framework จัดอยู่ในหมวดสถาปัตยกรรมและแนวปฏิบัติที่ดีที่สุด"
+    },
+    {
+      "question": "Which AWS service or tool does AWS Control Tower use to create resources?",
+      "options": [
+        "AWS CloudFormation",
+        "AWS Trusted Advisor",
+        "AWS Directory Service",
+        "AWS Cost Explorer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Control Tower สร้าง \"สิ่งก่อสร้าง\" (resources) บน Cloud ดังนั้นนึกถึง CloudFormation ที่ใช้สร้างโครงสร้างพื้นฐานบนคลาวด์",
+      "keywords_for_highlighting": [
+        "AWS Control Tower",
+        "create resources"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "AWS Control Tower เป็นบริการที่ช่วยในการตั้งค่าและจัดการสภาพแวดล้อม AWS หลายบัญชีตามแนวปฏิบัติที่ดีที่สุด ดังนั้นจึงเกี่ยวข้องกับสถาปัตยกรรมและการจัดการสภาพแวดล้อม AWS ที่ดี"
+    },
+    {
+      "question": "company wants to protect its AWS Cloud information, systems, and assets while performing risk assessment and mitigation tasks. Which pillar of the AWS Well-Architected Framework is supported by these goals?",
+      "options": [
+        "Reliability",
+        "Security",
+        "Operational excellence",
+        "Performance efficiency"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ปกป้องข้อมูล, ระบบ, ทรัพย์สิน\" และ \"ประเมินและลดความเสี่ยง\" เน้นเรื่องความปลอดภัยเป็นหลัก",
+      "keywords_for_highlighting": [
+        "protect",
+        "AWS Cloud information",
+        "systems",
+        "assets",
+        "risk assessment",
+        "mitigation"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ \"การปกป้องข้อมูล ระบบ และทรัพย์สิน\" รวมถึง \"การประเมินความเสี่ยงและการบรรเทาผลกระทบ\" สอดคล้องกับแนวปฏิบัติที่ดีด้านสถาปัตยกรรมที่เน้นความปลอดภัย ซึ่งเป็นส่วนหนึ่งของ AWS Well-Architected Framework"
+    },
+    {
+      "question": "A company needs to design a solution for the efficient use of compute resources for an enterprise workload. The company needs to make informed decisions as its technology needs evolve. Which pillar of the AWS Well-Architected Framework do these requirements represent?",
+      "options": [
+        "Operational excellence",
+        "Performance efficiency",
+        "Cost optimization",
+        "Reliability"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Efficient use of compute resources\" และ \"technology needs evolve\" สื่อถึงการใช้ทรัพยากรให้มีประสิทธิภาพและปรับตัวตามความต้องการที่เปลี่ยนไป ซึ่งตรงกับ Performance efficiency",
+      "keywords_for_highlighting": [
+        "efficient use of compute resources",
+        "technology needs evolve"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับเสาหลักของ AWS Well-Architected Framework ซึ่งเป็นแนวปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบน AWS จึงจัดอยู่ในหมวดสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Which design principle should be considered when architecting in the AWS Cloud?",
+      "options": [
+        "Think of servers as non-disposable resources.",
+        "Use synchronous integration of services.",
+        "Design loosely coupled components.",
+        "Implement the least permissive rules for security groups."
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Cloud\" ต้อง \"คล่องตัว\" ดังนั้นเลือก \"loosely coupled\" (แยกส่วนประกอบให้เป็นอิสระ)",
+      "keywords_for_highlighting": [
+        "design principle",
+        "architecting",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับหลักการออกแบบเมื่อสร้างสถาปัตยกรรมบน AWS Cloud เกี่ยวข้องโดยตรงกับสถาปัตยกรรมและแนวปฏิบัติที่ดีที่สุด"
+    },
+    {
+      "question": "Which pillar of the AWS Well-Architected Framework focuses on the return on investment of moving into the AWS Cloud?   154",
+      "options": [
+        "Sustainability",
+        "Cost optimization",
+        "Operational excellence",
+        "Reliability"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Return on investment\" (ROI) เกี่ยวข้องโดยตรงกับการลดต้นทุนและเพิ่มประสิทธิภาพด้านค่าใช้จ่าย ซึ่งก็คือ \"Cost optimization\" นั่นเอง",
+      "keywords_for_highlighting": [
+        "return on investment",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับเสาหลักของ AWS Well-Architected Framework จัดอยู่ในหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดีที่สุด"
+    },
+    {
+      "question": "Which perspective of the AWS Cloud Adoption Framework (AWS CAF) connects technology and business?",
+      "options": [
+        "Operations",
+        "People",
+        "Security",
+        "Governance"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**Governance คือกรอบการทำงานที่เชื่อมโยงเทคโนโลยีกับธุรกิจ เพราะเกี่ยวข้องกับการกำหนดนโยบายและควบคุมการใช้ทรัพยากรให้สอดคล้องกับเป้าหมายขององค์กร** (นึกถึงว่า Governance คือ \"การกำกับดูแล\" ให้ธุรกิจและเทคโนโลยีไปในทิศทางเดียวกัน)",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "connects technology",
+        "business"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "AWS Cloud Adoption Framework (CAF) เป็นแนวทางปฏิบัติที่ดีที่สุดในการวางแผนและดำเนินการย้ายระบบสู่คลาวด์ คำถามนี้เกี่ยวกับมุมมอง (perspective) หนึ่งใน CAF ซึ่งเชื่อมโยงเทคโนโลยีและธุรกิจ ซึ่งเกี่ยวข้องโดยตรงกับสถาปัตยกรรมและแนวปฏิบัติที่ดีในการนำคลาวด์มาใช้"
+    },
+    {
+      "question": "A company has a centralized group of users with large file storage requirements that have exceeded the space available on premises. The company wants to extend its file storage capabilities for this group while retaining the performance benefit of sharing content locally. What is the MOST operationally efficient AWS solution for this scenario?",
+      "options": [
+        "Create an Amazon S3 bucket for each user. Mount each bucket by using an S3 file system mounting utility.",
+        "Configure and deploy an AWS Storage Gateway file gateway. Connect each user's workstation to the file gateway.",
+        "Move each user's working environment to Amazon Workspaces. Set up an Amazon WorkDocs account for each user.",
+        "Deploy an Amazon EC2 instance and attach an Amazon Elastic Block Store (Amazon EBS) Provisioned IOPS volume. Share the EBS volume directly with the users."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ไฟล์ใหญ่, พื้นที่เต็ม, แชร์แบบ local แต่ใช้ AWS\" ให้คิดถึง Storage Gateway เพราะช่วยเชื่อมต่อ On-Premise กับ Cloud ได้อย่างมีประสิทธิภาพ",
+      "keywords_for_highlighting": [
+        "file storage",
+        "exceeded the space",
+        "retaining the performance benefit of sharing content locally",
+        "operationally efficient"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกโซลูชัน AWS ที่เหมาะสมที่สุดเพื่อให้ตรงตามความต้องการทางธุรกิจ โดยเน้นที่ประสิทธิภาพในการดำเนินงาน ซึ่งเป็นส่วนหนึ่งของแนวปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบน AWS"
+    },
+    {
+      "question": "Which of the following are general AWS Cloud design principles described in the AWS Well-Architected Framework?",
+      "options": [
+        "Consolidate key components into monolithic architectures.",
+        "Test systems at production scale.",
+        "Provision more capacity than a workload is expected to need.",
+        "Drive architecture design based on data collected about the workload behavior and requirements.",
+        "Make AWS Cloud architectural decisions static, one-time events."
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "Well-Architected Framework เน้นการทดสอบระบบจริงและปรับปรุงตามข้อมูลที่ได้จากการใช้งานจริง (data-driven).",
+      "keywords_for_highlighting": [
+        "AWS Cloud design principles",
+        "Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงหลักการออกแบบ AWS Cloud ซึ่งเป็นส่วนหนึ่งของ AWS Well-Architected Framework ซึ่งเป็นแนวทางปฏิบัติที่ดีที่สุดในการออกแบบสถาปัตยกรรมบน AWS ดังนั้นจึงจัดอยู่ในหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Which perspective in the AWS Cloud Adoption Framework (AWS CAF) includes a capability for well-designed data and analytics architecture?",
+      "options": [
+        "Security",
+        "Governance",
+        "Operations",
+        "Platform"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Data and analytics\" ต้องมีการ \"Operations\" ที่ดีเพื่อจัดการและวิเคราะห์ข้อมูลให้มีประสิทธิภาพ",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "data and analytics"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) และการออกแบบสถาปัตยกรรมข้อมูลและ Analytics ที่ดี จัดอยู่ในหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดี เนื่องจาก CAF เป็นกรอบแนวทางในการวางแผนและดำเนินการย้ายระบบสู่คลาวด์อย่างมีประสิทธิภาพ ซึ่งเกี่ยวข้องกับสถาปัตยกรรมและแนวปฏิบัติที่ดีที่สุด"
+    },
+    {
+      "question": "A company is collecting user behavior patterns to identify how to meet goals for sustainability impact. Which guidelines are best practices for the company to implement to meet these goals? (Select TWO.)",
+      "options": [
+        "Scale infrastructure with user load.",
+        "Maximize the geographic distance between workloads and user locations.",
+        "Eliminate creation and maintenance of unused assets.",
+        "Scale resources with excess capacity and remove auto scaling.",
+        "Scale infrastructure based on the number of users."
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "\"Sustainability\" (ความยั่งยืน) เน้นการใช้ทรัพยากรอย่างมีประสิทธิภาพ ดังนั้นต้องปรับขนาดตามการใช้งานจริงและกำจัดสิ่งที่ไม่จำเป็น",
+      "keywords_for_highlighting": [
+        "sustainability impact",
+        "user behavior patterns"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เน้นที่แนวปฏิบัติที่ดีที่สุด (best practices) ในการออกแบบและปรับขนาดโครงสร้างพื้นฐานเพื่อตอบสนองเป้าหมายด้านความยั่งยืน ซึ่งเป็นส่วนหนึ่งของสถาปัตยกรรมและแนวปฏิบัติที่ดีบน AWS"
+    },
+    {
+      "question": "A company is launching a mobile app. The company wants customers to be able to use the app without upgrading their mobile devices. Which pillar of the AWS Well-Architected Framework does this goal represent?",
+      "options": [
+        "Security",
+        "Reliability",
+        "Cost optimization",
+        "Sustainability"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ไม่ต้องอัพเกรด\" คือการประหยัดเงินของลูกค้า = **Cost optimization**",
+      "keywords_for_highlighting": [
+        "mobile app",
+        "without upgrading",
+        "mobile devices"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงเสาหลักของ AWS Well-Architected Framework ซึ่งเป็นแนวปฏิบัติที่ดีในการออกแบบและใช้งานระบบบน AWS ดังนั้นจึงจัดอยู่ในหมวดสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Which option is a pillar of the AWS Well-Architected Framework?",
+      "options": [
+        "Patch management",
+        "Cost optimization",
+        "Business technology strategy",
+        "Physical and environmental controls"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Well-Architected Framework เน้นเรื่อง **Cost** เสมอ เพราะการออกแบบที่ดีต้องคำนึงถึงค่าใช้จ่ายด้วย\"",
+      "keywords_for_highlighting": [
+        "Well-Architected Framework",
+        "pillar"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับเสาหลักของ AWS Well-Architected Framework เป็นเรื่องของสถาปัตยกรรมและแนวปฏิบัติที่ดีในการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "187 Which AWS service helps developers use loose coupling and reliable messaging between microservices?",
+      "options": [
+        "Elastic Load Balancing",
+        "Amazon Simple Notification Service (Amazon SNS)",
+        "Amazon CloudFront",
+        "Amazon Simple Queue Service (Amazon SQS)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**\"Microservices คุยกันแบบหลวมๆ และเชื่อถือได้ ต้องใช้ SQS คิวข้อความ\"** (SQS คือคิว)",
+      "keywords_for_highlighting": [
+        "microservices",
+        "loose coupling",
+        "reliable messaging"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ microservices, loose coupling และ reliable messaging ซึ่งเป็นแนวคิดหลักในสถาปัตยกรรมและการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "Which options are AWS Cloud Adoption Framework (AWS CAF) cloud transformation journey recommendations? (Select TWO.)",
+      "options": [
+        "Envision phase",
+        "Align phase",
+        "Assess phase",
+        "Mobilize phase",
+        "Migrate and modernize phase"
+      ],
+      "correctAnswer": [
+        0,
+        1
+      ],
+      "explanation": "**\"CAF เปลี่ยนร่าง มองให้ตรง\"** (CAF - Cloud Adoption Framework, เปลี่ยนร่าง - transformation journey, มอง - Envision, ตรง - Align)",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "cloud transformation journey"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) เกี่ยวข้องกับแนวปฏิบัติที่ดีในการนำ Cloud มาใช้ ซึ่งเป็นส่วนหนึ่งของสถาปัตยกรรมและการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "Which AWS service uses AWS Compute Optimizer to provide sizing recommendations based on workload metrics?",
+      "options": [
+        "Amazon EC2",
+        "Amazon RDS",
+        "Amazon Lightsail",
+        "AWS Step Functions"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**Compute Optimizer ช่วยปรับขนาด (sizing) ให้เหมาะสมกับ workload ดังนั้นจึงเกี่ยวข้องกับการคำนวณโดยตรง ซึ่ง EC2 คือบริการหลักด้านการคำนวณของ AWS.**",
+      "keywords_for_highlighting": [
+        "Compute Optimizer",
+        "sizing recommendations",
+        "workload metrics"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการใช้ AWS Compute Optimizer เพื่อปรับขนาดทรัพยากรให้เหมาะสม ซึ่งเป็นส่วนหนึ่งของแนวปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบน AWS เพื่อประสิทธิภาพและประหยัดค่าใช้จ่าย"
+    },
+    {
+      "question": "A company has migrated its workloads to AWS. The company wants to adopt AWS at scale and operate more efficiently and securely. Which AWS service or framework should the company use for operational support?",
+      "options": [
+        "AWS Support",
+        "AWS Cloud Adoption Framework (AWS CAF)",
+        "AWS Managed Services (AMS)",
+        "AWS Well-Architected Framework   211"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ปรับ AWS ให้ดี ต้องใช้ Well-Architected Framework เพื่อความปลอดภัยและประสิทธิภาพ\" (เน้นคำว่า \"operate efficiently and securely\" คู่กับ \"AWS at scale\")",
+      "keywords_for_highlighting": [
+        "workloads",
+        "AWS at scale",
+        "efficiently",
+        "securely",
+        "operational support"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเน้นที่การนำ AWS ไปใช้ในวงกว้างอย่างมีประสิทธิภาพและปลอดภัย ซึ่งเกี่ยวข้องกับแนวปฏิบัติที่ดีและสถาปัตยกรรมที่เหมาะสม เพื่อให้การดำเนินงานเป็นไปอย่างราบรื่นและสอดคล้องกับเป้าหมายขององค์กร"
+    },
+    {
+      "question": "A company wants to use guidelines from the AWS Well-Architected Framework to limit human error and facilitate consistent responses to events. Which of the following is a Well-Architected design principle that will meet these requirements?",
+      "options": [
+        "Use AWS CodeDeploy.",
+        "Perform operations as code.",
+        "Migrate workloads to a Dedicated Host.",
+        "Use AWS Compute Optimizer."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"จำ 'จำกัดข้อผิดพลาด' และ 'ตอบสนองสม่ำเสมอ' คู่กับ 'Operations as Code' เพราะการทำทุกอย่างเป็นโค้ดช่วยลดข้อผิดพลาดจากคนและทำให้การตอบสนองเป็นไปตามที่กำหนดไว้\"",
+      "keywords_for_highlighting": [
+        "จำกัดข้อผิดพลาด",
+        "ตอบสนองสม่ำเสมอ",
+        "Well-Architected"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงแนวทางปฏิบัติที่ดีจาก AWS Well-Architected Framework ซึ่งเป็นเรื่องของสถาปัตยกรรมและการออกแบบระบบบน AWS ที่ดี"
+    },
+    {
+      "question": "A company uses AWS Organizations. The company wants to apply security best practices from the AWS Well-Architected Framework to all of its AWS accounts. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon Macie",
+        "Amazon Detective",
+        "AWS Control Tower",
+        "AWS Secrets Manager"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"Well-Architected\" + \"Security Best Practices\" + \"Organizations\" นึกถึง \"Macie\" ที่ช่วยเรื่องความปลอดภัยของข้อมูลในภาพรวมองค์กร** (Macie ช่วยวิเคราะห์ข้อมูลเพื่อหาข้อมูลสำคัญที่อาจเป็นช่องโหว่)",
+      "keywords_for_highlighting": [
+        "Organizations",
+        "security best practices",
+        "Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการนำแนวปฏิบัติที่ดี (best practices) จาก AWS Well-Architected Framework ไปใช้ ซึ่งเป็นหัวใจสำคัญของหมวดสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "A company encourages its teams to test failure scenarios regularly and to validate their understanding of the impact of potential failures.   242 Which pillar of the AWS Well-Architected Framework does this philosophy represent?",
+      "options": [
+        "Operational excellence",
+        "Cost optimization",
+        "Performance efficiency",
+        "Security"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ทดสอบความล้มเหลว\" และ \"เข้าใจผลกระทบ\" เน้นการทำงานให้ราบรื่น = Operational excellence",
+      "keywords_for_highlighting": [
+        "test failure scenarios",
+        "impact of potential failures"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับเสาหลักของ AWS Well-Architected Framework ซึ่งเป็นแนวปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบน AWS"
+    },
+    {
+      "question": "A company deployed an application on an Amazon EC2 instance. The application ran as expected for 6 months. In the past week, users have reported latency issues. A system administrator found that the CPU utilization was at 100% during business hours. The company wants a scalable solution to meet demand. Which AWS service or feature should the company use to handle the load for its application during periods of high demand?",
+      "options": [
+        "Auto Scaling groups",
+        "AWS Global Accelerator",
+        "Amazon Route 53",
+        "An Elastic IP address"
+      ],
+      "correctAnswer": 0,
+      "explanation": "เมื่อเจอคำว่า \"CPU utilization 100%\" และ \"scalable solution\" ให้คิดถึง Auto Scaling groups ทันที เพราะมันช่วยเพิ่มลดจำนวน EC2 instance ตามความต้องการได้",
+      "keywords_for_highlighting": [
+        "CPU utilization 100%",
+        "scalable solution",
+        "meet demand"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกบริการ AWS ที่เหมาะสมเพื่อแก้ไขปัญหาด้านประสิทธิภาพและความสามารถในการปรับขนาด ซึ่งเป็นส่วนหนึ่งของแนวปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบน AWS"
+    },
+    {
+      "question": "A company is planning to migrate to the AWS Cloud. The company is conducting organizational transformation and wants to become more responsive to customer inquiries and feedback. Which tasks should the company perform to meet these requirements, according to the AWS Cloud Adoption Framework (AWS CAF)? (Select TWO.)",
+      "options": [
+        "Realign teams to focus on products and value streams.",
+        "Create new value propositions with new products and services.",
+        "Use agile methods to rapidly iterate and evolve.",
+        "Use a new data and analytics platform to create actionable insights.",
+        "Migrate and modernize legacy infrastructure."
+      ],
+      "correctAnswer": 4,
+      "explanation": "เน้น \"organizational transformation\" และ \"responsive to customer\" การปรับปรุงองค์กรให้ตอบสนองลูกค้าได้ดี มักเริ่มจากการปรับปรุงโครงสร้างพื้นฐานเดิมให้ทันสมัย (modernize legacy infrastructure)",
+      "keywords_for_highlighting": [
+        "organizational transformation",
+        "responsive to customer",
+        "AWS Cloud Adoption Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) ซึ่งเป็นแนวทางปฏิบัติที่ดีที่สุดในการวางแผนและดำเนินการย้ายระบบสู่ AWS และปรับปรุงองค์กรให้สอดคล้องกับ Cloud Computing"
+    },
+    {
+      "question": "Which option is a perspective that includes foundational capabilities of the AWS Cloud Adoption Framework (AWS CAF)?",
+      "options": [
+        "Sustainability",
+        "Security   252",
+        "Performance efficiency",
+        "Reliability"
+      ],
+      "correctAnswer": 1,
+      "explanation": "AWS CAF เน้นเรื่องความปลอดภัยเป็นพื้นฐาน ดังนั้นถ้าเจอ AWS CAF ให้มองหา Security ก่อนเลย",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "AWS CAF",
+        "foundational capabilities"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "AWS Cloud Adoption Framework (CAF) เกี่ยวข้องกับแนวปฏิบัติที่ดีและสถาปัตยกรรมที่เหมาะสมในการนำ Cloud มาใช้ ซึ่งเป็นหัวใจหลักของหมวด \"สถาปัตยกรรมและแนวปฏิบัติที่ดี\""
+    },
+    {
+      "question": "A company is running a monolithic on-premises application that does not scale and is difficult to maintain. The company has a plan to migrate the application to AWS and divide the application into microservices. Which best practice of the AWS Well-Architected Framework is the company following with this plan?",
+      "options": [
+        "Integrate functional testing as part of AWS deployment.",
+        "Use automation to deploy changes.",
+        "Deploy the application to multiple locations.",
+        "Implement loosely coupled dependencies."
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Monolithic -> Microservices\" ให้คิดถึงการ \"ลดการพึ่งพากัน\" (Loosely Coupled) เพื่อให้แต่ละส่วนทำงานได้อิสระ",
+      "keywords_for_highlighting": [
+        "monolithic",
+        "microservices",
+        "migrate",
+        "AWS Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงแนวปฏิบัติที่ดีที่สุด (Best Practice) ของ AWS Well-Architected Framework ซึ่งเกี่ยวข้องโดยตรงกับสถาปัตยกรรมและการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "Which of the following is a pillar of the AWS Well-Architected Framework?",
+      "options": [
+        "Redundancy",
+        "Operational excellence",
+        "Availability",
+        "Multi-Region   261"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Well-Architected\" เน้นการ \"ปฏิบัติการที่เป็นเลิศ\" (Operational Excellence) เพื่อให้ระบบทำงานราบรื่นและมีประสิทธิภาพ",
+      "keywords_for_highlighting": [
+        "Well-Architected Framework",
+        "pillar"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Well-Architected Framework เป็นเรื่องของสถาปัตยกรรมและแนวปฏิบัติที่ดีในการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "A company has designed its AWS Cloud infrastructure to run its workloads effectively. The company also has protocols in place to continuously improve supporting processes. Which pillar of the AWS Well-Architected Framework does this scenario represent?",
+      "options": [
+        "Security",
+        "Performance efficiency",
+        "Cost optimization",
+        "Operational excellence"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ปรับปรุงกระบวนการต่อเนื่อง\" คือหัวใจของ Operational Excellence มองหาคำที่สื่อถึงการพัฒนาและปรับปรุงอย่างต่อเนื่อง",
+      "keywords_for_highlighting": [
+        "continuously improve supporting processes"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับเสาหลักของ AWS Well-Architected Framework ซึ่งเป็นแนวทางปฏิบัติที่ดีในการออกแบบและใช้งานระบบบน AWS ดังนั้นจึงจัดอยู่ในหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Which AWS Cloud Adoption Framework (AWS CAF) capability belongs to the people perspective?",
+      "options": [
+        "Data architecture",
+        "Event management",
+        "Cloud fluency",
+        "Strategic partnership"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"People\" ใน AWS CAF เน้นที่ \"Fluency\" หรือความคล่องแคล่วในการใช้ Cloud เพราะคนต้องเข้าใจและใช้ Cloud ได้คล่องแคล่วถึงจะประสบความสำเร็จ",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "people perspective",
+        "capability"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) และ capability ที่เกี่ยวข้องกับ \"people perspective\" เกี่ยวข้องกับแนวปฏิบัติที่ดีในการนำ Cloud ไปใช้ ซึ่งเป็นส่วนหนึ่งของสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "A company plans to migrate to the AWS Cloud. The company wants to use the AWS Cloud Adoption   277 Framework (AWS CAF) to define and track business outcomes as part of its cloud transformation journey. Which AWS CAF governance perspective capability will meet these requirements?",
+      "options": [
+        "Benefits management",
+        "Risk management",
+        "Application portfolio management",
+        "Cloud financial management"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ถ้าโจทย์พูดถึง \"business outcomes\" หรือ \"ผลลัพธ์ทางธุรกิจ\" ที่ต้องการวัดผลจากการย้ายไป Cloud ให้ตอบ \"Benefits management\" เสมอ เพราะมันคือการจัดการผลประโยชน์ที่ได้รับ",
+      "keywords_for_highlighting": [
+        "business outcomes",
+        "AWS CAF",
+        "governance perspective"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) ซึ่งเป็นแนวทางและแนวปฏิบัติที่ดีในการวางแผนและดำเนินการย้ายระบบสู่คลาวด์ ดังนั้นจึงจัดอยู่ในหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "278 A company simulates workflows to review and validate that all processes are effective and that staff are familiar with the processes. Which design principle of the AWS Well-Architected Framework is the company following with this practice?",
+      "options": [
+        "Perform operations as code.",
+        "Refine operation procedures frequently.",
+        "Make frequent, small, reversible changes.",
+        "Structure the company to support business outcomes."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"จำ 'จำลอง workflows' และ 'ทบทวน/ตรวจสอบ' คู่กับ 'ปรับปรุงขั้นตอนการทำงาน' บ่อยๆ\"",
+      "keywords_for_highlighting": [
+        "จำลอง workflows",
+        "ทบทวน",
+        "ตรวจสอบ",
+        "processes effective",
+        "familiar"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับหลักการออกแบบของ AWS Well-Architected Framework ซึ่งเป็นแนวทางปฏิบัติที่ดีที่สุดในการออกแบบและใช้งานระบบบน AWS ดังนั้นจึงจัดอยู่ในหมวดสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Which of the following is a benefit that AWS Professional Services provides?",
+      "options": [
+        "Management of the ongoing security of user data",
+        "Advisory solutions for AWS adoption",
+        "Technical support 24 hours a day, 7 days a week",
+        "Monitoring of monthly billing costs in AWS accounts"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Professional Services\" เน้นการให้คำปรึกษา (Advisory) เพื่อช่วยให้องค์กรนำ AWS ไปใช้ (AWS adoption) ได้อย่างราบรื่น",
+      "keywords_for_highlighting": [
+        "AWS Professional Services",
+        "benefit"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับประโยชน์ของ AWS Professional Services เกี่ยวข้องกับสถาปัตยกรรมและแนวปฏิบัติที่ดีในการนำ AWS ไปใช้งาน ซึ่งเป็นสิ่งที่ Professional Services ให้คำปรึกษาและช่วยเหลือ"
+    },
+    {
+      "question": "Which option is an AWS Cloud Adoption Framework (AWS CAF) foundational capability for the operations perspective?",
+      "options": [
+        "Performance and capacity management",
+        "Application portfolio management",
+        "Identity and access management",
+        "Product management"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Operations\" เน้นการจัดการ \"Identity and access\" เพื่อควบคุมการเข้าถึงทรัพยากรอย่างปลอดภัย",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "operations perspective"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) และมุมมองด้านการดำเนินงาน (operations perspective) เกี่ยวข้องกับแนวปฏิบัติที่ดีในการนำ Cloud ไปใช้ และการออกแบบสถาปัตยกรรมที่เหมาะสมสำหรับการดำเนินงานใน AWS"
+    },
+    {
+      "question": "A company wants to monitor its workload performance. The company wants to ensure that the cloud services are delivered at a level that meets its business needs. Which AWS Cloud Adoption Framework (AWS CAF) perspective will meet these requirements?",
+      "options": [
+        "Business",
+        "Governance",
+        "Platform",
+        "Operations"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Performance\" และ \"delivered at a level that meets its business needs\" ชี้ไปที่การ *ปฏิบัติการ* (Operations) ที่ต้องทำให้ระบบทำงานได้ตามเป้าหมายทางธุรกิจ",
+      "keywords_for_highlighting": [
+        "monitor workload performance",
+        "delivered at a level that meets its business needs"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับการตรวจสอบประสิทธิภาพของ workload เพื่อให้มั่นใจว่าบริการ cloud ตอบสนองความต้องการทางธุรกิจ ซึ่งเกี่ยวข้องกับแนวปฏิบัติที่ดีในการออกแบบและจัดการสถาปัตยกรรมบน AWS Cloud Adoption Framework (AWS CAF)"
+    },
+    {
+      "question": "Which of the following is a software development framework that a company can use to define cloud resources as code and provision the resources through AWS CloudFormation?",
+      "options": [
+        "AWS CLI",
+        "AWS Developer Center",
+        "AWS Cloud Development Kit (AWS CDK)",
+        "AWS CodeStar"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"Code\" ในคำถามคู่กับ \"CDK\" ในคำตอบ** เพราะ CDK คือเครื่องมือพัฒนาที่ใช้เขียน Infrastructure as Code",
+      "keywords_for_highlighting": [
+        "software development framework",
+        "cloud resources as code",
+        "AWS CloudFormation"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Development Kit (CDK) ซึ่งเป็นเครื่องมือที่ช่วยในการกำหนดโครงสร้างพื้นฐานของ AWS เป็นโค้ด และจัดการผ่าน CloudFormation เกี่ยวข้องกับแนวทางปฏิบัติที่ดีในการสร้างและจัดการโครงสร้างพื้นฐานบน AWS"
+    },
+    {
+      "question": "A company is running an Amazon EC2 instance in a VPC. An ecommerce company is using Amazon EC2 Auto Scaling groups to manage a fleet of web servers running on Amazon EC2. This architecture follows which AWS Well-Architected Framework best practice?",
+      "options": [
+        "Secure the workload",
+        "Decouple infrastructure components",
+        "Design for failure",
+        "Think parallel"
+      ],
+      "correctAnswer": 2,
+      "explanation": "EC2 Auto Scaling คือหัวใจของการรับมือกับความล้มเหลว (failure) เพราะมันจะสร้างอินสแตนซ์ใหม่มาแทนที่ตัวที่เสียไปอัตโนมัติ",
+      "keywords_for_highlighting": [
+        "EC2 Auto Scaling",
+        "manage a fleet of web servers"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงแนวปฏิบัติที่ดี (best practice) ในการออกแบบสถาปัตยกรรมบน AWS ซึ่งเป็นหัวใจหลักของ AWS Well-Architected Framework ดังนั้นจึงจัดอยู่ในหมวด \"สถาปัตยกรรมและแนวปฏิบัติที่ดี\""
+    },
+    {
+      "question": "In which categories does AWS Trusted Advisor provide recommended actions? (Select TWO.)",
+      "options": [
+        "Operating system patches",
+        "Cost optimization",
+        "Repetitive tasks",
+        "Service quotas",
+        "Account activity records"
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "Trusted Advisor ช่วยแนะนำเรื่อง \"เงิน\" (Cost) และ \"โควต้า\" (Quota) เพื่อให้ใช้ AWS ได้อย่างมีประสิทธิภาพ",
+      "keywords_for_highlighting": [
+        "Trusted Advisor",
+        "recommended actions"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "AWS Trusted Advisor ให้คำแนะนำตามแนวปฏิบัติที่ดีที่สุด (Best Practices) ในด้านต่างๆ ซึ่งรวมถึงการเพิ่มประสิทธิภาพต้นทุน (Cost Optimization) และการตรวจสอบ Service Quotas เพื่อให้มั่นใจว่าการใช้งานเป็นไปตามข้อจำกัดและสอดคล้องกับสถาปัตยกรรมที่ดี"
+    },
+    {
+      "question": "Which AWS services can limit manual errors by consistently provisioning AWS resources in multiple envirom",
+      "options": [
+        "AWS Config",
+        "AWS CodeStar",
+        "AWS CloudFormation",
+        "AWS Cloud Development Kit (AWS CDK)",
+        "AWS CodeBuild"
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "\"Provisioning resources consistently\" นึกถึง CloudFormation และ CDK ที่ช่วยสร้างโครงสร้างพื้นฐาน (Infrastructure as Code) แบบอัตโนมัติและทำซ้ำได้",
+      "keywords_for_highlighting": [
+        "limit manual errors",
+        "consistently provisioning",
+        "multiple environments"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับการจัดเตรียมทรัพยากร AWS อย่างสม่ำเสมอในสภาพแวดล้อมที่หลากหลาย เป็นเรื่องของสถาปัตยกรรมและการนำแนวปฏิบัติที่ดีมาใช้เพื่อลดข้อผิดพลาดในการดำเนินการด้วยตนเอง"
+    },
+    {
+      "question": "Which capabilities are in the platform perspective of the AWS Cloud Adoption Framework (AWS CAF)?",
+      "options": [
+        "Performance and capacity management",
+        "Data engineering",
+        "Continuous integration and continuous delivery (CI/CD)",
+        "Infrastructure protection",
+        "Change and release management"
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "\"Platform\" ใน AWS CAF เน้นที่การสร้างและจัดการแพลตฟอร์ม ดังนั้น \"Data engineering\" และ \"CI/CD\" คือความสามารถที่เกี่ยวข้องกับการสร้างและปรับปรุงแพลตฟอร์มอย่างต่อเนื่อง",
+      "keywords_for_highlighting": [
+        "platform perspective",
+        "AWS Cloud Adoption Framework",
+        "AWS CAF"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (CAF) เน้นที่แนวปฏิบัติที่ดีและสถาปัตยกรรมที่เหมาะสมในการนำ Cloud มาใช้ ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"สถาปัตยกรรมและแนวปฏิบัติที่ดี\""
+    },
+    {
+      "question": "Which options are AWS Cloud Adoption Framework (AWS CAF) people perspective capabilities? (Select\nTWO.)",
+      "options": [
+        "Organizational alignment",
+        "Portfolio management",
+        "Organization design",
+        "Risk management",
+        "Modern application development"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "**CAF คน (People) เน้นการจัดระเบียบภายใน:** *การจัดโครงสร้างองค์กร (Organization design) และการปรับตัวให้สอดคล้องกัน (Organizational alignment) คือหัวใจของการจัดการ \"คน\" ใน CAF*",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "AWS CAF",
+        "people perspective",
+        "capabilities"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "AWS Cloud Adoption Framework (CAF) เป็นแนวทางปฏิบัติที่ดีที่สุด (Best Practices) ในการนำ Cloud มาใช้ ซึ่งเกี่ยวข้องกับสถาปัตยกรรมและการออกแบบองค์กรให้สอดคล้องกับ Cloud"
+    },
+    {
+      "question": "A company wants to set up its workloads to perform their intended functions and recover quickly from failure. Which pillar of the AWS Well-Architected Framework aligns with these goals?",
+      "options": [
+        "Performance efficiency",
+        "Sustainability",
+        "Reliability",
+        "Security"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ฟังก์ชัน\" และ \"กู้คืนจากความล้มเหลว\" สื่อถึงความน่าเชื่อถือ (Reliability) ที่ระบบต้องทำงานได้ตามที่ตั้งใจและกลับมาทำงานได้เร็วเมื่อมีปัญหา",
+      "keywords_for_highlighting": [
+        "workloads",
+        "perform their intended functions",
+        "recover quickly from failure"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับเสาหลักของ AWS Well-Architected Framework ซึ่งเป็นแนวทางปฏิบัติที่ดีในการออกแบบและใช้งานระบบบน AWS ดังนั้นจึงจัดอยู่ในหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Which of the following is an AWS Well-Architected Framework design principle for operational excellence in the AWS Cloud?",
+      "options": [
+        "Go global in minutes",
+        "Make frequent, small, reversible changes",
+        "Implement a strong foundation of identity and access management",
+        "Stop spending money on hardware infrastructure for data center operations"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Operational Excellence\" ใน AWS เน้นการปรับปรุงอย่างต่อเนื่องด้วยการเปลี่ยนแปลงเล็กๆ ที่ย้อนกลับได้ง่าย เพื่อให้ทดลองและเรียนรู้ได้เร็ว",
+      "keywords_for_highlighting": [
+        "Well-Architected Framework",
+        "operational excellence",
+        "design principle"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Well-Architected Framework และหลักการออกแบบ ถือเป็นเรื่องของสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Which of the following are pillars of the AWS Well-Architected Framework? (Select TWO)",
+      "options": [
+        "High availability",
+        "Performance efficiency",
+        "Cost optimization",
+        "Going global in minutes",
+        "Continuous development"
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "\"Well-Architected\" ต้องเน้น \"ประสิทธิภาพ\" และ \"ประหยัด\" เพื่อให้สถาปัตยกรรมดี",
+      "keywords_for_highlighting": [
+        "pillars",
+        "AWS Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Well-Architected Framework เป็นเรื่องของสถาปัตยกรรมและแนวปฏิบัติที่ดีในการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "A company needs to evaluate its AWS environment and provide best practice recommendations in five   376 categories: cost, performance, service limits, fault tolerance, and security. Which AWS service can the company use to meet these requirements?",
+      "options": [
+        "AWS Shield",
+        "AWS WAF",
+        "AWS Trusted Advisor",
+        "AWS Service Catalog"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ต้องการประเมินสภาพแวดล้อม AWS ตาม best practice หลายด้าน (cost, performance, security) ให้มองหา \"Trusted Advisor\" ที่ปรึกษาที่เชื่อถือได้",
+      "keywords_for_highlighting": [
+        "evaluate",
+        "best practice recommendations",
+        "cost",
+        "performance",
+        "service limits",
+        "fault tolerance",
+        "security"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ช่วยประเมินสภาพแวดล้อม AWS และให้คำแนะนำตามแนวปฏิบัติที่ดีที่สุดในด้านต่างๆ เช่น ต้นทุน ประสิทธิภาพ ความทนทานต่อข้อผิดพลาด และความปลอดภัย ซึ่งสอดคล้องกับหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "379 Which AWS service or tool gives a company the ability to release application changes in an automated way?",
+      "options": [
+        "Amazon AppFlow",
+        "AWS CodeDeploy",
+        "AWS PrivateLink",
+        "Amazon EKS Distro"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"เปลี่ยนแปลงแอปพลิเคชันแบบอัตโนมัติ\" ให้คิดถึง \"CodeDeploy\" เพราะ Deploy คือการนำ code ไปใช้งาน",
+      "keywords_for_highlighting": [
+        "release application changes",
+        "automated way"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับการใช้เครื่องมือ AWS เพื่อทำให้การเปลี่ยนแปลงแอปพลิเคชันเป็นไปโดยอัตโนมัติ ซึ่งเกี่ยวข้องกับแนวปฏิบัติที่ดีในการพัฒนาและปรับใช้แอปพลิเคชันบน AWS และสถาปัตยกรรมที่รองรับการทำงานอัตโนมัติ (Automation)"
+    },
+    {
+      "question": "Which AWS Well-Architected Framework pillar focuses on structured and streamlined allocation of computing resources?",
+      "options": [
+        "Reliability",
+        "Operational excellence",
+        "Performance efficiency",
+        "Sustainability"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ประสิทธิภาพ\" (Performance) เน้นการใช้ทรัพยากรให้คุ้มค่าและเป็นระบบ เหมือนการจัดสรรทรัพยากรคอมพิวเตอร์ให้มีประสิทธิภาพสูงสุด",
+      "keywords_for_highlighting": [
+        "allocation",
+        "computing resources",
+        "structured",
+        "streamlined"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Well-Architected Framework pillar เป็นเรื่องของสถาปัตยกรรมและแนวปฏิบัติที่ดีในการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "Which AWS Cloud design principle is a company using when the company implements AWS CloudTrail?",
+      "options": [
+        "Activate traceability.",
+        "Use serverless compute architectures.",
+        "Perform operations as code.",
+        "Go global in minutes."
+      ],
+      "correctAnswer": 0,
+      "explanation": "CloudTrail คือบริการบันทึกกิจกรรมต่างๆ ใน AWS ดังนั้นเมื่อเห็น CloudTrail ให้คิดถึงการ \"ติดตาม\" หรือ \"ตรวจสอบย้อนหลัง\" (Traceability)",
+      "keywords_for_highlighting": [
+        "AWS CloudTrail",
+        "design principle"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "AWS CloudTrail ช่วยในการติดตามกิจกรรมต่างๆ ใน AWS ซึ่งเป็นส่วนหนึ่งของแนวปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบนคลาวด์ เพื่อให้สามารถตรวจสอบและแก้ไขปัญหาได้ง่ายขึ้น"
+    },
+    {
+      "question": "406 Which AWS Cloud Adoption Framework (AWS CAF) perspective focuses on real-time insights and answers questions about strategy?",
+      "options": [
+        "Operations",
+        "People",
+        "Business",
+        "Platform"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Strategy\" ในคำถามเชื่อมโยงกับ \"Business\" เพราะกลยุทธ์เป็นเรื่องของธุรกิจ",
+      "keywords_for_highlighting": [
+        "strategy",
+        "AWS Cloud Adoption Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (CAF) และมุมมองต่างๆ เป็นเรื่องของแนวปฏิบัติที่ดีในการนำ AWS มาใช้ ซึ่งเกี่ยวข้องกับสถาปัตยกรรมและการวางแผนเชิงกลยุทธ์"
+    },
+    {
+      "question": "A company wants to quickly implement a continuous integration/continuous delivery (CI/CD) pipeline. Which AWS service will meet this requirement?",
+      "options": [
+        "AWS Config",
+        "Amazon Cognito",
+        "AWS DataSync",
+        "AWS CodeStar"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**CI/CD ด่วนๆ ต้อง CodeStar** (จำว่า \"Code\" ใน CodeStar เกี่ยวข้องกับการพัฒนาโปรแกรมและการทำ CI/CD)",
+      "keywords_for_highlighting": [
+        "continuous integration",
+        "continuous delivery",
+        "CI/CD",
+        "quickly implement"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ CI/CD pipeline ซึ่งเป็นส่วนหนึ่งของแนวปฏิบัติที่ดีในการพัฒนาซอฟต์แวร์บน AWS และเกี่ยวข้องกับการออกแบบสถาปัตยกรรมที่เหมาะสม"
+    },
+    {
+      "question": "Which AWS services can a company use to achieve a loosely coupled architecture? (Select TWO.)",
+      "options": [
+        "Amazon Workspaces",
+        "Amazon Simple Queue Service (Amazon SQS)",
+        "Amazon Connect",
+        "AWS Trusted Advisor",
+        "AWS Step Functions"
+      ],
+      "correctAnswer": [
+        1,
+        4
+      ],
+      "explanation": "\"สถาปัตยกรรมหลวม\" นึกถึง \"คิว\" (SQS) และ \"ขั้นตอน\" (Step Functions) ที่ทำงานแยกกันได้",
+      "keywords_for_highlighting": [
+        "loosely coupled architecture"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ช่วยให้บริษัทสร้างสถาปัตยกรรมแบบ Loosely Coupled ซึ่งเป็นแนวปฏิบัติที่ดีในการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "A company has data lakes designed for high performance computing (HPC) workloads. Which Amazon   419 EC2 instance type should the company use to meet these requirements?",
+      "options": [
+        "General purpose instances",
+        "Compute optimized instances",
+        "Memory optimized instances",
+        "Storage optimized instances"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HPC (High Performance Computing) ต้องการพลังประมวลผลสูง เลือก \"Compute optimized\" ที่เน้นการคำนวณ",
+      "keywords_for_highlighting": [
+        "high performance computing",
+        "HPC"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกประเภท EC2 instance ที่เหมาะสมที่สุดสำหรับ workload เฉพาะ (HPC) ซึ่งเป็นส่วนหนึ่งของการออกแบบสถาปัตยกรรมที่ดีบน AWS และการนำแนวปฏิบัติที่ดีมาใช้"
+    },
+    {
+      "question": "Which options are AWS Cloud Adoption Framework (AWS CAF) cloud transformation journey recommendations? (Select TWO.)",
+      "options": [
+        "Envision phase",
+        "AIign phase",
+        "Assess phase",
+        "Mobilize phase",
+        "Migrate and modernize phase   430"
+      ],
+      "correctAnswer": [
+        0,
+        1
+      ],
+      "explanation": "CAF เริ่มต้นด้วยการ \"เห็นภาพ\" (Envision) และ \"จัดเรียง\" (Align) เพื่อให้การเปลี่ยนผ่านเป็นไปในทิศทางเดียวกัน",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "AWS CAF",
+        "cloud transformation journey",
+        "recommendations"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (CAF) เกี่ยวข้องกับแนวปฏิบัติที่ดีและสถาปัตยกรรมในการวางแผนและดำเนินการย้ายระบบสู่ AWS อย่างมีประสิทธิภาพ"
+    },
+    {
+      "question": "A company wants to manage its cloud resources by using infrastructure as code (laC) template….. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "AWS Artifact",
+        "AWS Resource Explorer",
+        "AWS License Manager",
+        "AWS Service Catalog"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Infrastructure as code\" (IaC) และ \"จัดการ cloud resources\" นึกถึง **Service Catalog** ที่เหมือนแคตตาล็อกบริการที่จัดการโครงสร้างพื้นฐานด้วยโค้ด",
+      "keywords_for_highlighting": [
+        "infrastructure as code",
+        "manage",
+        "cloud resources"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับการจัดการทรัพยากรคลาวด์ด้วย Infrastructure as Code (IaC) เกี่ยวข้องกับแนวปฏิบัติที่ดีในการสร้างและจัดการโครงสร้างพื้นฐานบน AWS ซึ่งเป็นส่วนหนึ่งของสถาปัตยกรรมคลาวด์"
+    },
+    {
+      "question": "A development team wants to deploy multiple test environments for an application in a fast repeatable manner. Which AWS service should the team use?",
+      "options": [
+        "Amazon EC2",
+        "AWS CloudFormation",
+        "Amazon QuickSight",
+        "Amazon Elastic Container Service (Amazon ECS)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"สร้างสภาพแวดล้อมซ้ำๆ อย่างรวดเร็ว\" ให้คิดถึง **CloudFormation** เพราะมันคือการสร้างโครงสร้างพื้นฐานแบบอัตโนมัติด้วยโค้ด (Infrastructure as Code).",
+      "keywords_for_highlighting": [
+        "deploy multiple test environments",
+        "fast repeatable manner"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับการเลือกบริการที่เหมาะสมเพื่อสร้างสภาพแวดล้อมการทดสอบหลายชุดอย่างรวดเร็วและทำซ้ำได้ ซึ่งเป็นแนวปฏิบัติที่ดีในการพัฒนาซอฟต์แวร์และสถาปัตยกรรมบน AWS CloudFormation เป็นบริการที่ช่วยให้สามารถกำหนดโครงสร้างพื้นฐานเป็นโค้ด (Infrastructure as Code) ซึ่งสอดคล้องกับแนวคิดเรื่องสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "A company wants to design its cloud architecture so that it can support development innovations, and continuously improve processes and procedures. This is an example of which pillar of the AWS Well-Architected Framework?",
+      "options": [
+        "Security",
+        "Performance efficiency",
+        "Operational excellence",
+        "Reliability"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"พัฒนาต่อเนื่อง\" และ \"ปรับปรุงกระบวนการ\" นึกถึงความน่าเชื่อถือ (Reliability) ว่าระบบต้องพร้อมใช้งานเสมอเพื่อรองรับการพัฒนาและปรับปรุง",
+      "keywords_for_highlighting": [
+        "development innovations",
+        "continuously improve processes",
+        "procedures"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงเสาหลักของ AWS Well-Architected Framework ซึ่งเป็นแนวทางปฏิบัติที่ดีที่สุดในการออกแบบและใช้งานระบบบน AWS ดังนั้นจึงจัดอยู่ในหมวดสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "A company wants to provision and manage its AWS infrastructure by using the common programming languages TypeScript, Python, Java, and .NET. Which h AWS service will meet this requirement?",
+      "options": [
+        "AWS CodeBuild",
+        "AWS CloudFormation",
+        "AWSCLI",
+        "AWS Cloud Development Kit (AWS CDK)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ถ้าโจทย์พูดถึงการใช้ภาษาโปรแกรมมิ่งทั่วไป (TypeScript, Python, Java, .NET) เพื่อจัดการโครงสร้างพื้นฐาน AWS ให้เลือก CDK เพราะ CDK ช่วยให้เขียน Infrastructure as Code ด้วยภาษาเหล่านี้ได้",
+      "keywords_for_highlighting": [
+        "programming languages",
+        "manage",
+        "infrastructure"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการจัดการโครงสร้างพื้นฐาน AWS โดยใช้ภาษาโปรแกรมมิ่งต่างๆ ซึ่งเกี่ยวข้องกับสถาปัตยกรรมและการนำแนวปฏิบัติที่ดีมาใช้ในการจัดการโครงสร้างพื้นฐานบนคลาวด์"
+    },
+    {
+      "question": "A company needs a bridge between technology and business to help evolve to a culture of continuous growth and learning. Which perspective in the AWS Cloud Adoption Framework (AWS CAF) serves as this bridge?",
+      "options": [
+        "People",
+        "Governance",
+        "Operations",
+        "Security"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"คน\" สร้าง \"วัฒนธรรม\" การเติบโตและการเรียนรู้ ดังนั้นเมื่อพูดถึงการสร้างวัฒนธรรมในองค์กร ให้มองหาคำตอบที่เกี่ยวกับ \"People\"",
+      "keywords_for_highlighting": [
+        "bridge between technology and business",
+        "culture of continuous growth and learning"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) ซึ่งเป็นแนวทางปฏิบัติที่ดีที่สุดในการปรับใช้คลาวด์ และการทำความเข้าใจมุมมองต่างๆ ใน CAF เกี่ยวข้องกับสถาปัตยกรรมและแนวปฏิบัติที่ดีในการใช้ AWS"
+    },
+    {
+      "question": "A company migrated its systems to the AWS Cloud. The systems are rightsized, and a security review did not reveal any issues. The company must ensure that additional developments, integrations, changes, and system usage growth do not jeopardize this optimized AWS infrastructure. Which AWS service should the company use to report ongoing optimization and security?   444",
+      "options": [
+        "AWS Trusted Advisor",
+        "AWS Health Dashboard",
+        "Amazon Connect",
+        "AWS Systems Manager"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"optimized AWS infrastructure\" + \"ongoing optimization and security\" ให้จำว่าต้องใช้ **Trusted Advisor** เพื่อแนะนำเรื่องการปรับปรุงและรักษาความปลอดภัยต่อเนื่อง",
+      "keywords_for_highlighting": [
+        "optimized AWS infrastructure",
+        "ongoing optimization",
+        "security",
+        "report"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเน้นการตรวจสอบและปรับปรุงโครงสร้างพื้นฐาน AWS ให้เหมาะสมอย่างต่อเนื่อง ทั้งในด้านประสิทธิภาพและความปลอดภัย ซึ่งเป็นส่วนหนึ่งของแนวปฏิบัติที่ดีในการใช้งาน AWS"
+    },
+    {
+      "question": "Which programming languages does AWS Cloud Development Kit (AWS CDK) currently support? (Select\nTWO.)",
+      "options": [
+        "Python",
+        "Swift",
+        "TypeScript",
+        "Ruby",
+        "PHP"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "CDK เหมือน \"ชุดพัฒนา\" ที่ทันสมัย เน้นภาษาที่นิยมใช้สร้างเว็บและแอปพลิเคชันยุคใหม่: Python และ TypeScript",
+      "keywords_for_highlighting": [
+        "AWS Cloud Development Kit",
+        "AWS CDK",
+        "programming languages",
+        "support"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "AWS CDK เป็นเครื่องมือที่ช่วยในการสร้างโครงสร้างพื้นฐานบน AWS โดยใช้โค้ด ดังนั้นคำถามเกี่ยวกับภาษาโปรแกรมที่ CDK รองรับจึงเกี่ยวข้องกับสถาปัตยกรรมและการนำแนวปฏิบัติที่ดีมาใช้ในการสร้างโครงสร้างพื้นฐานบนคลาวด์"
+    },
+    {
+      "question": "A developer needs to maintain a development environment infrastructure and a production environment infrastructure in a repeatable fashion Which AWS service should the developer use to meet these requirements?",
+      "options": [
+        "AWS Ground Station",
+        "AWS Shield",
+        "AWS loT Device Defender",
+        "AWS CloudFormation"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ทำซ้ำ\" และ \"โครงสร้างพื้นฐาน\" ต้องใช้ CloudFormation เพื่อสร้างและจัดการโครงสร้างพื้นฐานแบบอัตโนมัติ",
+      "keywords_for_highlighting": [
+        "maintain",
+        "development environment",
+        "production environment",
+        "repeatable fashion"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการสร้างและจัดการโครงสร้างพื้นฐานในลักษณะที่ทำซ้ำได้ ซึ่งเป็นแนวปฏิบัติที่ดีในการพัฒนาและใช้งานแอปพลิเคชันบน AWS และ AWS CloudFormation เป็นเครื่องมือที่ช่วยให้ทำตามแนวทางปฏิบัตินี้ได้"
+    },
+    {
+      "question": "A company Is designing its AWS workloads so that components can be updated regularly and so that changes can be made in small, reversible increments. Which pillar of the AWS Well-Architected Framework does this design support?",
+      "options": [
+        "Security",
+        "Performance efficiency",
+        "Operational excellence",
+        "Reliability"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"อัพเดทสม่ำเสมอ\" และ \"เปลี่ยนแปลงเล็กน้อยที่ย้อนกลับได้\" คือหัวใจของการพัฒนาและจัดการระบบที่ดี ซึ่งตรงกับ Operational Excellence ที่เน้นการปรับปรุงและพัฒนาอย่างต่อเนื่อง",
+      "keywords_for_highlighting": [
+        "updated regularly",
+        "small",
+        "reversible increments"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับหลักการออกแบบระบบบน AWS โดยเน้นการปรับปรุงอย่างสม่ำเสมอและการเปลี่ยนแปลงที่สามารถย้อนกลับได้ ซึ่งสอดคล้องกับแนวปฏิบัติที่ดีด้านสถาปัตยกรรมที่ระบุไว้ใน AWS Well-Architected Framework"
+    },
+    {
+      "question": "Which AWS service can a company use to visually design and build serverless applications?",
+      "options": [
+        "AWS Lambda",
+        "AWS Batch",
+        "AWS Application Composer",
+        "AWS App Runner"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ออกแบบและสร้างแอป serverless แบบเห็นภาพ\" ให้คิดถึง \"Composer\" ที่เหมือนโปรแกรมแต่งเพลงที่ช่วยสร้างสรรค์ผลงาน",
+      "keywords_for_highlighting": [
+        "visually design",
+        "build",
+        "serverless applications"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการที่ใช้ในการออกแบบและสร้างแอปพลิเคชัน Serverless ซึ่งเกี่ยวข้องกับสถาปัตยกรรมและการนำแนวปฏิบัติที่ดีมาใช้ในการพัฒนาบน AWS."
+    },
+    {
+      "question": "A company is running a key-value NoSQL workload on Amazon EC2 instances. The company needs the workload to have scalability, failover protection, and backup capabilities. What is the MOST operationally efficient way to meet these requirements?",
+      "options": [
+        "Add additional EC2 instances to the database cluster.",
+        "Run an identical copy of the database in a second Availability Zone.",
+        "Migrate the database to Amazon DynamoDB.",
+        "Migrate the database to a relational database."
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"NoSQL, scalability, failover, backup\" เจอคำเหล่านี้ในโจทย์ ให้มองหา DynamoDB เพราะเป็นบริการ NoSQL ที่จัดการเรื่องพวกนี้ให้เอง",
+      "keywords_for_highlighting": [
+        "key-value NoSQL",
+        "scalability",
+        "failover protection",
+        "backup capabilities",
+        "operationally efficient"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกโซลูชันที่มีประสิทธิภาพในการดำเนินงานสูงสุด (operationally efficient) เพื่อตอบสนองความต้องการด้าน scalability, failover protection, และ backup สำหรับ workload ที่ใช้ NoSQL ซึ่งเกี่ยวข้องกับแนวปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบน AWS"
+    },
+    {
+      "question": "Which AWS service or feature should a company use between two microservices to ensure that messages are sent and received in exact order?",
+      "options": [
+        "Amazon Simple Email Service (Amazon SES)",
+        "Amazon Simple Notification Service (Amazon SNS)",
+        "Amazon S3 Event Notifications",
+        "Amazon Simple Queue Service (Amazon SQS) FIFO queues"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**\"ลำดับเป๊ะๆ\"** ต้องใช้ **\"SQS FIFO\"** เท่านั้น!",
+      "keywords_for_highlighting": [
+        "microservices",
+        "messages",
+        "exact order"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกบริการ AWS ที่เหมาะสมเพื่อแก้ไขปัญหาทางสถาปัตยกรรม (การรับประกันลำดับของข้อความระหว่าง microservices) ซึ่งเป็นส่วนหนึ่งของแนวปฏิบัติที่ดีในการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "Which design principles are included in the reliability pillar of the AWS Well-Architected Framework?",
+      "options": [
+        "Automatically recover from failure.",
+        "Grant everyone access to increase AWS service quotas.",
+        "Stop guessing capacity.",
+        "Design applications to run in a single Availability Zone.",
+        "Plan to increase AWS service quotas first in a secondary AWS Region."
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "\"Reliability\" คือความน่าเชื่อถือ ต้อง \"Recover\" จากปัญหาอัตโนมัติ และไม่ต้อง \"Guess\" เรื่อง Capacity เพราะ AWS ยืดหยุ่นปรับขนาดได้",
+      "keywords_for_highlighting": [
+        "reliability",
+        "Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงหลักการออกแบบที่อยู่ในเสาหลักความน่าเชื่อถือ (Reliability pillar) ของ AWS Well-Architected Framework ซึ่งเป็นเรื่องของสถาปัตยกรรมและแนวปฏิบัติที่ดีในการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "Which AWS service or tool inspects a user's AWS environment and makes recommendations for cost savings and system performance improvements?",
+      "options": [
+        "Cost Explorer",
+        "AWS Trusted Advisor",
+        "Amazon Inspector",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**Trusted Advisor เหมือน \"ที่ปรึกษา\" คอย \"ตรวจสภาพแวดล้อม\" และให้ \"คำแนะนำ\" เพื่อปรับปรุงให้ดีขึ้น (ทั้งประหยัดและประสิทธิภาพ)**",
+      "keywords_for_highlighting": [
+        "inspects",
+        "recommendations",
+        "cost savings",
+        "system performance improvements"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงเครื่องมือที่แนะนำการปรับปรุงด้านต้นทุนและประสิทธิภาพ ซึ่งเกี่ยวข้องกับแนวปฏิบัติที่ดีในการใช้งาน AWS และการออกแบบสถาปัตยกรรมที่เหมาะสม"
+    },
+    {
+      "question": "A company wants to avoid unnecessary charges and run workloads at the lowest price point. Which pillar of the AWS Well-Architected Framework includes these goals?",
+      "options": [
+        "Security",
+        "Reliability",
+        "Sustainability",
+        "Cost optimization"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ถ้าโจทย์ถามถึงการหลีกเลี่ยงค่าใช้จ่ายที่ไม่จำเป็น และต้องการราคาถูกที่สุด ให้เลือก \"Cost optimization\" ทันที",
+      "keywords_for_highlighting": [
+        "unnecessary charges",
+        "lowest price point"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับเสาหลักของ AWS Well-Architected Framework ซึ่งเป็นแนวทางปฏิบัติที่ดีในการออกแบบสถาปัตยกรรมบน AWS จึงจัดอยู่ในหมวดสถาปัตยกรรมและแนวปฏิบัติที่ดี"
+    },
+    {
+      "question": "Treating infrastructure as code in the AWS Cloud allows users to:",
+      "options": [
+        "automate migration of on-premises hardware to AWS data centers.",
+        "let a third party automate an audit of the AWS infrastructure.",
+        "turn over application code to AWS so it can run on the AWS infrastructure.",
+        "automate the infrastructure provisioning process."
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Infrastructure as code\" คือการจัดการโครงสร้างพื้นฐานแบบอัตโนมัติ ดังนั้นให้มองหาคำตอบที่เกี่ยวกับการสร้างหรือจัดการโครงสร้างพื้นฐานแบบอัตโนมัติ",
+      "keywords_for_highlighting": [
+        "infrastructure as code",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "การจัดการโครงสร้างพื้นฐานเป็นโค้ด (Infrastructure as Code) เป็นแนวปฏิบัติที่ดีในการจัดการและเตรียมทรัพยากรบน AWS ซึ่งเกี่ยวข้องกับสถาปัตยกรรมและการจัดการทรัพยากรอย่างมีประสิทธิภาพ"
+    },
+    {
+      "question": "A company wants to rightsize its Amazon EC2 instances. Which configuration change will meet this requirement with the LEAST operational overhead?",
+      "options": [
+        "Add EC2 instances in another Availability Zone.",
+        "Change the size and type of the EC2 instances based on utilization.   504",
+        "Convert the payment method from On-Demand to Savings Plans.",
+        "Reprovision the EC2 instances with a larger instance type."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Rightsize\" (ปรับขนาดให้เหมาะสม) คือดูที่การใช้งานจริง (utilization) แล้วปรับขนาดและประเภทของ EC2 ให้ตรงกับความต้องการ เพื่อลดภาระการจัดการ",
+      "keywords_for_highlighting": [
+        "rightsize",
+        "EC2 instances",
+        "least operational overhead"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับการปรับขนาด EC2 instances ให้เหมาะสม (rightsizing) เป็นเรื่องของแนวปฏิบัติที่ดีในการใช้ทรัพยากรอย่างมีประสิทธิภาพ ซึ่งเป็นส่วนหนึ่งของสถาปัตยกรรมที่ดีบน AWS"
+    },
+    {
+      "question": "Which AWS Cloud Adoption Framework (AWS CAF) perspective focuses on organizing an inventory of data products in a data catalog?",
+      "options": [
+        "Operations",
+        "Governance",
+        "Business",
+        "Platform"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Governance\" ดูแลเรื่อง \"inventory\" และ \"data catalog\" เหมือนเป็นผู้กำกับดูแลข้อมูลให้เป็นระเบียบ",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "inventory of data products",
+        "data catalog"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) และการจัดระเบียบข้อมูลใน Data Catalog เกี่ยวข้องกับแนวปฏิบัติที่ดีในการนำ AWS ไปใช้ และการออกแบบสถาปัตยกรรมที่เหมาะสมเพื่อจัดการข้อมูลอย่างมีประสิทธิภาพ"
+    },
+    {
+      "question": "Where can users find examples of AWS Cloud solution designs?",
+      "options": [
+        "AWS Marketplace",
+        "AWS Service Catalog",
+        "AWS Architecture Center",
+        "AWS Trusted Advisor"
+      ],
+      "correctAnswer": 2,
+      "explanation": "มองหา \"solution designs\" หรือ \"การออกแบบโซลูชัน\" ให้คิดถึง \"Architecture Center\" ซึ่งเป็นแหล่งรวมพิมพ์เขียวและตัวอย่างการออกแบบระบบบน AWS",
+      "keywords_for_highlighting": [
+        "solution designs",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับแหล่งที่ผู้ใช้สามารถค้นหาตัวอย่างการออกแบบโซลูชัน AWS Cloud เกี่ยวข้องโดยตรงกับสถาปัตยกรรมและแนวปฏิบัติที่ดีในการใช้งาน AWS Cloud"
+    },
+    {
+      "question": "Which design principle aligns with performance efficiency pillar of the AWS Well- Architected Framework?",
+      "options": [
+        "Using serverless architectures",
+        "Scaling horizontally",
+        "Measuring the cost of workloads",
+        "Using managed services"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Performance Efficiency\" นึกถึงการ \"Scale Horizontally\" เพื่อเพิ่มประสิทธิภาพโดยไม่ต้องเปลี่ยนสเปคเครื่อง",
+      "keywords_for_highlighting": [
+        "performance efficiency",
+        "Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้ถามถึงหลักการออกแบบที่สอดคล้องกับเสาหลักด้านประสิทธิภาพของ AWS Well-Architected Framework ซึ่งเกี่ยวข้องกับสถาปัตยกรรมและแนวปฏิบัติที่ดีที่สุดในการออกแบบระบบบน AWS"
+    },
+    {
+      "question": "A developer needs to use a standardized template to create copies of a company's AWS architecture for development test, and production environments. Which AWS service should the developer use to meet this requirement?",
+      "options": [
+        "AWS Cloud Map",
+        "AWS Cloud Formation",
+        "Amazon CloudFront",
+        "AWS CloudTrail"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Template\" และ \"สร้าง copies ของ architecture\" ให้คิดถึง CloudFormation เพราะมันคือบริการสร้างโครงสร้างพื้นฐานแบบอัตโนมัติจาก template",
+      "keywords_for_highlighting": [
+        "standardized template",
+        "copies",
+        "architecture",
+        "environments"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการสร้างสถาปัตยกรรม AWS ที่สอดคล้องตามมาตรฐานโดยใช้ template ซึ่งเป็นแนวปฏิบัติที่ดีในการจัดการ infrastructure as code (IaC) และการสร้างสภาพแวดล้อมที่สามารถทำซ้ำได้ (reproducible environments)"
+    },
+    {
+      "question": "Which design principle is related to the reliability pillar according to the AWS Well- Architected Framework?",
+      "options": [
+        "Test recovery procedures",
+        "Experiment more often",
+        "Go global in minutes",
+        "Analyze and attribute to expenditure"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Reliability\" (ความน่าเชื่อถือ) ต้อง \"Test recovery procedures\" (ทดสอบกระบวนการกู้คืน) เสมอ เพื่อให้มั่นใจว่าระบบจะกลับมาทำงานได้เมื่อเกิดปัญหา",
+      "keywords_for_highlighting": [
+        "reliability",
+        "Well-Architected Framework"
+      ],
+      "assigned_category_id_by_gemini": 9,
+      "assigned_category_name_by_gemini": "สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices)",
+      "gemini_category_justification": "คำถามเกี่ยวกับหลักการออกแบบที่เกี่ยวข้องกับเสาหลักความน่าเชื่อถือ (Reliability Pillar) ของ AWS Well-Architected Framework จัดอยู่ในหมวดหมู่สถาปัตยกรรมและแนวปฏิบัติที่ดี (Architecture and Best Practices) เนื่องจาก Well-Architected Framework เป็นแนวทางปฏิบัติที่ดีที่สุดในการออกแบบและสร้างระบบบน AWS"
+    }
+  ]
+}

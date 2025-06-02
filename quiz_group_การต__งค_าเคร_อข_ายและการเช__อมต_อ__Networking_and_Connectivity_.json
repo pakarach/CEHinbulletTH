@@ -1,0 +1,912 @@
+{
+  "quizTitle": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity) (ข้อประมาณ 509 - 509 จาก Dump เดิม) - 46 ข้อ",
+  "questions": [
+    {
+      "question": "Which of the following are components of an AWS Site-to-Site VPN connection?    143 (Select TWO.)",
+      "options": [
+        "AWS Storage Gateway",
+        "Virtual private gateway",
+        "NAT gateway",
+        "Customer gateway",
+        "Internet gateway"
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "Site-to-Site VPN ต้องมี \"ประตู\" สองฝั่ง คือฝั่ง AWS (Virtual Private Gateway) และฝั่งลูกค้า (Customer Gateway)",
+      "keywords_for_highlighting": [
+        "Site-to-Site VPN",
+        "components"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ AWS Site-to-Site VPN ซึ่งเป็นบริการที่เกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อระหว่างเครือข่ายภายในองค์กรกับ AWS Cloud"
+    },
+    {
+      "question": "Which AWS network services or features allow Cl DR block notation when providing an IP address range?",
+      "options": [
+        "Security groups",
+        "Amazon Machine Image (AMI)",
+        "Network access control list (network ACL)",
+        "AWS Budgets",
+        "Amazon Elastic Block Store (Amazon EBS)"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "**CIDR block** เกี่ยวข้องกับการจัดการเครือข่ายและความปลอดภัย ดังนั้นมองหาบริการที่เกี่ยวข้องกับ **security** และ **network access control**",
+      "keywords_for_highlighting": [
+        "network services",
+        "CIDR block",
+        "IP address range"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับบริการเครือข่ายของ AWS และการกำหนดช่วง IP address ซึ่งเป็นส่วนหนึ่งของการตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "Which AWS service is a highly available and scalable DNS web service?",
+      "options": [
+        "Amazon VPC",
+        "Amazon CloudFront",
+        "Amazon Route 53",
+        "Amazon Connect"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Route\" ในชื่อ Route 53 เชื่อมโยงกับการ \"นำทาง\" ซึ่ง DNS ทำหน้าที่ \"นำทาง\" ทราฟฟิกไปยังเว็บไซต์",
+      "keywords_for_highlighting": [
+        "DNS",
+        "web service"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ DNS ซึ่งเป็นส่วนสำคัญของการตั้งค่าเครือข่ายและการเชื่อมต่อใน AWS"
+    },
+    {
+      "question": "A company wants to set up a high-speed connection between its data center and its applications that run on AWS. The company must not transfer data over the internet. Which action should the company take to meet these requirements?",
+      "options": [
+        "Transfer data to AWS by using AWS Snowball.",
+        "Transfer data to AWS by using AWS Storage Gateway.",
+        "Set up a VPN connection between the data center and an AWS Region.",
+        "Set up an AWS Direct Connect connection between the company network and AWS."
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ความเร็วสูง\", \"ไม่ผ่านอินเทอร์เน็ต\" สองคำนี้บอกว่าต้องใช้ Direct Connect เท่านั้น!",
+      "keywords_for_highlighting": [
+        "high-speed connection",
+        "data center",
+        "not transfer data over the internet"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การสร้างการเชื่อมต่อความเร็วสูงและไม่ใช้อินเทอร์เน็ตระหว่างศูนย์ข้อมูลของบริษัทกับ AWS ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "Which AWS service or feature is associated with a subnet in a VPC and is used to control inbound and outbound traffic?",
+      "options": [
+        "Amazon Inspector",
+        "Network ACLs",
+        "AWS Shield",
+        "VPC Flow Logs"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Subnet ใน VPC ควบคุมทราฟฟิกเข้าออก ต้องนึกถึง ACL (Access Control List) ที่เป็นเหมือนยามเฝ้าประตู\"",
+      "keywords_for_highlighting": [
+        "subnet",
+        "VPC",
+        "control inbound and outbound traffic"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ subnet, VPC, inbound/outbound traffic และ Network ACLs ล้วนเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อใน AWS"
+    },
+    {
+      "question": "Which AWS services or features can a company use to connect the network of its on- premises data center to AWS? (Select TWO.)",
+      "options": [
+        "AWS VPN",
+        "AWS Directory Service",
+        "AWS Data Pipeline",
+        "AWS Direct Connect",
+        "AWS CloudHSM"
+      ],
+      "correctAnswer": [
+        0,
+        3
+      ],
+      "explanation": "\"On-premises\" เจอกับ \"connect network\" ให้คิดถึง VPN (ทางเชื่อมเสมือน) และ Direct Connect (ทางเชื่อมตรง) ที่เชื่อมโลกภายนอกเข้า AWS",
+      "keywords_for_highlighting": [
+        "on-premises",
+        "connect network"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามถามถึงบริการที่ใช้เชื่อมต่อเครือข่าย on-premises กับ AWS ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company wants to minimize network latency between its Amazon EC2 instances. The EC2 instances do not need to be highly available. Which solution meets these requirements?",
+      "options": [
+        "Use EC2 instances in a single Availability Zone.",
+        "Use Amazon CloudFront as the database for the EC2 instances.",
+        "Use EC2 instances in the same edge location and the same Availability Zone.",
+        "Use EC2 instances in the same edge location and the same AWS Region."
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"ลด Latency ไม่เน้น HA\"** ให้เลือก **\"Single AZ\"** (Availability Zone เดียว) เพราะอยู่ใกล้กันที่สุด",
+      "keywords_for_highlighting": [
+        "minimize network latency",
+        "EC2 instances",
+        "not need to be highly available"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เน้นไปที่การลด Latency ของเครือข่ายระหว่าง EC2 instances ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "Which AWS service can provide a dedicated network connection with consistent low latency from on premises to the AWS Cloud?",
+      "options": [
+        "Amazon VPC",
+        "Amazon Kinesis Data Streams",
+        "AWS Direct Connect",
+        "Amazon OpenSearch Service"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Direct\" ใน Direct Connect คือ \"โดยตรง\" จำว่าการเชื่อมต่อ \"โดยตรง\" จาก on-premises ไป AWS คือ Direct Connect",
+      "keywords_for_highlighting": [
+        "dedicated network connection",
+        "consistent low latency",
+        "on premises",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้สร้างการเชื่อมต่อเครือข่ายโดยเฉพาะระหว่าง on-premises และ AWS Cloud ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company has set up a VPC in its AWS account and has created a subnet in the VPC. The company wants to make the subnet public. Which AWS features should the company use to meet this requirement? (Select TWO.)",
+      "options": [
+        "Amazon VPC internet gateway",
+        "Amazon VPC NAT gateway",
+        "Amazon VPC route tables",
+        "Amazon VPC network ACL",
+        "Amazon EC2 security groups"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "\"Public subnet\" ต้องมี \"Internet Gateway\" เพื่อออกเน็ต และ \"Route Table\" เพื่อบอกทางว่าต้องไปที่ Gateway ไหน",
+      "keywords_for_highlighting": [
+        "public",
+        "subnet",
+        "VPC"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการตั้งค่าเครือข่าย (VPC, subnet) และการเชื่อมต่อ (internet gateway) ซึ่งเป็นหัวใจหลักของหมวดหมู่การตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "An ecommerce company wants to distribute traffic between the Amazon EC2 instances that host its website. Which AWS service or resource will meet these requirements?",
+      "options": [
+        "Application Load Balancer",
+        "AWS WAF",
+        "AWS CloudHSM",
+        "AWS Direct Connect"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"กระจาย traffic\" ไปยัง EC2 instances ที่ host เว็บไซต์? นึกถึง \"Load Balancer\" ทันที!**",
+      "keywords_for_highlighting": [
+        "distribute traffic",
+        "EC2 instances",
+        "website"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวกับวิธีการกระจาย traffic ระหว่าง EC2 instances ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "A company has set up a VPC on AWS. The company needs a dedicated connection between the VPC and the company’s on-premises network. Which action should the company take to meet this requirement?",
+      "options": [
+        "Establish a VPN connection between the VPC and the company's on-premises network.",
+        "Establish an AWS Direct Connect connection between the VPC and the company's on- premisesnetwork.",
+        "Attach an internet gateway to the VPC. Use the AWS public endpoints for connectivity.",
+        "Configure Amazon Connect to provide connectivity between the VPC and the company's on-premisesnetwork."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Dedicated connection\" หรือ \"การเชื่อมต่อเฉพาะ\" ให้ตอบ Direct Connect เสมอ",
+      "keywords_for_highlighting": [
+        "dedicated connection",
+        "on-premises network",
+        "VPC"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการสร้างการเชื่อมต่อเฉพาะระหว่าง VPC และเครือข่ายภายในองค์กร ซึ่งเป็นเรื่องของการตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "Which AWS services are connectivity services for a VPC? (Select TWO.)",
+      "options": [
+        "AWS Site-to-Site VPN   287",
+        "AWS Direct Connect",
+        "Amazon Connect",
+        "AWS Key Management Service (AWS KMS)",
+        "AWS Identity and Access Management (IAM)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"VPC ต้องการเชื่อมต่อ? มองหา Site-to-Site VPN และ Direct Connect ที่เชื่อมต่อเครือข่ายของคุณกับ AWS\"",
+      "keywords_for_highlighting": [
+        "connectivity services",
+        "VPC"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้ในการเชื่อมต่อกับ VPC ซึ่งเป็นหัวข้อหลักของการตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "Which VPC component provides a layer of security at the subnet level?",
+      "options": [
+        "Security groups",
+        "Network ACLs",
+        "NAT gateways",
+        "Route tables"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ACLs คุม \"Network\" ที่ \"Subnet\" เลเวล, ส่วน Security Groups คุมที่ Instance เลเวล",
+      "keywords_for_highlighting": [
+        "VPC",
+        "security",
+        "subnet level"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ VPC component ที่ให้ security layer ในระดับ subnet เกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity) โดยตรง"
+    },
+    {
+      "question": "What is the purpose of having an internet gateway within a VPC?",
+      "options": [
+        "To create a VPN connection to the VPC",
+        "To allow communication between the VPC and the internet",
+        "To impose bandwidth constraints on internet traffic",
+        "To load balance traffic from the internet across Amazon EC2 instances"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Internet Gateway คือ \"ประตู\" สู่โลกอินเทอร์เน็ต ดังนั้นหน้าที่หลักคือการ \"เชื่อมต่อ\" VPC กับอินเทอร์เน็ต",
+      "keywords_for_highlighting": [
+        "internet gateway",
+        "VPC",
+        "purpose"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ Internet Gateway ซึ่งเป็นส่วนประกอบสำคัญในการตั้งค่าเครือข่าย VPC และการเชื่อมต่อกับอินเทอร์เน็ต จึงจัดอยู่ในหมวดหมู่การตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "Which AWS service or feature can be used to control inbound and outbound traffic on an Amazon EC2 instance?",
+      "options": [
+        "Internet gateways",
+        "AWS Identity and Access Management (IAM)",
+        "Network ACLs",
+        "Security groups"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**\"EC2\" กับ \"traffic\" ต้องนึกถึง \"Security groups\" เป็นด่านแรกเสมอ เพราะ Security groups ควบคุม traffic เข้าออกระดับ instance**",
+      "keywords_for_highlighting": [
+        "EC2",
+        "inbound",
+        "outbound",
+        "traffic"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริการที่ใช้ควบคุม traffic เข้า-ออก EC2 instance เกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "Which AWS service or feature improves network performance by sending traffic through the AWS worldwide network infrastructure?",
+      "options": [
+        "Route table",
+        "AWS Transit Gateway",
+        "AWS Global Accelerator",
+        "Amazon VPC"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Global\" ในชื่อ AWS Global Accelerator บอกใบ้ถึงการทำงานระดับโลก และ \"Accelerator\" บ่งบอกถึงการเร่งความเร็ว ซึ่งสอดคล้องกับการปรับปรุงประสิทธิภาพเครือข่าย",
+      "keywords_for_highlighting": [
+        "network performance",
+        "AWS worldwide network infrastructure"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ช่วยปรับปรุงประสิทธิภาพเครือข่ายโดยใช้โครงสร้างพื้นฐานเครือข่ายทั่วโลกของ AWS ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company wants to connect its supported AWS services and VPCs. The company does not wa...... Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon Inspector",
+        "AWS PrivateLink",
+        "Amazon Connect",
+        "AWS Internet Gateway"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"เชื่อมต่อ AWS services และ VPCs แบบส่วนตัว (private) โดยไม่ต้องผ่านอินเทอร์เน็ต = PrivateLink\"",
+      "keywords_for_highlighting": [
+        "connect",
+        "AWS services",
+        "VPCs",
+        "not wa..."
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับการเชื่อมต่อ AWS services และ VPCs ซึ่งเป็นเรื่องของการตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity) โดยเฉพาะอย่างยิ่งการใช้ AWS PrivateLink เพื่อการเชื่อมต่อที่ปลอดภัยและเป็นส่วนตัว"
+    },
+    {
+      "question": "A network engineer needs to build a hybrid cloud architecture connecting on-premises networks to the AWS Cloud using AWS Direct Connect. The company has a few VPCs in a single AWS Region and expects to increase the number of VPCs to hundreds over time. Which AWS service or feature should the engineer use to simplify and scale this connectivity as the VPCs increase in number?",
+      "options": [
+        "VPC endpoints",
+        "AWS Transit Gateway",
+        "Amazon Route 53",
+        "AWS Secrets Manager"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Hybrid Cloud + VPC จำนวนมาก + ต้องการขยาย = Transit Gateway\"",
+      "keywords_for_highlighting": [
+        "hybrid cloud",
+        "VPC",
+        "increase",
+        "scale",
+        "connectivity"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การสร้างสถาปัตยกรรมเครือข่ายแบบ Hybrid Cloud โดยใช้ AWS Direct Connect และต้องการโซลูชันที่สามารถปรับขนาดได้เมื่อจำนวน VPC เพิ่มขึ้น ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "Which AWS service or tool can be used to set up a firewall to control traffic going into and coming out of an Amazon VPC subnet?",
+      "options": [
+        "Security group",
+        "AWS WAF",
+        "AWS Firewall Manager",
+        "Network ACL"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"VPC subnet\" และ \"firewall\" ที่ควบคุมทิศทางเข้าออก ให้คิดถึง \"Network ACL\" ที่เป็นเหมือนยามเฝ้าประตูเครือข่าย",
+      "keywords_for_highlighting": [
+        "firewall",
+        "VPC subnet",
+        "traffic",
+        "control"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการควบคุม traffic เข้าออก subnet ใน VPC ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่าย (firewall) และการเชื่อมต่อ (VPC subnet) โดยตรง"
+    },
+    {
+      "question": "An ecommerce company has deployed a new web application on Amazon EC2 Instances. The company wants to distribute incoming HTTP traffic evenly across all running instances.   351 Which AWS service or resource will meet this requirement?",
+      "options": [
+        "Amazon EC2 Auto Scaling",
+        "Application Load Balancer",
+        "Gateway Load Balancer",
+        "Network Load Balancer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"HTTP traffic evenly\" ให้คิดถึง Application Load Balancer เพราะเน้นการกระจาย traffic สำหรับ web application โดยเฉพาะ",
+      "keywords_for_highlighting": [
+        "HTTP traffic",
+        "evenly",
+        "web application"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวข้องกับการกระจาย traffic ในเครือข่ายไปยัง EC2 instances ซึ่งเป็นหน้าที่หลักของ Load Balancer และเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "Which AWS service or feature allows a user to establish a dedicated network connection between a company's on-premises data center and the AWS Cloud?",
+      "options": [
+        "AWS Direct Connect",
+        "VPC peering",
+        "AWS VPN",
+        "Amazon Route 53"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Direct\" แปลว่า \"โดยตรง\" จำว่าต้องการเชื่อมต่อ \"โดยตรง\" จาก On-Premise ไป AWS ต้องใช้ Direct Connect",
+      "keywords_for_highlighting": [
+        "dedicated network connection",
+        "on-premises data center",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้สร้างการเชื่อมต่อเครือข่ายโดยเฉพาะระหว่าง on-premises และ AWS Cloud ซึ่งเป็นเรื่องของการตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "A company wants to establish a private network connection between AWS and its corporate network. Which AWS service or feature will meet this requirement?",
+      "options": [
+        "Amazon Connect",
+        "Amazon Route 53",
+        "AWS Direct Connect",
+        "VPC peering"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Private network\" กับ \"corporate network\" สองคำนี้เจอกันเมื่อไหร่ ให้ตอบ \"Direct Connect\" ทันที!",
+      "keywords_for_highlighting": [
+        "private network connection",
+        "corporate network"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้สร้างการเชื่อมต่อเครือข่ายส่วนตัวระหว่าง AWS และเครือข่ายองค์กร ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company wants to create a globally accessible ecommerce platform for its customers. The company wants to use a highly available and scalable DNS web service to connect users to the platform. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon EC2",
+        "Amazon VPC",
+        "Amazon Route 53",
+        "Amazon RDS"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"DNS\" และ \"globally accessible\" เห็นสองคำนี้เมื่อไหร่ ให้ตอบ Route 53 ทันที!**",
+      "keywords_for_highlighting": [
+        "globally accessible",
+        "DNS"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริการ DNS ที่ใช้เชื่อมต่อผู้ใช้กับแพลตฟอร์ม เป็นเรื่องของการตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    },
+    {
+      "question": "Which AWS service or feature requires an Internet service provider (ISP) and a colocation facility to be Implemented?",
+      "options": [
+        "AWS VPN",
+        "Amazon Conned",
+        "AWS Direct Connect",
+        "Internet gateway   375"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Direct Connect คือการ \"เชื่อมต่อโดยตรง\" กับ AWS ดังนั้นจึงต้องมี ISP และ Colocation Facility เพื่อสร้างการเชื่อมต่อทางกายภาพ",
+      "keywords_for_highlighting": [
+        "ISP",
+        "colocation facility",
+        "implemented"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ต้องใช้ ISP และ colocation facility ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อจาก on-premise เข้ากับ AWS Cloud"
+    },
+    {
+      "question": "Which AWS service or feature gives users the ability to capture information about network traffic in a VPC?",
+      "options": [
+        "VPC Flow Logs",
+        "Amazon Inspector",
+        "VPC route tables",
+        "AWS CloudTrail"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Flow\" ในชื่อ \"VPC Flow Logs\" สื่อถึงการไหลของข้อมูล (traffic) ในเครือข่าย (VPC) ดังนั้นเมื่อเห็นคำว่า \"network traffic\" ในโจทย์ ให้เลือก \"VPC Flow Logs\"",
+      "keywords_for_highlighting": [
+        "network traffic",
+        "VPC",
+        "capture information"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการจับข้อมูลการรับส่งข้อมูลเครือข่ายใน VPC ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company needs stateless network filtering for its VPC. Which AWS service, tool, or feature will meet this requirement?   392",
+      "options": [
+        "AWS PrivateLink",
+        "Security group",
+        "Network access control list (ACL)",
+        "AWS WAF"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Stateless\" และ \"network filtering\" สองคำนี้ชี้ไปที่ Network ACL ซึ่งทำงานที่ layer เครือข่ายและไม่มี state (ไม่จำสถานะการเชื่อมต่อ)",
+      "keywords_for_highlighting": [
+        "stateless",
+        "network filtering",
+        "VPC"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ network filtering ใน VPC เกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "Which of the following can be components of a VPC in the AWS Cloud? (Select TWO.)",
+      "options": [
+        "Amazon API Gateway",
+        "Amazon S3 buckets and objects",
+        "AWS Storage Gateway",
+        "Internet gateway",
+        "Subnet"
+      ],
+      "correctAnswer": [
+        3,
+        4
+      ],
+      "explanation": "VPC คือเครือข่ายส่วนตัว ดังนั้นต้องมี \"ประตู\" (Internet Gateway) เชื่อมต่อโลกภายนอก และแบ่งเป็น \"ซอย\" (Subnet) เพื่อจัดระเบียบ",
+      "keywords_for_highlighting": [
+        "VPC",
+        "components"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงส่วนประกอบของ VPC (Virtual Private Cloud) ซึ่งเป็นบริการที่เกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อใน AWS Cloud โดยตรง"
+    },
+    {
+      "question": "Which AWS service or feature gives users the ability to connect VPCs and on-premises networks to a central hub?",
+      "options": [
+        "Virtual private gateway   396",
+        "AWS Transit Gateway",
+        "Internet gateway",
+        "Customer gateway"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Hub\" ตรงกับ \"Transit Gateway\" ที่เป็นเหมือนศูนย์กลางเชื่อมต่อเครือข่ายต่างๆ",
+      "keywords_for_highlighting": [
+        "connect",
+        "VPCs",
+        "on-premises networks",
+        "central hub"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้เชื่อมต่อ VPC และเครือข่าย On-Premise ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity) โดยตรง"
+    },
+    {
+      "question": "Which AWS services or features give users the ability to create a network connection between two VPCs?",
+      "options": [
+        "VPC endpoints",
+        "Amazon Route 53",
+        "VPC peering",
+        "AWS Direct Connect",
+        "AWS Transit Gateway"
+      ],
+      "correctAnswer": [
+        2,
+        4
+      ],
+      "explanation": "\"VPC สองอันอยากคุยกัน\" ให้คิดถึง \"VPC Peering\" (เพื่อนบ้านคุยกัน) และ \"Transit Gateway\" (ทางหลวงเชื่อมหลายบ้าน)",
+      "keywords_for_highlighting": [
+        "network connection",
+        "two VPCs"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้สร้างการเชื่อมต่อเครือข่ายระหว่าง VPC ซึ่งเป็นหัวข้อหลักของการตั้งค่าเครือข่ายและการเชื่อมต่อใน AWS"
+    },
+    {
+      "question": "Which AWS service or feature can be used to create a private connection between an on- premises workload and an AWS Cloud workload?",
+      "options": [
+        "Amazon Route 53",
+        "Amazon Macie",
+        "AWS Direct Connect",
+        "AWS PrivaleLink"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"On-premises\" (ที่ตั้งบริษัท) กับ \"AWS Cloud\" ต้องเชื่อมต่อแบบส่วนตัว (private) นึกถึง \"Direct Connect\" ที่แปลว่า \"เชื่อมต่อโดยตรง\"",
+      "keywords_for_highlighting": [
+        "private connection",
+        "on-premises",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้สร้างการเชื่อมต่อส่วนตัวระหว่าง on-premises และ AWS Cloud ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "Which AWS service or feature provides a firewall at the subnet level within a VPC?",
+      "options": [
+        "Security group",
+        "Network ACL",
+        "Elastic network interface",
+        "AWS WAF"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"Subnet Level\" และ \"Firewall\"** ให้จำว่า **\"ACL\"** คุมระดับ Network (เครือข่าย) ทั้งซับเน็ต",
+      "keywords_for_highlighting": [
+        "subnet level",
+        "firewall",
+        "VPC"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ firewall ที่ระดับ subnet ใน VPC เกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อใน AWS โดยตรง"
+    },
+    {
+      "question": "Which AWS service or feature provides log information of the inbound and outbound traffic on network   477 interfaces in a VPC?",
+      "options": [
+        "Amazon CloudWatch Logs",
+        "AWS CloudTrail",
+        "VPC Flow Logs",
+        "AWS Identity and Access Management (IAM)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"VPC Flow Logs\" คือบันทึกการไหลของ traffic ใน VPC, ให้จำว่า \"Flow\" คือการไหลของข้อมูลเข้าออก",
+      "keywords_for_highlighting": [
+        "log information",
+        "inbound and outbound traffic",
+        "VPC"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ให้ข้อมูลล็อกของการรับส่งข้อมูลเข้าและออกจากเครือข่ายใน VPC ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company wants to use an AWS networking solution that can act as a centralized gateway between multiple VPCs and on-premises networks. Which AWS service or feature will meet this requirement?",
+      "options": [
+        "Gateway VPC endpoint   480",
+        "AWS Direct Connect",
+        "AWS Transit Gateway",
+        "AWS PrivateLink"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Gateway กลาง\" เชื่อมหลาย VPC และ On-Premise นึกถึง \"Transit Gateway\" ที่เป็นเหมือน \"สถานีขนส่ง\" เชื่อมทุกเครือข่ายเข้าด้วยกัน",
+      "keywords_for_highlighting": [
+        "centralized gateway",
+        "multiple VPCs",
+        "on-premises networks"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงโซลูชันเครือข่าย AWS ที่ทำหน้าที่เป็นเกตเวย์กลางระหว่าง VPCs และเครือข่าย On-Premises ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "Which AWS tool or feature acts as a VPC firewall at the subnet level?",
+      "options": [
+        "Security group",
+        "Network ACL",
+        "Traffic Mirroring",
+        "Internet gateway"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Subnet-level firewall\" ให้จำว่าต้องใช้ \"Network ACL\" เพราะ ACL ควบคุมการเข้าออกของ subnet",
+      "keywords_for_highlighting": [
+        "VPC firewall",
+        "subnet level"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงเครื่องมือหรือฟีเจอร์ที่ทำหน้าที่เป็นไฟร์วอลล์ในระดับ subnet ภายใน VPC ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company is migrating its public website to AWS. The company wants to host the domain name for the website on AWS. Which AWS service should the company use to meet this requirement?",
+      "options": [
+        "AWS Lambda",
+        "Amazon Route 53   481",
+        "Amazon CloudFront",
+        "AWS Direct Connect"
+      ],
+      "correctAnswer": 1,
+      "explanation": "เว็บไซต์, โดเมนเนม, AWS = Route 53 (Router ใน AWS)",
+      "keywords_for_highlighting": [
+        "domain name",
+        "website",
+        "host"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการจัดการโดเมนเนม ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity) โดยเฉพาะอย่างยิ่งการใช้ DNS (Domain Name System)"
+    },
+    {
+      "question": "A company wants to minimize network latency between its Amazon EC2 instances. The EC2 instances do not need to be highly available. Which solution meets these requirements?",
+      "options": [
+        "Use EC2 instances in a single Availability Zone.",
+        "Use EC2 instances in multiple edge locations.",
+        "Use EC2 instances in the same Availability Zone but in different AWS Regions.",
+        "Use EC2 instances in the same edge location and the same AWS Region."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Latency น้อย\" และ \"ไม่ต้อง High Availability\" --> อยู่ใน \"Availability Zone เดียวกัน\" จบ!",
+      "keywords_for_highlighting": [
+        "minimize network latency",
+        "EC2 instances",
+        "single Availability Zone",
+        "not highly available"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการลด latency ของเครือข่ายระหว่าง EC2 instances ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity) โดยตรง"
+    },
+    {
+      "question": "Which AWS service can create a private network connection from on premises to the AWS Cloud?",
+      "options": [
+        "AWS Config",
+        "Virtual Private Cloud (Amazon VPC)",
+        "AWS Direct Connect",
+        "Amazon Route 53"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Direct Connect\" คือการ \"เชื่อมต่อโดยตรง\" จาก On-Premises เข้า AWS เหมือนต่อสายแลนส่วนตัว ไม่ต้องผ่านอินเทอร์เน็ต",
+      "keywords_for_highlighting": [
+        "private network connection",
+        "on premises",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้สร้างการเชื่อมต่อเครือข่ายส่วนตัวจาก On-Premises ไปยัง AWS Cloud ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company is connecting multiple VPCs and on-premises networks. The company needs to use an AWS service as a cloud router to simplify peering relationships. Which AWS service can the company use to meet this requirement?",
+      "options": [
+        "AWS Direct Connect",
+        "AWS Transit Gateway",
+        "Amazon Connect",
+        "Amazon Route 53"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"หลาย VPC + on-premises + cloud router\" ให้คิดถึง Transit Gateway เป็น \"ทางหลวง\" เชื่อมทุกเครือข่ายเข้าด้วยกัน",
+      "keywords_for_highlighting": [
+        "multiple VPCs",
+        "on-premises networks",
+        "cloud router",
+        "simplify peering relationships"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเชื่อมต่อเครือข่ายระหว่าง VPCs และ on-premises networks ซึ่งเป็นหัวข้อหลักของการตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity) ใน AWS"
+    },
+    {
+      "question": "A company needs to establish a dedicated network connection from on premises to AWS. The connection must provide consistent, low-latency network performance. Which AWS service should the company use to meet this requirement?",
+      "options": [
+        "AWS Direct Connect",
+        "AWS Site-to-Site VPN",
+        "AWS Directory Service",
+        "AWS Transit Gateway"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Dedicated network\" และ \"low-latency\" ชี้ไปที่ Direct Connect เสมอ เพราะต้องการการเชื่อมต่อเฉพาะและรวดเร็ว",
+      "keywords_for_highlighting": [
+        "dedicated network connection",
+        "on premises",
+        "low-latency"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้สร้างการเชื่อมต่อเครือข่ายเฉพาะจาก On-Premise ไปยัง AWS ซึ่งเกี่ยวข้องกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company is running Amazon EC2 instances in a private subnet in a VPC. Which AWS service or feature can provide the EC2 instances with network connections to the internet?",
+      "options": [
+        "Gateway endpoint",
+        "NAT gateway",
+        "Network Load Balancer",
+        "Amazon Route 53"
+      ],
+      "correctAnswer": 1,
+      "explanation": "EC2 ใน private subnet ต้องการออก internet ต้องใช้ NAT Gateway เป็น \"ประตู\" สู่โลกภายนอก",
+      "keywords_for_highlighting": [
+        "private subnet",
+        "network connections",
+        "internet"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเชื่อมต่ออินสแตนซ์ EC2 ใน subnet ส่วนตัวไปยังอินเทอร์เน็ต ซึ่งเป็นเรื่องของการตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity) โดยตรง"
+    },
+    {
+      "question": "509 Which of the following are features of network ACLs as they are used in the AWS Cloud? (Select TWO.)",
+      "options": [
+        "They are stateless.",
+        "They are stateful.",
+        "They evaluate all rules before allowing traffic.",
+        "They process rules in order, starting with the lowest numbered rule, when deciding whether to allow traffic.",
+        "They operate at the instance level."
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "ACLs \"ไม่มีหัวใจ\" (stateless) และ \"มีลำดับ\" ในการตัดสินใจ (ordered rules) นึกถึง \"ACL = ไม่มีหัวใจ, มีลำดับ\"",
+      "keywords_for_highlighting": [
+        "network ACLs",
+        "features",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับคุณสมบัติของ Network ACLs ซึ่งเป็นส่วนประกอบสำคัญของการตั้งค่าเครือข่ายใน AWS Cloud โดยเฉพาะอย่างยิ่งเกี่ยวกับการควบคุมการเข้าถึงเครือข่าย (Networking and Connectivity)"
+    },
+    {
+      "question": "A company wants to securely access an Amazon S3 bucket from an Amazon EC2 instance without accessing the internet. What should the company use to accomplish this goal?",
+      "options": [
+        "VPN connection",
+        "Internet gateway",
+        "VPC endpoint",
+        "NAT gateway"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ต้องการเข้า S3 จาก EC2 แบบปลอดภัย *โดยไม่ผ่านอินเทอร์เน็ต* นึกถึง **VPC endpoint** เลย!",
+      "keywords_for_highlighting": [
+        "securely access",
+        "S3 bucket",
+        "EC2 instance",
+        "without accessing the internet"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเชื่อมต่อ EC2 instance กับ S3 bucket ภายใน VPC โดยไม่ผ่านอินเทอร์เน็ต ซึ่งเป็นเรื่องของการตั้งค่าเครือข่ายและการเชื่อมต่อภายใน AWS. VPC endpoint เป็นโซลูชันที่เหมาะสมที่สุดสำหรับการเชื่อมต่อบริการ AWS ภายใน VPC อย่างปลอดภัยและไม่ผ่านอินเทอร์เน็ต"
+    },
+    {
+      "question": "A company uses AWS and has a VPC that includes two public subnets. The company needs to allow and deny specific inbound and outbound traffic for each public subnet. Which AWS service or tool can the company use to meet this requirement?",
+      "options": [
+        "Network ACL",
+        "AWSWAF",
+        "VPC route table entry",
+        "Security group"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ต้องการควบคุม traffic เข้าออกของ **subnet** แบบ allow/deny เฉพาะเจาะจง ต้องใช้ Network ACL",
+      "keywords_for_highlighting": [
+        "VPC",
+        "public subnets",
+        "allow and deny",
+        "inbound and outbound traffic",
+        "subnet"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการควบคุมทราฟฟิกเครือข่ายภายใน VPC ซึ่งเป็นส่วนหนึ่งของการตั้งค่าเครือข่ายและการเชื่อมต่อใน AWS"
+    },
+    {
+      "question": "A company is building AWS architecture to deliver real-time data feeds from an on- premises data center into an application that runs on AWS. The company needs a consistent network connection with minimal latency. What should the company use to connect the application and the data center to meet these requirements?",
+      "options": [
+        "AWS Direct Connect",
+        "Public internet",
+        "AWS VPN",
+        "Amazon Connect"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Real-time data\", \"minimal latency\", และ \"consistent network connection\" เจอปุ๊บ เลือก Direct Connect ปั๊บ!",
+      "keywords_for_highlighting": [
+        "real-time data",
+        "minimal latency",
+        "consistent network connection",
+        "on-premises data center"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเชื่อมต่อเครือข่ายระหว่าง on-premises data center และ AWS โดยเฉพาะเรื่อง latency และความสม่ำเสมอ ซึ่งเป็นประเด็นหลักของการตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)"
+    },
+    {
+      "question": "Which AWS service or feature can a company use to create a private, secured, and scalable network environment in the AWS Cloud?",
+      "options": [
+        "Amazon Elastic Container Service (Amazon ECS)",
+        "Amazon S3",
+        "Amazon VPC",
+        "Route tables"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"เครือข่ายส่วนตัว, ปลอดภัย, ขยายขนาดได้\" ใน AWS ให้คิดถึง \"VPC\" (Virtual Private Cloud) เสมอ",
+      "keywords_for_highlighting": [
+        "private",
+        "secured",
+        "scalable",
+        "network environment"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามถามถึงบริการที่ใช้สร้างเครือข่ายส่วนตัวที่ปลอดภัยและปรับขนาดได้ใน AWS Cloud ซึ่งเป็นเรื่องเกี่ยวกับการตั้งค่าเครือข่ายและการเชื่อมต่อโดยตรง"
+    },
+    {
+      "question": "A company wants to use AWS. The company has stringent requirements about low-latency access to on-premises systems and data residency. Which AWS service should the company use to design a solution that meets these requirements?",
+      "options": [
+        "AWS Wavelength",
+        "AWS Transit Gateway",
+        "AWS Ground Station",
+        "AWS Outposts"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"On-premises\" และ \"data residency\" สื่อถึงต้องมี AWS อยู่ใกล้ๆ ที่บริษัท ดังนั้นเลือก \"Outposts\" ที่แปลว่าด่านหน้า ซึ่งสื่อถึงการนำ AWS มาวางใกล้ตัว",
+      "keywords_for_highlighting": [
+        "low-latency",
+        "on-premises",
+        "data residency"
+      ],
+      "assigned_category_id_by_gemini": 12,
+      "assigned_category_name_by_gemini": "การตั้งค่าเครือข่ายและการเชื่อมต่อ (Networking and Connectivity)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ low-latency access to on-premises systems และ data residency เกี่ยวข้องกับการเชื่อมต่อเครือข่ายระหว่าง AWS และ on-premises ซึ่งเป็นหัวใจหลักของหมวดหมู่การตั้งค่าเครือข่ายและการเชื่อมต่อ"
+    }
+  ]
+}

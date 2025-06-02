@@ -1,0 +1,733 @@
+{
+  "quizTitle": "ประโยชน์ของ Cloud Computing (ข้อประมาณ 220 - 484 จาก Dump เดิม) - 36 ข้อ",
+  "questions": [
+    {
+      "question": "A retail company is building a new mobile app. The company is evaluating whether to build   116 the app at an on-premises data center or in the AWS Cloud. Which of the following are benefits of building this app in the AWS Cloud? (Select TWO.)",
+      "options": [
+        "A large upfront capital expense and low variable expenses",
+        "Increased speed for trying out new projects",
+        "Complete control over the physical security of the infrastructure",
+        "Flexibility to scale up in minutes as the application becomes popular",
+        "Ability to pick the specific data centers that will host the application servers"
+      ],
+      "correctAnswer": [
+        0,
+        3
+      ],
+      "explanation": "\"Mobile app ใน Cloud\" นึกถึงความ \"ยืดหยุ่น\" ในการขยาย (scale) และ \"ไม่ต้องลงทุนเยอะ\" ตั้งแต่แรก (upfront capital expense น้อยกว่า)",
+      "keywords_for_highlighting": [
+        "mobile app",
+        "AWS Cloud",
+        "benefits"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงข้อดีของการสร้างแอปพลิเคชันบน AWS Cloud ซึ่งเป็นหัวใจหลักของประโยชน์ของ Cloud Computing"
+    },
+    {
+      "question": "Which of the following are benefits that a company receives when it moves an on-premises production workload to AWS? (Select TWO.)",
+      "options": [
+        "AWS trains the company's staff on the use of all the AWS services.",
+        "AWS manages all security in the cloud.",
+        "AWS offers free support from technical account managers (TAMs).",
+        "AWS offers high availability.",
+        "AWS provides economies of scale."
+      ],
+      "correctAnswer": [
+        3,
+        4
+      ],
+      "explanation": "\"ย้ายงานขึ้น AWS\" นึกถึง \"พร้อมใช้งานเสมอ\" (High Availability) และ \"ประหยัดต้นทุน\" (Economies of Scale)",
+      "keywords_for_highlighting": [
+        "on-premises",
+        "production workload",
+        "AWS",
+        "benefits"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามถามถึงประโยชน์ที่บริษัทได้รับจากการย้าย workload ไปยัง AWS ซึ่งเป็นหัวใจหลักของประโยชน์ของ Cloud Computing"
+    },
+    {
+      "question": "Which AWS benefit is demonstrated by on-demand technology services that enable companies to replace   142 upfront fixed expenses with variable expenses?",
+      "options": [
+        "High availability",
+        "Economies of scale",
+        "Pay-as-you-go pricing",
+        "Global reach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"เปลี่ยนค่าใช้จ่ายคงที่ เป็น ค่าใช้จ่ายผันแปร\" ให้คิดถึง \"ประหยัดจากขนาด\" (Economies of Scale) เพราะการใช้ทรัพยากรตามความต้องการทำให้ลดต้นทุนโดยรวมได้",
+      "keywords_for_highlighting": [
+        "on-demand",
+        "fixed expenses",
+        "variable expenses"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงประโยชน์ของการใช้ AWS โดยเฉพาะการเปลี่ยนค่าใช้จ่ายคงที่ล่วงหน้าเป็นค่าใช้จ่ายผันแปร ซึ่งเป็นลักษณะสำคัญของ Cloud Computing และโมเดล Pay-as-you-go"
+    },
+    {
+      "question": "Which of the following is an advantage that users experience when they move on-premises workloads to the AWS Cloud?",
+      "options": [
+        "Elimination of expenses for running and maintaining data centers",
+        "Price discounts that are identical to discounts from hardware providers",
+        "Distribution of all operational controls to AWS",
+        "Elimination of operational expenses"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ย้ายไป AWS\" นึกถึง \"ไม่ต้องดูแล Data Center เอง\" ประหยัดค่าใช้จ่าย!",
+      "keywords_for_highlighting": [
+        "on-premises workloads",
+        "AWS Cloud",
+        "advantage"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงข้อดีที่ผู้ใช้ได้รับจากการย้าย workloads ไปยัง AWS Cloud ซึ่งเป็นหัวใจหลักของประโยชน์ของ Cloud Computing"
+    },
+    {
+      "question": "A company wants its workload to perform consistently and correctly. Which benefit of AWS Cloud computing does this goal represent?",
+      "options": [
+        "Security",
+        "Elasticity",
+        "Pay-as-you-go pricing",
+        "Reliability"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"สม่ำเสมอและถูกต้อง\" นึกถึง \"ความน่าเชื่อถือ\" เพราะระบบที่น่าเชื่อถือต้องทำงานได้สม่ำเสมอและถูกต้อง",
+      "keywords_for_highlighting": [
+        "workload",
+        "perform consistently",
+        "correctly"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงประโยชน์ของ AWS Cloud computing ที่เกี่ยวข้องกับการทำงานของ workload อย่างสม่ำเสมอและถูกต้อง ซึ่งตรงกับหัวข้อประโยชน์ของ Cloud Computing โดยตรง"
+    },
+    {
+      "question": "Which cloud concept is demonstrated by using AWS Compute Optimizer?",
+      "options": [
+        "Security validation",
+        "Rightsizing",
+        "Elasticity",
+        "Global reach"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Compute Optimizer ช่วย \"Optimize\" ขนาด (Size) ของทรัพยากร Compute ให้เหมาะสม = Rightsizing",
+      "keywords_for_highlighting": [
+        "Compute Optimizer"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "AWS Compute Optimizer ช่วยให้ปรับขนาดทรัพยากรให้เหมาะสม ซึ่งเป็นประโยชน์หลักของ Cloud Computing ในด้านการประหยัดต้นทุนและเพิ่มประสิทธิภาพ"
+    },
+    {
+      "question": "Which benefits can customers gain by using AWS Marketplace? (Select TWO.)",
+      "options": [
+        "Speed of business",
+        "Fewer legal objections",
+        "Ability to pay with credit cards",
+        "No requirement for product licenses for any products",
+        "Free use of all services for the first hour"
+      ],
+      "correctAnswer": [
+        0,
+        1
+      ],
+      "explanation": "AWS Marketplace ช่วยให้ธุรกิจ **เร็วขึ้น** และ **ลดปัญหาทางกฎหมาย** เพราะมีสินค้าที่ตรวจสอบแล้วพร้อมใช้งาน",
+      "keywords_for_highlighting": [
+        "AWS Marketplace",
+        "benefits"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS Marketplace เน้นที่ประโยชน์ที่ลูกค้าจะได้รับ ซึ่งเป็นส่วนหนึ่งของประโยชน์โดยรวมของการใช้ Cloud Computing"
+    },
+    {
+      "question": "Which AWS Cloud benefit describes the ability to acquire resources as they are needed and release resources when they are no longer needed?",
+      "options": [
+        "Economies of scale",
+        "Elasticity",
+        "Agility",
+        "Security"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ได้เมื่อต้องการ เลิกเมื่อไม่ใช้\" นึกถึงยางยืด (Elastic) ที่ยืดหดได้ตามความต้องการ",
+      "keywords_for_highlighting": [
+        "acquire resources as they are needed",
+        "release resources when they are no longer needed"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงประโยชน์ของการใช้ AWS Cloud โดยเฉพาะความสามารถในการปรับขนาดทรัพยากรตามความต้องการ ซึ่งเป็นลักษณะสำคัญของ Cloud Computing"
+    },
+    {
+      "question": "220 A company wants to use the latest technologies and wants to minimize its capital investment. Instead of upgrading on-premises infrastructure, the company wants to move to the AWS Cloud. Which AWS Cloud benefit does this scenario describe?",
+      "options": [
+        "Increased speed to market",
+        "The trade of infrastructure expenses for operating expenses",
+        "Massive economies of scale",
+        "The ability to go global in minutes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Minimize capital investment\" (ลดการลงทุนด้านทุน) มักจะมาคู่กับ \"trade of infrastructure expenses for operating expenses\" (เปลี่ยนค่าใช้จ่ายโครงสร้างพื้นฐานเป็นค่าใช้จ่ายในการดำเนินงาน) เพราะ AWS ช่วยลดค่าใช้จ่ายในการซื้อและบำรุงรักษาฮาร์ดแวร์",
+      "keywords_for_highlighting": [
+        "minimize capital investment",
+        "move to the AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามเน้นที่ประโยชน์ของการย้ายไปใช้ AWS Cloud โดยเฉพาะการลดค่าใช้จ่ายด้านทุน (Capital Investment) และเปลี่ยนเป็นค่าใช้จ่ายในการดำเนินงาน (Operating Expenses) ซึ่งเป็นหนึ่งในประโยชน์หลักของ Cloud Computing"
+    },
+    {
+      "question": "223 Which scenarios represent the concept of elasticity on AWS? (Select TWO.)",
+      "options": [
+        "Scaling the number of Amazon EC2 instances based on traffic",
+        "Resizing Amazon RDS instances as business needs change",
+        "Automatically directing traffic to less-utilized Amazon EC2 instances",
+        "Using AWS compliance documents to accelerate the compliance process",
+        "Having the ability to create and govern environments using code"
+      ],
+      "correctAnswer": [
+        0,
+        1
+      ],
+      "explanation": "Elasticity คือการปรับขนาดทรัพยากร (EC2, RDS) ตามความต้องการที่เปลี่ยนแปลงไป (traffic, business needs)",
+      "keywords_for_highlighting": [
+        "elasticity",
+        "AWS"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงสถานการณ์ที่แสดงถึง \"elasticity\" ซึ่งเป็นหนึ่งในประโยชน์หลักของ Cloud Computing ที่ทำให้สามารถปรับขนาดทรัพยากรได้ตามความต้องการ"
+    },
+    {
+      "question": "Which of the following is a benefit of operating in the AWS Cloud?",
+      "options": [
+        "The ability to migrate on-premises network devices to the AWS Cloud",
+        "The ability to expand compute, storage, and memory when needed",
+        "The ability to host custom hardware in the AWS Cloud",
+        "The ability to customize the underlying hypervisor layer for Amazon EC2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "AWS Cloud คือความยืดหยุ่น! มองหาคำตอบที่พูดถึงการขยายทรัพยากรได้ตามต้องการ (compute, storage, memory)",
+      "keywords_for_highlighting": [
+        "benefit",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามถามถึง \"benefit of operating in the AWS Cloud\" ซึ่งเป็นหัวใจหลักของประโยชน์ของการใช้ Cloud Computing"
+    },
+    {
+      "question": "Which abilities are benefits of the AWS Cloud? (Select TWO.)",
+      "options": [
+        "Trade variable expenses for capital expenses.",
+        "Deploy globally in minutes.",
+        "Plan capacity in advance of deployments.",
+        "Take advantage of economies of scale.",
+        "Reduce dependencies on network connectivity."
+      ],
+      "correctAnswer": [
+        0,
+        1
+      ],
+      "explanation": "\"AWS Cloud\" คือจ่ายตามใช้ (Variable) และขยายได้ทั่วโลกอย่างรวดเร็ว (Globally in Minutes)",
+      "keywords_for_highlighting": [
+        "abilities",
+        "benefits",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามถามถึง \"benefits of the AWS Cloud\" ซึ่งตรงกับหมวดหมู่ \"ประโยชน์ของ Cloud Computing\" โดยตรง"
+    },
+    {
+      "question": "Which statements explain the business value of migration to the AWS Cloud? (Select TWO.)",
+      "options": [
+        "The migration of enterprise applications to the AWS Cloud makes these applications automatically available on mobile devices",
+        "Companies that migrate to the AWS Cloud eliminate the need to plan for high availability and disaster recovery.",
+        "Companies that migrate to the AWS Cloud reduce IT costs related to infrastructure, freeing budget for reinvestment in otherareas.",
+        "Applications are modernized because migration to the AWS Cloud requires companies to rearchitect and rewrite allenterprise applications."
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "\"Business Value\" ในโจทย์เน้นเรื่อง \"ลดค่าใช้จ่าย\" และ \"คืนงบประมาณ\" ให้ลงทุนในส่วนอื่นได้ (Cost Reduction & Reinvestment).",
+      "keywords_for_highlighting": [
+        "business value",
+        "migration",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึง \"business value\" หรือคุณค่าทางธุรกิจของการย้ายระบบไป AWS Cloud ซึ่งเป็นหัวใจหลักของประโยชน์ที่ Cloud Computing มอบให้"
+    },
+    {
+      "question": "A company must be able to develop, test, and launch an application in the AWS Cloud quickly. Which advantage of cloud computing will meet these requirements?",
+      "options": [
+        "Stop guessing capacity",
+        "Trade fixed expense for variable expense",
+        "Achieve economies of scale",
+        "Increase speed and agility"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ถ้าโจทย์ถามถึงการพัฒนา, ทดสอบ, และเปิดตัวแอปพลิเคชันอย่างรวดเร็ว ให้มองหาคำตอบที่เกี่ยวข้องกับ \"ความเร็ว\" และ \"ความคล่องตัว\" ในการปรับตัว",
+      "keywords_for_highlighting": [
+        "develop",
+        "test",
+        "launch",
+        "quickly"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงข้อดีของ Cloud Computing ที่ช่วยให้บริษัทพัฒนา ทดสอบ และเปิดตัวแอปพลิเคชันได้อย่างรวดเร็ว ซึ่งเป็นลักษณะเฉพาะของประโยชน์ของ Cloud Computing โดยตรง"
+    },
+    {
+      "question": "Which of the following is a benefit of using an AWS managed service?",
+      "options": [
+        "Reduced operational overhead for a company's IT staff",
+        "Increased fixed costs that can be predicted by a finance team",
+        "Removal of the need to have a backup strategy",
+        "Removal of the need to follow compliance standards"
+      ],
+      "correctAnswer": 0,
+      "explanation": "บริการ Managed ลดภาระงาน! มองหาคำว่า \"managed service\" ในโจทย์ แล้วนึกถึงการลดงานให้ทีม IT",
+      "keywords_for_highlighting": [
+        "managed service",
+        "benefit"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงประโยชน์ของการใช้บริการที่มีการจัดการของ AWS ซึ่งเป็นหัวใจสำคัญของประโยชน์ของ Cloud Computing โดยรวม เช่น การลดภาระการจัดการโครงสร้างพื้นฐาน"
+    },
+    {
+      "question": "AWS has the ability to achieve lower pay-as-you-go pricing by aggregating usage across hundreds of thousands of users. This describes which advantage of the AWS Cloud?",
+      "options": [
+        "Launch globally in minutes",
+        "Increase speed and agility",
+        "High economies of scale",
+        "No guessing about compute capacity"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Pay-as-you-go\" และ \"aggregate usage\" คือสัญญาณว่า AWS ใช้ประโยชน์จาก \"ขนาดเศรษฐกิจ\" ที่ใหญ่โตเพื่อลดราคา",
+      "keywords_for_highlighting": [
+        "pay-as-you-go",
+        "aggregate usage",
+        "hundreds of thousands of users"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงข้อได้เปรียบของการใช้ AWS Cloud โดยเฉพาะเรื่องการประหยัดต้นทุนจาก Economies of Scale ซึ่งเป็นหนึ่งในประโยชน์หลักของ Cloud Computing"
+    },
+    {
+      "question": "What does the concept of agility mean in AWS Cloud computing? (Select TWO.)",
+      "options": [
+        "The speed at which AWS resources are implemented",
+        "The speed at which AWS creates new AWS Regions",
+        "The ability to experiment quickly",
+        "The elimination of wasted capacity",
+        "The low cost of entry into cloud computing   321"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "\"Agility\" ใน AWS คือความเร็วในการสร้างทรัพยากร (AWS resources) และความสามารถในการทดลองสิ่งใหม่ๆ ได้อย่างรวดเร็ว (experiment quickly) นึกถึง Agile development ที่เน้นการปรับตัวไว",
+      "keywords_for_highlighting": [
+        "agility",
+        "AWS Cloud computing"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามเกี่ยวกับความหมายของ \"agility\" ใน AWS Cloud computing นั้นเกี่ยวข้องโดยตรงกับประโยชน์ที่ได้รับจากการใช้ Cloud Computing ซึ่ง agility เป็นหนึ่งในข้อได้เปรียบหลัก"
+    },
+    {
+      "question": "Which advantage of cloud computing allows users to scale resources up and down based on the amount of load that an application supports?",
+      "options": [
+        "Go global in minutes",
+        "Stop guessing capacity",
+        "Benefit from massive economies of scale",
+        "Trade fixed expense for variable expense"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ไม่ต้องเดา\" คือหัวใจของการปรับขนาดทรัพยากรตามโหลดงานในคลาวด์",
+      "keywords_for_highlighting": [
+        "scale resources",
+        "load",
+        "application"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามเกี่ยวกับความสามารถในการปรับขนาดทรัพยากรขึ้นลงตามโหลดของแอปพลิเคชัน เป็นหนึ่งในประโยชน์หลักของ Cloud Computing ที่เรียกว่า Elasticity หรือ Scalability"
+    },
+    {
+      "question": "A company wants to migrate its on-premises infrastructure to the AWS Cloud. Which advantage of cloud computing will help the company reduce upfront costs?",
+      "options": [
+        "Go global in minutes",
+        "Increase speed and agility",
+        "Benefit from massive economies of scale",
+        "Trade fixed expense for variable expense"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ย้ายไป Cloud ลดค่าใช้จ่ายเริ่มต้น (upfront costs) ให้จำว่าเป็นการ 'เปลี่ยนค่าใช้จ่ายคงที่ เป็น ค่าใช้จ่ายแปรผัน'\"",
+      "keywords_for_highlighting": [
+        "on-premises",
+        "migrate",
+        "AWS Cloud",
+        "reduce upfront costs"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามถามถึงข้อดีของการใช้ Cloud Computing ที่ช่วยลดต้นทุนเริ่มต้น ซึ่งเป็นหัวใจหลักของประโยชน์ของการใช้ Cloud Computing"
+    },
+    {
+      "question": "Which AWS Cloud benefit gives a company the ability to quickly deploy cloud resources to access compute, storage, and database infrastructures in a matter of minutes?",
+      "options": [
+        "Elasticity",
+        "Cost savings",
+        "Agility",
+        "Reliability"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"deploy quickly\" หรือ \"อย่างรวดเร็ว\" คือ Agility เพราะ Agility หมายถึงความคล่องตัวในการปรับเปลี่ยนและตอบสนองต่อความต้องการทางธุรกิจที่เปลี่ยนแปลงไปอย่างรวดเร็ว",
+      "keywords_for_highlighting": [
+        "quickly deploy",
+        "minutes",
+        "compute",
+        "storage",
+        "database infrastructures"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึง \"benefit\" หรือประโยชน์ของ AWS Cloud ซึ่งตรงกับหมวดหมู่ \"ประโยชน์ของ Cloud Computing\" โดยตรง"
+    },
+    {
+      "question": "Which option is a benefit of the economies of scale based on the advantages of cloud computing?",
+      "options": [
+        "The ability to trade variable expense for fixed expense",
+        "Increased speed and agility",
+        "Lower variable costs over fixed costs",
+        "Increased operational costs across data centers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Economy of scale\" ใน Cloud คือการขยายขนาดแล้วได้ประโยชน์เรื่องความเร็วและความคล่องตัว (speed and agility) ที่มากขึ้น",
+      "keywords_for_highlighting": [
+        "economies of scale",
+        "benefit",
+        "cloud computing"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามถามถึงประโยชน์ของ economies of scale ซึ่งเป็นหนึ่งในประโยชน์หลักของ cloud computing"
+    },
+    {
+      "question": "What is a benefit of using AWS serverless computing?",
+      "options": [
+        "Application deployment and management are not required",
+        "Application security will be fully managed by AWS",
+        "Monitoring and logging are not needed",
+        "Management of infrastructure is offloaded to AWS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Serverless คือไม่ต้องจัดการอะไรเลย! เน้น \"ไม่ต้อง\" ทำอะไรเกี่ยวกับแอปพลิเคชัน",
+      "keywords_for_highlighting": [
+        "serverless",
+        "benefit"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามถามถึง \"benefit\" หรือประโยชน์ของการใช้ serverless computing ซึ่งเป็นลักษณะเด่นและข้อดีของ cloud computing โดยรวม"
+    },
+    {
+      "question": "Which cloud computing advantage is a company applying when it uses AWS Regions to increase application availability to users in different countries?",
+      "options": [
+        "Pay-as-you-go pricing",
+        "Capacity forecasting",
+        "Economies of scale",
+        "Global reach"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Regions\" และ \"countries\" คือการกระจายไปทั่วโลก ดังนั้นต้องตอบ \"Global reach\" เพื่อให้ครอบคลุมทั่วโลก",
+      "keywords_for_highlighting": [
+        "AWS Regions",
+        "application availability",
+        "different countries"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงข้อดีของการใช้ Cloud Computing (AWS Regions) เพื่อเพิ่มความพร้อมใช้งานของแอปพลิเคชัน ซึ่งเป็นหนึ่งในประโยชน์หลักของ Cloud Computing"
+    },
+    {
+      "question": "Which benefits does a company gain when the company moves from on-premises IT architecture to the AWS Cloud? (Select TWO.)",
+      "options": [
+        "Reduced or eliminated tasks for hardware troubleshooting, capacity planning, and procurement",
+        "Elimination of the need for trained IT staff",
+        "Automatic security configuration of all applications that are migrated to the cloud",
+        "Elimination of the need for disaster recovery planning",
+        "Faster deployment of new features and applications"
+      ],
+      "correctAnswer": [
+        0,
+        4
+      ],
+      "explanation": "ย้ายไป AWS คือลดงานดูแลฮาร์ดแวร์ และปล่อยของใหม่ได้ไวขึ้น!",
+      "keywords_for_highlighting": [
+        "on-premises",
+        "AWS Cloud",
+        "benefits"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงประโยชน์ที่บริษัทจะได้รับจากการย้ายจากระบบ IT แบบ On-Premises ไปยัง AWS Cloud ซึ่งเป็นหัวใจหลักของประโยชน์ของ Cloud Computing"
+    },
+    {
+      "question": "Which of the following are advantages of moving to the AWS Cloud? (Select TWO.)",
+      "options": [
+        "Users can implement all AWS services in seconds.",
+        "AWS assumes all responsibility for the security of infrastructure and applications.",
+        "Users experience increased speed and agility.",
+        "Users benefit from massive economies of scale.",
+        "Users can move hardware from their data center to the AWS Cloud."
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "\"ย้ายไป AWS เร็วและถูก\" (จำว่าการย้ายไป AWS ทำให้ได้ความเร็ว/คล่องตัวมากขึ้น และประหยัดค่าใช้จ่ายจาก Economies of Scale)",
+      "keywords_for_highlighting": [
+        "advantages",
+        "moving",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามถามถึงข้อดีของการย้ายไปใช้ AWS Cloud ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"ประโยชน์ของ Cloud Computing\""
+    },
+    {
+      "question": "Which of the following is an advantage that the AWS Cloud provides to users?",
+      "options": [
+        "Users eliminate the need to guess about infrastructure capacity requirements.",
+        "Users decrease their variable costs by maintaining sole ownership of IT hardware.   427",
+        "Users maintain control of underlying IT infrastructure hardware.",
+        "Users maintain control of operating systems for managed services."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ไม่ต้องเดา\" เรื่องความจุ (Capacity) เพราะ AWS ยืดหยุ่นได้ตามต้องการ",
+      "keywords_for_highlighting": [
+        "advantage",
+        "AWS Cloud",
+        "infrastructure capacity requirements"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามถามถึงข้อดีที่ AWS Cloud มอบให้ผู้ใช้ ซึ่งเป็นหัวใจหลักของประโยชน์ของ Cloud Computing"
+    },
+    {
+      "question": "How does AWS Cloud computing help businesses reduce costs? (Select TWO.)",
+      "options": [
+        "AWS changes the name prices for servicers in every AWS Region.",
+        "AWS enables capacity in be adjusted un demand.",
+        "AWS offers discounts tor Amazon LC2 instances that remain Idle tor more man 1 week.",
+        "AWS does not charge for data sent from the AWS Cloud to the internet.",
+        "AWS eliminates many of the costs of building and maintaining on-premises data centers."
+      ],
+      "correctAnswer": [
+        1,
+        4
+      ],
+      "explanation": "ลดต้นทุนต้องนึกถึงความยืดหยุ่น (ปรับตามความต้องการ) และการไม่ต้องแบกรับภาระดูแลศูนย์ข้อมูลเอง",
+      "keywords_for_highlighting": [
+        "reduce costs",
+        "AWS Cloud computing"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงวิธีที่ AWS Cloud Computing ช่วยลดต้นทุน ซึ่งเป็นประโยชน์หลักประการหนึ่งของการใช้ Cloud Computing"
+    },
+    {
+      "question": "Elasticity in the AWS Cloud refers to which of the following? (Select TWO.)",
+      "options": [
+        "How quickly an Amazon EC2 instance can be restarted",
+        "The ability to rightsized resources as demand shifts",
+        "The maximum amount of RAM an Amazon EC2 instance can use",
+        "The pay-as-you-go billing model",
+        "How easily resources can be procured when they are needed"
+      ],
+      "correctAnswer": [
+        1,
+        4
+      ],
+      "explanation": "\"Elasticity\" ใน AWS คือความยืดหยุ่น ปรับขนาดตามความต้องการ (rightsize) และจัดหาทรัพยากรได้ง่ายเมื่อต้องการ (procure easily) นึกถึงยางยืดที่ยืดหดได้ตามแรงดึง",
+      "keywords_for_highlighting": [
+        "Elasticity",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "Elasticity เป็นหนึ่งในประโยชน์หลักของ Cloud Computing ที่ช่วยให้ปรับขนาดทรัพยากรได้ตามความต้องการ"
+    },
+    {
+      "question": "Which characteristic of the AWS Cloud helps users eliminate underutilized CPU capacity'?",
+      "options": [
+        "Agility",
+        "Elasticity",
+        "Reliability",
+        "Durability"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"CPU ที่ไม่ได้ใช้\" คือทรัพยากรที่เสียเปล่า Elasticity ช่วยให้ปรับขนาดได้ตามต้องการ เหมือนยางยืดที่ยืดหดได้ตามการใช้งาน CPU จริง",
+      "keywords_for_highlighting": [
+        "underutilized CPU capacity"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงคุณสมบัติของ AWS Cloud ที่ช่วยลดการใช้ CPU ที่ไม่เต็มประสิทธิภาพ ซึ่งเป็นประโยชน์หลักของ Cloud Computing ในด้านการประหยัดต้นทุนและเพิ่มประสิทธิภาพการใช้งานทรัพยากร"
+    },
+    {
+      "question": "484 A company is considering a move to the AWS Cloud. The company wants to be able to scale its compute resources as needed to accommodate changing loads. Which benefit of the AWS Cloud does this scenario describe?",
+      "options": [
+        "Global deployment in minutes",
+        "Cost savings",
+        "Agility",
+        "Elasticity"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Scale compute resources as needed\" หรือ \"ปรับขนาดทรัพยากรคอมพิวเตอร์ตามต้องการ\" ให้คิดถึง **Elasticity** ที่แปลว่าความยืดหยุ่นในการปรับขนาด",
+      "keywords_for_highlighting": [
+        "scale compute resources",
+        "changing loads"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงประโยชน์ของการใช้ AWS Cloud โดยเฉพาะความสามารถในการปรับขนาดทรัพยากรตามความต้องการ ซึ่งเป็นลักษณะสำคัญของ Cloud Computing"
+    },
+    {
+      "question": "A company wants to test a new application. Which AWS principle will help the company test the application?   486",
+      "options": [
+        "Make long-term commitments in exchange for a cost discount.",
+        "Scale up and down when needed without any long-term commitments.",
+        "Have total control over the application infrastructure.",
+        "Manage all of the maintenance tasks associated with the cloud."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ทดสอบแอปใหม่\" นึกถึงความยืดหยุ่นในการปรับขนาดขึ้นลงได้ตามต้องการ (Scale up/down) โดยไม่ต้องผูกมัดระยะยาว",
+      "keywords_for_highlighting": [
+        "test",
+        "new application"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริษัทที่ต้องการทดสอบแอปพลิเคชันใหม่ และตัวเลือก B เกี่ยวกับการปรับขนาดขึ้นลงได้ตามต้องการโดยไม่มีข้อผูกมัดระยะยาว เป็นประโยชน์หลักของ Cloud Computing ในด้านความยืดหยุ่นและความคล่องตัว"
+    },
+    {
+      "question": "An ecommerce company plans to move its data center workload to the AWS Cloud to support highly dynamic usage patterns. Which benefits make the AWS Cloud cost-effective for the migration of this type of workload? (Select TWO.)",
+      "options": [
+        "Reliability",
+        "Security",
+        "Elasticity",
+        "Pay-as-you-go resource pricing",
+        "High availability"
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "\"ใช้งานเปลี่ยนแปลงสูง\" (dynamic usage) ต้อง \"ยืดหยุ่น\" (Elasticity) และจ่ายเท่าที่ใช้ (Pay-as-you-go) เท่านั้น!",
+      "keywords_for_highlighting": [
+        "data center workload",
+        "highly dynamic usage patterns",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามเน้นที่ \"benefits make the AWS Cloud cost-effective\" ซึ่งเป็นลักษณะสำคัญของประโยชน์ของ Cloud Computing โดยเฉพาะอย่างยิ่งในบริบทของการย้าย workload ที่มีลักษณะการใช้งานแบบ dynamic"
+    },
+    {
+      "question": "A company's gaming application has been gaining popularity. There has been high demand for the gaming application in countries where the company does not currently deploy the application. Which advantage of the AWS Cloud can help the company to deploy the application to more countries around the world?",
+      "options": [
+        "Increase speed and agility",
+        "Go global in minutes",
+        "Trade fixed expense for variable expense",
+        "Benefit from massive economies of scale"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"เกมดัง อยากไปทั่วโลกไวๆ ต้อง AWS 'Go global in minutes' เลย!\"",
+      "keywords_for_highlighting": [
+        "gaming application",
+        "high demand",
+        "countries",
+        "deploy",
+        "around the world"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามเน้นที่ความสามารถของ AWS Cloud ในการช่วยให้บริษัทขยายการใช้งานแอปพลิเคชันไปยังประเทศต่างๆ ทั่วโลก ซึ่งเป็นประโยชน์หลักของ Cloud Computing ในด้านความยืดหยุ่นและความสามารถในการปรับขนาดทั่วโลก"
+    },
+    {
+      "question": "Which options are benefits of using third-party software from AWS Marketplace? (Select TWO.)",
+      "options": [
+        "The software's data encryption is managed by a third-party vendor.",
+        "The software has been evaluated by vendors to ensure that it will run on AWS.",
+        "Users do not need to upgrade to newer software versions.",
+        "Users do not need to conduct security testing on the software.",
+        "Users can launch preconfigured software in only a few steps."
+      ],
+      "correctAnswer": [
+        1,
+        4
+      ],
+      "explanation": "AWS Marketplace เหมือนร้านค้าที่คัดสรรมาแล้ว ดังนั้น \"evaluated by vendors\" และ \"preconfigured software\" คือจุดเด่นที่ช่วยให้ชีวิตง่ายขึ้น",
+      "keywords_for_highlighting": [
+        "third-party software",
+        "AWS Marketplace",
+        "benefits"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงข้อดีของการใช้ซอฟต์แวร์จาก AWS Marketplace ซึ่งเป็นส่วนหนึ่งของประโยชน์ของการใช้ Cloud Computing ที่ช่วยลดภาระในการจัดการและติดตั้งซอฟต์แวร์ด้วยตนเอง"
+    },
+    {
+      "question": "A company migrated to the AWS Cloud. Now the company pays for services on an as-needed basis. Which advantage of cloud computing is the company benefiting from?",
+      "options": [
+        "Stop spending money running and maintaining data centers   507",
+        "Increase speed and agility",
+        "Go global in minutes",
+        "Trade fixed expense for variable expense"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"จ่ายตามที่ใช้\" ในคลาวด์ = เปลี่ยนจาก \"ค่าใช้จ่ายคงที่\" เป็น \"ค่าใช้จ่ายแปรผัน\"",
+      "keywords_for_highlighting": [
+        "as-needed basis",
+        "advantage",
+        "cloud computing"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามนี้ถามถึงข้อดีของการใช้ Cloud Computing โดยเฉพาะการจ่ายตามการใช้งานจริง (as-needed basis) ซึ่งเป็นหนึ่งในประโยชน์หลักของ Cloud Computing ที่เรียกว่า \"Trade fixed expense for variable expense\""
+    },
+    {
+      "question": "A company wants to know more about the benefits offered by cloud computing. The company wants to understand the operational advantage of agility. How does AWS provide agility for users?",
+      "options": [
+        "The ability the ensure high availability by deploying workloads to multiple regions.",
+        "A pay-as-you-go model for many services and resources",
+        "The ability to transfer infrastructure management to the AWS Cloud",
+        "The ability to provision and deprovision resources quickly with minimal effort"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Agility\" ใน AWS คือความรวดเร็วในการปรับเปลี่ยนทรัพยากร; คิดถึง \"provision/deprovision\" ที่แปลว่าจัดหา/ยกเลิกทรัพยากรได้ไว",
+      "keywords_for_highlighting": [
+        "benefits",
+        "cloud computing",
+        "operational advantage",
+        "agility",
+        "AWS"
+      ],
+      "assigned_category_id_by_gemini": 7,
+      "assigned_category_name_by_gemini": "ประโยชน์ของ Cloud Computing",
+      "gemini_category_justification": "คำถามเน้นที่การทำความเข้าใจประโยชน์ของ Cloud Computing โดยเฉพาะอย่างยิ่งเรื่องความคล่องตัว (agility) ที่ AWS มอบให้"
+    }
+  ]
+}

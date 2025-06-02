@@ -1,0 +1,528 @@
+{
+  "quizTitle": "การจัดการบัญชีและการสนับสนุน (Account Management and Support) (ข้อประมาณ 248 - 253 จาก Dump เดิม) - 27 ข้อ",
+  "questions": [
+    {
+      "question": "A company wants to centrally manage security policies and billing services within a multi- account AWS environment. Which AWS service should the company use to meet these requirements?   124",
+      "options": [
+        "AWS Identity and Access Management (IAM)",
+        "AWS Organizations",
+        "AWS Resource Access Manager (AWS RAM)",
+        "AWS Config"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"จัดการรวมศูนย์\" และ \"หลายบัญชี AWS\" ให้คิดถึง AWS Organizations ทันที เพราะเป็นบริการที่ช่วยจัดการบัญชี AWS หลายบัญชีแบบรวมศูนย์",
+      "keywords_for_highlighting": [
+        "centrally manage",
+        "multi-account AWS environment",
+        "security policies",
+        "billing services"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการบัญชี AWS หลายบัญชี ซึ่งรวมถึงการจัดการนโยบายความปลอดภัยและการเรียกเก็บเงิน ซึ่งเป็นหน้าที่หลักของ AWS Organizations และเป็นส่วนหนึ่งของการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "Which benefit is included with an AWS Enterprise Support plan?",
+      "options": [
+        "AWS Partner Network (APN) support at no cost",
+        "Designated support from an AWS technical account manager (TAM)",
+        "On-site support from AWS engineers",
+        "AWS managed compliance as code with AWS Config"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Enterprise Support เน้นการดูแลแบบ \"เฉพาะเจาะจง\" ดังนั้นมองหา Technical Account Manager (TAM) ที่คอยดูแลเป็นพิเศษ",
+      "keywords_for_highlighting": [
+        "Enterprise Support",
+        "benefit"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามถึงสิทธิประโยชน์ที่มาพร้อมกับแผนการสนับสนุน AWS Enterprise ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "A company needs help managing multiple AWS linked accounts that are reported on a consolidated bill. Which AWS Support plan includes an AWS concierge whom the company can ask for assistance?   133",
+      "options": [
+        "AWS Developer Support",
+        "AWS Enterprise Support",
+        "AWS Business Support",
+        "AWS Basic Support"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"บัญชีเยอะ (multiple accounts), บิลรวม (consolidated bill), ต้องการคนช่วย (concierge) ต้องใช้ Enterprise Support เพราะ Enterprise คือบริการระดับสูงสุด\"",
+      "keywords_for_highlighting": [
+        "multiple AWS linked accounts",
+        "consolidated bill",
+        "AWS concierge"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับการจัดการบัญชี AWS หลายบัญชี, การเรียกเก็บเงินแบบรวม และแผนการสนับสนุน AWS ซึ่งทั้งหมดนี้เกี่ยวข้องกับการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "A large company has multiple departments. Each department has its own AWS account. Each department has purchased Amazon EC2 Reserved Instances. Some departments do not use all the Reserved Instances that they purchased, and other departments need more Reserved Instances than they purchased. The company needs to manage the AWS accounts for all the departments so that the departments can share the Reserved Instances. Which AWS service or tool should the company use to meet these requirements?",
+      "options": [
+        "AWS Systems Manager",
+        "Cost Explorer",
+        "AWS Trusted Advisor",
+        "AWS Organizations"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"หลายแผนก หลายบัญชี EC2 Reserved Instances ที่ต้องการแชร์กัน\" เจอคำเหล่านี้ ให้ตอบ \"AWS Organizations\" เพราะช่วยจัดการหลายบัญชีและแชร์ทรัพยากรได้",
+      "keywords_for_highlighting": [
+        "multiple departments",
+        "AWS account",
+        "Reserved Instances",
+        "share"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการบัญชี AWS หลายบัญชี และการแชร์ Reserved Instances ซึ่งเป็นฟังก์ชันที่เกี่ยวข้องกับการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "Which AWS service or tool helps to centrally manage billing and allow controlled access to resources across AWS accounts?",
+      "options": [
+        "AWS Identity and Access Management (IAM)",
+        "AWS Organizations",
+        "AWS Cost Explorer",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"จัดการหลายบัญชี\" และ \"ควบคุมการเข้าถึง\" นึกถึง \"องค์กร\" ที่ต้องจัดการหลายสิ่งหลายอย่างให้เป็นระเบียบ",
+      "keywords_for_highlighting": [
+        "centrally manage billing",
+        "controlled access",
+        "across AWS accounts"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การจัดการบัญชี AWS หลายบัญชี การควบคุมการเข้าถึงทรัพยากร และการจัดการการเรียกเก็บเงิน ซึ่งเป็นหัวใจหลักของการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "How does the AWS Enterprise Support Concierge team help users?",
+      "options": [
+        "Supporting application development",
+        "Providing architecture guidance",
+        "Answering billing and account inquiries",
+        "Answering questions regarding technical support cases"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Enterprise Support Concierge\" นึกถึง \"Concierge\" ในโรงแรมที่ช่วยเรื่องทั่วไป เช่น บิลและบัญชี ไม่ใช่เรื่องเทคนิค",
+      "keywords_for_highlighting": [
+        "Enterprise Support",
+        "Concierge",
+        "help users"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามเกี่ยวกับทีม AWS Enterprise Support Concierge เกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "A company wants to run its production workloads on AWS. The company needs concierge service, a designated AWS technical account manager (TAM), and technical support that is available 24 hours a day, 7 days a week. Which AWS Support plan will meet these requirements?",
+      "options": [
+        "AWS Basic Support",
+        "AWS Enterprise Support",
+        "AWS Business Support",
+        "AWS Developer Support"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ต้องการบริการระดับ \"คอนเซียจ\" และ \"Technical Account Manager (TAM)\" ต้องเลือก Enterprise Support เท่านั้น",
+      "keywords_for_highlighting": [
+        "concierge service",
+        "technical account manager (TAM)",
+        "24 hours a day",
+        "7 days a week"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามถึงแผนการสนับสนุนของ AWS ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "A company is assessing its AWS Business Support plan to determine if the plan still meets the company's needs. The company is considering switching to AWS Enterprise Support. Which additional benefit will the company receive with AWS Enterprise Support?",
+      "options": [
+        "A full set of AWS Trusted Advisor checks",
+        "Phone, email, and chat access to cloud support engineers 24 hours a day, 7 days a week",
+        "A designated technical account manager (TAM) to assist in monitoring and optimization",
+        "A consultative review and architecture guidance for the company's applications"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Enterprise Support เน้นการดูแลแบบ \"VIP\" ต้องมีคนดูแลส่วนตัว (TAM) คอยช่วยเหลือเรื่องการจัดการและปรับปรุงระบบให้ดีขึ้น",
+      "keywords_for_highlighting": [
+        "Enterprise Support",
+        "additional benefit",
+        "switching",
+        "company’s needs"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความแตกต่างของแผนการสนับสนุน AWS ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "Which task must a user perform by using the AWS account root user credentials?",
+      "options": [
+        "Make changes to AWS production resources.",
+        "Change AWS Support plans.",
+        "Access AWS Cost and Usage Reports.",
+        "Grant auditors’ access to an AWS account for a compliance audit."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Root user\" เกี่ยวข้องกับเรื่องสำคัญระดับ \"Support plans\" เพราะเป็นเรื่องของการจัดการบัญชี AWS โดยรวม",
+      "keywords_for_highlighting": [
+        "root user",
+        "task"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับงานที่ต้องทำโดยใช้ credentials ของ root user ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนของ AWS โดยเฉพาะการเปลี่ยนแปลง Support plans"
+    },
+    {
+      "question": "Which AWS Support plan is the minimum recommended tier for users who have production workloads on AWS?",
+      "options": [
+        "AWS Developer Support",
+        "AWS Enterprise Support",
+        "AWS Business Support",
+        "AWS Enterprise On-Ramp Support   240"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Production workload\" (งานที่ใช้งานจริง) ต้องการ \"Business Support\" เพื่อให้ธุรกิจดำเนินไปได้อย่างราบรื่น",
+      "keywords_for_highlighting": [
+        "production workloads",
+        "minimum recommended tier"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามถึงแผนการสนับสนุนของ AWS ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "A company needs to engage third-party consultants to help maintain and support its AWS environment and the company's business needs. Which AWS service or resource will meet these requirements?",
+      "options": [
+        "AWS Support",
+        "AWS Organizations",
+        "AWS Service Catalog",
+        "AWS Partner Network (APN)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ถ้าโจทย์พูดถึงการจ้าง \"third-party consultants\" หรือ \"ช่วยดูแลและสนับสนุน\" ให้มองหาตัวเลือกที่เกี่ยวข้องกับ \"Partner\" หรือ \"Network\" ที่เชื่อมโยงกับ AWS",
+      "keywords_for_highlighting": [
+        "third-party consultants",
+        "maintain and support",
+        "AWS environment",
+        "business needs"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามเกี่ยวข้องกับการหาแหล่งข้อมูลภายนอกเพื่อช่วยสนับสนุนและดูแลรักษาสภาพแวดล้อม AWS ซึ่งเชื่อมโยงกับการจัดการบัญชีและการสนับสนุนจาก AWS รวมถึงการใช้ประโยชน์จากเครือข่ายพันธมิตรของ AWS เพื่อการสนับสนุนเพิ่มเติม"
+    },
+    {
+      "question": "248 Which task can only an AWS account root user perform?",
+      "options": [
+        "Changing the AWS Support plan",
+        "Deleting AWS resources",
+        "Creating an Amazon EC2 instance key pair",
+        "Configuring AWS WAF"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Root user\" คือผู้มีอำนาจสูงสุด เปลี่ยน \"Support plan\" ได้เท่านั้น",
+      "keywords_for_highlighting": [
+        "root user",
+        "perform"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับงานที่ผู้ใช้ root ของบัญชี AWS สามารถทำได้ ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนของ AWS โดยตรง"
+    },
+    {
+      "question": "253 What is the LEAST expensive AWS Support plan that provides the full set of AWS Trusted Advisor best practice checks for cost optimization?",
+      "options": [
+        "AWS Enterprise Support",
+        "AWS Business Support",
+        "AWS Developer Support",
+        "AWS Basic Support"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Trusted Advisor แบบเต็ม\" เพื่อ \"Cost Optimization\" ต้อง \"Business\" ถึงจะคุ้มค่าที่สุด (ไม่แพงสุดแต่ได้ครบ)",
+      "keywords_for_highlighting": [
+        "LEAST expensive",
+        "Trusted Advisor",
+        "cost optimization"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับแผนการสนับสนุนของ AWS และผลกระทบต่อการเข้าถึงฟีเจอร์ Trusted Advisor ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "A company is migrating its data center to AWS. The company needs an AWS Support plan that provides chat access to a cloud sup engineer 24 hours a day, 7 days a week. The company does not require access to infrastructure event management. What is the MOST cost-effective AWS Support plan that meets these requirements?",
+      "options": [
+        "AWS Enterprise Support",
+        "AWS Business Support",
+        "AWS Developer Support",
+        "AWS Basic Support"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ต้องการแชท 24/7 กับวิศวกร แต่ไม่ต้องการจัดการเหตุการณ์โครงสร้างพื้นฐาน → เลือก Business Support",
+      "keywords_for_highlighting": [
+        "chat access",
+        "24 hours a day",
+        "7 days a week",
+        "infrastructure event management",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกแผนการสนับสนุนของ AWS ที่เหมาะสม ซึ่งเป็นส่วนหนึ่งของการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "Which benefit does AWS offer exclusively to users who have an AWS Enterprise Support plan?",
+      "options": [
+        "Access to a technical project manager",
+        "Access to a technical account manager (TAM)",
+        "Access to a cloud support engineer",
+        "Access to a solutions architectA company wants to automatically set up and govern a multi-account AWS environment."
+      ],
+      "correctAnswer": 1,
+      "explanation": "**Enterprise Support ต้องมี TAM (Technical Account Manager) คอยดูแลใกล้ชิด** เหมือนผู้จัดการบัญชีส่วนตัวสำหรับลูกค้าองค์กร",
+      "keywords_for_highlighting": [
+        "Enterprise Support",
+        "benefit"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามเกี่ยวกับสิทธิประโยชน์ที่ AWS มอบให้เฉพาะผู้ใช้ที่มีแผน Enterprise Support เกี่ยวข้องกับการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "A company that has multiple business units wants to centrally manage and govern its AWS Cloud environments. The company wants to automate the creation of AWS accounts, apply service control policies (SCPs), and simplify billing processes. Which AWS service or tool should the company use to meet these requirements?",
+      "options": [
+        "AWS Organizations",
+        "Cost Explorer",
+        "AWS Budgets",
+        "AWS Trusted Advisor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"จัดการหลายหน่วยธุรกิจ, ควบคุมจากศูนย์กลาง, สร้างบัญชีอัตโนมัติ\" เหล่านี้คือสัญญาณบอกว่าต้องใช้ AWS Organizations",
+      "keywords_for_highlighting": [
+        "multiple business units",
+        "centrally manage",
+        "automate the creation of AWS accounts",
+        "service control policies (SCPs)",
+        "simplify billing processes"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการบัญชี AWS หลายบัญชี การสร้างบัญชีอัตโนมัติ การควบคุมนโยบาย และการจัดการการเรียกเก็บเงิน ซึ่งเป็นส่วนหนึ่งของการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "At what support level do users receive access to a support concierge?",
+      "options": [
+        "Basic Support",
+        "Developer Support",
+        "Business Support",
+        "Enterprise Support"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Concierge\" คือบริการส่วนตัวระดับสูง ต้องใช้ \"Enterprise\" ซึ่งเป็นระดับสูงสุดถึงจะได้รับบริการนี้",
+      "keywords_for_highlighting": [
+        "support concierge",
+        "support level"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับระดับการสนับสนุน (support level) ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุน (Account Management and Support) โดยตรง"
+    },
+    {
+      "question": "Which benefit is always free of charge with AWS, regardless of a user's AWS Support plan?",
+      "options": [
+        "AWS Developer Support",
+        "AWS Developer Forums",
+        "Programmatic case management",
+        "AWS technical account manager (TAM)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ฟรี\" ต้อง \"ฟอรัม\"! นึกถึงฟอรัมเป็นแหล่งข้อมูลฟรีสำหรับนักพัฒนาเสมอ",
+      "keywords_for_highlighting": [
+        "always free of charge",
+        "AWS Support plan"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับสิทธิประโยชน์ที่มาพร้อมกับ AWS โดยไม่คำนึงถึงแผนการสนับสนุน ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "Which AWS Support plans provide access to an AWS technical account manager (TAM)? (Select)",
+      "options": [
+        "AWS Basic Support",
+        "AWS Developer Support",
+        "AWS Business Support",
+        "AWS Enterprise On-Ramp Support",
+        "AWS Enterprise Support"
+      ],
+      "correctAnswer": [
+        3,
+        4
+      ],
+      "explanation": "TAM (Technical Account Manager) คือบริการระดับสูง ต้องใช้แผน Support ที่ชื่อ \"Enterprise\" หรือ \"Enterprise On-Ramp\" เท่านั้น",
+      "keywords_for_highlighting": [
+        "AWS Support plans",
+        "technical account manager (TAM)"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับแผนการสนับสนุนของ AWS และการเข้าถึงผู้จัดการบัญชีทางเทคนิค (TAM) ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "Which AWS feature provides a no-cost platform for AWS users to join community groups, ask questions,   390 find answers, and read community-generated articles about best practices?",
+      "options": [
+        "AWS Knowledge Center",
+        "AWS re:Post",
+        "AWS 10",
+        "AWS Enterprise Support"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ชุมชน\" และ \"ถามตอบ\" นึกถึง re:Post ที่เป็นเหมือนเว็บบอร์ดสำหรับ AWS",
+      "keywords_for_highlighting": [
+        "community groups",
+        "ask questions",
+        "answers",
+        "community-generated articles",
+        "best practices"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามเกี่ยวกับแพลตฟอร์มที่ให้ผู้ใช้ AWS สามารถเข้าร่วมกลุ่มชุมชน ถามคำถาม และอ่านบทความเกี่ยวกับแนวปฏิบัติที่ดีที่สุด ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนจาก AWS"
+    },
+    {
+      "question": "Which AWS Support plan provides the full set of AWS Trusted Advisor checks at the LOWEST cost?",
+      "options": [
+        "AWS Developer Support",
+        "AWS Business Support",
+        "AWS Enterprise On-Ramp Support",
+        "AWS Enterprise Support"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Trusted Advisor แบบเต็ม\" ต้อง \"Business\" เพื่อธุรกิจที่ต้องตรวจสอบครบถ้วนในราคาที่สมเหตุสมผล",
+      "keywords_for_highlighting": [
+        "Trusted Advisor",
+        "full set",
+        "LOWEST cost"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับแผนการสนับสนุนของ AWS และค่าใช้จ่ายที่เกี่ยวข้อง ซึ่งเป็นส่วนหนึ่งของการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "Which AWS Support plan provides the full set to AWS Trusted Advisor checks at the LOWEST cost?",
+      "options": [
+        "AWS Developer Support",
+        "AWS Business Support",
+        "AWS Enterprise On-Ramp Support",
+        "AWS Enterprise Support"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Trusted Advisor แบบเต็ม\" ต้อง \"Business\" เพราะ Developer เน้นพัฒนา Enterprise เน้นบริการระดับสูง",
+      "keywords_for_highlighting": [
+        "Trusted Advisor",
+        "full set",
+        "LOWEST cost"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับแผนการสนับสนุนของ AWS และความคุ้มค่าในการเข้าถึงฟีเจอร์ Trusted Advisor ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "A company runs its production workload in the AWS Cloud. The company needs to choose one of the AWS Support Plans. Which of the AWS Support Plans will meet these requirements at the LOWEST cost?",
+      "options": [
+        "Developer",
+        "Enterprise On-Ramp",
+        "Enterprise",
+        "Business"
+      ],
+      "correctAnswer": 0,
+      "explanation": "โจทย์ถามหา Support Plan ที่ *ถูกที่สุด* และไม่ได้ต้องการการ support ที่ซับซ้อนมาก (แค่ production workload ทั่วไป) ให้เลือก Developer ไปเลย",
+      "keywords_for_highlighting": [
+        "LOWEST cost",
+        "production workload"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับการเลือกแผนการสนับสนุนของ AWS ที่เหมาะสม ซึ่งเป็นส่วนหนึ่งของการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "Which AWS service or feature allows users to create new AWS accounts, group multiple accounts to organize workflows, and apply policies to groups of accounts?",
+      "options": [
+        "AWS Identity and Access Management (1AM)",
+        "AWS Trusted Advisor",
+        "AWS CloudFormation",
+        "AWS Organizations"
+      ],
+      "correctAnswer": 3,
+      "explanation": "สร้างบัญชีใหม่, จัดกลุ่มบัญชี, และกำหนดนโยบาย --> \"Organizations\" ช่วยจัดระเบียบองค์กร",
+      "keywords_for_highlighting": [
+        "create new AWS accounts",
+        "group multiple accounts",
+        "apply policies"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการสร้างและจัดการบัญชี AWS หลายบัญชี รวมถึงการจัดกลุ่มและกำหนดนโยบาย ซึ่งเป็นส่วนหนึ่งของการจัดการบัญชีและการสนับสนุน"
+    },
+    {
+      "question": "A company is releasing a business-critical application. Before the release, the company needs strategic planning assistance from AWS. During the release, the company needs AWS infrastructure event management and real-time support. What should the company do to meet these requirement?",
+      "options": [
+        "Access AWS Trusted Advisor.",
+        "Contact the AWS Partner Network (APN).",
+        "Sign up for AWS Enterprise Support.",
+        "Contact AWS Professional Services.   491"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ต้องการวางแผนเชิงกลยุทธ์ก่อนเปิดตัวแอปพลิเคชันสำคัญ และต้องการการจัดการเหตุการณ์โครงสร้างพื้นฐานแบบเรียลไทม์ ต้องเลือก Enterprise Support เท่านั้นถึงจะครอบคลุม",
+      "keywords_for_highlighting": [
+        "business-critical application",
+        "strategic planning assistance",
+        "infrastructure event management",
+        "real-time support"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เน้นที่ความต้องการความช่วยเหลือด้านการวางแผนเชิงกลยุทธ์, การจัดการเหตุการณ์โครงสร้างพื้นฐาน และการสนับสนุนแบบเรียลไทม์ ซึ่งเป็นส่วนหนึ่งของการจัดการบัญชีและการสนับสนุนจาก AWS"
+    },
+    {
+      "question": "A company needs access to checks and recommendations that help the company follow AWS best practices for cost optimization, security, fault tolerance, performance, and service quotas. Which combination of an AWS service and AWS Support plan on the AWS account will meet these requirements?",
+      "options": [
+        "AWS Trusted Advisor with AWS Developer Support",
+        "AWS Health Dashboard with AWS Enterprise Support",
+        "AWS Trusted Advisor with AWS Business Support",
+        "AWS Health Dashboard with AWS Enterprise On-Ramp Support"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ต้องการคำแนะนำด้าน Best Practices ครอบคลุมหลายด้าน (Cost, Security, Fault Tolerance, Performance, Quotas) ต้องใช้ Trusted Advisor ที่มาพร้อม Business Support ขึ้นไป",
+      "keywords_for_highlighting": [
+        "best practices",
+        "cost optimization",
+        "security",
+        "fault tolerance",
+        "performance",
+        "service quotas"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเข้าถึงบริการ AWS (Trusted Advisor, Health Dashboard) และแผนการสนับสนุน (Support Plan) เพื่อให้ได้ประโยชน์สูงสุด ซึ่งเกี่ยวข้องกับการจัดการบัญชีและการสนับสนุนโดยตรง"
+    },
+    {
+      "question": "A company has multiple AWS accounts. The company needs to receive a consolidated bill from AWS and must centrally manage security and compliance. Which AWS service or feature should the company use to meet these requirements?",
+      "options": [
+        "AWS Cost and Usage Report",
+        "AWS Organizations",
+        "AWS Config",
+        "AWS Security Hub"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"หลายบัญชี, บิลรวม, จัดการความปลอดภัยจากศูนย์กลาง\" นึกถึง \"Organizations\" ที่แปลว่า \"องค์กร\" ซึ่งรวมทุกอย่างไว้ด้วยกัน",
+      "keywords_for_highlighting": [
+        "multiple AWS accounts",
+        "consolidated bill",
+        "centrally manage security and compliance"
+      ],
+      "assigned_category_id_by_gemini": 8,
+      "assigned_category_name_by_gemini": "การจัดการบัญชีและการสนับสนุน (Account Management and Support)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการบัญชี AWS หลายบัญชี การรวมบิล และการจัดการความปลอดภัยและการปฏิบัติตามข้อกำหนด ซึ่งเป็นส่วนหนึ่งของการจัดการบัญชีและการสนับสนุน"
+    }
+  ]
+}

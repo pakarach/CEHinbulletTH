@@ -1,0 +1,2407 @@
+{
+  "quizTitle": "ความปลอดภัยและการเข้าถึง (Security and Access) (ข้อประมาณ 134 - 462 จาก Dump เดิม) - 123 ข้อ",
+  "questions": [
+    {
+      "question": "A company wants to manage access and permissions for its third-party software as a service (SaaS) applications. The company wants to use a portal where end users can access assigned AWS accounts and AWS Cloud applications. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "Amazon Cognito",
+        "AWS IAM Identity Center (AWS Single Sign-On)",
+        "AWS Identity and Access Management (IAM)",
+        "AWS Directory Service for Microsoft Active Directory"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**SaaS, portal, access assigned AWS accounts and AWS Cloud applications** เจอคำเหล่านี้ ให้คิดถึง **IAM Identity Center (Single Sign-On)** เพราะเน้นการจัดการสิทธิ์เข้าถึงแบบรวมศูนย์",
+      "keywords_for_highlighting": [
+        "third-party software as a service (SaaS)",
+        "portal",
+        "access assigned AWS accounts",
+        "AWS Cloud applications"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การจัดการการเข้าถึงและสิทธิ์การใช้งาน (access and permissions) สำหรับแอปพลิเคชัน SaaS ซึ่งเป็นประเด็นหลักด้านความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "Which AWS services or tools are designed to protect a workload from SQL injections, cross-site scripting,   114 and DDoS attacks? (Select TWO.)",
+      "options": [
+        "VPC endpoint",
+        "Virtual private gatewayQ C. AWS Shield Standard",
+        "AWS Config",
+        "AWS WAF"
+      ],
+      "correctAnswer": 2,
+      "explanation": "จำว่า **WAF** คือ \"กำแพง\" ป้องกันเว็บจากภัยคุกคามต่างๆ และ **Shield** คือ \"เกราะ\" ป้องกันการโจมตีแบบ DDoS",
+      "keywords_for_highlighting": [
+        "SQL injections",
+        "cross-site scripting",
+        "DDoS attacks",
+        "protect"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ป้องกันภัยคุกคามทางไซเบอร์ เช่น SQL injection, XSS และ DDoS ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงระบบ AWS โดยตรง"
+    },
+    {
+      "question": "An ecommerce company has migrated its IT infrastructure from an on-premises data center to the AWS Cloud. Which AWS service is used to track, record, and audit configuration changes made to AWS resources?",
+      "options": [
+        "AWS Shield",
+        "AWS Config",
+        "AWS IAM",
+        "Amazon Inspector"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Config\" เหมือน \"Configuration\" ซึ่งหมายถึงการตั้งค่าต่างๆ ดังนั้น AWS Config จึงใช้ติดตามการเปลี่ยนแปลงการตั้งค่าทรัพยากร",
+      "keywords_for_highlighting": [
+        "track",
+        "record",
+        "audit",
+        "configuration changes",
+        "AWS resources"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการติดตาม, บันทึก, และตรวจสอบการเปลี่ยนแปลงการกำหนดค่าทรัพยากร AWS ซึ่งเป็นส่วนหนึ่งของการรักษาความปลอดภัยและการควบคุมการเข้าถึงทรัพยากรในระบบคลาวด์"
+    },
+    {
+      "question": "Which AWS service can a company use to securely store and encrypt passwords for a database?",
+      "options": [
+        "AWS Shield",
+        "AWS Secrets Manager",
+        "AWS Identity and Access Management (IAM)",
+        "Amazon Cognito"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ความลับ\" (Secrets) ต้อง \"จัดการ\" (Manager) เพื่อเก็บรหัสผ่านอย่างปลอดภัย",
+      "keywords_for_highlighting": [
+        "securely store",
+        "encrypt passwords",
+        "database"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการจัดเก็บและเข้ารหัสรหัสผ่านอย่างปลอดภัย ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS"
+    },
+    {
+      "question": "Which AWS service will help a company identify the user who deleted an Amazon EC2 instance yesterday?",
+      "options": [
+        "Amazon CloudWatch",
+        "AWS Trusted Advisor",
+        "AWS CloudTrail",
+        "Amazon Inspector"
+      ],
+      "correctAnswer": 2,
+      "explanation": "อยากรู้ว่าใครทำอะไร (เช่น ลบ EC2) เมื่อวาน ให้มองหา \"CloudTrail\" ที่บันทึกทุกการกระทำใน AWS account",
+      "keywords_for_highlighting": [
+        "deleted",
+        "EC2 instance",
+        "yesterday",
+        "identify the user"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการระบุผู้ใช้ที่ทำการลบ EC2 instance ซึ่งเป็นประเด็นด้านความปลอดภัยและการเข้าถึง (Security and Access) เนื่องจากเกี่ยวข้องกับการตรวจสอบกิจกรรมของผู้ใช้และการติดตามการกระทำที่อาจส่งผลกระทบต่อความปลอดภัยของระบบ"
+    },
+    {
+      "question": "A company needs to configure rules to identify threats and protect applications from malicious network access. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "AWS Identity and Access Management (IAM)",
+        "Amazon QuickSight",
+        "AWS WAF",
+        "Amazon Detective"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Threats\" และ \"protect applications from malicious network access\" เห็นคำเหล่านี้ปุ๊บ นึกถึง WAF (Web Application Firewall) ปั๊บ!",
+      "keywords_for_highlighting": [
+        "threats",
+        "protect applications",
+        "malicious network access"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเน้นที่การระบุภัยคุกคามและการป้องกันแอปพลิเคชันจากการเข้าถึงเครือข่ายที่เป็นอันตราย ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "134 A company is reviewing its operating policies. Which policy complies with guidance in the security pillar of the AWS Well-Architected Framework?",
+      "options": [
+        "Ensure that employees have access to all company data.",
+        "Expand employees' permissions as they gain more experience.",
+        "Grant all privileges and access to all users.",
+        "Apply security requirements at all layers of a process."
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Security pillar\" และ \"Well-Architected Framework\" เน้นการป้องกันหลายชั้น ดังนั้นมองหาคำตอบที่พูดถึงการรักษาความปลอดภัย \"ทุกระดับ\" หรือ \"หลายชั้น\"",
+      "keywords_for_highlighting": [
+        "security pillar",
+        "Well-Architected Framework",
+        "operating policies"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่นโยบายการดำเนินงานที่สอดคล้องกับหลักการด้านความปลอดภัย ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS"
+    },
+    {
+      "question": "A company has an AWS-hosted website located behind an Application Load Balancer. The company wants to safeguard the website from SQL injection or cross-site scripting. Which AWS service should the company use?",
+      "options": [
+        "Amazon GuardDuty",
+        "AWS WAF",
+        "AWS Trusted Advisor",
+        "Amazon Inspector"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**เว็บไซต์ + SQL injection/XSS = WAF** (จำว่า WAF ช่วย \"ว้าว\" เว็บไซต์ให้ปลอดภัยจาก injection)",
+      "keywords_for_highlighting": [
+        "website",
+        "SQL injection",
+        "cross-site scripting"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการรักษาความปลอดภัยเว็บไซต์จากภัยคุกคามต่างๆ เช่น SQL injection และ cross-site scripting ซึ่งเป็นประเด็นด้านความปลอดภัยโดยตรง และตัวเลือกคำตอบก็เป็นบริการที่เกี่ยวข้องกับความปลอดภัยของ AWS"
+    },
+    {
+      "question": "An auditor needs to find out whether a specific AWS service is compliant with specific compliance frameworks.   139 Which AWS service will provide this information?",
+      "options": [
+        "AWS Artifact",
+        "AWS Trusted Advisor",
+        "Amazon GuardDuty",
+        "AWS Certificate Manager (ACM)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Auditor ต้องการตรวจสอบ compliance framework? นึกถึง **Artifact** ที่เก็บเอกสารหลักฐาน (artifacts) การ compliance ต่างๆ\"",
+      "keywords_for_highlighting": [
+        "auditor",
+        "compliance",
+        "framework"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับความสอดคล้องตามข้อกำหนด (compliance) และบริการที่ใช้ตรวจสอบความสอดคล้องนั้นเกี่ยวข้องกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS."
+    },
+    {
+      "question": "What can a user accomplish using AWS CloudTrail?",
+      "options": [
+        "Generate an IAM user credentials report.",
+        "Record API calls made to AWS services.",
+        "Assess the compliance of AWS resource configurations with policies and guidelines.",
+        "Ensure that Amazon EC2 instances are patched with the latest security updates.A company uses Amazon Workspaces."
+      ],
+      "correctAnswer": 1,
+      "explanation": "CloudTrail เหมือน \"ร่องรอย\" การกระทำทุกอย่างใน AWS ดังนั้นจำว่ามัน \"บันทึก\" การเรียก API ต่างๆ",
+      "keywords_for_highlighting": [
+        "CloudTrail",
+        "accomplish"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "AWS CloudTrail เกี่ยวข้องกับการบันทึกกิจกรรม API ซึ่งเป็นส่วนหนึ่งของการตรวจสอบความปลอดภัยและการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "A company needs to continuously monitor its environment to analyze network and account activity and identify potential security threats. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "AWS Artifact",
+        "Amazon Macie",
+        "AWS Identity and Access Management (IAM)",
+        "Amazon GuardDuty"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"GuardDuty\" เหมือน \"Guard\" ที่คอย \"ตรวจตรา\" (monitor) ความปลอดภัยและภัยคุกคาม",
+      "keywords_for_highlighting": [
+        "monitor",
+        "analyze network",
+        "account activity",
+        "security threats"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเน้นที่การตรวจสอบสภาพแวดล้อมเพื่อวิเคราะห์กิจกรรมเครือข่ายและบัญชี และระบุภัยคุกคามด้านความปลอดภัย ซึ่งเป็นหัวใจหลักของหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "Which AWS service or feature offers HTTP attack protection to users running public-facing web applications?",
+      "options": [
+        "Security groups",
+        "Network ACLs",
+        "AWS Shield Standard",
+        "AWS WAF"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"เว็บ\" ที่ \"เปิดสู่สาธารณะ\" โดนโจมตี HTTP ต้องใช้ \"WAF\" ป้องกัน (เหมือนกำแพงป้องกันเว็บ).",
+      "keywords_for_highlighting": [
+        "HTTP attack",
+        "public-facing web applications"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริการที่ให้การป้องกันการโจมตี HTTP ซึ่งเกี่ยวข้องกับความปลอดภัยของแอปพลิเคชันบน AWS"
+    },
+    {
+      "question": "Who enables encryption of data at rest for Amazon Elastic Block Store (Amazon EBS)?",
+      "options": [
+        "AWS Support",
+        "AWS customers",
+        "AWS Key Management Service (AWS KMS)",
+        "AWS Trusted Advisor"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"Data at rest\" และ \"EBS\" ต้องจัดการเอง!** ลูกค้าต้องจัดการเรื่องการเข้ารหัสข้อมูลที่พักอยู่บน EBS เอง",
+      "keywords_for_highlighting": [
+        "encryption",
+        "data at rest",
+        "Amazon EBS"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ \"encryption of data at rest\" ซึ่งเป็นประเด็นที่เกี่ยวข้องกับความปลอดภัยของข้อมูล และการจัดการคีย์ (Key Management Service) ซึ่งเป็นส่วนหนึ่งของการควบคุมการเข้าถึงข้อมูล"
+    },
+    {
+      "question": "A company has an online shopping website and wants to store customers' credit card data. The company must meet Payment Card Industry (PCI) standards. Which service can the company use to access AWS compliance documentation?",
+      "options": [
+        "Amazon Cloud Directory",
+        "AWS Artifact",
+        "AWS Trusted Advisor",
+        "Amazon Inspector   156"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**PCI standards** และ **compliance documentation** ให้จำว่าต้องใช้ **AWS Artifact** เพื่อเข้าถึงเอกสาร compliance ต่างๆ",
+      "keywords_for_highlighting": [
+        "PCI standards",
+        "compliance documentation"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ PCI compliance และการเข้าถึงเอกสารที่เกี่ยวข้องกับ compliance ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงข้อมูล"
+    },
+    {
+      "question": "157 A developer wants to use an Amazon S3 bucket to store application logs that contain sensitive data. Which AWS service or feature should the developer use to restrict read and write access to the S3 bucket?",
+      "options": [
+        "Security groups",
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "ACLs"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**S3 + Sensitive Data + Restrict Access** ให้คิดถึง **ACLs** เพราะเน้นการควบคุมสิทธิ์การเข้าถึงระดับ object โดยตรง",
+      "keywords_for_highlighting": [
+        "S3 bucket",
+        "sensitive data",
+        "restrict read and write access"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับการจำกัดการเข้าถึงข้อมูลที่ละเอียดอ่อนใน S3 bucket ซึ่งเป็นเรื่องของความปลอดภัยและการควบคุมการเข้าถึง (Security and Access) โดยตรง"
+    },
+    {
+      "question": "A company website is experiencing DDoS attacks. Which AWS service can help protect the company website against these attacks?",
+      "options": [
+        "AWS Resource Access Manager",
+        "AWS Amplify",
+        "AWS Shield",
+        "Amazon GuardDuty"
+      ],
+      "correctAnswer": 2,
+      "explanation": "DDoS attack เหมือน \"โล่\" ที่ต้องใช้ \"AWS Shield\" ป้องกัน",
+      "keywords_for_highlighting": [
+        "DDoS attacks",
+        "protect"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการที่ช่วยป้องกันการโจมตี DDoS ซึ่งเกี่ยวข้องกับความปลอดภัยของเว็บไซต์ จึงจัดอยู่ในหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A company wants high levels of detection and near-real-time (NRT) mitigation against large and sophisticated distributed denial of service (DDoS) attacks on applications running on AWS. Which AWS service should the company use?",
+      "options": [
+        "Amazon GuardDuty",
+        "Amazon Inspector",
+        "AWS Shield Advanced",
+        "Amazon Macie"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"DDoS ใหญ่และซับซ้อน\" ให้คิดถึง \"Shield Advanced\" ที่เป็นเกราะป้องกันขั้นสูง",
+      "keywords_for_highlighting": [
+        "DDoS",
+        "near-real-time",
+        "mitigation",
+        "sophisticated"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการป้องกันการโจมตี DDoS ซึ่งเป็นประเด็นด้านความปลอดภัย และตัวเลือกต่างๆ เป็นบริการที่เกี่ยวข้องกับความปลอดภัยของ AWS"
+    },
+    {
+      "question": "A company is running its application in the AWS Cloud and wants to protect against a DDoS attack. The company's security team wants near real-time visibility into DDoS attacks. Which AWS service or traffic filter will meet these requirements with the MOST features for DDoS protection?",
+      "options": [
+        "AWS Shield Advanced",
+        "AWS Shield",
+        "Amazon GuardDuty",
+        "Network ACLs"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ต้องการป้องกัน DDoS แบบเรียลไทม์และมีฟีเจอร์เยอะสุด ให้เลือก \"Shield Advanced\" เพราะ \"Advanced\" แปลว่าขั้นสูง ฟีเจอร์เยอะกว่าตัวอื่น",
+      "keywords_for_highlighting": [
+        "DDoS attack",
+        "real-time visibility",
+        "MOST features",
+        "DDoS protection"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การป้องกัน DDoS attack และการมองเห็นภัยคุกคาม ซึ่งเป็นประเด็นหลักด้านความปลอดภัยและการเข้าถึงทรัพยากรใน AWS Cloud."
+    },
+    {
+      "question": "Which of the following actions are controlled with AWS Identity and Access Management (IAM)? (Select\nTWO.)",
+      "options": [
+        "Control access to AWS service APIs and to other specific resources.",
+        "Provide intelligent threat detection and continuous monitoring.",
+        "Protect the AWS environment using multi-factor authentication (MFA).",
+        "Grant users access to AWS data centers.",
+        "Provide firewall protection for applications from common web attacks."
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "IAM คือ \"ยาม\" ที่คอย **ควบคุมการเข้าถึง** ทั้ง API และทรัพยากรต่างๆ รวมถึงช่วย **ป้องกัน** ด้วย MFA เหมือนยามที่ต้องมีกุญแจหลายดอก (MFA)",
+      "keywords_for_highlighting": [
+        "IAM",
+        "actions"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการควบคุมการเข้าถึงและการจัดการสิทธิ์ ซึ่งเป็นหน้าที่หลักของ AWS Identity and Access Management (IAM) ซึ่งอยู่ในหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "Which AWS service provides threat detection by monitoring for malicious activities and unauthorized actions to protect AWS accounts, workloads, and data that is stored in Amazon S3?",
+      "options": [
+        "AWS Shield",
+        "AWS Firewall Manager",
+        "Amazon GuardDuty",
+        "Amazon Inspector"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"GuardDuty\" เหมือน \"ยาม\" ที่คอย \"ตรวจจับ\" สิ่งผิดปกติและ \"ปกป้อง\" AWS จากภัยคุกคาม",
+      "keywords_for_highlighting": [
+        "threat detection",
+        "malicious activities",
+        "unauthorized actions",
+        "protect",
+        "AWS accounts",
+        "workloads",
+        "data",
+        "Amazon S3"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ตรวจจับภัยคุกคามและกิจกรรมที่เป็นอันตราย ซึ่งเกี่ยวข้องกับความปลอดภัยของ AWS accounts, workloads, และข้อมูลใน S3 ดังนั้นจึงจัดอยู่ในหมวดหมู่ \"ความปลอดภัยและการเข้าถึง\""
+    },
+    {
+      "question": "Which AWS service provides encryption at rest for Amazon RDS and for Amazon Elastic Block Store (Amazon EBS) volumes?",
+      "options": [
+        "AWS Lambda",
+        "AWS Key Management Service (AWS KMS)",
+        "AWSWAF",
+        "Amazon Rekognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ถ้าโจทย์ถามถึงการ \"เข้ารหัสข้อมูลที่พักอยู่\" (encryption at rest) ใน RDS หรือ EBS ให้มองหา \"KMS\" เพราะ KMS คือบริการจัดการกุญแจเข้ารหัสของ AWS",
+      "keywords_for_highlighting": [
+        "encryption at rest",
+        "Amazon RDS",
+        "Amazon Elastic Block Store",
+        "Amazon EBS"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการเข้ารหัสข้อมูล ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS"
+    },
+    {
+      "question": "Which AWS service or feature will search for and identify AWS resources that are shared externally?",
+      "options": [
+        "Amazon OpenSearch Service",
+        "AWS Control Tower",
+        "AWS IAM Access Analyzer",
+        "AWS Fargate"
+      ],
+      "correctAnswer": 2,
+      "explanation": "มองหาคำว่า \"shared externally\" (แชร์ภายนอก) ในคำถาม แล้วนึกถึง IAM Access Analyzer ที่ช่วยวิเคราะห์การเข้าถึงทรัพยากร",
+      "keywords_for_highlighting": [
+        "search",
+        "identify",
+        "shared externally"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริการที่ใช้ค้นหาและระบุทรัพยากร AWS ที่ถูกแชร์ภายนอกเกี่ยวข้องโดยตรงกับความปลอดภัยและการควบคุมการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "Which AWS service is always available free of charge to users?",
+      "options": [
+        "Amazon Athena",
+        "AWS Identity and Access Management (IAM)",
+        "AWS Secrets Manager",
+        "Amazon ElastiCacheA company has only basic knowledge of AWS technologies."
+      ],
+      "correctAnswer": 1,
+      "explanation": "IAM คือประตูสู่ AWS ทุกคนต้องเข้าฟรี! (IAM = Identity & Access Management)",
+      "keywords_for_highlighting": [
+        "always available",
+        "free of charge",
+        "users"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ให้บริการฟรี ซึ่งเกี่ยวข้องกับการจัดการการเข้าถึงและความปลอดภัยของ AWS โดย IAM เป็นบริการที่ใช้จัดการผู้ใช้และการเข้าถึงทรัพยากร AWS ซึ่งให้บริการฟรีเสมอ"
+    },
+    {
+      "question": "A company is building an application in the AWS Cloud. The company wants to use temporary credentials for the application to access other AWS resources. Which AWS service will meet these requirements?",
+      "options": [
+        "AWS Key Management Service (Aws KMS)",
+        "AWS CloudHSM",
+        "Amazon Cognito",
+        "AWS Security Token Service (Aws STS)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Temporary credentials\" หรือ \"credentials ชั่วคราว\" ให้คิดถึง STS ทันที เพราะ STS คือบริการสร้าง credentials ชั่วคราวเพื่อเข้าถึง AWS resources",
+      "keywords_for_highlighting": [
+        "temporary credentials",
+        "access other AWS resources"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการให้สิทธิ์การเข้าถึงทรัพยากร AWS อย่างปลอดภัย โดยใช้ credentials ชั่วคราว ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "Which company needs to apply security rules to a subnet for Amazon EC2 instances. Which AWS service   207 or feature provides this functionality?",
+      "options": [
+        "Network ACLs",
+        "Security groups",
+        "AWS Certificate Manager (ACM)",
+        "AWS Config"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Subnet\" กับ \"Security Rules\" มาด้วยกัน นึกถึง Network ACLs ที่คุมระดับ subnet เลย",
+      "keywords_for_highlighting": [
+        "security rules",
+        "subnet",
+        "Amazon EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการใช้ security rules กับ subnet เพื่อป้องกัน EC2 instances ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "What can a cloud practitioner use to retrieve AWS security and compliance documents and submit them as evidence to an auditor or regulator?",
+      "options": [
+        "AWS Certificate Manager",
+        "AWS Systems Manager",
+        "AWS Artifact",
+        "Amazon Inspector"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"หลักฐาน\" (evidence) ที่ต้องส่งให้ผู้ตรวจสอบ (auditor) นึกถึง \"Artifact\" ที่เป็นแหล่งเก็บเอกสารหลักฐาน**",
+      "keywords_for_highlighting": [
+        "security",
+        "compliance",
+        "documents",
+        "evidence",
+        "auditor",
+        "regulator"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ \"AWS security and compliance documents\" ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการปฏิบัติตามข้อกำหนด (compliance) ซึ่งเป็นส่วนหนึ่งของหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "Which AWS service or feature offers security for a VPC by acting as a firewall to control traffic in and out of subnets?",
+      "options": [
+        "AWS Security Hub",
+        "Security groups",
+        "Network ACL",
+        "AWSWAF"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"VPC\", \"firewall\", \"subnets\"** สามคำนี้มาด้วยกัน ให้ตอบ **\"Network ACL\"** เพราะ Network ACL คือไฟร์วอลล์ที่ควบคุมการเข้าออกของ traffic ในระดับ subnet ของ VPC",
+      "keywords_for_highlighting": [
+        "security",
+        "VPC",
+        "firewall",
+        "traffic",
+        "subnets"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการหรือคุณสมบัติที่ให้ความปลอดภัยสำหรับ VPC โดยทำหน้าที่เป็นไฟร์วอลล์ ซึ่งเกี่ยวข้องกับความปลอดภัยและการควบคุมการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "Which actions are best practices for an AWS account root user? (Select TWO.)",
+      "options": [
+        "Share root user credentials with team members.",
+        "Create multiple root users for the account, separated by environment.",
+        "Enable multi-factor authentication (MFA) on the root user.   215",
+        "Create an IAM user with administrator privileges for daily administrative tasks, instead of using the root user.",
+        "Use programmatic access instead of the root user and password."
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "\"Root User\" คือบัญชีสูงสุด ต้องป้องกันด้วย MFA และเลี่ยงการใช้งานโดยสร้าง IAM user ที่มีสิทธิ์ admin แทน",
+      "keywords_for_highlighting": [
+        "root user",
+        "best practices"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่แนวปฏิบัติที่ดีที่สุดในการรักษาความปลอดภัยและการจัดการสิทธิ์การเข้าถึงบัญชี AWS โดยเฉพาะการจัดการบัญชี root user ซึ่งเป็นส่วนสำคัญของความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A company wants to grant users in one AWS account access to resources in another AWS account. The users do not currently have permission to access the resources. Which AWS service will meet this requirement?",
+      "options": [
+        "IAM group",
+        "IAM role",
+        "IAM tag",
+        "IAM Access Analyzer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ข้ามบัญชี\" ต้องใช้ \"บทบาท\" (Role) เพื่อให้สิทธิ์ชั่วคราว ไม่ใช่การจัดกลุ่มหรือแท็ก",
+      "keywords_for_highlighting": [
+        "grant users in one AWS account access",
+        "another AWS account",
+        "do not currently have permission"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการให้สิทธิ์การเข้าถึงทรัพยากรใน AWS ซึ่งเป็นประเด็นหลักด้านความปลอดภัยและการเข้าถึง (Security and Access) โดยเฉพาะอย่างยิ่งการใช้ IAM เพื่อจัดการสิทธิ์การเข้าถึงระหว่างบัญชี AWS ต่างๆ"
+    },
+    {
+      "question": "A company wants to verify if multi-factor authentication (MFA) is enabled for all users within its AWS accounts. Which AWS service or resource will meet this requirement?",
+      "options": [
+        "AWS Cost and Usage Report",
+        "IAM credential reports",
+        "AWS Artifact",
+        "Amazon CloudFront reports"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"MFA\" และ \"users\" ในโจทย์ ชี้ไปที่ \"credential reports\" ใน IAM เพราะเกี่ยวข้องกับการจัดการข้อมูลประจำตัวและการเข้าถึงของผู้ใช้",
+      "keywords_for_highlighting": [
+        "multi-factor authentication (MFA)",
+        "users",
+        "AWS accounts"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความต้องการในการตรวจสอบว่า MFA เปิดใช้งานสำหรับผู้ใช้ทั้งหมด ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงทรัพยากร AWS"
+    },
+    {
+      "question": "Which AWS service or feature can the company use to limit the access to AWS services for member accounts?",
+      "options": [
+        "AWS Identity and Access Management (IAM)",
+        "Service control policies (SCPs)",
+        "Organizational units (OUs)",
+        "Access control lists (ACLs)   225"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"จำ 'จำกัดการเข้าถึง' ในระดับ 'บัญชีสมาชิก' ต้องใช้ SCPs ควบคุม\"**",
+      "keywords_for_highlighting": [
+        "จำกัดการเข้าถึง",
+        "AWS services",
+        "member accounts"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงวิธีการจำกัดการเข้าถึงบริการ AWS ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการควบคุมการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "A company needs to implement identity management for a fleet of mobile apps that are running in the AWS Cloud. Which AWS service will meet this requirement?",
+      "options": [
+        "Amazon Cognito",
+        "AWS Security Hub",
+        "AWS Shield",
+        "AWS WAF"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"Mobile apps\" ต้องการ \"identity management\" นึกถึง \"Cognito\" ทันที เพราะจัดการ identity ให้แอปได้**",
+      "keywords_for_highlighting": [
+        "mobile apps",
+        "identity management"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ \"identity management\" ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึง (Security and Access) ใน AWS Cloud."
+    },
+    {
+      "question": "A company is running an application on AWS. The company wants to identify and prevent the accidental Which AWS service or feature will meet these requirements?",
+      "options": [
+        "Amazon GuardDuty",
+        "Network ACL",
+        "AWS WAF",
+        "AWS Network Firewall"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"Accidental\" (อุบัติเหตุ) ต้อง GuardDuty (เวรยาม) คอยเฝ้าระวัง**",
+      "keywords_for_highlighting": [
+        "identify",
+        "prevent",
+        "accidental"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ \"identify and prevent the accidental\" ซึ่งเกี่ยวข้องกับความปลอดภัย และตัวเลือกต่างๆ เป็นบริการที่เกี่ยวข้องกับการรักษาความปลอดภัยของ AWS"
+    },
+    {
+      "question": "A company needs to apply security rules to specific Amazon EC2 instances. Which AWS service or feature provides this functionality?",
+      "options": [
+        "AWS Shield",
+        "Network ACLs",
+        "Security groups",
+        "AWS Firewall Manager"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Security rules\" และ \"EC2 instances\" มาคู่กันเสมอ นึกถึง Security groups เมื่อต้องการควบคุมความปลอดภัยของ EC2",
+      "keywords_for_highlighting": [
+        "security rules",
+        "EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการใช้บริการ AWS เพื่อกำหนดกฎความปลอดภัยให้กับ EC2 instances ซึ่งเป็นเรื่องของความปลอดภัยและการเข้าถึงทรัพยากรใน AWS."
+    },
+    {
+      "question": "A company wants to define a central data protection policy that works across AWS services for compute, storage, and database resources. Which AWS service will meet this requirement?",
+      "options": [
+        "AWS Batch",
+        "AWS Elastic Disaster Recovery",
+        "AWS Backup",
+        "Amazon FSx"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"Data protection policy\" ที่ครอบคลุมหลาย AWS services (compute, storage, database) ให้คิดถึง \"Backup\" เพื่อการปกป้องข้อมูลแบบรวมศูนย์**",
+      "keywords_for_highlighting": [
+        "data protection policy",
+        "across AWS services",
+        "compute",
+        "storage",
+        "database resources"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับนโยบายการปกป้องข้อมูล ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึงข้อมูลใน AWS Cloud."
+    },
+    {
+      "question": "A company needs to control inbound and outbound traffic for an Amazon EC2 instance. Which AWS service or feature can the company associate with the EC2 instance to meet this requirement?",
+      "options": [
+        "Network ACL",
+        "Security group",
+        "AWS WAF",
+        "VPC route tables"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ควบคุม traffic เข้า-ออกของ EC2 instance\" ให้คิดถึง \"Security group\" เสมอ เพราะมันคือ firewall สำหรับ instance นั้นๆ",
+      "keywords_for_highlighting": [
+        "control inbound and outbound traffic",
+        "EC2 instance"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการควบคุมการเข้าถึงและรักษาความปลอดภัยของ EC2 instance ซึ่งเป็นหัวใจหลักของหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A company needs to securely store important credentials that an application uses to connect users to a database. Which AWS service can meet this requirement with the MINIMAL amount of operational overhead?",
+      "options": [
+        "AWS Key Management Service (AWS KMS)",
+        "AWS Config",
+        "AWS Secrets Manager",
+        "Amazon GuardDuty"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"Credentials\" (ข้อมูลลับ) + \"Minimal overhead\" (ภาระน้อยสุด) = Secrets Manager เพราะออกแบบมาจัดการความลับโดยเฉพาะ**",
+      "keywords_for_highlighting": [
+        "securely store credentials",
+        "minimal amount of operational overhead"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดเก็บข้อมูลรับรอง (credentials) อย่างปลอดภัย ซึ่งเป็นประเด็นด้านความปลอดภัย และการควบคุมการเข้าถึงข้อมูลสำคัญ"
+    },
+    {
+      "question": "A company hosts a large amount of data in AWS. The company wants to identify if any of the data should be considered sensitive. Which AWS service will meet the requirement?",
+      "options": [
+        "Amazon Inspector",
+        "Amazon Macie",
+        "AWS Identity and Access Management (IAM)",
+        "Amazon CloudWatch"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ถ้าเจอคำว่า \"data considered sensitive\" หรือ \"ข้อมูลที่อาจเป็นข้อมูลละเอียดอ่อน\" ให้คิดถึง Amazon Macie เพราะ Macie เชี่ยวชาญด้านการค้นหาและปกป้องข้อมูลละเอียดอ่อน",
+      "keywords_for_highlighting": [
+        "data",
+        "sensitive"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการระบุข้อมูลที่ละเอียดอ่อน ซึ่งเป็นประเด็นด้านความปลอดภัย และ Amazon Macie เป็นบริการที่ใช้ในการค้นหาและปกป้องข้อมูลที่ละเอียดอ่อนใน AWS ดังนั้นจึงจัดอยู่ในหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "Which AWS service or feature enables users to encrypt data at rest in Amazon S3?",
+      "options": [
+        "IAM policies",
+        "Server-side encryption",
+        "Amazon GuardDuty",
+        "Client-side encryption"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"At rest\" ใน S3 ต้องใช้ \"Server-side encryption\" เพื่อเข้ารหัสข้อมูลที่อยู่กับที่บนเซิร์ฟเวอร์ของ AWS เอง",
+      "keywords_for_highlighting": [
+        "encrypt data at rest",
+        "Amazon S3"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเข้ารหัสข้อมูล ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึงข้อมูลใน Amazon S3"
+    },
+    {
+      "question": "A developer has been hired by a large company and needs AWS credentials. Which are security best practices that should be followed? (Select TWO.)",
+      "options": [
+        "Grant the developer access to only the AWS resources needed to perform the job.",
+        "Share the AWS account root user credentials with the developer.",
+        "Add the developer to the administrator's group in AWS IAM.",
+        "Configure a password policy that ensures the developer's password cannot be changed.",
+        "Ensure the account password policy requires a minimum length."
+      ],
+      "correctAnswer": [
+        0,
+        4
+      ],
+      "explanation": "\"สิทธิ์น้อยที่สุด\" และ \"รหัสผ่านแข็งแรง\" คือหัวใจสำคัญของการรักษาความปลอดภัยที่ดี",
+      "keywords_for_highlighting": [
+        "developer",
+        "AWS credentials",
+        "security best practices"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การจัดการ credentials และการปฏิบัติตามแนวทางปฏิบัติที่ดีที่สุดด้านความปลอดภัยในการเข้าถึงทรัพยากร AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A retail company has recently migrated its website to AWS. The company wants to ensure that it is protected from SQL injection attacks. The website uses an Application Load Balancer to distribute traffic to multiple Amazon EC2 instances. Which AWS service or feature can be used to create a custom rule that blocks SQL injection attacks?",
+      "options": [
+        "Security groups",
+        "AWS WAF",
+        "Network ACLs",
+        "AWS Shield"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"SQL injection\" และ \"Application Load Balancer\" นำไปสู่ \"WAF\" เสมอ เพราะ WAF ทำงานที่ Layer 7 (Application Layer)",
+      "keywords_for_highlighting": [
+        "SQL injection",
+        "Application Load Balancer",
+        "custom rule",
+        "blocks"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการป้องกันเว็บไซต์จาก SQL injection attacks ซึ่งเป็นประเด็นด้านความปลอดภัย และถามถึงบริการที่ใช้สร้างกฎเพื่อบล็อกการโจมตี ซึ่งเกี่ยวข้องกับการเข้าถึงและการรักษาความปลอดภัยของข้อมูล"
+    },
+    {
+      "question": "Which AWS service provides protection against DDoS attacks for applications that run in the AWS Cloud?",
+      "options": [
+        "Amazon VPC",
+        "AWS Shield",
+        "AWS Audit Manager",
+        "AWS Config"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Shield\" เหมือน \"เกราะ\" ป้องกันการโจมตี DDoS ซึ่งเป็นภัยคุกคามต่อแอปพลิเคชัน",
+      "keywords_for_highlighting": [
+        "DDoS",
+        "protection",
+        "applications"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ให้การป้องกันการโจมตี DDoS ซึ่งเกี่ยวข้องกับความปลอดภัยของแอปพลิเคชันบน AWS Cloud โดยตรง"
+    },
+    {
+      "question": "A company wants a list of all users in its AWS account, the status of all of the users' access keys, and if multi-factor authentication (MFA) has been configured. Which AWS service or feature will meet these requirements?",
+      "options": [
+        "AWS Key Management Service (AWS KMS)",
+        "IAM Access Analyzer",
+        "IAM credential report",
+        "Amazon CloudWatch"
+      ],
+      "correctAnswer": 2,
+      "explanation": "อยากรู้ข้อมูลผู้ใช้ทั้งหมด, สถานะ access key, และ MFA ต้องดู \"รายงานข้อมูลประจำตัว IAM\" (IAM credential report)",
+      "keywords_for_highlighting": [
+        "รายชื่อผู้ใช้",
+        "สถานะ access key",
+        "MFA",
+        "AWS account"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการผู้ใช้, คีย์การเข้าถึง, และ MFA ซึ่งเป็นเรื่องของความปลอดภัยและการเข้าถึงทรัพยากรใน AWS โดยตรง"
+    },
+    {
+      "question": "A company wants to ensure that all of its Amazon EC2 instances have compliant operating system patches. Which AWS service will meet these requirements?",
+      "options": [
+        "AWS Compute Optimizer",
+        "AWS Elastic Beanstalk",
+        "AWS AppSync",
+        "AWS Systems Manager"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"แพทช์\" และ \"จัดการ\" ไปด้วยกัน! นึกถึง \"Systems Manager\" เพื่อจัดการแพทช์ให้เป็นระบบ",
+      "keywords_for_highlighting": [
+        "operating system patches",
+        "EC2 instances",
+        "compliant"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการรักษาความปลอดภัยของ EC2 instances โดยการตรวจสอบให้แน่ใจว่ามีการติดตั้ง patch ที่ถูกต้อง ซึ่งเป็นส่วนหนึ่งของการรักษาความปลอดภัยและการเข้าถึงระบบ"
+    },
+    {
+      "question": "According to security best practices, how should an Amazon EC2 instance be given access to an Amazon S3 bucket?",
+      "options": [
+        "Hard code an IAM user's secret key and access key directly in the application, and upload the file.",
+        "Store the IAM user's secret key and access key in a text file on the EC2 instance, read the keys, then upload the file.",
+        "Have the EC2 instance assume a role to obtain the privileges to upload the file.",
+        "Modify the S3 bucket policy so that any service can upload to it at any time."
+      ],
+      "correctAnswer": 2,
+      "explanation": "เมื่อพูดถึงการให้ EC2 เข้าถึง S3 อย่างปลอดภัย ให้มองหาคำตอบที่ใช้ \"role\" เสมอ เพราะเป็นวิธีที่ปลอดภัยที่สุดโดยไม่ต้องฝัง credentials โดยตรง",
+      "keywords_for_highlighting": [
+        "EC2 instance",
+        "access",
+        "S3 bucket",
+        "security best practices"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีที่ปลอดภัยที่สุดในการให้สิทธิ์ EC2 instance เข้าถึง S3 bucket ซึ่งเกี่ยวข้องกับความปลอดภัยและการจัดการการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "273 A company wants to monitor for misconfigured security groups that are allowing unrestricted access to specific ports. Which AWS service will meet this requirement?",
+      "options": [
+        "AWS Trusted Advisor",
+        "Amazon CloudWatch",
+        "Amazon GuardDuty",
+        "AWS Health Dashboard"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Misconfigured security groups\" ที่ทำให้เกิด \"unrestricted access\" ให้คิดถึง \"Trusted Advisor\" ที่ช่วยแนะนำการตั้งค่าที่ถูกต้องเพื่อความปลอดภัย",
+      "keywords_for_highlighting": [
+        "misconfigured security groups",
+        "unrestricted access",
+        "monitor"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความปลอดภัยของกลุ่มความปลอดภัย (Security Groups) และการตรวจสอบการเข้าถึงที่ไม่จำกัด ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึงใน AWS Cloud."
+    },
+    {
+      "question": "Which AWS service or feature can a company use to apply security rules to specific Amazon EC2 instances?",
+      "options": [
+        "Network ACLs",
+        "Security groups",
+        "AWS Trusted Advisor",
+        "AWS WAF"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"EC2 instances\" และ \"security rules\" ให้คิดถึง \"Security groups\" เพราะ Security groups คือ firewall ที่ติดอยู่กับ EC2 instance โดยตรง",
+      "keywords_for_highlighting": [
+        "security rules",
+        "Amazon EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการกำหนดกฎความปลอดภัยให้กับ EC2 instances ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงทรัพยากรใน AWS."
+    },
+    {
+      "question": "A company is setting up AWS Identity and Access Management (IAM) on an AWS account. Which recommendation complies with IAM security best practices?",
+      "options": [
+        "Use the account root user access keys for administrative tasks.",
+        "Grant broad permissions so that all company employees can access the resources they need.",
+        "Turn on multi-factor authentication (MFA) for added security during the login process.",
+        "Avoid rotating credentials to prevent issues in production applications."
+      ],
+      "correctAnswer": 2,
+      "explanation": "IAM + Security = MFA (Multi-Factor Authentication) เพิ่มความปลอดภัยในการล็อกอิน",
+      "keywords_for_highlighting": [
+        "IAM",
+        "security best practices"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การตั้งค่า IAM ซึ่งเป็นบริการที่เกี่ยวข้องกับความปลอดภัยและการควบคุมการเข้าถึงทรัพยากรบน AWS โดยตรง และตัวเลือกต่างๆ ก็เกี่ยวข้องกับแนวทางปฏิบัติที่ดีที่สุดด้านความปลอดภัยของ IAM"
+    },
+    {
+      "question": "A company has teams that have different job roles and responsibilities. The company's employees often change teams. The company needs to manage permissions for the employees so that the permissions are appropriate for the job responsibilities. Which IAM resource should the company use to meet this requirement with the LEAST operational overhead?",
+      "options": [
+        "IAM user groups",
+        "IAM roles   288",
+        "IAM instance profiles",
+        "IAM policies for individual users"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"เปลี่ยนทีมบ่อย\" และ \"จัดการสิทธิ์ตามหน้าที่\" ให้เลือก \"IAM role\" เพราะ role มอบสิทธิ์ชั่วคราวตามหน้าที่ ไม่ผูกติดกับ user",
+      "keywords_for_highlighting": [
+        "teams",
+        "job roles",
+        "responsibilities",
+        "manage permissions",
+        "LEAST operational overhead"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นเรื่องการจัดการสิทธิ์การเข้าถึงทรัพยากร AWS โดยใช้ IAM ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "A company has a compliance requirement to record and evaluate configuration changes, as well as perform remediation actions on AWS resources. Which AWS service should the company use?",
+      "options": [
+        "AWS Config",
+        "AWS Secrets Manager",
+        "AWS CloudTrail",
+        "AWS Trusted Advisor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Compliance\" และ \"configuration changes\" ให้คิดถึง \"Config\" เพราะ Config ช่วยให้เป็นไปตามข้อกำหนดและจัดการการเปลี่ยนแปลงการตั้งค่า",
+      "keywords_for_highlighting": [
+        "compliance",
+        "configuration changes",
+        "remediation actions"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับข้อกำหนดด้าน Compliance, การบันทึกการเปลี่ยนแปลง, และการแก้ไขปัญหาด้านความปลอดภัยของทรัพยากร AWS ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "A company needs to identify who accessed an AWS service and what action was performed for a given time period. Which AWS service should the company use to meet this requirement?",
+      "options": [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "AWS Security Hub",
+        "Amazon Inspector"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"ใครทำอะไร\" ใน AWS ต้องใช้ CloudTrail เพื่อ \"ตามรอย\" การเข้าถึงและกิจกรรมต่างๆ**",
+      "keywords_for_highlighting": [
+        "accessed",
+        "action",
+        "performed",
+        "time period"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการระบุผู้ที่เข้าถึงบริการ AWS และการกระทำที่พวกเขาทำ ซึ่งเป็นประเด็นหลักด้านความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "Which AWS service is deployed to VPCs and provides protection from common network threats?   303",
+      "options": [
+        "AWSShield",
+        "AWSWAF",
+        "AWS Network Firewall",
+        "AWS FirewallManager"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"VPC\"** กับ **\"Network threats\"** มาคู่กัน ให้ตอบ **\"Network Firewall\"** เพราะไฟร์วอลล์เครือข่ายปกป้อง VPC จากภัยคุกคาม",
+      "keywords_for_highlighting": [
+        "VPCs",
+        "network threats"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ให้การป้องกันจากภัยคุกคามทางเครือข่าย ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "A company wants an automated process to continuously scan its Amazon EC2 instances for software vulnerabilities. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon GuardDuty",
+        "Amazon Inspector",
+        "Amazon Detective",
+        "Amazon Cognito"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"สแกนหาช่องโหว่\" นึกถึง \"Inspector\" ที่คอยตรวจสอบความปลอดภัยของ EC2",
+      "keywords_for_highlighting": [
+        "automated process",
+        "scan",
+        "EC2 instances",
+        "software vulnerabilities"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความปลอดภัยของ EC2 instances และการใช้บริการ AWS เพื่อตรวจหาช่องโหว่ ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "Which AWS service can a company use to find security and compliance reports, including International Organization for Standardization (ISO) reports?",
+      "options": [
+        "AWS Artifact",
+        "Amazon CloudWatch",
+        "AWS Config   308",
+        "AWS Audit Manager"
+      ],
+      "correctAnswer": 0,
+      "explanation": "มองหาคำว่า \"reports\" และ \"compliance\" ในคำถาม นึกถึง \"Artifact\" ที่เก็บเอกสารรายงานต่างๆ",
+      "keywords_for_highlighting": [
+        "security",
+        "compliance reports",
+        "ISO"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ค้นหารายงานด้านความปลอดภัยและการปฏิบัติตามข้อกำหนด ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS"
+    },
+    {
+      "question": "Which AWS services allow users to monitor and retain records of account activities that include governance, compliance, and auditing?",
+      "options": [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "Amazon GuardDuty",
+        "AWS Shield",
+        "AWS WAF"
+      ],
+      "correctAnswer": [
+        0,
+        1
+      ],
+      "explanation": "**\"ร่องรอย\" (Trail) บ่งบอก \"กิจกรรม\" (Activities) ที่เกิดขึ้นในบัญชี, ส่วน \"CloudWatch\" คอย \"เฝ้าดู\" (Monitor) การทำงานโดยรวม**",
+      "keywords_for_highlighting": [
+        "monitor",
+        "retain records",
+        "account activities",
+        "governance",
+        "compliance",
+        "auditing"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการที่ใช้ในการตรวจสอบและบันทึกกิจกรรมของบัญชี ซึ่งเกี่ยวข้องกับ governance, compliance และ auditing ทั้งหมดนี้เป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึงใน AWS"
+    },
+    {
+      "question": "Which AWS service or tool provides on-demand access to AWS security and compliance reports and AWS online agreements?",
+      "options": [
+        "AWS Artifact",
+        "AWS Trusted Advisor",
+        "Amazon Inspector",
+        "AWS Billing console"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"Artifact\" เหมือน \"เอกสาร\" เก็บรายงานความปลอดภัยและข้อตกลงต่างๆ**",
+      "keywords_for_highlighting": [
+        "security and compliance reports",
+        "AWS online agreements",
+        "on-demand access"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ให้ข้อมูลเกี่ยวกับความปลอดภัยและการปฏิบัติตามข้อกำหนด ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูลบน AWS"
+    },
+    {
+      "question": "A company needs to set up user authentication for a new application. Users must be able to sign in directly with a user name and password, or through a third-party provider. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "AWS IAM Identity Center (AWS Single Sign-On)",
+        "AWS Signer",
+        "Amazon Cognito",
+        "AWS Directory Service"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"User authentication\" และ \"sign in directly or third-party provider\" ให้คิดถึง Amazon Cognito ทันที เพราะจัดการการยืนยันตัวตนได้หลากหลายรูปแบบ",
+      "keywords_for_highlighting": [
+        "user authentication",
+        "sign in",
+        "third-party provider"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการตั้งค่าการยืนยันตัวตนผู้ใช้และการจัดการการเข้าถึง ซึ่งเป็นหัวใจสำคัญของความปลอดภัยและการเข้าถึงใน AWS"
+    },
+    {
+      "question": "A company wants to integrate its online shopping website with social media login credentials. Which AWS service can the company use to make this integration?",
+      "options": [
+        "AWS Directory Service",
+        "AWS Identity and Access Management (IAM)",
+        "Amazon Cognito",
+        "AWS IAM Identity Center (AWS Single Sign-On)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"Social media login\" หรือ \"login credentials\" นึกถึง \"Cognito\" ที่ช่วยจัดการการยืนยันตัวตน (authentication) ให้แอปพลิเคชัน**",
+      "keywords_for_highlighting": [
+        "social media login",
+        "online shopping website",
+        "integrate"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการข้อมูลประจำตัวและการเข้าถึง ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึงใน AWS"
+    },
+    {
+      "question": "A company is planning to migrate to the AWS Cloud and wants to become more responsive to customer inquiries and feedback. The company wants to focus on organizational transformation. A company wants to give its customers the ability to view specific data that is hosted in Amazon S3 buckets. The company wants to keep control over the full datasets that the company shares with the customers. Which S3 feature will meet these requirements?",
+      "options": [
+        "S3 Storage Lens",
+        "S3 Cross-Region Replication (CRR)",
+        "S3 Versioning",
+        "S3 Access Points"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ต้องการให้ลูกค้าเข้าถึงข้อมูล S3 ได้เฉพาะเจาะจง และบริษัทต้องการควบคุมข้อมูลทั้งหมด เลือก \"Access Points\" เพื่อการเข้าถึงที่จำกัดและควบคุมได้",
+      "keywords_for_highlighting": [
+        "customer inquiries",
+        "view specific data",
+        "Amazon S3 buckets",
+        "control over the full datasets",
+        "shares with the customers"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเน้นเรื่องการให้ลูกค้าเข้าถึงข้อมูลใน S3 โดยที่บริษัทยังคงควบคุมข้อมูลทั้งหมด ซึ่งเกี่ยวข้องกับความปลอดภัยและการจัดการสิทธิ์การเข้าถึงข้อมูล"
+    },
+    {
+      "question": "An auditor is preparing for an annual security audit. The auditor requests certification details for a company's AWS hosted resources across multiple Availability Zones in the us- east-1 Region. How should the company respond to the auditor's request?",
+      "options": [
+        "Open an AWS Support ticket to request that the AWS technical account manager (TAM) respond and help the auditor.",
+        "Open an AWS Support ticket to request that the auditor receive approval to conduct an onsite assessment of the AWS data centers inwhich the company operates.",
+        "Explain to the auditor that AWS does not need to be audited because the company's application is hosted in multiple AvailabilityZones.",
+        "Use AWS Artifact to download the applicable report for AWS security controls. Provide the report to the auditor."
+      ],
+      "correctAnswer": 3,
+      "explanation": "เมื่อเจอคำว่า \"auditor\" (ผู้ตรวจสอบ) และ \"certification details\" (รายละเอียดการรับรอง) ให้คิดถึง AWS Artifact ซึ่งเป็นที่เก็บรายงานการรับรองต่างๆ",
+      "keywords_for_highlighting": [
+        "auditor",
+        "certification details",
+        "AWS hosted resources",
+        "security audit"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับความปลอดภัยและการเข้าถึงข้อมูลการรับรอง (certification details) ซึ่งเป็นส่วนหนึ่งของการรักษาความปลอดภัยใน AWS และการตอบสนองต่อการตรวจสอบ (audit) ด้านความปลอดภัย"
+    },
+    {
+      "question": "A company needs an automated vulnerability management service that continually scans AWS workloads for software vulnerabilities. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon GuardDuty",
+        "Amazon Inspector",
+        "AWS Security Hub",
+        "AWS Shield"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Vulnerability\" กับ \"Inspector\" ขึ้นต้นด้วยตัวอักษรที่คล้ายกัน (V กับ I) และ Inspector คือผู้ตรวจสอบช่องโหว่",
+      "keywords_for_highlighting": [
+        "automated vulnerability management",
+        "scans",
+        "software vulnerabilities"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริการที่ใช้สแกนหาช่องโหว่ด้านความปลอดภัยของ workloads บน AWS จัดอยู่ในหมวดหมู่ \"ความปลอดภัยและการเข้าถึง\" เนื่องจากเกี่ยวข้องกับการรักษาความปลอดภัยของระบบและข้อมูลบน AWS"
+    },
+    {
+      "question": "A company is storing sensitive customer data in an Amazon S3 bucket. The company wants to protect the data from accidental deletion or overwriting. Which S3 feature should the company use to meet these requirements?",
+      "options": [
+        "S3 Lifecycle rules",
+        "S3 Versioning",
+        "S3 bucket policies",
+        "S3 server-side encryption"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ป้องกันการลบ/เขียนทับข้อมูล\" นึกถึง \"S3 Versioning\" ที่เก็บทุกเวอร์ชันของไฟล์",
+      "keywords_for_highlighting": [
+        "sensitive customer data",
+        "accidental deletion",
+        "overwriting"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการปกป้องข้อมูลที่ละเอียดอ่อนใน S3 จากการลบหรือเขียนทับโดยไม่ได้ตั้งใจ ซึ่งเป็นประเด็นด้านความปลอดภัยและการเข้าถึงข้อมูล"
+    },
+    {
+      "question": "Which AWS service can identify when an Amazon EC2 instance was terminated?",
+      "options": [
+        "AWS Identity and Access Management (IAM)",
+        "AWS CloudTrail",
+        "AWS Compute Optimizer",
+        "Amazon EventBridge"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**CloudTrail ตามรอย (trail) เหตุการณ์ต่างๆ ใน AWS รวมถึงการ terminate EC2 instance ดังนั้นถ้าถามถึงการตรวจสอบเหตุการณ์ต่างๆ ให้เลือก CloudTrail**",
+      "keywords_for_highlighting": [
+        "EC2 instance",
+        "terminated",
+        "identify"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการระบุว่าใครหรืออะไรเป็นผู้ยุติ EC2 instance ซึ่งเกี่ยวข้องกับการตรวจสอบและการรักษาความปลอดภัยของทรัพยากร AWS"
+    },
+    {
+      "question": "Which AWS service provides this functionality?",
+      "options": [
+        "AWS IAM Identity Center (AWS Single Sign-On)   330",
+        "AWS Systems Manager",
+        "AWS Config",
+        "AWS Control Tower"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Control Tower\" คือหอควบคุมที่ช่วย \"ควบคุม\" การทำงานต่างๆ ใน AWS ให้เป็นไปตามมาตรฐานและกฎระเบียบ",
+      "keywords_for_highlighting": [
+        "functionality"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "ตัวเลือก A คือ AWS IAM Identity Center ซึ่งเกี่ยวข้องกับการจัดการการเข้าถึงและการยืนยันตัวตน ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "An IT engineer needs to access AWS services from an on-premises application. Which credentials or keys does the application need for authentication?",
+      "options": [
+        "AWS account user name and password",
+        "IAM access key and secret",
+        "Amazon EC2 key pairs",
+        "AWS Key Management Service (AWS KMS) keys"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"On-premises application\" ต้องการเข้าถึง AWS ต้องใช้ \"IAM access key and secret\" เสมอเพื่อยืนยันตัวตน",
+      "keywords_for_highlighting": [
+        "on-premises application",
+        "AWS services",
+        "authentication"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการที่แอปพลิเคชันเข้าถึงบริการ AWS ซึ่งเกี่ยวข้องโดยตรงกับการรักษาความปลอดภัยและการจัดการการเข้าถึง (authentication)"
+    },
+    {
+      "question": "Which AWS service or feature identifies whether an Amazon S3 bucket or an IAM role has been shared with an external entity?",
+      "options": [
+        "AWS Service Catalog",
+        "AWS Systems Manager",
+        "AWS IAM Access Analyzer",
+        "AWS Organizations"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Access Analyzer\" ช่วย \"วิเคราะห์การเข้าถึง\" ทรัพยากร AWS ของคุณจากภายนอกองค์กร (external entity) โดยเฉพาะ S3 bucket และ IAM role ที่อาจถูกแชร์ออกไป",
+      "keywords_for_highlighting": [
+        "shared with external entity",
+        "S3 bucket",
+        "IAM role"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการระบุว่าทรัพยากร AWS ถูกแชร์กับภายนอกหรือไม่ ซึ่งเป็นประเด็นด้านความปลอดภัยและการควบคุมการเข้าถึง"
+    },
+    {
+      "question": "An AWS user wants to proactively detect when an instance or account might be compromised or if there are threats from attacks. Which AWS service should the user choose?",
+      "options": [
+        "Amazon GuardDuty   336",
+        "AWS WAF",
+        "AWS Shield",
+        "Amazon Inspector"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ตรวจจับภัยคุกคามเชิงรุก\" ให้จำ GuardDuty เหมือน \"ยามรักษาความปลอดภัย\" ที่คอยตรวจตรา",
+      "keywords_for_highlighting": [
+        "proactively detect",
+        "compromised",
+        "threats",
+        "attacks"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ \"การตรวจจับเชิงรุกเมื่ออินสแตนซ์หรือบัญชีอาจถูกบุกรุก\" และ \"ภัยคุกคามจากการโจมตี\" เกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงทรัพยากรบน AWS"
+    },
+    {
+      "question": "A company needs to track the activity in its AWS accounts, and needs to know when an API call is made against its AWS resources. Which AWS tool or service can be used to meet these requirements?",
+      "options": [
+        "Amazon CloudWatch",
+        "Amazon Inspector",
+        "AWS CloudTrail",
+        "AWS IAM"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"Activity\" และ \"API call\" ต้องคู่กับ \"CloudTrail\" เสมอ เพราะ CloudTrail ตามรอยทุกการเรียก API ใน AWS**",
+      "keywords_for_highlighting": [
+        "track the activity",
+        "API call",
+        "AWS resources"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความสามารถในการติดตามกิจกรรมและการเรียก API ในบัญชี AWS ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงทรัพยากร AWS"
+    },
+    {
+      "question": "To assist companies with Payment Card Industry Data Security Standard (PCI DSS) compliance in the cloud. AWS provides:",
+      "options": [
+        "physical inspections of data centers by appointment.",
+        "required PCI compliance certifications for any application running on AWS.",
+        "an AWS Attestation of Compliance (AOC) report for specific AWS services.",
+        "professional PCI compliance services."
+      ],
+      "correctAnswer": 2,
+      "explanation": "**PCI DSS + Compliance ใน AWS = AOC Report** (จำว่า AWS ช่วยเรื่อง PCI Compliance ด้วยเอกสาร AOC)",
+      "keywords_for_highlighting": [
+        "PCI DSS",
+        "compliance",
+        "cloud"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ PCI DSS compliance เกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูล ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"ความปลอดภัยและการเข้าถึง\""
+    },
+    {
+      "question": "Which AWS service is a cloud security posture management (CSPM) service that aggregates alerts from various AWS services and partner products in a standardized format?",
+      "options": [
+        "AWS Security Hub",
+        "AWS Trusted Advisor",
+        "Amazon EventBndge   354",
+        "Amazon GuardDuty"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Security Hub\" คือ \"ศูนย์กลางความปลอดภัย\" ที่รวมการแจ้งเตือนจากที่ต่างๆ มาตรฐานเดียวกัน",
+      "keywords_for_highlighting": [
+        "cloud security posture management (CSPM)",
+        "aggregates alerts",
+        "standardized format"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ช่วยจัดการความปลอดภัยของระบบคลาวด์ (CSPM) ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงทรัพยากรบน AWS"
+    },
+    {
+      "question": "Using AWS Identity and Access Management (IAM) to grant access only to the resources needed to perform a task is a concept known as:",
+      "options": [
+        "restricted access.",
+        "as-needed access.",
+        "least privilege access.",
+        "token access."
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"IAM จำกัดสิทธิ์เท่าที่จำเป็น\" ให้จำว่า \"น้อยที่สุด\" คือ \"ดีที่สุด\" ในเรื่องการให้สิทธิ์ (least privilege).",
+      "keywords_for_highlighting": [
+        "IAM",
+        "grant access",
+        "resources needed",
+        "task"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ IAM ซึ่งเป็นบริการที่ใช้ในการจัดการการเข้าถึงทรัพยากร AWS และแนวคิดเรื่องการให้สิทธิ์การเข้าถึงเฉพาะทรัพยากรที่จำเป็น ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงโดยตรง"
+    },
+    {
+      "question": "Which AWS Cloud deployment model uses AWS Outposts as part of the application deployment infrastructure?",
+      "options": [
+        "On-premises",
+        "Serverless",
+        "Cloud-native",
+        "Hybrid"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Outposts\" คือการขยาย AWS ไปยัง On-premises ดังนั้นจึงเป็นการผสมผสานระหว่าง Cloud และ On-premises ซึ่งก็คือ \"Hybrid\"",
+      "keywords_for_highlighting": [
+        "AWS Outposts",
+        "deployment model"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับโมเดลการปรับใช้ AWS Cloud ที่ใช้ AWS Outposts ซึ่งเกี่ยวข้องกับการรักษาความปลอดภัยและการเข้าถึงทรัพยากรในสภาพแวดล้อมแบบไฮบริด (Hybrid) ที่เชื่อมต่อกับ AWS Cloud"
+    },
+    {
+      "question": "A company needs to block SQL injection attacks. Which AWS service or feature can meet this requirement?",
+      "options": [
+        "AWS WAF",
+        "AWS Shield",
+        "Network ACLs",
+        "Security groups"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**SQL Injection ต้อง WAF!** ป้องกันเว็บแอปพลิเคชันจากช่องโหว่ต่างๆ รวมถึง SQL Injection",
+      "keywords_for_highlighting": [
+        "SQL injection attacks",
+        "block"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความปลอดภัย (SQL injection attacks) และการใช้บริการ AWS เพื่อป้องกันภัยคุกคาม ซึ่งเกี่ยวข้องกับหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "Which action is a security best practice for access to sensitive data that is stored in an Amazon S3 bucket?",
+      "options": [
+        "Enable S3 Cross-Region Replication (CRR) on the S3 bucket.",
+        "Use IAM roles for applications that require access to the S3 bucket.",
+        "Configure AWS WAF to prevent unauthorized access to the S3 bucket.",
+        "Configure Amazon GuardDuty to prevent unauthorized access to the S3 bucket."
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"Sensitive data\" ใน S3 ต้องใช้ \"IAM roles\" เพื่อการเข้าถึงที่ปลอดภัยจากแอปพลิเคชัน**",
+      "keywords_for_highlighting": [
+        "sensitive data",
+        "S3 bucket",
+        "access",
+        "security best practice"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การรักษาความปลอดภัยข้อมูลใน S3 และการควบคุมการเข้าถึง ซึ่งเป็นประเด็นหลักของหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "What is the best resource for a user to find compliance-related information and reports about AWS?",
+      "options": [
+        "AWS Artifact",
+        "AWS Marketplace",
+        "Amazon Inspector",
+        "Increase operational costs across data centers."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Artifact\" คือ \"สิ่งประดิษฐ์\" หรือ \"หลักฐาน\" จำว่าถ้าถามหาข้อมูลและรายงานเกี่ยวกับ \"compliance\" (การปฏิบัติตามข้อกำหนด) ให้มองหา \"หลักฐาน\" หรือ \"Artifact\"",
+      "keywords_for_highlighting": [
+        "compliance",
+        "information",
+        "reports",
+        "AWS"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับข้อมูลและรายงานที่เกี่ยวข้องกับการปฏิบัติตามข้อกำหนด (Compliance) ของ AWS เกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูล ซึ่งเป็นส่วนหนึ่งของการปฏิบัติตามข้อกำหนดต่างๆ"
+    },
+    {
+      "question": "What is the MOST secure way to store passwords on AWS?",
+      "options": [
+        "Store passwords in an Amazon S3 bucket.",
+        "Store passwords as AWS CloudFormation parameters",
+        "Store passwords in AWS Storage Gateway.   371",
+        "Store passwords in AWS Secrets Manager."
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ความลับ\" ต้องเก็บใน \"Secrets Manager\" เท่านั้น!",
+      "keywords_for_highlighting": [
+        "secure",
+        "passwords",
+        "store",
+        "AWS"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงวิธีการที่ปลอดภัยที่สุดในการจัดเก็บรหัสผ่าน ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงทรัพยากรบน AWS"
+    },
+    {
+      "question": "Which service enables customers to audit API calls in their AWS accounts'?",
+      "options": [
+        "AWS CloudTrail",
+        "AWS Trusted Advisor",
+        "Amazon Inspector",
+        "AWS X-Ray   377"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Audit API calls\" นึกถึง \"CloudTrail\" ที่คอย \"ตามรอย\" การเรียก API ทุกอย่างใน AWS Account",
+      "keywords_for_highlighting": [
+        "audit",
+        "API calls"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริการที่ใช้ตรวจสอบ API calls ในบัญชี AWS ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงข้อมูลในระบบคลาวด์"
+    },
+    {
+      "question": "A company wants to establish a schedule for rotating database user credentials. Which AWS service will support this requirement with the LEAST amount of operational overhead?",
+      "options": [
+        "AWS Systems Manager",
+        "AWS Secrets Manager",
+        "AWS License Manager",
+        "AWS Managed Services"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ต้องการหมุนเวียนข้อมูลลับ (credentials) แบบง่ายที่สุด ให้มองหา \"Secrets Manager\" เพราะชื่อก็บอกอยู่แล้วว่าจัดการความลับ",
+      "keywords_for_highlighting": [
+        "schedule",
+        "rotating",
+        "database user credentials",
+        "LEAST amount of operational overhead"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการข้อมูลลับ (database user credentials) และการหมุนเวียนข้อมูลลับ ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "Which guidelines are best practices for using AWS Identity and Access Management (1AM)? (Select\nTWO.)",
+      "options": [
+        "Share access keys.",
+        "Create individual 1AM users.",
+        "Use inline policies instead of customer managed policies.",
+        "Grant maximum privileges to 1AM users.",
+        "Use groups to assign permissions to 1AM users."
+      ],
+      "correctAnswer": [
+        1,
+        4
+      ],
+      "explanation": "IAM คือเรื่อง \"ตัวใครตัวมัน\" และ \"จัดกลุ่มให้ง่าย\" เสมอ! คิดถึงการจัดการสิทธิ์แบบรายบุคคลและแบบกลุ่ม",
+      "keywords_for_highlighting": [
+        "IAM",
+        "best practices"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS IAM และแนวปฏิบัติที่ดีที่สุดในการใช้งาน IAM เกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "A social media company wants to protect its web application from common web exploits such as SQL injections and cross-site scripting. Which AWS service will meet these requirements?",
+      "options": [
+        "Amazon Inspector",
+        "AWS WAF",
+        "Amazon GuardDuty",
+        "Amazon CloudWatch"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**เว็บแอป + SQL injection/XSS = WAF (Web Application Firewall) ป้องกันเว็บ**",
+      "keywords_for_highlighting": [
+        "web application",
+        "SQL injections",
+        "cross-site scripting",
+        "web exploits"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความปลอดภัยของเว็บแอปพลิเคชันและการป้องกันการโจมตีทางไซเบอร์ ซึ่งเป็นหัวใจหลักของหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A company needs to perform an audit of recent AWS account activity. The audit will investigate who initiated an event and what actions were performed. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "AWS Config",
+        "Amazon Rekognition",
+        "AWS CloudTrail",
+        "Amazon Simple Notification Service (Amazon SNS)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Audit\" (การตรวจสอบ) และ \"who initiated an event\" (ใครเป็นคนเริ่มเหตุการณ์) ให้คิดถึง CloudTrail ที่บันทึกร่องรอยการกระทำทั้งหมดใน AWS",
+      "keywords_for_highlighting": [
+        "audit",
+        "AWS account activity",
+        "who initiated an event",
+        "actions were performed"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการตรวจสอบกิจกรรมในบัญชี AWS เพื่อระบุผู้ที่เริ่มต้นเหตุการณ์และการกระทำที่เกิดขึ้น ซึ่งเป็นส่วนหนึ่งของการรักษาความปลอดภัยและการเข้าถึงระบบ AWS"
+    },
+    {
+      "question": "389 Which AWS service integrates with other AWS services to provide the ability to encrypt data at rest?",
+      "options": [
+        "AWS Key Management Service (AWS KMS)",
+        "AWS Certificate Manager (ACM)",
+        "AWS Identity and Access Management (1AM)",
+        "AWS Security Hub"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Encrypt data at rest\" (เข้ารหัสข้อมูลที่พัก) ให้คิดถึง \"KMS\" (Key Management Service) ที่จัดการกุญแจสำคัญในการเข้ารหัส",
+      "keywords_for_highlighting": [
+        "encrypt data at rest"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการที่ใช้ในการเข้ารหัสข้อมูล ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS"
+    },
+    {
+      "question": "A cloud practitioner needs to obtain AWS compliance reports before migrating an environment to the AWS Cloud How can these reports be generated?",
+      "options": [
+        "Contact the AWS Compliance team",
+        "Download the reports from AWS Artifact",
+        "Open a case with AWS Support",
+        "Generate the reports with Amazon Macie."
+      ],
+      "correctAnswer": 1,
+      "explanation": "อยากได้รายงาน compliance ก่อนย้ายไป AWS Cloud? นึกถึง \"Artifact\" ที่เก็บรวบรวมเอกสารสำคัญต่างๆ",
+      "keywords_for_highlighting": [
+        "compliance reports",
+        "migrating",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับการเข้าถึงรายงานการปฏิบัติตามข้อกำหนด ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงข้อมูลที่เกี่ยวข้องกับการปฏิบัติตามกฎระเบียบ (Compliance)."
+    },
+    {
+      "question": "In which situations should a company create an 1AM user instead of an 1AM role? (Select TWO.)",
+      "options": [
+        "When an application that runs on Amazon EC2 instances requires access to other AWS services",
+        "When the company creates AWS access credentials for individuals",
+        "When the company creates an application that runs on a mobile phone that makes requests to AWS",
+        "When the company needs to add users to 1AM groups",
+        "When users are authenticated in the corporate network and want to be able to use AWS without having to sign in a second time"
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "IAM **User** สร้างให้ **คน** จริงๆ ที่ต้องการเข้า AWS โดยตรง และ **User** ต้องอยู่ใน **Group** เพื่อจัดการสิทธิ์",
+      "keywords_for_highlighting": [
+        "IAM user",
+        "instead of IAM role"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ IAM ซึ่งเป็นบริการที่ใช้ในการจัดการความปลอดภัยและการเข้าถึงทรัพยากร AWS"
+    },
+    {
+      "question": "Which AWS service supports user sign-up functionality and authentication to mobile and web applications?",
+      "options": [
+        "Amazon Cognito",
+        "AWS Config",
+        "Amazon GuardDuty",
+        "AWS Systems Manager"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"Sign-up\" และ \"Authentication\" สำหรับแอปบนมือถือและเว็บ = Cognito (คิดถึง \"Cognito\" เหมือน \"Login\")**",
+      "keywords_for_highlighting": [
+        "user sign-up",
+        "authentication",
+        "mobile applications",
+        "web applications"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการระบุบริการที่ใช้ในการจัดการการเข้าถึงและการพิสูจน์ตัวตนของผู้ใช้ ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึงใน AWS Cloud."
+    },
+    {
+      "question": "A systems administrator created a new 1AM user for a developer and assigned the user an access key instead of a user name and password. What is the access key used for?",
+      "options": [
+        "To access the AWS account as the AWS account root user",
+        "To access the AWS account through the AWS Management Console",
+        "To access the AWS account through a CLI",
+        "To access all of a company's AWS accounts"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Access key\" มาคู่กับ \"CLI\" เสมอ จำไว้ว่า CLI ต้องใช้ Access key ในการเข้าถึง AWS",
+      "keywords_for_highlighting": [
+        "access key",
+        "user",
+        "CLI"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการสร้าง IAM user และการใช้ access key ซึ่งเป็นส่วนหนึ่งของการจัดการความปลอดภัยและการเข้าถึงทรัพยากรใน AWS."
+    },
+    {
+      "question": "Which AWS service or resource provides answers to the most frequently askedsecurity- related questions that AWS receives from its users'?",
+      "options": [
+        "AWS Artifact",
+        "Amazon Connect",
+        "AWS Chatbot",
+        "AWS Knowledge Center"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"Artifact\" เหมือน \"คลังเอกสาร\" ที่เก็บคำถามยอดฮิตด้านความปลอดภัยจากผู้ใช้งาน AWS ไว้**",
+      "keywords_for_highlighting": [
+        "security-related questions",
+        "AWS receives from its users"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการหรือแหล่งข้อมูลที่ให้คำตอบเกี่ยวกับคำถามด้านความปลอดภัยที่พบบ่อย ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึง (Security and Access) ใน AWS Cloud."
+    },
+    {
+      "question": "A user has been granted permission to change their own IAM user password. Which AWS services can the user use to change the password? (Select TWO.)",
+      "options": [
+        "AWS Command Line Interface (AWS CLI)",
+        "AWS Key Management Service (AWS KMS)",
+        "AWS Management Console",
+        "AWS Resource Access Manager (AWS RAM)",
+        "AWS Secrets Manager"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "เปลี่ยนรหัสผ่านตัวเองต้องใช้เครื่องมือที่คนใช้โดยตรงได้เลย (CLI หรือ Console) ไม่ใช่บริการจัดการความปลอดภัยลับๆ",
+      "keywords_for_highlighting": [
+        "IAM user password",
+        "change the password"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการสิทธิ์การเข้าถึง (permission) และการเปลี่ยนแปลงรหัสผ่าน ซึ่งเป็นส่วนสำคัญของความปลอดภัยและการเข้าถึงใน AWS"
+    },
+    {
+      "question": "A company uses a third-party identity provider (IdP). The company wants to provide its employees with access to AWS accounts and services without requiring another set of login credentials. Which AWS service will meet this requirement?",
+      "options": [
+        "AWS Directory Service",
+        "Amazon Cognito",
+        "AWS IAM Identity Center",
+        "AWS Resource Access Manager (AWS RAM)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"IdP\" (Third-party Identity Provider) และ \"ไม่ต้องใช้ login credentials ชุดใหม่\" ให้คิดถึง \"IAM Identity Center\" ที่ช่วยรวมศูนย์การจัดการ identity",
+      "keywords_for_highlighting": [
+        "third-party identity provider",
+        "IdP",
+        "access to AWS accounts",
+        "without requiring another set of login credentials"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการให้สิทธิ์การเข้าถึง AWS โดยใช้ผู้ให้บริการ identity provider ภายนอก ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการจัดการการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "Which options are AWS Cloud Adoption Framework (AWS CAF) security perspective capabilities? (Select\nTWO.)",
+      "options": [
+        "Observability",
+        "Incident and problem management",
+        "Incident response",
+        "Infrastructure protection",
+        "Availability and continuity"
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "CAF ด้าน Security เน้น \"การรับมือ\" กับเหตุการณ์ (Incident Response) และ \"การป้องกัน\" โครงสร้างพื้นฐาน (Infrastructure Protection) เป็นหลัก",
+      "keywords_for_highlighting": [
+        "AWS Cloud Adoption Framework",
+        "security perspective capabilities"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามถามเกี่ยวกับ AWS Cloud Adoption Framework (AWS CAF) ในส่วนของมุมมองด้านความปลอดภัย ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "A company is migrating its applications from on-premises to the AWS Cloud. The company wants to ensure   450 that the applications are assigned only the minimum permissions that are needed to perform all operations. Which AWS service will meet these requirements'?",
+      "options": [
+        "AWS Identity and Access Management (IAM)",
+        "Amazon CloudWatch",
+        "Amazon Macie",
+        "Amazon GuardDuty"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ต้องการให้สิทธิ์น้อยที่สุด (minimum permissions) เพื่อใช้งาน AWS, นึกถึง IAM ทันที เพราะ IAM คือบริการจัดการสิทธิ์การเข้าถึงใน AWS",
+      "keywords_for_highlighting": [
+        "minimum permissions",
+        "operations"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเน้นเรื่องการกำหนดสิทธิ์การเข้าถึงขั้นต่ำ ซึ่งเป็นส่วนสำคัญของความปลอดภัยและการเข้าถึงทรัพยากรใน AWS และ IAM เป็นบริการหลักที่ใช้จัดการสิทธิ์เหล่านี้"
+    },
+    {
+      "question": "Which AWS service gives users the ability to discover and protect sensitive data that is stored in Amazon   452 S3 buckets?",
+      "options": [
+        "Amazon Macie",
+        "Amazon Detective",
+        "Amazon GuardDuty",
+        "AWS I AM Access Analyzer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**Macie มาช่วย \"ค้นหาและปกป้อง\" ข้อมูลสำคัญใน S3 เหมือนเป็นผู้ช่วยส่วนตัวที่คอยสอดส่องดูแลข้อมูล**",
+      "keywords_for_highlighting": [
+        "discover",
+        "protect",
+        "sensitive data",
+        "S3 buckets"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการที่ใช้ค้นหาและปกป้องข้อมูลที่ละเอียดอ่อน ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS S3"
+    },
+    {
+      "question": "A company wants to allow users to authenticate and authorize multiple AWS accounts by using a single set of credentials. Which AWS service or resource will meet this requirement?",
+      "options": [
+        "AWS Organizations",
+        "IAM user",
+        "AWS IAM Identity Center (AWS Single Sign-On)",
+        "AWS Control Tower"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Single set of credentials\" หรือ \"ชุดข้อมูลรับรองเดียว\" ให้จำว่าต้องใช้ IAM Identity Center (Single Sign-On) เพื่อจัดการการเข้าถึงหลายบัญชี AWS ด้วยข้อมูลชุดเดียว",
+      "keywords_for_highlighting": [
+        "authenticate",
+        "authorize",
+        "multiple AWS accounts",
+        "single set of credentials"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการอนุญาตให้ผู้ใช้ตรวจสอบสิทธิ์และให้สิทธิ์การเข้าถึงบัญชี AWS หลายบัญชี ซึ่งเป็นประเด็นหลักด้านความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "Which of the following services can be used to block network traffic to an instance? (Select TWO.)",
+      "options": [
+        "Security groups",
+        "Amazon Virtual Private Cloud (Amazon VPC) flow logs",
+        "Network ACLs",
+        "Amazon CloudWatch",
+        "AWS CloudTrail"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "\"บล็อกทราฟฟิก\" นึกถึง \"Security groups\" และ \"Network ACLs\" ที่เป็นเหมือน \"ยาม\" คอยเฝ้าระวังการเข้าออกของข้อมูล",
+      "keywords_for_highlighting": [
+        "block",
+        "network traffic",
+        "instance"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการบล็อกทราฟฟิกเครือข่าย ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการควบคุมการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "A company is requesting Payment Card Industry (PCI) reports that validate the operating effectiveness of AWS security controls. How should the company obtain these reports?",
+      "options": [
+        "Contact AWS Support",
+        "Download reports from AWS Artifact.",
+        "Download reports from AWS Security Hub.",
+        "Contact an AWS technical account manager (TAM)."
+      ],
+      "correctAnswer": 1,
+      "explanation": "PCI reports และ AWS security controls ให้คิดถึง AWS Artifact ที่เป็นแหล่งรวมเอกสาร compliance และรายงานต่างๆ",
+      "keywords_for_highlighting": [
+        "PCI reports",
+        "AWS security controls",
+        "validate",
+        "obtain"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการขอรายงาน PCI ซึ่งเป็นการตรวจสอบความปลอดภัยและการปฏิบัติตามข้อกำหนดด้านความปลอดภัย ดังนั้นจึงจัดอยู่ในหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "462 An administrator observed that multiple AWS resources were deleted yesterday. Which AWS service will help identify the cause and determine which user deleted the resources?",
+      "options": [
+        "AWS CtoudTrail",
+        "Amazon Inspector",
+        "Amazon GuardDuty",
+        "AWS Trusted Advisor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "อยากรู้ว่าใครลบอะไรใน AWS ให้มองหา \"ร่องรอย\" หรือ \"บันทึก\" การกระทำ ซึ่งก็คือ CloudTrail นั่นเอง",
+      "keywords_for_highlighting": [
+        "resources deleted",
+        "identify the cause",
+        "which user"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการระบุผู้ใช้ที่ลบทรัพยากร ซึ่งเป็นประเด็นด้านความปลอดภัยและการเข้าถึง (Security and Access) โดย AWS CloudTrail เป็นบริการที่ใช้ในการตรวจสอบกิจกรรมในบัญชี AWS"
+    },
+    {
+      "question": "Which AWS service is used to provide encryption for Amazon EBS?",
+      "options": [
+        "AWS Certificate Manager",
+        "AWS Systems Manager",
+        "AWS KMS",
+        "AWS Config"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**EBS ปลอดภัยต้อง KMS!** จำไว้ว่า EBS (Elastic Block Storage) ต้องการการเข้ารหัส และ KMS (Key Management Service) คือบริการที่จัดการกุญแจเข้ารหัส",
+      "keywords_for_highlighting": [
+        "encryption",
+        "Amazon EBS"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการที่ใช้ในการเข้ารหัสข้อมูล ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS."
+    },
+    {
+      "question": "A company has deployed applications on Amazon EC2 instances. The company needs to assess application vulnerabilities and must identify infrastructure deployments that do not meet best practices. Which AWS service can the company use to meet these requirements?",
+      "options": [
+        "AWS Trusted Advisor",
+        "Amazon Inspector   465",
+        "AWSConfig",
+        "Amazon GuardDuty"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Vulnerabilities\" และ \"Best Practices\" ชี้ไปที่ Inspector เพราะ Inspector ช่วยตรวจสอบช่องโหว่และความสอดคล้องตามมาตรฐาน",
+      "keywords_for_highlighting": [
+        "application vulnerabilities",
+        "infrastructure deployments",
+        "best practices"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเน้นการประเมินช่องโหว่ของแอปพลิเคชันและการระบุการปรับใช้ที่ไม่เป็นไปตามแนวทางปฏิบัติที่ดี ซึ่งเกี่ยวข้องกับความปลอดภัยของระบบ ดังนั้นจึงจัดอยู่ในหมวดความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A user wants to allow applications running on an Amazon EC2 instance to make calls to other AWS services. The access granted must be secure. Which AWS service or feature should be used?",
+      "options": [
+        "Security groups",
+        "AWS Firewall Manager",
+        "IAM roles",
+        "IAM user SSH keys"
+      ],
+      "correctAnswer": 2,
+      "explanation": "EC2 ต้องการสิทธิ์เข้าถึงบริการ AWS อื่นๆ อย่างปลอดภัย นึกถึง \"IAM roles\" เพราะเป็นเหมือนบัตรประชาชนดิจิทัลที่ EC2 ใช้",
+      "keywords_for_highlighting": [
+        "EC2 instance",
+        "calls to other AWS services",
+        "secure"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการให้สิทธิ์การเข้าถึงบริการ AWS อย่างปลอดภัย ซึ่งเป็นหัวใจหลักของความปลอดภัยและการเข้าถึงใน AWS"
+    },
+    {
+      "question": "A company needs a firewall that will control network connections to and from a single Amazon EC2 instance. This firewall will not control network connections to and from other instances that are in the same subnet. Which AWS service or feature can the company use to meet these requirements?",
+      "options": [
+        "Network ACL",
+        "AWS WAF",
+        "Route table   470",
+        "Security group"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"EC2 instance *เดียว* ที่ต้องการ firewall เฉพาะเจาะจง ต้องนึกถึง Security Group เพราะมันผูกกับ instance โดยตรง\"",
+      "keywords_for_highlighting": [
+        "firewall",
+        "single EC2 instance",
+        "network connections"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับไฟร์วอลล์และการควบคุมการเข้าถึงทรัพยากร EC2 ซึ่งเป็นประเด็นหลักด้านความปลอดภัยและการเข้าถึงใน AWS"
+    },
+    {
+      "question": "A company wants to migrate to AWS and use the same security software it uses on premises. The security software vendor offers its security software as a service on AWS. Where can the company purchase the security solution?",
+      "options": [
+        "AWS Partner Solutions Finder",
+        "AWS Support Center",
+        "AWS Management Console",
+        "AWS Marketplace"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ต้องการใช้ซอฟต์แวร์เดิมบน AWS และผู้ขายมีบริการบน AWS ให้มองหา \"Marketplace\" ที่เป็นตลาดซื้อขายซอฟต์แวร์สำเร็จรูป",
+      "keywords_for_highlighting": [
+        "migrate to AWS",
+        "same security software",
+        "security software as a service",
+        "purchase"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นเรื่องการใช้ซอฟต์แวร์รักษาความปลอดภัยบน AWS ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงทรัพยากรบนคลาวด์"
+    },
+    {
+      "question": "A company wants to generate a list of IAM users. The company also wants to view the status of various credentials that are associated with the users, such as password, access keys: and multi-factor authentication (MFA) devices Which AWS service or feature will meet these requirements?",
+      "options": [
+        "IAM credential report",
+        "AWS IAM Identity Center (AWS Single Sign-On)",
+        "AWS Identity and Access Management Access Analyzer",
+        "AWS Cost and Usage Report"
+      ],
+      "correctAnswer": 0,
+      "explanation": "อยากรู้สถานะ credentials (รหัสผ่าน, access keys, MFA) ของ IAM users ให้มองหา \"IAM credential report\"",
+      "keywords_for_highlighting": [
+        "IAM users",
+        "status of credentials",
+        "password",
+        "access keys",
+        "multi-factor authentication (MFA)"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ IAM users, credentials, access keys และ MFA ซึ่งเป็นเรื่องที่เกี่ยวข้องกับความปลอดภัยและการเข้าถึงทรัพยากรใน AWS โดยตรง"
+    },
+    {
+      "question": "A company wants to control the protection of its AWS resources. The company wants to block SQL injection attacks and cross-site scripting. Which AWS service or feature meets these requirements?",
+      "options": [
+        "Amazon GuardDuty",
+        "AWSWAF",
+        "Security groups",
+        "AWS Shield"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"SQL injection\" และ \"cross-site scripting\" คือการโจมตีเว็บแอปพลิเคชัน ต้องใช้ WAF (Web Application Firewall) ช่วยป้องกัน",
+      "keywords_for_highlighting": [
+        "SQL injection",
+        "cross-site scripting",
+        "protection",
+        "AWS resources"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นการควบคุมและป้องกันภัยคุกคามต่อทรัพยากร AWS ซึ่งเกี่ยวข้องกับความปลอดภัยและการเข้าถึงโดยตรง"
+    },
+    {
+      "question": "Which AWS service or feature allows users to securely store encrypted credentials and retrieve these credentials when required?",
+      "options": [
+        "AWS Encryption SDK",
+        "AWS Security Hub",
+        "AWS Secrets Manager",
+        "AWS Artifact"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Secrets\" ในชื่อบริการ \"Secrets Manager\" ตรงกับความต้องการในการ \"store encrypted credentials\" ในโจทย์",
+      "keywords_for_highlighting": [
+        "securely store",
+        "encrypted credentials",
+        "retrieve"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้จัดเก็บข้อมูลรับรองที่เข้ารหัสอย่างปลอดภัย ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการจัดการการเข้าถึงทรัพยากรใน AWS"
+    },
+    {
+      "question": "Which action should a company take to improve security in its AWS account?",
+      "options": [
+        "Require multi-factor authentication (MFA) for privileged users.",
+        "Remove the root user account.",
+        "Create an access key for the AWS account root user.",
+        "Create an access key for each privileged user."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Security\" คู่กับ \"MFA\" เสมอ โดยเฉพาะเมื่อพูดถึงผู้ใช้ที่มีสิทธิ์สูง (privileged users)",
+      "keywords_for_highlighting": [
+        "security",
+        "improve",
+        "AWS account"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเน้นที่การปรับปรุงความปลอดภัยในบัญชี AWS และตัวเลือกต่างๆ เกี่ยวข้องกับ MFA, การจัดการบัญชี root และการจัดการ access key ซึ่งทั้งหมดนี้เป็นประเด็นด้านความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A company needs to block SOL injection attacks. Which AWS service or feature provides this functionality?",
+      "options": [
+        "AWS WAF",
+        "Network ACLs",
+        "Security groups",
+        "AWS Trusted Advisor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"SQL injection\" โจมตีเว็บแอปพลิเคชัน ต้องใช้ \"WAF\" (Web Application Firewall) เพื่อป้องกัน",
+      "keywords_for_highlighting": [
+        "SQL injection attacks",
+        "block"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการป้องกัน SQL injection ซึ่งเป็นประเด็นด้านความปลอดภัย และ AWS WAF เป็นบริการที่ใช้ในการป้องกันภัยคุกคามทางเว็บ รวมถึง SQL injection ดังนั้นจึงจัดอยู่ในหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A company wants to secure its consumer web application by using SSL/TLS to encrypt traffic. Which AWS service can the company use to meet this goal?",
+      "options": [
+        "AWS WAF",
+        "AWS Shield",
+        "Amazon VPC",
+        "AWS Certificate Manager (ACM)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"SSL/TLS\" และ \"encrypt traffic\" นึกถึง \"Certificate Manager\" เพราะใบรับรอง (Certificate) ใช้สำหรับเข้ารหัส",
+      "keywords_for_highlighting": [
+        "secure",
+        "SSL/TLS",
+        "encrypt traffic"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับการรักษาความปลอดภัยของเว็บแอปพลิเคชันโดยใช้ SSL/TLS ซึ่งเป็นส่วนหนึ่งของความปลอดภัยและการเข้าถึงข้อมูล"
+    },
+    {
+      "question": "Which task can an IAM user perform without AWS account root user credentials?",
+      "options": [
+        "Change to a different AWS Support plan.",
+        "Close an AWS account.",
+        "View the AWS Billing console.",
+        "Activate access to the AWS Billing console."
+      ],
+      "correctAnswer": 2,
+      "explanation": "IAM user ทำได้แค่ดู (View) Billing console, แต่การเปลี่ยนแปลง (Change, Close, Activate) ต้องใช้สิทธิ์ Root",
+      "keywords_for_highlighting": [
+        "IAM user",
+        "without root",
+        "task"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ IAM user, root user credentials และการเข้าถึง AWS Billing console ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการจัดการสิทธิ์การเข้าถึง (access management) ใน AWS"
+    },
+    {
+      "question": "A company wants to centrally manage Its employee's access to multiple AWS accounts. Which AWS service or feature should the company use to meet this requirement?",
+      "options": [
+        "AWS Identity and Access Management Access Analyzer",
+        "AWS Secrets Manager",
+        "AWS IAM Identity Center",
+        "AWS Security Token Service (AWS STS)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**จัดการการเข้าถึงหลายบัญชี (multiple accounts) แบบรวมศูนย์ (centrally manage) ต้องใช้ Identity Center**",
+      "keywords_for_highlighting": [
+        "centrally manage",
+        "multiple AWS accounts",
+        "employee\\'s access"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการการเข้าถึงของผู้ใช้งานไปยังบัญชี AWS หลายบัญชี ซึ่งเป็นประเด็นหลักด้านความปลอดภัยและการเข้าถึง (Security and Access)"
+    },
+    {
+      "question": "A company wants to enhance security by launching a third-party ISP intrusion detection system from its AWS account. Which AWS service or resource should the company use to meet this requirement?",
+      "options": [
+        "AWS Security Hub",
+        "AWS Marketplace",
+        "AWS Quick Starts",
+        "AWS Security Center"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ต้องการใช้ระบบ intrusion detection ของ third-party จาก AWS account ให้มองหา \"Marketplace\" เพราะเป็นที่ซื้อขายซอฟต์แวร์และบริการจากภายนอก",
+      "keywords_for_highlighting": [
+        "third-party",
+        "intrusion detection system",
+        "AWS account"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเสริมสร้างความปลอดภัยโดยใช้ระบบตรวจจับการบุกรุก ซึ่งเกี่ยวข้องกับบริการและทรัพยากรที่ช่วยในการรักษาความปลอดภัยของ AWS account"
+    },
+    {
+      "question": "A company needs to manage multiple logins across AWS accounts within the same organization in AWS Organizations. Which AWS service should the company use to meet this requirement?",
+      "options": [
+        "Amazon VPC",
+        "Amazon GuardDuty",
+        "Amazon Cognito",
+        "AWS IAM Identity Center   502"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"จัดการหลายบัญชี\" ในองค์กรเดียวกัน ให้จำ \"IAM Identity Center\" เป็นศูนย์รวมจัดการตัวตน",
+      "keywords_for_highlighting": [
+        "multiple logins",
+        "AWS accounts",
+        "AWS Organizations"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การจัดการการเข้าถึงและการจัดการข้อมูลประจำตัว (logins) ซึ่งเป็นส่วนสำคัญของความปลอดภัยและการเข้าถึงใน AWS"
+    },
+    {
+      "question": "A company wants a report that lists the status of multi-factor authentication (MFA) devices that all users in the company's AWS account use. Which AWS feature or service will meet this requirement?",
+      "options": [
+        "AWS Cost and Usage Reports",
+        "IAM credential reports",
+        "Detailed Billing Reports",
+        "AWS Cost Explorer reports"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**MFA + ผู้ใช้ (users) + สถานะ (status) = รายงานข้อมูลประจำตัว IAM (IAM credential reports)** เพราะ IAM เกี่ยวข้องกับการจัดการผู้ใช้และการเข้าถึง",
+      "keywords_for_highlighting": [
+        "multi-factor authentication (MFA)",
+        "users",
+        "status",
+        "AWS account"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการตรวจสอบสถานะของ MFA ซึ่งเป็นส่วนหนึ่งของการรักษาความปลอดภัยและการจัดการการเข้าถึงบัญชี AWS ของผู้ใช้"
+    },
+    {
+      "question": "A company wants to log in securely to Linux Amazon EC2 instances. How can the company accomplish this goal?",
+      "options": [
+        "Use SSH keys.",
+        "Use a VPN.",
+        "Use end-to-end encryption.",
+        "Use Amazon Route 53."
+      ],
+      "correctAnswer": 0,
+      "explanation": "**Linux EC2 + login securely** ให้จำว่าต้องใช้ **SSH keys** เสมอ เป็นวิธีมาตรฐานและปลอดภัย",
+      "keywords_for_highlighting": [
+        "Linux",
+        "EC2",
+        "securely",
+        "log in"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับการล็อกอินเข้า EC2 instances อย่างปลอดภัย ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงทรัพยากรบน AWS"
+    },
+    {
+      "question": "A company's IT administrator needs to configure the AWS CLI for programmatic access to AWS services for the company's employees. Which combination of credential components must the IT administrator use to meet this requirement? (Select TWO.)",
+      "options": [
+        "A public key",
+        "A secret access key",
+        "An IAM role",
+        "An access key ID",
+        "A private key"
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "CLI (Command Line Interface) ต้องการ \"คู่หู\" คือ Access Key ID (เหมือน Username) และ Secret Access Key (เหมือน Password) เพื่อยืนยันตัวตนในการเข้าถึง AWS แบบอัตโนมัติ",
+      "keywords_for_highlighting": [
+        "AWS CLI",
+        "programmatic access",
+        "credential components"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการกำหนดค่า AWS CLI เพื่อให้ผู้ใช้สามารถเข้าถึงบริการ AWS ได้อย่างปลอดภัย ซึ่งต้องใช้ข้อมูลประจำตัว (credentials) ที่ถูกต้อง ดังนั้นจึงจัดอยู่ในหมวดหมู่ \"ความปลอดภัยและการเข้าถึง\""
+    },
+    {
+      "question": "Which AWS service can generate information that can be used by external auditors?",
+      "options": [
+        "Amazon Cognito",
+        "Amazon FSx",
+        "AWS Config",
+        "Amazon Inspector"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Config\" เหมือน \"Configuration\" หรือ \"การตั้งค่า\" ซึ่งต้องมีข้อมูลให้ผู้ตรวจสอบภายนอก (auditors) ตรวจสอบได้",
+      "keywords_for_highlighting": [
+        "external auditors",
+        "generate information"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริการที่สร้างข้อมูลสำหรับผู้ตรวจสอบภายนอกเกี่ยวข้องกับความปลอดภัยและการเข้าถึง เนื่องจากข้อมูลดังกล่าวใช้ในการตรวจสอบความสอดคล้องตามข้อกำหนดด้านความปลอดภัยและการกำกับดูแล"
+    },
+    {
+      "question": "A company is building a web application using AWS. Which AWS service will help prevent network layer DDoS attacks against the web application?",
+      "options": [
+        "AWS WAF",
+        "AWS Firewall Manager",
+        "Amazon GuardDuty",
+        "AWS Shield"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"DDoS\" เหมือน \"Shield\" ที่ใช้ป้องกันการโจมตี ดังนั้นเมื่อเห็น \"DDoS\" ให้ตอบ \"AWS Shield\"",
+      "keywords_for_highlighting": [
+        "DDoS",
+        "network layer",
+        "web application"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับบริการ AWS ที่ช่วยป้องกันการโจมตี DDoS ซึ่งเกี่ยวข้องกับความปลอดภัยของแอปพลิเคชันเว็บโดยตรง"
+    },
+    {
+      "question": "A company is preparing for an audit and wants documentation that AWS complies with the Payment Card Industry Data Security Standard (PCI DSS). Where can the company find this documentation?",
+      "options": [
+        "AWS Artifact",
+        "AWS Organizations",
+        "AWS Trusted Advisor",
+        "AWS Support Center"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"Audit\" (การตรวจสอบ) และ \"PCI DSS\" (มาตรฐานความปลอดภัยบัตรเครดิต) นึกถึง \"Artifact\" (เอกสารหลักฐาน) ที่ใช้ในการตรวจสอบ**",
+      "keywords_for_highlighting": [
+        "audit",
+        "PCI DSS",
+        "documentation",
+        "complies"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับเอกสาร PCI DSS ซึ่งเกี่ยวข้องกับความปลอดภัยและการปฏิบัติตามข้อกำหนด (Compliance) ซึ่งเป็นส่วนหนึ่งของหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "Which AWS service can a company use to manage encryption keys in the cloud?",
+      "options": [
+        "AWS License Manager",
+        "AWS Certificate Manager (ACM)",
+        "AWS CloudHSM",
+        "AWS Directory Service"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**HSM คือ Hardware Security Module เน้นการจัดการ \"encryption keys\" ที่ต้องการความปลอดภัยระดับฮาร์ดแวร์**",
+      "keywords_for_highlighting": [
+        "manage encryption keys"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้จัดการ encryption keys ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึงข้อมูลใน AWS Cloud."
+    },
+    {
+      "question": "A company needs to request temporary, limited-privilege credentials for IAM users and for the federated users that the company authenticates. Which AWS service will provide these credentials?",
+      "options": [
+        "Amazon GuardDuty   520",
+        "AWS Key Management Service (AWS KMS)",
+        "AWS Security Token Service (AWS STS)",
+        "AWS Identity and Access Management Access Analyzer"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ชั่วคราว\" และ \"สิทธิ์จำกัด\" นึกถึง STS ที่แจกโทเค็นชั่วคราวให้ใช้ AWS อย่างปลอดภัย",
+      "keywords_for_highlighting": [
+        "temporary",
+        "limited-privilege credentials",
+        "federated users"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการขอ credentials ชั่วคราวเพื่อจำกัดสิทธิ์การเข้าถึง ซึ่งเป็นเรื่องที่เกี่ยวข้องกับความปลอดภัยและการเข้าถึงทรัพยากรใน AWS โดยตรง"
+    },
+    {
+      "question": "Which AWS service or resource can a company use to deploy AWS WAF rules?",
+      "options": [
+        "Amazon EC2",
+        "Application Load Balancer",
+        "AWS Trusted Advisor",
+        "Network Load Balancer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "WAF (Web Application Firewall) คอยปกป้องเว็บแอปพลิเคชัน ดังนั้นจึงต้องใช้กับ Load Balancer ที่จัดการ traffic ของแอปพลิเคชัน",
+      "keywords_for_highlighting": [
+        "AWS WAF rules",
+        "deploy"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ AWS WAF ซึ่งเป็นบริการที่เกี่ยวข้องกับการรักษาความปลอดภัยของเว็บแอปพลิเคชัน ดังนั้นจึงจัดอยู่ในหมวดหมู่ \"ความปลอดภัยและการเข้าถึง\""
+    },
+    {
+      "question": "A user wants to review all Amazon S3 buckets with ACLs and S3 bucket policies in the S3 console. Which AWS service or resource will meet this requirement?",
+      "options": [
+        "S3 Multi-Region Access Points",
+        "S3 Storage Lens",
+        "AWS IAM Identity Center",
+        "Access Analyzer for S3"
+      ],
+      "correctAnswer": 3,
+      "explanation": "อยาก**review** S3 buckets ที่มี **ACLs** และ **policies** เพื่อดูว่าใครเข้าถึงอะไรได้บ้าง ให้มองหา **Access Analyzer** ที่ช่วยวิเคราะห์สิทธิ์การเข้าถึง",
+      "keywords_for_highlighting": [
+        "review",
+        "S3 buckets",
+        "ACLs",
+        "S3 bucket policies"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ ACLs และ S3 bucket policies เกี่ยวข้องกับการควบคุมการเข้าถึงและความปลอดภัยของข้อมูลใน S3 ซึ่งเป็นส่วนหนึ่งของหมวดหมู่ความปลอดภัยและการเข้าถึง"
+    },
+    {
+      "question": "A company notices suspicious network activity against an application that is running on a fleet of Amazon EC2 instances. The suspicious activity is coming from a single IP address. Which AWS service should the company use to block access from this IP address?",
+      "options": [
+        "AWS Shield",
+        "AWS Config",
+        "Amazon GuardDuty",
+        "AWS WAF"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**\"Suspicious network activity\" และ \"block access\"** คิดถึง **WAF** ที่เป็นเหมือน \"กำแพง\" คอยป้องกันเว็บแอปพลิเคชัน",
+      "keywords_for_highlighting": [
+        "suspicious network activity",
+        "block access",
+        "IP address"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการบล็อก IP address ที่น่าสงสัย ซึ่งเป็นประเด็นด้านความปลอดภัยและการเข้าถึงระบบ"
+    },
+    {
+      "question": "A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLl and AWS software development kits (SDKs). Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Select TWO)",
+      "options": [
+        "Create an 1AM user and provide AWS Management Console access only.",
+        "Create an 1AM user and provide programmatic access only.   532",
+        "Create an 1AM role and provide AWS Management Console access only.",
+        "Create an 1AM policy with administrator access and attach it to the 1AM user.",
+        "Create an 1AM policy with Amazon RDS access and attach it to the 1AM user."
+      ],
+      "correctAnswer": [
+        1,
+        4
+      ],
+      "explanation": "ต้องการเข้าถึง RDS ผ่าน CLI/SDK เท่านั้น และจำกัดสิทธิ์ขั้นต่ำสุด ต้องสร้าง User ที่เข้าถึงแบบ Programmatic (ไม่ใช่ Console) และให้สิทธิ์ RDS โดยเฉพาะ",
+      "keywords_for_highlighting": [
+        "Amazon RDS",
+        "AWS CLI",
+        "AWS software development kits (SDKs)",
+        "least privilege"
+      ],
+      "assigned_category_id_by_gemini": 4,
+      "assigned_category_name_by_gemini": "ความปลอดภัยและการเข้าถึง (Security and Access)",
+      "gemini_category_justification": "คำถามนี้เน้นเรื่องการให้สิทธิ์การเข้าถึงบริการ AWS (Amazon RDS) อย่างปลอดภัย โดยใช้หลักการสิทธิ์น้อยที่สุด (least privilege) ซึ่งเกี่ยวข้องโดยตรงกับความปลอดภัยและการเข้าถึง (Security and Access)"
+    }
+  ]
+}

@@ -1,0 +1,1900 @@
+{
+  "quizTitle": "การกำหนดราคาและต้นทุน (Pricing and Cost) (ข้อประมาณ 136 - 514 จาก Dump เดิม) - 96 ข้อ",
+  "questions": [
+    {
+      "question": "Which option is an advantage of AWS Cloud computing that minimizes variable costs?",
+      "options": [
+        "High availability",
+        "Economies of scale",
+        "Global reach",
+        "Agility"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ค่าใช้จ่ายผันแปร\" น้อยลงเพราะ \"ขนาด\" ใหญ่ขึ้น (ยิ่งใหญ่ยิ่งถูก)",
+      "keywords_for_highlighting": [
+        "variable costs",
+        "advantage"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงข้อดีของ AWS Cloud computing ที่ช่วยลดต้นทุนผันแปร ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company is running applications on Amazon EC2 instances in the same AWS account for several different projects. The company wants to track the infrastructure costs for each of the projects separately. The company must conduct this tracking with the least possible impact to the existing infrastructure and with no additional cost. What should the company do to meet these requirements?",
+      "options": [
+        "Use a different EC2 instance type for each project.",
+        "Publish project-specific custom Amazon CloudWatch metrics for each application.",
+        "Deploy EC2 instances for each project in a separate AWS account.",
+        "Use cost allocation tags with values that are specific to each project.   119"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ต้องการติดตามค่าใช้จ่ายแยกตามโปรเจกต์ โดยไม่กระทบโครงสร้างเดิมและไม่มีค่าใช้จ่ายเพิ่ม ให้มองหา \"cost allocation tags\" เสมอ",
+      "keywords_for_highlighting": [
+        "track infrastructure costs",
+        "separately",
+        "least possible impact",
+        "no additional cost"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การติดตามค่าใช้จ่ายโครงสร้างพื้นฐานของแต่ละโปรเจ็กต์ ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนใน AWS Cloud."
+    },
+    {
+      "question": "A company needs to store data across multiple Availability Zones in an AWS Region. The data will not be accessed regularly but must be immediately retrievable. Which Amazon Elastic File System (Amazon EFS) storage class meets these requirements MOST cost effectively?",
+      "options": [
+        "EFS Standard",
+        "EFS Standard-Infrequent Access(EFS Standard-IA)",
+        "EFS One Zone",
+        "EFS One Zone-Infrequent Access (EFS One Zone-IA)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ไม่ใช้บ่อยแต่ต้องเรียกคืนได้ทันที\" ให้เลือก \"Infrequent Access\" เพื่อประหยัดค่าใช้จ่าย",
+      "keywords_for_highlighting": [
+        "multiple Availability Zones",
+        "not be accessed regularly",
+        "immediately retrievable",
+        "cost effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเน้นที่การเลือก storage class ที่ \"MOST cost effectively\" ซึ่งเกี่ยวข้องกับการเปรียบเทียบราคาและต้นทุนของแต่ละตัวเลือก"
+    },
+    {
+      "question": "A company needs to run its existing custom, nonproduction workloads in the AWS Cloud quickly and cost-effectively. The workloads can recover from interruptions easily. Which pricing model should the company use?",
+      "options": [
+        "Reserved Instances",
+        "On-Demand Instances",
+        "Spot Instances",
+        "Dedicated Hosts"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ไม่สำคัญ\", \"ถูก\" และ \"ขัดจังหวะได้\" คิดถึง Spot Instances เพราะเหมาะกับงานที่ไม่สำคัญ ราคาถูก และทนต่อการถูกขัดจังหวะได้",
+      "keywords_for_highlighting": [
+        "nonproduction",
+        "cost-effectively",
+        "recover from interruptions easily"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือก pricing model ที่เหมาะสมที่สุด ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนในการใช้งาน AWS Cloud."
+    },
+    {
+      "question": "A company has two AWS accounts in an organization in AWS Organizations for consolidated billing. All of the company's AWS resources are hosted in one AWS Region. Account A has purchased five Amazon EC2 Standard Reserved Instances (RIs) and has four EC2 instances running. Account B has not purchased any RIs and also has four EC2 instances running. Which statement is true regarding pricing for these eight instances?",
+      "options": [
+        "The eight instances will be charged as regular instances.",
+        "Four instances will be charged as RIs, and four will be charged as regular instances.",
+        "Five instances will be charged as RIs, and three will be charged as regular instances.",
+        "The eight instances will be charged as RIs."
+      ],
+      "correctAnswer": 1,
+      "explanation": "RI ซื้อที่ Account A แต่ใช้ได้ทั้ง Organization ดังนั้น Account B ก็ได้ประโยชน์ แต่ต้องดูจำนวน RI ที่ซื้อเทียบกับจำนวน instance ที่รันทั้งหมด",
+      "keywords_for_highlighting": [
+        "AWS Organizations",
+        "consolidated billing",
+        "Reserved Instances",
+        "Account A",
+        "Account B",
+        "EC2 instances running"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการทำความเข้าใจวิธีการทำงานของการจองอินสแตนซ์ (Reserved Instances) และผลกระทบต่อการกำหนดราคาในสภาพแวดล้อม AWS Organizations ซึ่งเป็นประเด็นหลักในการจัดการต้นทุนและค่าใช้จ่ายใน AWS"
+    },
+    {
+      "question": "136 A cloud practitioner is analyzing Amazon EC2 instance performance and usage to provide recommendations for potential cost savings. Which cloud concept does this analysis demonstrate?",
+      "options": [
+        "Auto scaling",
+        "Rightsizing",
+        "Load balancing",
+        "High availability"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"วิเคราะห์ประสิทธิภาพ EC2 เพื่อประหยัดค่าใช้จ่าย\" ให้คิดถึง \"Rightsizing\" เพราะคือการปรับขนาดให้เหมาะสมกับความต้องการ",
+      "keywords_for_highlighting": [
+        "EC2 instance performance",
+        "usage",
+        "cost savings"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นการวิเคราะห์ประสิทธิภาพและการใช้งาน EC2 เพื่อแนะนำการประหยัดค่าใช้จ่าย ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company has developed a distributed application that recovers gracefully from interruptions. The application periodically processes large volumes of data by using multiple Amazon EC2 instances. The application is sometimes idle for months. Which EC2 instance purchasing option is MOST cost-effective for this use case?",
+      "options": [
+        "Reserved Instances",
+        "Spot Instances",
+        "Dedicated Instances",
+        "On-Demand Instances"
+      ],
+      "correctAnswer": 1,
+      "explanation": "แอปพลิเคชันประมวลผลข้อมูลเป็นครั้งคราวและยอมรับการหยุดชะงักได้ดี เลือก **Spot Instances** เพราะราคาถูกและเหมาะกับงานที่ไม่เร่งด่วน",
+      "keywords_for_highlighting": [
+        "distributed application",
+        "recovers gracefully",
+        "large volumes of data",
+        "sometimes idle",
+        "MOST cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือก EC2 ที่คุ้มค่าที่สุด ซึ่งเกี่ยวข้องกับการพิจารณาเรื่องราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company wants to access a report about the estimated environmental impact of the company's AWS usage. Which AWS service or feature should the company use to meet this requirement?",
+      "options": [
+        "AWS Organizations",
+        "IAM policy",
+        "AWS Billing console",
+        "Amazon Simple Notification Service (Amazon SNS)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"สิ่งแวดล้อม\" กับ \"ค่าใช้จ่าย\" มักมาคู่กันใน AWS ดังนั้นเมื่อพูดถึงผลกระทบต่อสิ่งแวดล้อม ให้มองหาเครื่องมือที่เกี่ยวกับการจัดการค่าใช้จ่าย ซึ่งก็คือ Billing console",
+      "keywords_for_highlighting": [
+        "environmental impact",
+        "AWS usage",
+        "report"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ \"estimated environmental impact of the company's AWS usage\" เกี่ยวข้องกับการวัดผลกระทบ ซึ่งเชื่อมโยงกับต้นทุนทางสิ่งแวดล้อม และจัดอยู่ในหมวดหมู่การกำหนดราคาและต้นทุน (Pricing and Cost) ที่กว้างขึ้นได้"
+    },
+    {
+      "question": "A company needs to host a web server on Amazon EC2 instances for at least 1 year. The web server cannot tolerate interruption. Which EC2 instance purchasing option will meet these requirements MOST cost- effectively?",
+      "options": [
+        "On-Demand Instances",
+        "Partial Upfront Reserved Instances",
+        "Spot Instances",
+        "No Upfront Reserved Instances"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"เว็บเซิร์ฟเวอร์ 1 ปี + ไม่ทนการหยุดชะงัก\" ให้เลือก Reserved Instance แบบจ่ายบางส่วนล่วงหน้าเพื่อประหยัดและมั่นใจ",
+      "keywords_for_highlighting": [
+        "web server",
+        "1 year",
+        "cannot tolerate interruption",
+        "cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือก EC2 ที่คุ้มค่าที่สุด (cost-effectively) ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company plans to migrate to AWS and wants to create cost estimates for its AWS use cases. Which AWS service or tool can the company use to meet these requirements?",
+      "options": [
+        "AWS Pricing Calculator",
+        "Amazon CloudWatch",
+        "AWS Cost Explorer",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ต้องการ \"ประมาณการค่าใช้จ่าย\" ก่อนย้ายไป AWS ให้ใช้ \"เครื่องคิดเลข\" เพื่อคำนวณ",
+      "keywords_for_highlighting": [
+        "migrate",
+        "AWS",
+        "cost estimates",
+        "AWS use cases"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงเครื่องมือที่ใช้ในการประมาณการค่าใช้จ่ายในการใช้งาน AWS ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "Which AWS service or tool should a company use to forecast AWS spending?",
+      "options": [
+        "Amazon DevPay",
+        "AWS Organizations",
+        "AWS Trusted Advisor",
+        "Cost Explorer"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ถ้าโจทย์ถามถึงการ \"คาดการณ์ค่าใช้จ่าย\" ให้มองหาตัวเลือกที่มีคำว่า \"Explorer\" เพราะมันจะช่วย \"สำรวจ\" ค่าใช้จ่ายในอนาคตได้",
+      "keywords_for_highlighting": [
+        "forecast",
+        "AWS spending"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการคาดการณ์ค่าใช้จ่าย ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "A company wants to use Amazon EC2 instances for a stable production workload that will run for 1 year. Which instance purchasing option meets these requirements MOST cost-effectively?",
+      "options": [
+        "Dedicated Hosts",
+        "Reserved Instances   165",
+        "On-Demand Instances",
+        "Spot Instances"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"งาน production มั่นคง + รันยาว 1 ปี\" ให้เลือก \"Reserved\" เพราะจองล่วงหน้าคุ้มกว่า",
+      "keywords_for_highlighting": [
+        "stable production workload",
+        "1 year",
+        "cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือกการซื้อ EC2 ที่คุ้มค่าที่สุด ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company wants to migrate its application to AWS. The company wants to replace upfront expenses with variable payment that is based on usage. What should the company do to meet these requirements?",
+      "options": [
+        "Use pay-as-you-go pricing.   167",
+        "Purchase Reserved Instances.",
+        "Pay less by using more.",
+        "Rightsize instances."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"จ่ายตามการใช้งาน\" (pay-as-you-go) คือการเปลี่ยนค่าใช้จ่ายเริ่มต้น (upfront expenses) เป็นค่าใช้จ่ายแปรผันตามการใช้งาน",
+      "keywords_for_highlighting": [
+        "migrate",
+        "application",
+        "AWS",
+        "upfront expenses",
+        "variable payment",
+        "usage"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเปรียบเทียบตัวเลือกการกำหนดราคาต่างๆ ของ AWS และวิธีที่บริษัทสามารถลดค่าใช้จ่ายได้ ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"การกำหนดราคาและต้นทุน\""
+    },
+    {
+      "question": "A company has all of its servers in the us-east-1 Region. The company is considering the deployment of   171 additional servers different Region. Which AWS tool should the company use to find pricing information for other Regions?",
+      "options": [
+        "Cost Explorer",
+        "AWS Budgets",
+        "AWS Purchase Order Management",
+        "AWS Pricing Calculator"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"หา *ราคา* ใน *Region อื่น* ต้องใช้เครื่องคิดเลข *AWS Pricing Calculator* \"",
+      "keywords_for_highlighting": [
+        "pricing information",
+        "different Region"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงเครื่องมือที่ใช้ในการค้นหาข้อมูลราคาสำหรับ Regions ต่างๆ ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของ AWS โดยตรง"
+    },
+    {
+      "question": "Which actions are examples of a company's effort to right size its AWS resources to control cloud costs?",
+      "options": [
+        "Switch from Amazon RDS to Amazon DynamoDB to accommodate NoSQL datasets.Q",
+        "Use Amazon S3 Lifecycle policies to move objects that users access infrequently to lower-cost storage tiers.",
+        "Use Multi-AZ deployments for Amazon RDS.",
+        "Replace existing Amazon EC2 instances with AWS Elastic Beanstalk."
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "\"Right size\" หมายถึงการปรับขนาดให้เหมาะสม และการย้ายข้อมูล S3 ไปยัง tier ที่ถูกกว่าเมื่อไม่ค่อยได้ใช้ ก็คือการปรับขนาดพื้นที่จัดเก็บให้เหมาะสมกับความถี่ในการใช้งาน",
+      "keywords_for_highlighting": [
+        "right size",
+        "control cloud costs"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการปรับขนาดทรัพยากร AWS ให้เหมาะสมเพื่อควบคุมค่าใช้จ่าย ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company has created an AWS Cost and Usage Report and wants to visualize the report. Which AWS service should the company use to ingest and display this information?",
+      "options": [
+        "Amazon QuickSight",
+        "Amazon Pinpoint",
+        "Amazon Neptune",
+        "Amazon Kinesis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**Cost and Usage Report + Visualize (แสดงผล) = QuickSight** (QuickSight คือเครื่องมือ Visualize ข้อมูล)",
+      "keywords_for_highlighting": [
+        "Cost and Usage Report",
+        "visualize"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการวิเคราะห์และแสดงผลข้อมูลจาก AWS Cost and Usage Report ซึ่งเป็นเรื่องของการจัดการต้นทุนและการกำหนดราคาของบริการ AWS"
+    },
+    {
+      "question": "A company wants to make an upfront commitment for continued use of its production Amazon EC2 instances in exchange for a reduced overall cost. Which pricing options meet these requirements with the LOWEST cost? (Select TWO.)",
+      "options": [
+        "Spot Instances",
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Savings Plans",
+        "Dedicated Hosts   183"
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "\"Commitment\" และ \"Reduced cost\" นึกถึง \"Reserved\" และ \"Savings\" ที่ต้องมีการผูกมัดล่วงหน้าเพื่อแลกกับราคาที่ถูกลง",
+      "keywords_for_highlighting": [
+        "upfront commitment",
+        "reduced overall cost"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือกการกำหนดราคาที่เหมาะสมที่สุดเพื่อลดต้นทุน ซึ่งเป็นหัวใจสำคัญของหมวดหมู่ \"การกำหนดราคาและต้นทุน\""
+    },
+    {
+      "question": "A company needs to run a workload for several batch image rendering applications. It is acceptable for the workload to experience downtime. Which Amazon EC2 pricing model would be MOST cost-effective in this situation?",
+      "options": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Dedicated Instances",
+        "Spot Instances"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Batch\" กับ \"Downtime acceptable\" มาคู่กับ \"Spot\" เพราะ Spot ราคาถูกแต่มีสิทธิ์โดนตัดได้ เหมาะกับงานที่ไม่ซีเรียสเรื่องเวลา",
+      "keywords_for_highlighting": [
+        "batch image rendering",
+        "downtime acceptable",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกโมเดลราคา Amazon EC2 ที่เหมาะสมที่สุดเพื่อลดต้นทุน ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุน (Pricing and Cost)"
+    },
+    {
+      "question": "A company has an application that runs periodically in an on-premises environment. The application runs for a few hours most days, but runs for 8 hours a day for a week at the end of each month. Which AWS service or feature should be used to host the application in the AWS Cloud?",
+      "options": [
+        "Amazon EC2 Standard Reserved Instances",
+        "Amazon EC2 On-Demand Instances",
+        "AWS Wavelength",
+        "Application Load Balancer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "แอปพลิเคชันรันเป็นช่วงเวลาไม่แน่นอน (ขึ้นๆ ลงๆ) ให้เลือก On-Demand ที่จ่ายตามการใช้งานจริงเท่านั้น",
+      "keywords_for_highlighting": [
+        "periodically",
+        "a few hours",
+        "8 hours a day",
+        "end of each month"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกบริการ AWS ที่เหมาะสมเพื่อลดต้นทุนในการรันแอปพลิเคชันตามความต้องการใช้งานที่เปลี่ยนแปลงไป ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "Which Amazon EC2 instan ce pricing model can provide discounts of up to 90%?",
+      "options": [
+        "Reserved Instances",
+        "On-Demand",
+        "Dedicated Hosts",
+        "Spot Instances"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Spot\" เหมือน \"จุด\" ที่ราคาผันผวนเหมือนตลาดหุ้น ราคาถูกสุดๆ แต่ก็อาจโดนแย่งไปได้ทุกเมื่อ (ส่วนลดสูงสุด = Spot)",
+      "keywords_for_highlighting": [
+        "pricing model",
+        "discounts",
+        "90%"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับโมเดลการกำหนดราคาของ EC2 และส่วนลด ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนในการใช้งาน AWS"
+    },
+    {
+      "question": "Which AWS service or storage class provides low-cost, long-term data storage?",
+      "options": [
+        "Amazon S3 Glacier Deep Archive",
+        "AWS Snowball",
+        "Amazon MQ",
+        "AWS Storage Gateway"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Glacier Deep Archive\" เน้นที่คำว่า \"Deep\" ซึ่งสื่อถึงการเก็บข้อมูลระยะยาวและราคาถูกที่สุด",
+      "keywords_for_highlighting": [
+        "low-cost",
+        "long-term",
+        "data storage"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่มีราคาถูกและเหมาะสำหรับการจัดเก็บข้อมูลระยะยาว ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนในการใช้บริการ AWS"
+    },
+    {
+      "question": "To reduce costs, a company is planning to migrate a NoSQL database to AWS. Which AWS service is fully managed and can automatically scale throughput capacity to meet database workload demands?",
+      "options": [
+        "Amazon Redshift",
+        "Amazon Aurora",
+        "Amazon DynamoDB",
+        "Amazon RDS"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**NoSQL และ Scale อัตโนมัติ** ให้คิดถึง **DynamoDB** เพราะเป็น NoSQL ที่เน้นการ scale ได้อย่างยืดหยุ่น",
+      "keywords_for_highlighting": [
+        "NoSQL",
+        "migrate",
+        "fully managed",
+        "automatically scale",
+        "throughput capacity",
+        "database workload demands"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเน้นที่การลดต้นทุนและเลือกบริการที่สามารถปรับขนาดได้อัตโนมัติเพื่อตอบสนองความต้องการของฐานข้อมูล ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company is migrating to the AWS Cloud to meet storage needs. The company wants to optimize costs based on the amount of storage that the company uses. Which AWS offering or benefit will meet these requirements MOST cost-effectively?",
+      "options": [
+        "Pay-as-you-go pricing",
+        "Savings Plans",
+        "AWS Free Tier",
+        "Volume-based discounts"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ปริมาณการใช้งานเยอะ\" ให้คิดถึง \"ส่วนลดตามปริมาณ\" (Volume-based discounts)",
+      "keywords_for_highlighting": [
+        "storage needs",
+        "optimize costs",
+        "amount of storage",
+        "cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกบริการ AWS ที่เหมาะสมที่สุดเพื่อตอบสนองความต้องการด้านพื้นที่จัดเก็บข้อมูลโดยคำนึงถึงต้นทุนเป็นหลัก ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุนใน AWS"
+    },
+    {
+      "question": "A company must archive Amazon S3 data that the company's business units no longer need to access. Which S3 storage class will meet this requirement MOST cost-effectively?",
+      "options": [
+        "S3 Glacier Instant Retrieval",
+        "S3 Glacier Flexible Retrieval",
+        "S3 Glacier Deep Archive",
+        "S3 One Zone-Infrequent Access (S3 One Zone-IA)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Archive\" (เก็บถาวรที่ไม่ค่อยได้ใช้) นึกถึง \"Deep Archive\" (เก็บลึกสุด) คือตัวเลือกที่ประหยัดที่สุด",
+      "keywords_for_highlighting": [
+        "archive",
+        "no longer need to access",
+        "MOST cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือก storage class ที่คุ้มค่าใช้จ่ายที่สุด (MOST cost-effectively) ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS S3"
+    },
+    {
+      "question": "A company wants to receive a notification when a specific AWS cost threshold is reached. Which AWS services or tools can the company use to meet this requirement? (Select TWO.)",
+      "options": [
+        "Amazon Simple Queue Service (Amazon SQS)",
+        "AWS Budgets",
+        "Cost Explorer",
+        "Amazon CloudWatch",
+        "AWS Cost and Usage Report"
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "\"งบประมาณ\" และ \"แจ้งเตือน\" คือเพื่อนกัน! ถ้าเจอเรื่องงบประมาณที่เกินกำหนด ให้คิดถึงการแจ้งเตือนจาก CloudWatch ด้วย",
+      "keywords_for_highlighting": [
+        "cost threshold",
+        "notification",
+        "AWS cost"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการแจ้งเตือนเมื่อถึงเกณฑ์ค่าใช้จ่ายที่กำหนด ซึ่งเป็นเรื่องของการจัดการต้นทุนและค่าใช้จ่ายในการใช้บริการ AWS โดยตรง"
+    },
+    {
+      "question": "Which AWS services are supported by Savings Plans? (Select TWO.)",
+      "options": [
+        "Amazon EC2",
+        "Amazon RDS",
+        "Amazon SageMaker",
+        "Amazon Redshift",
+        "Amazon DynamoDB"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "Savings Plans เน้นที่ **EC2** เพื่อประหยัดค่าใช้จ่ายในการประมวลผล และ **SageMaker** สำหรับการประมวลผล Machine Learning ที่ต้องการความต่อเนื่อง",
+      "keywords_for_highlighting": [
+        "Savings Plans",
+        "services"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับ Savings Plans ซึ่งเป็นกลไกการกำหนดราคาที่ AWS นำเสนอ ดังนั้นจึงจัดอยู่ในหมวดหมู่ \"การกำหนดราคาและต้นทุน\""
+    },
+    {
+      "question": "A company has 5 TB of data stored in Amazon S3. The company plans to occasionally run queries on the data for analysis. Which AWS service should the company use to run these queries in the MOST cost- effective manner?",
+      "options": [
+        "Amazon Redshift",
+        "Amazon Athena",
+        "Amazon Kinesis",
+        "Amazon RDS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ข้อมูลใน S3 + Query เป็นครั้งคราว + ประหยัดสุด\" ให้ตอบ Athena เพราะ Athena เหมาะกับ query ข้อมูลใน S3 แบบ On-demand และ Pay-per-query",
+      "keywords_for_highlighting": [
+        "S3",
+        "data",
+        "queries",
+        "analysis",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเน้นที่การเลือกบริการที่ \"cost-effective\" หรือคุ้มค่าที่สุด ซึ่งเกี่ยวข้องกับการพิจารณาเรื่องราคาและต้นทุนในการใช้งานบริการ AWS ต่างๆ"
+    },
+    {
+      "question": "A company wants to receive alerts to monitor its overall operating costs for its AWS public cloud infrastructure. Which AWS offering will meet these requirements?",
+      "options": [
+        "Amazon EventBridge",
+        "Compute Savings Plans",
+        "AWS Budgets",
+        "Migration Evaluator"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ค่าใช้จ่าย (costs) ต้องดูที่งบประมาณ (Budgets)\"",
+      "keywords_for_highlighting": [
+        "alerts",
+        "operating costs",
+        "AWS public cloud infrastructure"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ \"overall operating costs\" และการแจ้งเตือนเกี่ยวกับต้นทุน ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของ AWS โดยตรง"
+    },
+    {
+      "question": "A company wants to query its server logs to gain insights about its customers' experiences. Which AWS service will store this data MOST cost-effectively?",
+      "options": [
+        "Amazon Aurora",
+        "Amazon Elastic File System (Amazon EFS)",
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon S3"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**\"Logs\" (บันทึก) และ \"Cost-effectively\" (คุ้มค่า) นึกถึง S3 เพราะ S3 เหมาะกับการเก็บข้อมูลจำนวนมากราคาถูก**",
+      "keywords_for_highlighting": [
+        "server logs",
+        "insights",
+        "cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเน้นที่การเลือกบริการที่ \"MOST cost-effectively\" ซึ่งเกี่ยวข้องกับการพิจารณาเรื่องราคาและต้นทุนในการจัดเก็บข้อมูล"
+    },
+    {
+      "question": "Which option is the default pricing model for Amazon EC2 instances?",
+      "options": [
+        "On-Demand Instances",
+        "Savings Plans",
+        "Spot Instances",
+        "Reserved Instances"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"EC2 **เริ่มต้น** ต้อง **On-Demand** ก่อนเสมอ เหมือนเช่าบ้านรายวัน\"",
+      "keywords_for_highlighting": [
+        "default",
+        "pricing model",
+        "Amazon EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับโมเดลราคาเริ่มต้นของ Amazon EC2 ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "What is a characteristic of Convertible Reserved Instances (RIs)?",
+      "options": [
+        "Users can exchange Convertible RIs for other Convertible RIs from a different instance family.",
+        "Users can exchange Convertible RIs for other Convertible RIs in different AWS Regions.",
+        "Users can sell and buy Convertible RIs on the AWS Marketplace.",
+        "Users can shorten the term of their Convertible RIs by merging them with other Convertible RIs."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Convertible\" แปลว่า \"แปลงได้\" ดังนั้นจำว่า Convertible RIs สามารถ \"แปลง\" ไปเป็น instance family อื่นได้",
+      "keywords_for_highlighting": [
+        "Convertible Reserved Instances",
+        "characteristic"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับคุณสมบัติของ Convertible Reserved Instances ซึ่งเป็นส่วนหนึ่งของการกำหนดราคาและต้นทุนของ AWS."
+    },
+    {
+      "question": "A company wants to migrate its server-based applications to the AWS Cloud. The company wants to determine the total cost of ownership for its compute resources that will be hosted on the AWS Cloud. Which combination of AWS services or tools will meet these requirements?",
+      "options": [
+        "AWS Pricing Calculator",
+        "Migration Evaluator",
+        "AWS Support Center",
+        "AWS Application Discovery Service",
+        "AWS Database Migration Service (AWS DMS)"
+      ],
+      "correctAnswer": [
+        0,
+        3
+      ],
+      "explanation": "อยากรู้ \"ต้นทุนรวม (Total Cost of Ownership)\" ใน AWS Cloud ให้ใช้ \"Pricing Calculator\" คำนวณ และใช้ \"Application Discovery Service\" เพื่อหาข้อมูลทรัพยากรที่มีอยู่ก่อนย้าย",
+      "keywords_for_highlighting": [
+        "total cost of ownership",
+        "migrate",
+        "server-based applications",
+        "compute resources"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การคำนวณต้นทุนรวม (Total Cost of Ownership) สำหรับทรัพยากร compute บน AWS Cloud ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company needs to set a maximum spending limit on AWS services each month. The company also needs to set up alerts for when the company reaches its spending limit. Which AWS service or tool should the company use to meet these requirements?",
+      "options": [
+        "Cost Explorer",
+        "AWS Trusted Advisor",
+        "Service Quotas",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**\"จำกัดค่าใช้จ่าย\" และ \"แจ้งเตือนเมื่อถึงลิมิต\" ให้คิดถึง \"Budgets\" ที่แปลว่า งบประมาณ**",
+      "keywords_for_highlighting": [
+        "maximum spending limit",
+        "alerts",
+        "spending limit"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการกำหนดงบประมาณและแจ้งเตือนเมื่อถึงขีดจำกัดการใช้จ่าย ซึ่งเป็นเรื่องของการจัดการต้นทุนในการใช้บริการ AWS โดยตรง"
+    },
+    {
+      "question": "A company is running an application that is hosted on Amazon EC2 instances. The usage of the EC2 instances is higher during daytime hours than nighttime hours. The company wants to optimize the number of EC2 instances based on this usage pattern. Which AWS service or instance purchasing option should the company use to meet these requirements?",
+      "options": [
+        "Spot Instances",
+        "Reserved Instances",
+        "AWS CloudFormation",
+        "AWS Auto Scaling"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ใช้งานต่างเวลา\" + \"ปรับจำนวน EC2 อัตโนมัติ\" = Auto Scaling",
+      "keywords_for_highlighting": [
+        "usage pattern",
+        "optimize",
+        "EC2 instances",
+        "Auto Scaling"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นการเลือกบริการหรือตัวเลือกการซื้อ EC2 ที่เหมาะสมเพื่อลดต้นทุนตามรูปแบบการใช้งานที่เปลี่ยนแปลงไป ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุน (Pricing and Cost)"
+    },
+    {
+      "question": "A company has an application workload that is stateless by design and can sustain occasional downtime. The application performs massively parallel computations.   237 Which Amazon EC2 pricing model should the company choose for its application to reduce cost?",
+      "options": [
+        "On-Demand Instances",
+        "Spot Instances",
+        "Reserved Instances",
+        "Dedicated Instances"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Stateless, downtime ได้, parallel computations\" ให้เลือก \"Spot Instances\" เพราะราคาถูก เหมาะกับงานที่ทำๆ หยุดๆ ได้",
+      "keywords_for_highlighting": [
+        "stateless",
+        "downtime",
+        "parallel computations",
+        "reduce cost"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงโมเดลการกำหนดราคาของ EC2 เพื่อลดต้นทุน ซึ่งเป็นหัวข้อหลักในการทำความเข้าใจเรื่องการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "A customer runs an On-Demand Amazon Linux EC2 instance for 3 hours, 5 minutes, and 6 seconds. For how much time will the customer be billed?",
+      "options": [
+        "3 hours, 5 minutes",
+        "3 hours, 5 minutes, and 6 seconds",
+        "3 hours, 6 minutes",
+        "4 hours"
+      ],
+      "correctAnswer": 2,
+      "explanation": "EC2 On-Demand คิดค่าบริการเป็น *ชั่วโมงเต็ม* ดังนั้นเศษของชั่วโมง (นาทีและวินาที) จะถูกปัดขึ้นเป็นชั่วโมงถัดไปเสมอ",
+      "keywords_for_highlighting": [
+        "On-Demand",
+        "EC2",
+        "billed"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการทำความเข้าใจวิธีการคิดราคาของ EC2 instance ซึ่งเป็นส่วนหนึ่งของการกำหนดราคาและต้นทุนของ AWS."
+    },
+    {
+      "question": "A company wants a customized assessment of its current on-premises environment. The company wants to understand its projected running costs in the AWS Cloud. Which AWS service or tool will meet these requirements?",
+      "options": [
+        "AWS Trusted Advisor",
+        "Amazon Inspector",
+        "AWS Control Tower",
+        "Migration Evaluator"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ต้องการประเมินค่าใช้จ่ายในการย้ายไป AWS (running costs) ให้มองหาเครื่องมือ \"Migration Evaluator\" ที่ช่วยประเมินการย้ายระบบ",
+      "keywords_for_highlighting": [
+        "customized assessment",
+        "on-premises environment",
+        "projected running costs"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเน้นที่การประเมินต้นทุนการใช้งานใน AWS Cloud ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company wants to launch multiple workloads on AWS. Each workload is related to a different business unit. The company wants to separate and track costs for each business unit. Which solution will meet these requirements with the LEAST operational overhead?",
+      "options": [
+        "Use AWS Organizations and create one account for each business unit.",
+        "Use a spreadsheet to control the owners and cost of each resource.",
+        "Use an Amazon DynamoDB table to record costs for each business unit.",
+        "Use the AWS Billing console to assign owners to resources and track costs."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"หลายธุรกิจ, แยกค่าใช้จ่าย, น้อยสุด\" -> AWS Organizations แยกบัญชีให้แต่ละธุรกิจ ง่ายสุด!",
+      "keywords_for_highlighting": [
+        "multiple workloads",
+        "separate and track costs",
+        "business unit",
+        "LEAST operational overhead"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การติดตามและแยกต้นทุนสำหรับแต่ละหน่วยธุรกิจ ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุนใน AWS"
+    },
+    {
+      "question": "A company is running its application in the AWS Cloud. The company wants to periodically review its AWS account for cost optimization opportunities. Which AWS service or tool can the company use to meet these requirements?",
+      "options": [
+        "AWS Cost Explorer",
+        "AWS Trusted Advisor",
+        "AWS Pricing",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 0,
+      "explanation": "มองหาคำว่า \"cost optimization\" (การปรับต้นทุนให้เหมาะสม) ในโจทย์ แล้วนึกถึง AWS Cost Explorer ที่ช่วยสำรวจและวิเคราะห์ค่าใช้จ่าย",
+      "keywords_for_highlighting": [
+        "cost optimization",
+        "periodically review",
+        "AWS account"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การตรวจสอบบัญชี AWS เพื่อหาโอกาสในการปรับต้นทุนให้เหมาะสม ซึ่งเป็นหัวใจหลักของหมวดหมู่การกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company is running a workload in the AWS Cloud.   271 Which AWS best practice ensures the MOST cost-effective architecture for the workload?",
+      "options": [
+        "Loose coupling",
+        "Rightsizing",
+        "Caching",
+        "Redundancy"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Cost-effective\" (ประหยัดค่าใช้จ่าย) มักมาคู่กับ \"Loose coupling\" (ลดการพึ่งพากัน) เพราะช่วยให้ปรับขนาดและเปลี่ยนแปลงได้ง่าย ลดค่าใช้จ่ายที่ไม่จำเป็น",
+      "keywords_for_highlighting": [
+        "cost-effective",
+        "architecture",
+        "workload"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเกี่ยวกับแนวทางปฏิบัติที่ดีที่สุดเพื่อให้ได้สถาปัตยกรรมที่คุ้มค่าที่สุด (cost-effective) ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนในการใช้งาน AWS Cloud."
+    },
+    {
+      "question": "A company's application has high customer usage during certain times of the day. The company wants to reduce the number of Amazon EC2 instances that run when application usage is low. Which AWS service or instance purchasing option should the company use to meet this requirement?",
+      "options": [
+        "EC2 Instance Savings Plans",
+        "Spot Instances",
+        "Reserved Instances",
+        "Amazon EC2 Auto Scaling"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ใช้งานสูงเป็นช่วงเวลา\" และ \"ลดจำนวน EC2\" สองสิ่งนี้บ่งบอกว่าต้องปรับขนาดอัตโนมัติ (Auto Scaling) เพื่อให้สอดคล้องกับการใช้งาน",
+      "keywords_for_highlighting": [
+        "ใช้งานสูงเป็นช่วงเวลา",
+        "ลดจำนวน EC2",
+        "application usage is low"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การลดจำนวน EC2 instances เพื่อลดต้นทุน ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company wants to store data with high availability, encrypt the data at rest, and have direct access to the data over the internet. Which AWS service will meet these requirements MOST cost-effectively?",
+      "options": [
+        "Amazon Elastic Block Store (AmazonEBS)",
+        "Amazon S3",
+        "Amazon Elastic File System (Amazon EFS)",
+        "AWS Storage Gateway"
+      ],
+      "correctAnswer": 2,
+      "explanation": "**\"Direct access over the internet\" + \"High availability\"** นึกถึง **EFS** ที่แชร์ไฟล์ข้าม AZ ได้ และเข้าถึงได้โดยตรง",
+      "keywords_for_highlighting": [
+        "high availability",
+        "encrypt data at rest",
+        "direct access",
+        "internet",
+        "cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเน้นที่การเลือกบริการที่ตรงตามความต้องการและ \"MOST cost-effectively\" ซึ่งเกี่ยวข้องกับการพิจารณาด้านราคาและต้นทุน"
+    },
+    {
+      "question": "Which Amazon S3 storage class is the MOST cost-effective for long-term storage?",
+      "options": [
+        "S3 Glacier Deep Archive",
+        "S3 Standard",
+        "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "S3 One Zone-Infrequent Access (S3 One Zone-IA)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Long-term\" (ระยะยาว) คู่กับ \"Deep Archive\" (เก็บลึก), จำว่าเก็บนานต้องเก็บลึกถึงราก!",
+      "keywords_for_highlighting": [
+        "MOST cost-effective",
+        "long-term storage"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงคลาสของ Amazon S3 ที่ประหยัดค่าใช้จ่ายมากที่สุดสำหรับการจัดเก็บระยะยาว ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "282 Which AWS service or tool helps users visualize, understand, and manage spending and usage over time?",
+      "options": [
+        "AWS Organizations",
+        "AWS Pricing Calculator",
+        "AWS Cost Explorer",
+        "AWS Service Catalog"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Visualize spending\" หรือ \"manage usage\" เห็นคำเหล่านี้ในโจทย์ ให้ตอบ \"Cost Explorer\" ทันที!",
+      "keywords_for_highlighting": [
+        "visualize",
+        "understand",
+        "manage spending",
+        "usage",
+        "over time"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ช่วยในการจัดการค่าใช้จ่ายและการใช้งาน ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "A user has a stateful workload that will run on Amazon EC2 for the next 3 years. What is the MOST cost-effective pricing model for this workload?",
+      "options": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Dedicated Instances",
+        "Spot Instances"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"3 ปี\" บอกใบ้ว่าต้อง \"Reserved\" เพราะระยะยาวคุ้มกว่า",
+      "keywords_for_highlighting": [
+        "stateful workload",
+        "Amazon EC2",
+        "3 years",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเปรียบเทียบโมเดลราคาต่างๆ ของ EC2 เพื่อหาตัวเลือกที่คุ้มค่าที่สุด ซึ่งเป็นหัวใจหลักของการกำหนดราคาและต้นทุนใน AWS Cloud."
+    },
+    {
+      "question": "A company seeks cost savings in exchange for a commitment to use a specific amount of an AWS service or category ofAWS services for 1 year or 3 years. Which AWS pricing model or offering will meet these requirements?",
+      "options": [
+        "Pay-as-you-go pricing",
+        "Savings Plans",
+        "AWS Free Tier",
+        "Volume discounts"
+      ],
+      "correctAnswer": 1,
+      "explanation": "มองหาคำว่า \"cost savings\" (ประหยัดค่าใช้จ่าย) และ \"commitment\" (ข้อผูกมัด) ที่บ่งบอกถึงการทำสัญญาระยะยาวเพื่อแลกกับส่วนลด ซึ่งตรงกับ Savings Plans",
+      "keywords_for_highlighting": [
+        "cost savings",
+        "commitment",
+        "1 year",
+        "3 years"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงโมเดลการกำหนดราคาของ AWS ที่ช่วยประหยัดค่าใช้จ่าย ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "Which AWS service will allow a user to set custom cost and usage limits, and will alert when the thresholds   310 are exceeded?",
+      "options": [
+        "AWS Organizations",
+        "AWS Budgets",
+        "Cost Explorer",
+        "AWS Trusted Advisor"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Budget\" แปลว่า งบประมาณ; ถ้าโจทย์ถามถึงการตั้งค่า \"cost and usage limits\" และแจ้งเตือนเมื่อเกินขีดจำกัด ให้ตอบ \"AWS Budgets\"",
+      "keywords_for_highlighting": [
+        "cost and usage limits",
+        "alert",
+        "thresholds"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ช่วยในการกำหนดขีดจำกัดค่าใช้จ่ายและแจ้งเตือนเมื่อเกินขีดจำกัด ซึ่งเกี่ยวข้องกับการจัดการต้นทุนโดยตรง"
+    },
+    {
+      "question": "A company wants its AWS usage to be more sustainable. The company wants to track, measure, review, and forecast polluting emissions that result from its AWS applications. Which AWS service or tool can the company use to meet these requirements?",
+      "options": [
+        "AWS Health Dashboard",
+        "AWS customer carbon footprint tool",
+        "AWS Support Center",
+        "Amazon QuickSight"
+      ],
+      "correctAnswer": 1,
+      "explanation": "อยากรู้เรื่อง \"คาร์บอน\" และ \"ความยั่งยืน\" ใน AWS ให้มองหาเครื่องมือ \"carbon footprint\".",
+      "keywords_for_highlighting": [
+        "sustainable",
+        "track",
+        "measure",
+        "review",
+        "forecast",
+        "polluting emissions",
+        "AWS applications"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการติดตามและวัดผลกระทบด้านสิ่งแวดล้อมจากการใช้งาน AWS ซึ่งเชื่อมโยงโดยตรงกับการจัดการต้นทุนและผลกระทบที่อาจเกิดขึ้นจากการใช้งานทรัพยากร AWS"
+    },
+    {
+      "question": "A company needs to categorize and track AWS usage cost based on business categories. Which AWS service or feature should the company use to meet these requirements?   316",
+      "options": [
+        "Cost allocation tags",
+        "AWS Organizations",
+        "AWS Security Hub",
+        "AWS Cost and Usage Report"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"จัดหมวดหมู่\" และ \"ติดตามค่าใช้จ่าย\" ให้มองหา \"tags\" เพื่อติดป้ายกำกับและแบ่งประเภทค่าใช้จ่าย",
+      "keywords_for_highlighting": [
+        "categorize",
+        "track",
+        "AWS usage cost",
+        "business categories"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความต้องการในการจัดหมวดหมู่และติดตามค่าใช้จ่ายในการใช้งาน AWS ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company wants to set AWS spending targets and track costs against those targets. Which AWS tool or feature should the company use to meet these requirements?",
+      "options": [
+        "AWS Cost Explorer",
+        "AWS Budgets",
+        "AWS Cost and Usage Report",
+        "Savings Plans"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ต้องการ \"ตั้งเป้า\" การใช้จ่ายและ \"ติดตาม\" ค่าใช้จ่าย เทียบกับเป้าหมาย ให้จำว่าใช้ \"Budgets\" (งบประมาณ)",
+      "keywords_for_highlighting": [
+        "spending targets",
+        "track costs"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับการตั้งเป้าหมายการใช้จ่ายและติดตามต้นทุน ซึ่งเป็นหัวใจหลักของการกำหนดราคาและต้นทุนใน AWS"
+    },
+    {
+      "question": "Which AWS service can be used at no additional cost?",
+      "options": [
+        "Amazon SageMaker",
+        "AWS Config   334",
+        "AWS Organizations",
+        "Amazon CloudWatch"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"องค์กร\" มักจะเริ่มต้นด้วยการจัดระเบียบ ซึ่ง AWS Organizations ช่วยจัดระเบียบ account โดยไม่มีค่าใช้จ่ายเพิ่มเติม",
+      "keywords_for_highlighting": [
+        "no additional cost",
+        "service"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ AWS ที่ไม่มีค่าใช้จ่ายเพิ่มเติม ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "What is the recommended use case for Amazon EC2 On-Demand Instances?",
+      "options": [
+        "A steady-state workload that requires a particular EC2 instance configuration for a long period of time",
+        "A workload that can be interrupted for a project that requires the lowest possible cost",
+        "An unpredictable workload that does not require a long-term commitment",
+        "A workload that is expected to run for longer than 1 year"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"On-Demand\" เหมือน \"สั่งเลย\" เหมาะกับงานที่ไม่แน่นอน ไม่ผูกมัดระยะยาว",
+      "keywords_for_highlighting": [
+        "EC2 On-Demand Instances",
+        "recommended use case"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ Amazon EC2 On-Demand Instances และ use case ที่เหมาะสมที่สุดนั้นเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "Which Amazon EC2 pricing model is the MOST cost efficient for an uninterruptible workload that runs once a year for 24 hours?",
+      "options": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Spot Instances",
+        "Dedicated Instances"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ปีละครั้ง 24 ชั่วโมง\" ให้คิดถึง On-Demand เพราะไม่ต้องผูกมัดระยะยาว จ่ายเท่าที่ใช้จริงเท่านั้น",
+      "keywords_for_highlighting": [
+        "uninterruptible workload",
+        "once a year",
+        "24 hours"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงโมเดลราคาของ EC2 ที่คุ้มค่าที่สุด ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "347 Which AWS service or tool provides a visualization of historical AWS spending patterns and projections of future AWS costs?",
+      "options": [
+        "AWS Cos! and Usage Report",
+        "AWS Budgets",
+        "Cost Explorer",
+        "Amazon CloudWatch"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"มองหา 'visualization' และ 'spending patterns' ในโจทย์ ให้ตอบ 'Cost Explorer' เพราะชื่อสื่อถึงการสำรวจค่าใช้จ่าย\"",
+      "keywords_for_highlighting": [
+        "visualization",
+        "spending patterns",
+        "projections",
+        "future costs"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการวิเคราะห์และคาดการณ์ค่าใช้จ่าย ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "A company runs an application on AWS that performs batch jobs. The application is fault- tolerant and can handle interruptions. The company wants to optimize the cost to run the application. Which AWS offering will meet these requirements?",
+      "options": [
+        "Amazon Macie",
+        "Amazon Neptune",
+        "Amazon EC2 Spot Instances",
+        "Amazon EC2 On-Demand Instances"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Batch jobs\" + \"Fault-tolerant\" + \"Cost optimization\" = Spot Instances (ถูกขัดจังหวะได้ ไม่เป็นไร และราคาถูก)",
+      "keywords_for_highlighting": [
+        "batch jobs",
+        "fault-tolerant",
+        "optimize the cost"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การ \"optimize the cost\" ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุนในการใช้งาน AWS และตัวเลือกต่างๆ ก็เกี่ยวข้องกับวิธีการคิดราคาของบริการ EC2"
+    },
+    {
+      "question": "Which of the following can the AWS Pricing Calculator do?",
+      "options": [
+        "Project monthly AWS costs.",
+        "Calculate historical AWS costs.",
+        "Provide in-depth information about AWS pricing strategies.",
+        "Provide users with access to their monthly bills."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Calculator\" ในชื่อเครื่องมือบ่งบอกถึงการ \"Project\" หรือคาดการณ์ตัวเลข ดังนั้นเมื่อเจอ Calculator ให้มองหาตัวเลือกที่เกี่ยวกับการคาดการณ์ค่าใช้จ่าย",
+      "keywords_for_highlighting": [
+        "Pricing Calculator",
+        "do"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับความสามารถของ AWS Pricing Calculator ซึ่งเป็นเครื่องมือที่เกี่ยวข้องกับการประมาณการค่าใช้จ่ายในการใช้บริการ AWS ดังนั้นจึงจัดอยู่ในหมวดหมู่ \"การกำหนดราคาและต้นทุน\""
+    },
+    {
+      "question": "A company is using multiple AWS accounts for different business teams. The finance team wants to receive one bill for all of the company's accounts. Which AWS service or tool should the finance team use to meet this requirement?",
+      "options": [
+        "AWS Organizations",
+        "AWS Trusted Advisor",
+        "Cost Explorer",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ถ้าเจอคำว่า \"หลายบัญชี\" และ \"บิลเดียว\" ให้ตอบ \"AWS Organizations\" เพราะเป็นบริการจัดการหลายบัญชีและรวมบิลได้",
+      "keywords_for_highlighting": [
+        "multiple AWS accounts",
+        "one bill"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับความต้องการในการรวมบิลค่าใช้จ่ายของ AWS ซึ่งเกี่ยวข้องกับการจัดการต้นทุนและการกำหนดราคา"
+    },
+    {
+      "question": "A company needs to provision uninterruptible Amazon EC2 instances, when needed, and pay for compute capacity by the second. Which EC2 instance purchasing option will meet these requirements?",
+      "options": [
+        "Reserved Instances",
+        "Spot Instances",
+        "On-Demand Instances   362",
+        "Dedicated Instances"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"uninterruptible\" (ไม่หยุดชะงัก) และ \"pay by the second\" (จ่ายตามวินาที) คือ On-Demand เท่านั้นที่ตอบโจทย์นี้",
+      "keywords_for_highlighting": [
+        "uninterruptible",
+        "pay by the second"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกตัวเลือกการซื้อ EC2 ที่เหมาะสมที่สุด โดยพิจารณาจากความต้องการด้านต้นทุนและลักษณะการใช้งาน ซึ่งเป็นประเด็นหลักในเรื่องการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "Which complimentary AWS service or tool creates data-driven business cases for cloud planning?",
+      "options": [
+        "Migration Evaluator",
+        "AWS Billing Conductor",
+        "AWS Billing Console",
+        "Amazon Forecast"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"วางแผน Cloud\" ต้อง \"ประเมินการย้าย\" ก่อนเสมอ เพื่อสร้างเคสทางธุรกิจที่ขับเคลื่อนด้วยข้อมูล",
+      "keywords_for_highlighting": [
+        "data-driven business cases",
+        "cloud planning"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเกี่ยวกับเครื่องมือที่ช่วยสร้างกรณีทางธุรกิจโดยอิงจากข้อมูลสำหรับการวางแผนคลาวด์ เกี่ยวข้องกับการประเมินต้นทุนและผลประโยชน์ ซึ่งเป็นส่วนหนึ่งของการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company wants to implement detailed tracking of its cloud costs by department and project. Which AWS feature or service should the company use?",
+      "options": [
+        "Consolidated billing",
+        "Cost allocation tags",
+        "AWS Marketplace",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ติดตามค่าใช้จ่าย\" + \"แผนก/โครงการ\" = Cost Allocation Tags (แท็กช่วยจัดสรรค่าใช้จ่ายตามหมวดหมู่ที่ต้องการ)",
+      "keywords_for_highlighting": [
+        "tracking",
+        "cloud costs",
+        "department",
+        "project"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การติดตามและจัดการต้นทุนใน AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่ \"การกำหนดราคาและต้นทุน\""
+    },
+    {
+      "question": "Which AWS Cloud service can send alerts to customers if custom spending thresholds are exceeded?",
+      "options": [
+        "AWS Budgets",
+        "AWS Cost Explorer",
+        "AWS Cost Allocation Tags",
+        "AWS Organizations"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Budget\" แปลว่า งบประมาณ ดังนั้นถ้าเจอคำว่า \"spending thresholds\" (ขีดจำกัดการใช้จ่าย) ให้เลือก AWS Budgets เพราะเกี่ยวกับการจัดการงบประมาณ",
+      "keywords_for_highlighting": [
+        "alerts",
+        "spending thresholds",
+        "exceeded"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการตรวจสอบและแจ้งเตือนเมื่อค่าใช้จ่ายเกินงบประมาณที่กำหนด ซึ่งเป็นส่วนหนึ่งของการจัดการต้นทุนใน AWS Cloud"
+    },
+    {
+      "question": "Which AWS service is always provided at no charge?",
+      "options": [
+        "Amazon S3",
+        "AWS Identity and Access Management (IAM)",
+        "Elastic Load Balancers",
+        "AWS WAF"
+      ],
+      "correctAnswer": 2,
+      "explanation": "IAM จัดการ *ตัวตน* (Identity) ใน AWS ซึ่งเป็นพื้นฐานและ *ฟรี* เสมอ",
+      "keywords_for_highlighting": [
+        "always",
+        "no charge",
+        "service",
+        "AWS Identity and Access Management (IAM)"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับบริการ AWS ที่ไม่มีค่าใช้จ่าย ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company wants to run its workload on Amazon EC2 instances for more than 1 year. This workload will run continuously. Which option offers a discounted hourly rate compared to the hourly rate of On-Demand Instances?",
+      "options": [
+        "AWS Graviton processor",
+        "Dedicated Hosts",
+        "EC2 Instance Savings Plans",
+        "Amazon EC2 Auto Scaling instances"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"รันงานต่อเนื่องนานๆ แถมอยากได้ส่วนลด EC2? มองหา Savings Plans เลย!\"",
+      "keywords_for_highlighting": [
+        "workload",
+        "Amazon EC2 instances",
+        "more than 1 year",
+        "continuously",
+        "discounted hourly rate"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงตัวเลือกที่ช่วยลดต้นทุนในการใช้งาน EC2 ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของบริการ AWS โดยตรง"
+    },
+    {
+      "question": "A company has batch workloads that need to run for short periods of time on Amazon EC2. The workloads can handle interruptions and can start again from where they ended. What is the MOST cost-effective EC2 instance purchasing option to meet these requirements?",
+      "options": [
+        "Reserved Instances",
+        "Spot Instances",
+        "Dedicated Instances",
+        "On-Demand Instances"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"งาน Batch สั้นๆ ขัดจังหวะได้ เน้นถูกสุดๆ ต้อง Spot เท่านั้น!\"",
+      "keywords_for_highlighting": [
+        "batch workloads",
+        "short periods of time",
+        "interruptions",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือกการซื้ออินสแตนซ์ EC2 ที่คุ้มค่าที่สุด ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company plans to use an Amazon Snowball Edge device la transfer files to the AWS Cloud. Which activities related in a Snowball device are available to the company at no cost?",
+      "options": [
+        "Use of the Snowball Edge appliance for a 10-day period",
+        "The transfer of data out of Amazon S3 and 10 the Snowball Edge appliance   400",
+        "The transfer of data from the Snowball Edge appliance into Amazon S3",
+        "Daily use of the Snowball Edge appliance after 10 days"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Snowball Edge ฟรี 10 วันแรก, เน้นเรื่อง \"ฟรี\" และ \"Snowball Edge\"",
+      "keywords_for_highlighting": [
+        "Snowball Edge",
+        "transfer files",
+        "no cost"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับค่าใช้จ่ายในการใช้บริการ Amazon Snowball Edge ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุนในการใช้บริการ AWS"
+    },
+    {
+      "question": "Which pricing model will interrupt a running Amazon EC2 instance if capacity becomes temporarily unavailable?",
+      "options": [
+        "On-Demand Instances",
+        "Standard Reserved Instances",
+        "Spot Instances",
+        "Convertible Reserved Instances   417"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Spot\" เหมือน \"จุดดับ\" ที่อาจเกิดขึ้นได้เสมอ ทำให้ EC2 instance ถูกขัดจังหวะได้",
+      "keywords_for_highlighting": [
+        "interrupt",
+        "EC2",
+        "capacity",
+        "unavailable",
+        "pricing model"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามเกี่ยวกับโมเดลการกำหนดราคาของ EC2 และผลกระทบต่อการทำงานของอินสแตนซ์ ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนในการใช้งาน AWS"
+    },
+    {
+      "question": "Which AWS resource can help a company reduce Its costs in exchange for a usage commitment when using Amazon EC2 instances?",
+      "options": [
+        "Compute Savings Plans",
+        "Auto Stalling group",
+        "On-Demand Instance",
+        "EC2 instance store"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ลดต้นทุน\" + \"ข้อผูกมัดการใช้งาน\" = Savings Plans (แผนการประหยัด)",
+      "keywords_for_highlighting": [
+        "reduce costs",
+        "usage commitment",
+        "EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงวิธีการลดต้นทุนในการใช้งาน Amazon EC2 ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของบริการ AWS โดยตรง"
+    },
+    {
+      "question": "A company runs an uninterruptible Amazon EC2 workload on AWS 24 hours a day. 7 days a week. The company will require the same instance family and instance type to run the workload for the next 12 months. Which combination of purchasing options should the company choose to MOST optimize costs? (Select\nTWO.)",
+      "options": [
+        "Standard Reserved Instance",
+        "Convertible Reserved Instance",
+        "Compute Savings Plan",
+        "Spot Instance",
+        "All Upfront payment"
+      ],
+      "correctAnswer": [
+        0,
+        4
+      ],
+      "explanation": "\"รันตลอด 24/7, 12 เดือน, ต้องการแบบเดิม\" ให้เลือกรีเสิร์ฟแบบมาตรฐาน (Standard Reserved) และจ่ายล่วงหน้า (All Upfront) เพื่อลดต้นทุนสูงสุด",
+      "keywords_for_highlighting": [
+        "uninterruptible",
+        "24 hours a day",
+        "7 days a week",
+        "same instance family and instance type",
+        "12 months",
+        "MOST optimize costs"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือกการซื้อ EC2 ที่เหมาะสมที่สุดเพื่อลดต้นทุน ซึ่งเป็นหัวใจหลักของการกำหนดราคาและต้นทุนใน AWS"
+    },
+    {
+      "question": "Which Amazon S3 storage class is MOST cost-effective for unknown access patterns?",
+      "options": [
+        "S3 Standard",
+        "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "S3 One Zone-Infrequent Access (S3 One Zone-IA)",
+        "S3 Intelligent-Tiering"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ถ้าไม่รู้ว่าเข้าถึงข้อมูลบ่อยแค่ไหน (unknown access patterns) ให้เลือก \"ฉลาด\" ที่สุด คือ Intelligent-Tiering",
+      "keywords_for_highlighting": [
+        "MOST cost-effective",
+        "unknown access patterns"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงความคุ้มค่าด้านต้นทุนของคลาสจัดเก็บข้อมูล Amazon S3 ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company wants to migrate its on_premises workloads to the AWS Cloud. The company wants to separate workloads for chargeback to different departments. Which AWS services or features will meet these requirements? (Select TWO.)",
+      "options": [
+        "Placement groups",
+        "Consolidated billing",
+        "Edge locations",
+        "AWS Config",
+        "Multiple AWS accounts"
+      ],
+      "correctAnswer": [
+        1,
+        4
+      ],
+      "explanation": "\"Chargeback\" และ \"departments\" นึกถึงการแบ่งบิลและการแยกบัญชี AWS เพื่อให้แต่ละแผนกรับผิดชอบค่าใช้จ่ายของตัวเอง",
+      "keywords_for_highlighting": [
+        "chargeback",
+        "departments",
+        "workloads",
+        "migrate",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ chargeback และการแยก workloads เพื่อวัตถุประสงค์ทางการเงิน เกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนในการใช้งาน AWS Cloud"
+    },
+    {
+      "question": "A company plans to launch an ecommerce website that contains many images for a product catalog. The company wants to keep the cost of running the website within a specific budget.   442 Which AWS service or tool should the company use to monitor the ongoing costs of the website?",
+      "options": [
+        "AWS Cost Explorer",
+        "AWS SDKs",
+        "EC2 Image Builder",
+        "AWS CloudFormation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"งบประมาณ\" หรือ \"ค่าใช้จ่าย\" ในโจทย์ มักจะเชื่อมโยงกับ \"Cost Explorer\" เสมอ เพื่อติดตามและควบคุมค่าใช้จ่าย",
+      "keywords_for_highlighting": [
+        "ecommerce website",
+        "images",
+        "product catalog",
+        "cost",
+        "budget",
+        "monitor"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการหรือเครื่องมือที่ใช้ในการตรวจสอบต้นทุนของเว็บไซต์ ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนในการใช้งาน AWS."
+    },
+    {
+      "question": "A company has a compute workload that is steady, predictable, and uninterruptible. Which Amazon EC2 instance purchasing options meet these requirements MOST cost- effectively? (Select\nTWO.)",
+      "options": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Spot Instances",
+        "Saving Plans",
+        "Dedicated Hosts"
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "\"งานสม่ำเสมอ ไม่สะดุด ต้อง 'จอง' (Reserved) หรือ 'วางแผน' (Saving Plans) ล่วงหน้าเพื่อความคุ้มค่า\"",
+      "keywords_for_highlighting": [
+        "steady",
+        "predictable",
+        "uninterruptible",
+        "MOST cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือกการซื้ออินสแตนซ์ EC2 ที่คุ้มค่าที่สุด ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "A company wants a cost-effective option when running its applications in an Amazon EC2 instance for short time periods. The applications can be interrupted. Which EC2 instance type will meet these requirements?",
+      "options": [
+        "Spot Instances",
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Dedicated Instances"
+      ],
+      "correctAnswer": 0,
+      "explanation": "**\"สั้น ถูก ขัดจังหวะได้\"** คือ Spot Instances เพราะเราประมูลราคาเพื่อใช้งานช่วงสั้นๆ และยอมรับการถูกขัดจังหวะได้หากมีคนเสนอราคาสูงกว่า",
+      "keywords_for_highlighting": [
+        "cost-effective",
+        "short time periods",
+        "interrupted"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกประเภท EC2 instance ที่คุ้มค่าที่สุด ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนในการใช้งาน AWS."
+    },
+    {
+      "question": "A company wants to migrate critical on-premises production systems to Amazon EC2 instances. The production instances will be used for at least 3 years. The company wants a pricing option that will minimize cost. Which solution will meet these requirements?",
+      "options": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Spot Instances",
+        "AWS Free Tier"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ใช้ยาวๆ 3 ปี\" ต้อง \"จอง\" ล่วงหน้าเพื่อประหยัดสุดๆ",
+      "keywords_for_highlighting": [
+        "migrate",
+        "production",
+        "3 years",
+        "minimize cost"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือกการกำหนดราคาที่เหมาะสมที่สุดสำหรับ Amazon EC2 เพื่อลดต้นทุน ซึ่งเป็นหัวใจหลักของหมวดหมู่การกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company is migrating to the AWS Cloud and plans to run experimental workloads for 3 to 6 months on AWS. Which pricing model will meet these requirements?",
+      "options": [
+        "Use Savings Plans for a 3-year term.",
+        "Use Dedicated Hosts.",
+        "Buy Reserved Instances.",
+        "Use On-Demand Instances."
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ทดลองสั้นๆ\" ให้ใช้ \"On-Demand\" เพราะไม่ต้องผูกมัดระยะยาว เหมาะสำหรับงานที่ไม่แน่นอน",
+      "keywords_for_highlighting": [
+        "migrating",
+        "experimental workloads",
+        "3 to 6 months"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกรูปแบบการกำหนดราคาที่เหมาะสมที่สุดสำหรับ workload บน AWS ซึ่งเป็นหัวข้อหลักของการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company has moved all its infrastructure to the AWS Cloud. To plan ahead for each quarter, the finance team wants to track the cost and usage data of all resources from previous months. The finance team wants to automatically generate reports that contains the data. Which AWS service or feature should the finance team use to meet these requirements?",
+      "options": [
+        "Amazon Detective",
+        "AWS Pricing Calculator",
+        "AWS Budgets",
+        "AWS Savings Plans"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"วางแผนการเงิน\" และ \"รายงานอัตโนมัติ\" นึกถึง AWS Budgets ที่ช่วยควบคุมค่าใช้จ่ายและสร้างรายงานได้",
+      "keywords_for_highlighting": [
+        "finance team",
+        "track cost and usage data",
+        "automatically generate reports"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การติดตามค่าใช้จ่ายและปริมาณการใช้ทรัพยากรเพื่อสร้างรายงาน ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนใน AWS Cloud"
+    },
+    {
+      "question": "A company has deployed a web application to Amazon EC2 instances. The EC2 instances have low usage. Which AWS service or feature should lite company use in rightsized the FC? instances?",
+      "options": [
+        "AWS Config",
+        "AWS Cost Anomaly Detection",
+        "AWS Budgets",
+        "AWS Compute Optimizer"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"EC2 usage low\" (ใช้งาน EC2 น้อย) ให้มองหา \"Optimizer\" เพื่อปรับขนาดให้เหมาะสม",
+      "keywords_for_highlighting": [
+        "EC2 instances",
+        "low usage",
+        "rightsized"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการลดต้นทุนโดยการปรับขนาด EC2 instances ให้เหมาะสม ซึ่งเป็นประเด็นหลักในเรื่องการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "A company has a workload that will run continuously for 1 year. The workload cannot tolerate service interruptions. Which Amazon EC2 purchasing option will be MOST cost-effective?   461",
+      "options": [
+        "All Upfront Reserved Instances",
+        "Partial Upfront Reserved Instances",
+        "Dedicated Instances",
+        "On-Demand Instances"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"รันยาวๆ 1 ปี ไม่มีหยุด จ่ายหมดแต่แรก คุ้มสุด!\" (เน้นว่ารันนานและไม่มีหยุด ต้องเลือกจ่ายล่วงหน้าทั้งหมด)",
+      "keywords_for_highlighting": [
+        "รันต่อเนื่อง 1 ปี",
+        "service interruptions",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือกการซื้อ EC2 ที่คุ้มค่าที่สุด ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของบริการ AWS โดยตรง"
+    },
+    {
+      "question": "A company's application is running on Amazon EC2 instances. The company is planning a partial migration to a serverless architecture in the next year and wants to pay for resources up front. Which AWS purchasing option will optimize the company's costs?",
+      "options": [
+        "Convertible Reserved Instances",
+        "Spot Instances",
+        "EC2 Instance Savings Plans",
+        "Compute Savings Plan"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Serverless\" + \"จ่ายล่วงหน้า\" (up front) --> มองหา Savings Plan ที่ครอบคลุม Compute (รวมถึง serverless)",
+      "keywords_for_highlighting": [
+        "serverless",
+        "จ่ายล่วงหน้า",
+        "optimize costs"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกตัวเลือกการซื้อที่เหมาะสมที่สุดเพื่อลดต้นทุน ซึ่งเป็นหัวใจสำคัญของหมวดหมู่การกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "Which top-level key performance indicator (KPI) is available in AWS rightsizing recommendations of Cost Optimization?",
+      "options": [
+        "Container modernization opportunities",
+        "Estimated monthly saving",
+        "Reserved instances savings",
+        "Compute savings recommendations"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Rightsizing\" คือการปรับขนาดให้เหมาะสม ซึ่งจะส่งผลให้เห็น \"การประหยัดรายเดือนโดยประมาณ\" ได้ชัดเจนที่สุด",
+      "keywords_for_highlighting": [
+        "KPI",
+        "rightsizing",
+        "Cost Optimization"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับ \"AWS rightsizing recommendations of Cost Optimization\" ซึ่งเป็นส่วนหนึ่งของการจัดการต้นทุนและพิจารณาทางเลือกในการกำหนดราคาที่เหมาะสมที่สุด"
+    },
+    {
+      "question": "A company needs to store infrequently used data for data archives and long-term backups. Which AWS service or storage class will meet these requirements MOST cost-effectively?",
+      "options": [
+        "Amazon FSx for Lustre",
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon Elastic File System (Amazon EFS)   478",
+        "Amazon S3 Glacier Flexible Retrieval"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Infrequently used data\" หรือ \"long-term backups\" ให้คิดถึง \"Glacier\" ซึ่งเป็นที่เก็บข้อมูลระยะยาวราคาถูก",
+      "keywords_for_highlighting": [
+        "infrequently used data",
+        "long-term backups",
+        "cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเน้นที่การเลือกบริการที่คุ้มค่าที่สุด (MOST cost-effectively) ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของบริการ AWS ต่างๆ"
+    },
+    {
+      "question": "Which AWS service or tool can a company use to set up consolidated billing?",
+      "options": [
+        "AWS Billing and Cost Management console",
+        "AWS Organizations",
+        "AWS Cost and Usage Report",
+        "AWS Systems Manager"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"รวมบิล\" ต้องใช้ \"องค์กร\" ใน AWS เพื่อจัดการหลายบัญชี",
+      "keywords_for_highlighting": [
+        "consolidated billing",
+        "set up"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการที่ใช้ในการจัดการค่าใช้จ่ายและการเรียกเก็บเงิน ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "A company needs to reserve a certain amount of Amazon EC2 compute resources in a specific Availability Zone within an AWS Region. Which purchasing option should the company use to meet this requirement?",
+      "options": [
+        "EC2 Instance Savings Plans",
+        "Compute Savings Plans",
+        "Regional Reserved Instances",
+        "Zonal Reserved Instances"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Availability Zone\" ที่เฉพาะเจาะจง (Zonal) ต้องใช้ \"Zonal Reserved Instances\" เท่านั้น",
+      "keywords_for_highlighting": [
+        "reserve",
+        "EC2",
+        "Availability Zone",
+        "specific"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกตัวเลือกการซื้อ EC2 ที่เหมาะสมที่สุดเพื่อตอบสนองความต้องการด้านทรัพยากรและงบประมาณ ซึ่งเป็นประเด็นหลักในการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "A company is moving Us development and test environments to AWS to increase agility and reduce cost. Because these are not production workloads and the servers are not fully utilized, occasional unavailability is acceptable. What is the MOST cost-effective Amazon EC2 pricing model that will meet these requirements?",
+      "options": [
+        "Reserved instances",
+        "On-Demand Instances",
+        "Spot Instances",
+        "Dedicated Hosts"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ไม่เน้นใช้งานตลอดเวลา + ยอมรับการหยุดทำงานได้ + ประหยัดสุด\" -> ตอบ \"Spot\" (เหมือนซื้อของลดราคาแบบเสี่ยงๆ)",
+      "keywords_for_highlighting": [
+        "development and test environments",
+        "increase agility and reduce cost",
+        "not production workloads",
+        "servers are not fully utilized",
+        "occasional unavailability is acceptable"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกโมเดลการกำหนดราคา EC2 ที่คุ้มค่าที่สุด ซึ่งเป็นประเด็นหลักของการจัดการต้นทุนใน AWS"
+    },
+    {
+      "question": "Which AWS service can a company use to directly query and analyze AWS Cost and Usage Reports?",
+      "options": [
+        "Amazon OpenSearch Service",
+        "Amazon Athena",
+        "Amazon Aurora",
+        "AWS Glue"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Cost and Usage Reports\" ต้อง \"Query and Analyze\" นึกถึง Athena เทพธิดาแห่งปัญญาที่ช่วยวิเคราะห์ข้อมูล",
+      "keywords_for_highlighting": [
+        "query",
+        "analyze",
+        "AWS Cost and Usage Reports"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ในการวิเคราะห์รายงานค่าใช้จ่ายและการใช้งาน AWS ซึ่งเกี่ยวข้องโดยตรงกับการกำหนดราคาและต้นทุนของ AWS"
+    },
+    {
+      "question": "A company wants to visualize and manage AWS Cloud costs and usage for a specific period of time. Which AWS service or feature will meet these requirements?",
+      "options": [
+        "Cost Explorer",
+        "Consolidated billing",
+        "AWS Organizations",
+        "AWS Budgets"
+      ],
+      "correctAnswer": 0,
+      "explanation": "อยากเห็นภาพรวมค่าใช้จ่ายและจัดการการใช้งาน AWS ให้เลือก \"Cost Explorer\" ที่ช่วยสำรวจค่าใช้จ่าย",
+      "keywords_for_highlighting": [
+        "visualize",
+        "manage",
+        "AWS Cloud costs",
+        "usage",
+        "specific period of time"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงการจัดการและวิเคราะห์ต้นทุนและค่าใช้จ่ายในการใช้งาน AWS ซึ่งเป็นหัวใจหลักของหมวดหมู่การกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company is moving some of its on-premises IT services to the AWS Cloud. The finance department wants to see the entire bill so it can forecast spending limits. Which AWS service can the company use to set spending limits and receive notifications if those limits are exceeded?",
+      "options": [
+        "AWS Cost and Usage Reports",
+        "AWS Budgets",
+        "AWS Organizations consolidated billing",
+        "Cost Explorer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"งบประมาณ\" (Budgets) ช่วย \"จำกัดการใช้จ่าย\" และ \"แจ้งเตือน\" เมื่อเกินงบที่ตั้งไว้",
+      "keywords_for_highlighting": [
+        "spending limits",
+        "notifications",
+        "exceeded"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้ในการกำหนดขีดจำกัดการใช้จ่ายและรับการแจ้งเตือน ซึ่งเกี่ยวข้องโดยตรงกับการจัดการต้นทุนและการกำหนดราคาของบริการ AWS"
+    },
+    {
+      "question": "For which use case are Amazon EC2 On-Demand Instances MOST cost-effective?",
+      "options": [
+        "Compute-intensive video transcoding that can be restarted it necessary",
+        "An instance in continual use for 1 month to conduct quality assurance tests",
+        "An instance that runs a web server that will run for 1 year",
+        "An instance that runs a database that will run for 3 years"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"On-Demand\" เหมาะกับงานระยะสั้นที่ต้องการความยืดหยุ่น เช่น การทดสอบ QA ที่ใช้แค่ช่วงเวลาหนึ่งเท่านั้น",
+      "keywords_for_highlighting": [
+        "On-Demand",
+        "MOST cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงกรณีการใช้งานที่ Amazon EC2 On-Demand Instances มีความคุ้มค่าด้านต้นทุนมากที่สุด ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของบริการ AWS"
+    },
+    {
+      "question": "514 A company needs to organize its resources and track AWS costs on a detailed level. The company needs to categorize costs by business department, environment, and application. Which solution will meet these requirements'?",
+      "options": [
+        "Access the AWS Cost Management console to organize resources set an AWS budget, and receive notifications of unintentional usage.",
+        "Use tags to organize the resources. Activate cost allocation tags to track AWS costs on a detailed level.",
+        "Create Amazon CloudWatch dashboards to visually organize and track costs individually.",
+        "Access the AWS Billing and Cost Management dashboard to organize and track resource consumption on a detailed level."
+      ],
+      "correctAnswer": 1,
+      "explanation": "ต้องการจัดระเบียบทรัพยากรและติดตามค่าใช้จ่ายแบบละเอียด โดยแบ่งตามแผนก, สภาพแวดล้อม, และแอปพลิเคชัน ให้มองหาคำว่า \"tags\" เพราะ tags ช่วยในการจัดหมวดหมู่และติดตามค่าใช้จ่ายได้ละเอียด",
+      "keywords_for_highlighting": [
+        "organize resources",
+        "track AWS costs",
+        "detailed level",
+        "categorize costs",
+        "business department",
+        "environment",
+        "application"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การจัดระเบียบทรัพยากรและการติดตามค่าใช้จ่าย AWS ในระดับรายละเอียด ซึ่งเป็นหัวใจหลักของการกำหนดราคาและต้นทุนใน AWS"
+    },
+    {
+      "question": "A company purchased Amazon EC2 Standard Reserved Instances (Rls) for a workload in the AWS Cloud. The company needs to move part of the workload to an instance family that does not match the instance family of these Standard RIs. How can the company take advantage of the Standard RIs that it no longer needs?",
+      "options": [
+        "Contact the AWS Support team, and ask the team to sell the Standard RIs.",
+        "Sell the Standard RIs on the Amazon EC2 Reserved Instance Marketplace.",
+        "Sell the Standard RIs as a third-party seller on the AWS Marketplace.",
+        "Convert the Standard RIs to Savings Plans."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Standard RIs\" ที่ \"ไม่ตรง family\" ให้คิดถึงการ \"ขาย\" ใน \"Marketplace\" เพื่อเอาทุนคืน",
+      "keywords_for_highlighting": [
+        "Standard Reserved Instances",
+        "instance family",
+        "no longer needs"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการจัดการต้นทุนและวิธีการใช้ประโยชน์จาก Reserved Instances ที่ไม่ได้ใช้งาน ซึ่งเป็นส่วนหนึ่งของการกำหนดราคาและต้นทุนใน AWS Cloud."
+    },
+    {
+      "question": "A cloud engineer wants to store data in Amazon S3. The engineer will access some of the data yearly and some of the data dally. Which S3 storage class will meet these requirements MOST cost-effectively?",
+      "options": [
+        "S3 Standard",
+        "S3 Glacier Deep Archive",
+        "S3 One Zone-Infrequent Access (S3 One Zone-IA)",
+        "S3 Intelligent-Tiering"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ถ้าโจทย์พูดถึงการเข้าถึงข้อมูลที่ \"ไม่แน่นอน\" (ทั้งรายปีและรายวัน) และต้องการ \"ประหยัดต้นทุน\" ให้เลือก Intelligent-Tiering เพราะมันจัดการ tier ให้เองตามการใช้งาน",
+      "keywords_for_highlighting": [
+        "data yearly",
+        "data daily",
+        "cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือก storage class ที่คุ้มค่าที่สุด (MOST cost-effectively) ซึ่งเกี่ยวข้องกับการพิจารณาเรื่องราคาและต้นทุนของบริการ Amazon S3 แต่ละประเภท"
+    },
+    {
+      "question": "A company has an on-premises application. The application has processing times of less than 5 minutes and is invoked only a few times each day. The company wants to move the application to the AWS Cloud. Which AWS service will support this application MOST cost-effectively?",
+      "options": [
+        "Amazon Elastic Container Service (Amazon ECS)",
+        "AWS Lambda",
+        "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "Amazon EC2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ประมวลผลสั้นๆ ไม่กี่ครั้งต่อวัน\" ให้คิดถึง Lambda เพราะเหมาะกับงานเล็กๆ ที่เกิดขึ้นไม่บ่อย จ่ายตามที่ใช้จริง",
+      "keywords_for_highlighting": [
+        "processing times of less than 5 minutes",
+        "invoked only a few times each day",
+        "MOST cost-effectively"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามเน้นที่การเลือกบริการ AWS ที่ \"MOST cost-effectively\" หรือมีประสิทธิภาพด้านต้นทุนมากที่สุด ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุน"
+    },
+    {
+      "question": "A company will run a predictable compute workload on Amazon EC2 Instances for the next 3 years. The workload is critical for the company. The company wants to optimize costs to run the workload. Which solution will meet these requirements?",
+      "options": [
+        "Spot Instances",
+        "Dedicated Hosts",
+        "Savings Plans",
+        "On-Demand Instances"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"ใช้งานระยะยาว (3 ปี), คาดการณ์ได้, ต้องการประหยัด -> เลือก Savings Plans\"",
+      "keywords_for_highlighting": [
+        "predictable compute workload",
+        "3 years",
+        "optimize costs"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การ \"optimize costs\" ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุน (Pricing and Cost) ใน AWS Cloud."
+    },
+    {
+      "question": "Which AWS service or feature can a company use to determine which business unit is using specific AWS resources?",
+      "options": [
+        "Cost allocation tags",
+        "Key pairs",
+        "Amazon Inspector",
+        "AWS Trusted Advisor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ธุรกิจ\" ใช้ AWS resources อะไร? ต้องใช้ \"Tags\" เพื่อ \"จัดสรรค่าใช้จ่าย\" ให้ถูกหน่วยงาน",
+      "keywords_for_highlighting": [
+        "business unit",
+        "AWS resources",
+        "determine"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงวิธีการระบุว่าหน่วยธุรกิจใดใช้ทรัพยากร AWS ใด ซึ่งเกี่ยวข้องกับการติดตามและจัดการต้นทุนการใช้งาน AWS โดยตรง"
+    },
+    {
+      "question": "Which AWS service or resource can provide discounts on some AWS service costs in exchange for a spending commitment?",
+      "options": [
+        "Amazon Detective",
+        "AWS Pricing",
+        "Savings Plans",
+        "Basic Support"
+      ],
+      "correctAnswer": 3,
+      "explanation": "** \"Savings Plans\" มีคำว่า \"Savings\" ซึ่งแปลว่า \"การประหยัด\" สอดคล้องกับ \"discounts\" (ส่วนลด) และ \"commitment\" (ข้อผูกมัด) แสดงถึงการวางแผนเพื่อประหยัดค่าใช้จ่าย\n\n**KEYWORDS:** ['discounts', 'spending commitment']",
+      "keywords_for_highlighting": [],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ให้ส่วนลดแลกกับการผูกมัดการใช้จ่าย ซึ่งเกี่ยวข้องกับการกำหนดราคาและต้นทุนของบริการ AWS โดยตรง"
+    },
+    {
+      "question": "A company is running a reporting web server application on Amazon EC2 instances. The application runs once every week and once again at the end of the month. The EC2 instances can be shut down when they are not in use. What is the MOST cost-effective billing model for this use case?",
+      "options": [
+        "Standard Reserved Instances",
+        "Convertible Reserved Instances",
+        "On-Demand Capacity Reservations",
+        "On-Demand Instances"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"รันเป็นครั้งคราว, ปิดได้เมื่อไม่ใช้\" นึกถึง On-Demand เพราะจ่ายเฉพาะตอนใช้เท่านั้น",
+      "keywords_for_highlighting": [
+        "reporting web server",
+        "EC2 instances",
+        "shut down",
+        "not in use",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 3,
+      "assigned_category_name_by_gemini": "การกำหนดราคาและต้นทุน (Pricing and Cost)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกโมเดลการเรียกเก็บเงินที่คุ้มค่าที่สุดสำหรับ EC2 ซึ่งเป็นประเด็นหลักของการกำหนดราคาและต้นทุนใน AWS"
+    }
+  ]
+}

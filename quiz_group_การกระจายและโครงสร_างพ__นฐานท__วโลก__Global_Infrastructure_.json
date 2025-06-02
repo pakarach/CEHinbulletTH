@@ -1,0 +1,336 @@
+{
+  "quizTitle": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure) (ข้อประมาณ 245 - 245 จาก Dump เดิม) - 17 ข้อ",
+  "questions": [
+    {
+      "question": "Which AWS service offers a global content delivery network (CDN) that helps companies securely deliver websites, videos, applications, and APIs at high speeds with low latency?",
+      "options": [
+        "Amazon EC2",
+        "Amazon CloudFront",
+        "Amazon CloudWatch",
+        "AWS CloudFormation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Content Delivery\" (ส่งคอนเทนต์) ต้องใช้ \"CloudFront\" (อยู่หน้าสุด ส่งไว)",
+      "keywords_for_highlighting": [
+        "content delivery network",
+        "CDN",
+        "high speeds",
+        "low latency"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เป็น Content Delivery Network (CDN) ระดับโลก ซึ่งเกี่ยวข้องโดยตรงกับโครงสร้างพื้นฐานทั่วโลกของ AWS และการกระจายเนื้อหาไปยังผู้ใช้ทั่วโลก"
+    },
+    {
+      "question": "An Availability Zone consists of:   160",
+      "options": [
+        "one or more data centers in a single location.",
+        "two or more data centers in multiple locations.",
+        "one or more physical hosts in a single data center.",
+        "two or more physical hosts in multiple data centers."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Availability Zone คือ \"โซน\" ที่ต้องมีอย่างน้อยหนึ่ง Data Center และอยู่ใน \"ที่เดียว\" เพื่อป้องกันความเสี่ยง",
+      "keywords_for_highlighting": [
+        "Availability Zone",
+        "consists of"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้ถามถึงองค์ประกอบของ Availability Zone ซึ่งเป็นส่วนหนึ่งของโครงสร้างพื้นฐานทั่วโลกของ AWS"
+    },
+    {
+      "question": "A company processes personally identifiable information (Pll) and must keep data in the country where it was generated. The company wants to use Amazon EC2 instances for these workloads. Which AWS service will meet these requirements?",
+      "options": [
+        "AWS Outposts",
+        "AWS Storage Gateway",
+        "AWS DataSync",
+        "AWS OpsWorks"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ข้อมูลส่วนบุคคล (PII) ต้องอยู่ในประเทศเดิม? นึกถึง **Outposts** ที่เหมือน EC2 แต่ตั้งอยู่ในสถานที่ของคุณ",
+      "keywords_for_highlighting": [
+        "personally identifiable information (PII)",
+        "keep data in the country",
+        "Amazon EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับข้อกำหนดด้านกฎระเบียบที่ต้องเก็บข้อมูลในประเทศที่สร้างขึ้น ซึ่งเชื่อมโยงโดยตรงกับโครงสร้างพื้นฐานทั่วโลกของ AWS และการเลือกบริการที่เหมาะสมเพื่อตอบสนองความต้องการนั้น"
+    },
+    {
+      "question": "A company's headquarters is located on a different continent from where the majority of the company's customers live. The company wants an AWS Cloud environment setup that will provide the lowest latency to the customers.   198 A company wants to automate the creation of new AWS accounts and automatically prevent all users from creating Amazon EC2 instances. Which AWS service provides this functionality?",
+      "options": [
+        "AWS Service Catalog",
+        "AWS Organizations",
+        "EC2 Image Builder",
+        "AWS Systems Manager"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"สำนักงานใหญ่อยู่คนละทวีปกับลูกค้า\" และต้องการ \"ลด Latency\" ให้ลูกค้า ให้มองหาบริการที่ช่วยจัดการโครงสร้างพื้นฐานแบบรวมศูนย์และควบคุมการเข้าถึงทรัพยากร ซึ่งก็คือ AWS Organizations",
+      "keywords_for_highlighting": [
+        "สำนักงานใหญ่",
+        "คนละทวีป",
+        "ลูกค้า",
+        "lowest latency",
+        "automate",
+        "new AWS accounts",
+        "prevent",
+        "EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามเน้นเรื่องการตั้งค่าสภาพแวดล้อม AWS ที่ลด latency ให้กับลูกค้าซึ่งอยู่ต่างทวีป ซึ่งเกี่ยวข้องโดยตรงกับโครงสร้างพื้นฐานทั่วโลกของ AWS (Regions, Availability Zones)"
+    },
+    {
+      "question": "A company wants to launch its web application in a second AWS Region. The company needs to determine which services must be regionally configured for this launch. Which AWS services can be configured at the Region level? (Select TWO.)",
+      "options": [
+        "Amazon EC2",
+        "Amazon Route 53",
+        "Amazon CloudFront",
+        "AWS WAF",
+        "Amazon DynamoDB"
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "**\"Route 53\" คือ DNS ทั่วโลก และ \"WAF\" ต้องเลือก Region ที่จะป้องกัน**",
+      "keywords_for_highlighting": [
+        "Region",
+        "configured"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ AWS ที่ต้องกำหนดค่าในระดับ Region ซึ่งเกี่ยวข้องโดยตรงกับโครงสร้างพื้นฐานทั่วโลกของ AWS และการกระจายบริการในแต่ละ Region"
+    },
+    {
+      "question": "A company manages factory machines in real time. The company wants to use AWS technology to deploy its monitoring applications as close to the factory machines as possible. Which AWS solution will meet these requirements with the LEAST latency?",
+      "options": [
+        "AWS Outposts",
+        "Amazon EC2",
+        "AWS App Runner",
+        "AWS Batch"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"โรงงาน\" และ \"ใกล้ที่สุด\" = Outposts เอาเครื่อง AWS ไปตั้งที่โรงงานเลย ใกล้สุด!",
+      "keywords_for_highlighting": [
+        "factory machines",
+        "real time",
+        "as close as possible",
+        "LEAST latency"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การเลือกโซลูชัน AWS ที่เหมาะสมที่สุดเพื่อลด Latency โดยการ Deploy แอปพลิเคชันใกล้กับ Factory Machines ซึ่งเกี่ยวข้องโดยตรงกับโครงสร้างพื้นฐานทั่วโลกของ AWS และการเลือกบริการที่เหมาะสมเพื่อตอบสนองความต้องการด้าน Latency ที่ต่ำที่สุด"
+    },
+    {
+      "question": "A company is building an application that needs to deliver images and videos globally with minimal latency. Which approach can the company use to accomplish this in a cost effective manner?",
+      "options": [
+        "Deliver the content through Amazon CloudFront.",
+        "Store the content on Amazon S3 and enable S3 cross-region replication.",
+        "Implement a VPN across multiple AWS Regions.",
+        "Deliver the content through AWS PrivateLink."
+      ],
+      "correctAnswer": 0,
+      "explanation": "ถ้าโจทย์ถามถึงการส่งเนื้อหาทั่วโลกแบบรวดเร็วและประหยัด ให้เลือก CloudFront เพราะเป็น CDN ที่กระจาย content ไปทั่วโลก",
+      "keywords_for_highlighting": [
+        "deliver images and videos globally",
+        "minimal latency",
+        "cost effective"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การส่งมอบเนื้อหาทั่วโลกด้วยความหน่วงต่ำ ซึ่งเกี่ยวข้องโดยตรงกับโครงสร้างพื้นฐานทั่วโลกของ AWS และบริการที่ช่วยให้การส่งมอบเนื้อหาเป็นไปอย่างมีประสิทธิภาพในระดับโลก"
+    },
+    {
+      "question": "245 A company provides a web-based ecommerce service that runs in two Availability Zones within a single AWS Region. The web service distributes content that is stored in the Amazon S3 Standard storage class. The company wants to improve the web service's performance globally. What should the company do to meet this requirement?",
+      "options": [
+        "Change the S3 storage class to S3 Intelligent-Tiering.",
+        "Deploy an Amazon CloudFront distribution to cache web server content in edge locations.",
+        "Use Amazon API Gateway for the web service.",
+        "Migrate the website ecommerce servers to Amazon EC2 with enhanced networking."
+      ],
+      "correctAnswer": 1,
+      "explanation": "ถ้าโจทย์ถามถึงการ \"ปรับปรุงประสิทธิภาพทั่วโลก\" (globally) สำหรับเว็บที่ใช้ S3 ให้เลือก CloudFront เพื่อทำ caching ใกล้ผู้ใช้ทั่วโลก",
+      "keywords_for_highlighting": [
+        "ประสิทธิภาพทั่วโลก",
+        "web-based ecommerce",
+        "Amazon S3"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการปรับปรุงประสิทธิภาพของเว็บเซอร์วิสทั่วโลกโดยใช้ Amazon CloudFront ซึ่งเป็นบริการที่เกี่ยวข้องกับการกระจายเนื้อหาและโครงสร้างพื้นฐานทั่วโลกของ AWS เพื่อให้ผู้ใช้ทั่วโลกสามารถเข้าถึงเนื้อหาได้เร็วขึ้น"
+    },
+    {
+      "question": "A company wants to migrate its on-premises relational databases to the AWS Cloud. The company wants to use infrastructure as close to its current geographical location as possible. Which AWS service or resource should the company use to select its Amazon RDS deployment area?",
+      "options": [
+        "Amazon Connect",
+        "AWS Wavelength",
+        "AWS Regions",
+        "AWS Direct Connect"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ฐานข้อมูล (databases) และตำแหน่งทางภูมิศาสตร์ (geographical location) ให้เลือก \"AWS Regions\" เพราะ Regions คือพื้นที่ทางภูมิศาสตร์ที่ AWS ให้บริการ",
+      "keywords_for_highlighting": [
+        "relational databases",
+        "geographical location",
+        "Amazon RDS deployment area"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกพื้นที่การใช้งาน Amazon RDS ที่ใกล้เคียงกับสถานที่ตั้งปัจจุบัน ซึ่งเป็นประเด็นที่เกี่ยวข้องกับโครงสร้างพื้นฐานทั่วโลกของ AWS (AWS Regions)"
+    },
+    {
+      "question": "A company wants to use the AWS Cloud to deploy an application globally. Which architecture deployment model should the company use to meet this requirement?",
+      "options": [
+        "Multi-Region",
+        "Single-Region",
+        "Multi-AZ",
+        "Single-AZ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"ทั่วโลก\" (globally) ต้องใช้ \"หลายภูมิภาค\" (Multi-Region) เพื่อกระจายแอปพลิเคชัน",
+      "keywords_for_highlighting": [
+        "deploy",
+        "application",
+        "globally"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการ deploy application ให้ครอบคลุมทั่วโลก ซึ่งเกี่ยวข้องโดยตรงกับการกระจายและโครงสร้างพื้นฐานทั่วโลกของ AWS (Regions, Availability Zones)"
+    },
+    {
+      "question": "A company uses AWS for its web application. The company wants to minimize latency and perform compute operations for the application as close to end users as possible. Which AWS service or infrastructure component will provide this functionality?",
+      "options": [
+        "AWS Regions",
+        "Availability Zones",
+        "Edge locations",
+        "AWS Direct Connect"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ถ้าโจทย์ถามถึงการลด Latency และให้ Application อยู่ใกล้ผู้ใช้มากที่สุด ให้ตอบ \"Edge locations\" เพราะเป็นที่ที่ AWS เอา Content ไปวางไว้ใกล้ User ที่สุด",
+      "keywords_for_highlighting": [
+        "minimize latency",
+        "close to end users"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการลด latency โดยใช้โครงสร้างพื้นฐานของ AWS ที่ใกล้กับผู้ใช้ ซึ่งเป็นลักษณะเด่นของโครงสร้างพื้นฐานทั่วโลกของ AWS โดยเฉพาะ Edge Locations"
+    },
+    {
+      "question": "Which AWS service enables companies to deploy an application dose to end users?",
+      "options": [
+        "Amazon CloudFront",
+        "AWS Auto Scaling",
+        "AWS AppSync",
+        "Amazon Route S3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ถ้าโจทย์ถามถึงการ \"deploy application close to end users\" หรือ \"ใกล้ชิดผู้ใช้\" ให้คิดถึง **CloudFront** เพราะเป็น CDN ที่เน้นการกระจาย content ไปยัง Edge Locations ทั่วโลก",
+      "keywords_for_highlighting": [
+        "deploy application",
+        "close to end users"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ช่วยให้บริษัทสามารถนำแอปพลิเคชันไปใช้งานใกล้กับผู้ใช้ปลายทาง ซึ่งเกี่ยวข้องกับโครงสร้างพื้นฐานทั่วโลกของ AWS และการกระจายเนื้อหา (Content Delivery Network - CDN)"
+    },
+    {
+      "question": "A company hosts its website on Amazon EC2 instances. The company needs to ensure that the website reaches a global audience and provides minimum latency to users. Which AWS service should the company use to meet these requirements?",
+      "options": [
+        "Amazon Route 53",
+        "Amazon CloudFront",
+        "Elastic Load Balancing",
+        "AWS Lambda"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"ทั่วโลก\" + \"latency ต่ำ\" = CloudFront** (จำว่า CloudFront คือ CDN ที่ช่วยให้เว็บเข้าถึงได้ทั่วโลกและเร็วขึ้น)",
+      "keywords_for_highlighting": [
+        "website",
+        "global audience",
+        "minimum latency"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวกับวิธีการทำให้เว็บไซต์เข้าถึงผู้ใช้ทั่วโลกโดยมี Latency ต่ำ ซึ่งเกี่ยวข้องกับโครงสร้างพื้นฐานทั่วโลกของ AWS และการกระจายเนื้อหาไปยังตำแหน่งต่างๆ ทั่วโลก"
+    },
+    {
+      "question": "Which option is an environment that consists of one or more data centers?",
+      "options": [
+        "Amazon CloudFront",
+        "Availability Zone",
+        "VPC",
+        "AWS Outposts"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"ดาต้าเซ็นเตอร์\" หลายแห่งรวมกันเป็น \"Availability Zone\" เหมือนโซนที่พร้อมใช้งานเสมอ",
+      "keywords_for_highlighting": [
+        "data centers",
+        "environment"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้ถามถึงสภาพแวดล้อมที่ประกอบด้วยศูนย์ข้อมูล ซึ่งเกี่ยวข้องกับโครงสร้างพื้นฐานทั่วโลกของ AWS และ Availability Zone เป็นส่วนประกอบสำคัญของโครงสร้างพื้นฐานนั้น"
+    },
+    {
+      "question": "Which AWS services make use of global edge locations'? (Select TWO.)",
+      "options": [
+        "AWS Fargate",
+        "Amazon CloudFront",
+        "AWS Global Accelerator   439",
+        "AWS Wavelength",
+        "Amazon VPC"
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "\"Edge Locations\" นึกถึง CDN (CloudFront) และ Global Accelerator ที่ช่วยเร่งความเร็วให้ผู้ใช้ทั่วโลก",
+      "keywords_for_highlighting": [
+        "global edge locations"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ประโยชน์จาก edge locations ซึ่งเป็นส่วนหนึ่งของโครงสร้างพื้นฐานทั่วโลกของ AWS"
+    },
+    {
+      "question": "Which AWS service uses edge locations to cache content?",
+      "options": [
+        "Amazon Kinesis",
+        "Amazon Simple Queue Service (Amazon SQS)",
+        "Amazon CloudFront",
+        "Amazon Route 53"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Edge locations\" คือจุดเด่นของ CloudFront ในการทำ caching เพื่อให้ส่งข้อมูลได้เร็วขึ้นทั่วโลก",
+      "keywords_for_highlighting": [
+        "edge locations",
+        "cache content"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้ถามถึงบริการที่ใช้ edge locations ซึ่งเป็นส่วนหนึ่งของโครงสร้างพื้นฐานทั่วโลกของ AWS เพื่อแคชเนื้อหา"
+    },
+    {
+      "question": "A company uploads audio and video files to a centralized Amazon S3 bucket from different geographic locations. Which AWS solution will optimize transfer speeds for these files?",
+      "options": [
+        "AWS Global Accelerator",
+        "S3 Transfer Acceleration",
+        "AWS Direct Connect",
+        "Amazon CloudFront"
+      ],
+      "correctAnswer": 1,
+      "explanation": "อัปโหลดไฟล์ไป S3 จากหลายที่ทั่วโลก ต้องการให้เร็ว ต้องใช้ \"S3 Transfer Acceleration\" ช่วยเร่งความเร็ว!",
+      "keywords_for_highlighting": [
+        "audio and video files",
+        "centralized Amazon S3 bucket",
+        "different geographic locations",
+        "optimize transfer speeds"
+      ],
+      "assigned_category_id_by_gemini": 11,
+      "assigned_category_name_by_gemini": "การกระจายและโครงสร้างพื้นฐานทั่วโลก (Global Infrastructure)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการเลือกบริการ AWS ที่เหมาะสมเพื่อปรับปรุงความเร็วในการถ่ายโอนไฟล์ไปยัง S3 จากสถานที่ต่างๆ ทั่วโลก ซึ่งเป็นประเด็นที่เกี่ยวข้องกับโครงสร้างพื้นฐานทั่วโลกของ AWS และการเลือกบริการที่เหมาะสมเพื่อใช้ประโยชน์จากโครงสร้างพื้นฐานนั้น"
+    }
+  ]
+}

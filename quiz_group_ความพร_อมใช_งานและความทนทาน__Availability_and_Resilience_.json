@@ -1,0 +1,334 @@
+{
+  "quizTitle": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience) (ข้อประมาณ 327 - 327 จาก Dump เดิม) - 17 ข้อ",
+  "questions": [
+    {
+      "question": "How should the company deploy the application to meet these requirements?",
+      "options": [
+        "Ina single Availability Zone",
+        "On AWS Direct Connect",
+        "On Reserved Instances",
+        "In multiple Availability Zones"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ถ้าโจทย์พูดถึง \"requirements\" (ความต้องการ) โดยเฉพาะเรื่องความพร้อมใช้งานสูง (High Availability) หรือความทนทานต่อความผิดพลาด (Fault Tolerance) ให้เลือก \"multiple Availability Zones\" เสมอ",
+      "keywords_for_highlighting": [
+        "requirements",
+        "deploy",
+        "application"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเกี่ยวกับวิธีการ Deploy Application เพื่อให้ตรงตาม Requirement ซึ่งเกี่ยวข้องกับความพร้อมใช้งานและความทนทานของระบบ (Availability and Resilience) การ Deploy ในหลาย Availability Zone เป็นแนวทางปฏิบัติที่ดีเพื่อให้ระบบยังคงทำงานได้แม้ Availability Zone หนึ่งจะล่ม"
+    },
+    {
+      "question": "A company wants its Amazon EC2 instances to share the same geographic area but use multiple independent underlying power sources. Which solution achieves this goal?",
+      "options": [
+        "Use EC2 instances in a single Availability Zone.",
+        "Use EC2 instances in multiple AWS Regions.",
+        "Use EC2 instances in multiple Availability Zones in the same AWS Region.",
+        "Use EC2 instances in the same edge location and the same AWS Region."
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"แหล่งจ่ายไฟอิสระ\" และ \"พื้นที่ทางภูมิศาสตร์เดียวกัน\" ให้เลือก Availability Zones ที่อยู่ใน Region เดียวกันเสมอ",
+      "keywords_for_highlighting": [
+        "geographic area",
+        "multiple independent underlying power sources"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การออกแบบระบบให้มีความพร้อมใช้งานสูงและทนทานต่อความผิดพลาด โดยเฉพาะอย่างยิ่งการใช้ Availability Zones เพื่อให้ระบบยังคงทำงานได้แม้ว่าแหล่งจ่ายไฟหลักจะล้มเหลว ซึ่งเป็นหัวใจสำคัญของความพร้อมใช้งานและความทนทาน"
+    },
+    {
+      "question": "A company wants to design a reliable web application that is hosted on Amazon EC2. Which approach will achieve this goal?",
+      "options": [
+        "Launch large EC2 instances in the same Availability Zone.",
+        "Spread EC2 instances across more than one security group.",
+        "Spread EC2 instances across more than one Availability Zone.",
+        "Use an Amazon Machine Image (AMI) from AWS Marketplace."
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Reliable\" หรือ \"เชื่อถือได้\" ในโจทย์ = กระจาย (Spread) ข้าม Availability Zone (AZ) เพื่อความทนทานต่อความล้มเหลว",
+      "keywords_for_highlighting": [
+        "reliable",
+        "web application",
+        "Amazon EC2"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเกี่ยวกับความน่าเชื่อถือของแอปพลิเคชันบน EC2 ซึ่งเกี่ยวข้องโดยตรงกับความพร้อมใช้งานและความทนทานของระบบ"
+    },
+    {
+      "question": "A company migrated its core application onto multiple workloads in the AWS Cloud. The company wants to improve the application's reliability. Which cloud design principle should the company implement to achieve this goal?",
+      "options": [
+        "Maximize utilization.",
+        "Decouple the components.",
+        "Rightsize the resources.",
+        "Adopt a consumption model."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Reliability\" (ความน่าเชื่อถือ) ต้องการ \"Decouple\" (แยกส่วนประกอบ) เพื่อให้ส่วนหนึ่งเสีย อีกส่วนยังทำงานได้",
+      "keywords_for_highlighting": [
+        "reliability",
+        "improve",
+        "cloud design principle"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเน้นที่การปรับปรุงความน่าเชื่อถือของแอปพลิเคชัน ซึ่งเป็นประเด็นหลักของความพร้อมใช้งานและความทนทาน (Availability and Resilience) ใน AWS Cloud."
+    },
+    {
+      "question": "A company wants to build a new web application by using AWS services. The application must meet the on-demand load for periods of heavy activity. Which AWS services or resources provide the necessary workload adjustments to meet these requirements? (Select TWO.)",
+      "options": [
+        "Amazon Machine Image (AMI)",
+        "Amazon EC2 Auto Scaling",
+        "Amazon EC2 instance",
+        "AWS Lambda",
+        "EC2 Image Builder"
+      ],
+      "correctAnswer": [
+        1,
+        3
+      ],
+      "explanation": "\"โหลดหนัก\" และ \"ปรับตามต้องการ\" นึกถึง Auto Scaling ที่ปรับ EC2 ให้เอง และ Lambda ที่รันโค้ดตามอีเวนต์โดยไม่ต้องจัดการเซิร์ฟเวอร์",
+      "keywords_for_highlighting": [
+        "on-demand load",
+        "heavy activity",
+        "workload adjustments"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเน้นที่การปรับขนาด workload ตามความต้องการ (on-demand load) เพื่อรองรับช่วงเวลาที่มีกิจกรรมสูง ซึ่งเกี่ยวข้องกับความสามารถในการปรับตัวและรับมือกับความต้องการที่เปลี่ยนแปลงไป ซึ่งเป็นส่วนหนึ่งของความพร้อมใช้งานและความทนทานของระบบ"
+    },
+    {
+      "question": "A company has deployed an application in the AWS Cloud. The company wants to ensure that the application is highly resilient. Which component of AWS infrastructure can the company use to meet this requirement?",
+      "options": [
+        "Content delivery network (CDN)",
+        "Edge locations",
+        "Wavelength Zones",
+        "Availability Zones"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Resilient\" (ยืดหยุ่น) ต้องคู่กับ \"Availability Zones\" (AZs) เพราะ AZs ช่วยให้ระบบทำงานได้ต่อเนื่องแม้บางส่วนล่ม",
+      "keywords_for_highlighting": [
+        "highly resilient",
+        "AWS Cloud"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามนี้ถามถึงวิธีการทำให้แอปพลิเคชันมีความทนทานสูง ซึ่งเป็นคุณสมบัติหลักของความพร้อมใช้งานและความทนทาน (Availability and Resilience) ใน AWS Cloud."
+    },
+    {
+      "question": "A company wants to migrate its high-performance computing (HPC) application to Amazon EC2 instances. The application has multiple components. The application must have fault tolerance and must have the ability to fail over automatically. Which AWS infrastructure solution will meet these requirements with the LEAST latency between components?",
+      "options": [
+        "Multiple AWS Regions",
+        "Multiple edge locations",
+        "Multiple Availability Zones",
+        "Regional edge caches"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HPC ต้องการความเร็วและทนทาน หากต้องการความเร็วสูงสุดและ failover อัตโนมัติใน AWS ให้เลือก Availability Zones (AZs) ที่อยู่ใน Region เดียวกัน",
+      "keywords_for_highlighting": [
+        "high-performance computing (HPC)",
+        "fault tolerance",
+        "least latency"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเน้นที่ความทนทานต่อความผิดพลาด (fault tolerance) และความสามารถในการ failover อัตโนมัติ ซึ่งเป็นประเด็นหลักของความพร้อมใช้งานและความทนทาน (Availability and Resilience)"
+    },
+    {
+      "question": "A company must store call recordings for 6 years. The storage system should be highly durable and cost-effective. Which AWS service meets these requirements?",
+      "options": [
+        "AWS Snowball",
+        "Amazon S3",
+        "AWS Storage Gateway",
+        "Amazon Kinesis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "**\"เก็บข้อมูลนานๆ ราคาถูก\"** ให้คิดถึง **S3**",
+      "keywords_for_highlighting": [
+        "call recordings",
+        "6 years",
+        "highly durable",
+        "cost-effective"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเน้นที่ความทนทาน (durability) ของระบบจัดเก็บข้อมูล ซึ่งเป็นประเด็นหลักของความพร้อมใช้งานและความทนทาน (Availability and Resilience)"
+    },
+    {
+      "question": "A company has a MySQL database running on a single Amazon EC2 instance. The company now requires higher availability in the event of an outage. Which set of tasks would meet this requirement?",
+      "options": [
+        "Add an Application Load Balancer in front of the EC2 instance.",
+        "Configure EC2 Auto Recovery to move the instance to another Availability Zone.",
+        "Migrate to Amazon RDS and enable Multi-AZ.",
+        "Enable termination protection for the EC2 instance to avoid outages."
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Availability\" (ความพร้อมใช้งาน) และ \"MySQL\" นำไปสู่ RDS Multi-AZ เสมอ!",
+      "keywords_for_highlighting": [
+        "higher availability",
+        "MySQL database",
+        "EC2 instance",
+        "outage"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การทำให้ระบบฐานข้อมูลมีความพร้อมใช้งานสูงขึ้น (higher availability) ในกรณีที่เกิดปัญหา ซึ่งเป็นประเด็นหลักของความพร้อมใช้งานและความทนทาน (Availability and Resilience)"
+    },
+    {
+      "question": "327 A company has a single Amazon EC2 instance. The company wants to adopt a highly available architecture. What can the company do to meet this requirement?",
+      "options": [
+        "Scale vertically to a larger EC2 instance size.",
+        "Scale horizontally across multiple Availability Zones.",
+        "Purchase an EC2 Dedicated Instance.",
+        "Change the EC2 instance family to a compute optimized instance."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Highly available\" (พร้อมใช้งานสูง) ต้องกระจายความเสี่ยงข้าม Availability Zones เพื่อให้ระบบยังทำงานได้แม้โซนใดโซนหนึ่งล่ม",
+      "keywords_for_highlighting": [
+        "highly available",
+        "EC2 instance",
+        "architecture"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเกี่ยวกับสถาปัตยกรรมที่มีความพร้อมใช้งานสูง (highly available architecture) ซึ่งเป็นประเด็นหลักของความพร้อมใช้งานและความทนทาน (Availability and Resilience)"
+    },
+    {
+      "question": "Which AWS services or features provide disaster recovery solutions for Amazon EC2 instances? (Select\nTWO.)",
+      "options": [
+        "EC2 Reserved Instances",
+        "EC2 Amazon Machine Images (AMIs)",
+        "Amazon Elastic Block Store (Amazon EBS) snapshots",
+        "AWS Shield",
+        "Amazon GuardDuty"
+      ],
+      "correctAnswer": [
+        1,
+        2
+      ],
+      "explanation": "**\"กู้ภัย EC2 ต้องมี 'ภาพ' (AMI) และ 'สำเนา' (EBS snapshots) ไว้ก่อน\"**",
+      "keywords_for_highlighting": [
+        "disaster recovery",
+        "EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเกี่ยวกับ disaster recovery เกี่ยวข้องโดยตรงกับความพร้อมใช้งานและความทนทานของระบบ ซึ่งเป็นหัวใจสำคัญของหมวดหมู่ที่ 5"
+    },
+    {
+      "question": "Which AWS Cloud benefit is shown by an architecture’s ability to withstand failures with minimal downtime?",
+      "options": [
+        "Agility",
+        "Elasticity",
+        "Scalability",
+        "High availability"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"ทนต่อความล้มเหลว\" และ \"เวลาหยุดทำงานน้อยที่สุด\" สองสิ่งนี้คือหัวใจของ \"High availability\" หรือความพร้อมใช้งานสูง",
+      "keywords_for_highlighting": [
+        "withstand failures",
+        "minimal downtime"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเกี่ยวกับความสามารถของสถาปัตยกรรมในการทนต่อความล้มเหลวและลดเวลาหยุดทำงานให้น้อยที่สุด ซึ่งเป็นลักษณะสำคัญของความพร้อมใช้งานและความทนทาน (Availability and Resilience)"
+    },
+    {
+      "question": "A company is building a new application on AWS. The company needs the application to remain available if an individual application component fails. Which design principle should the company use to meet this requirement?",
+      "options": [
+        "Disposable resources",
+        "Automation",
+        "Rightsizing",
+        "Loose coupling"
+      ],
+      "correctAnswer": 3,
+      "explanation": "แอปต้อง \"ไม่ล่ม\" แม้ส่วนประกอบเดียวเสีย ให้มองหา \"ความสัมพันธ์ที่หลวม\" (Loose coupling) จะช่วยให้แอปยังทำงานได้",
+      "keywords_for_highlighting": [
+        "application component fails",
+        "remain available",
+        "design principle"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเน้นที่การทำให้แอปพลิเคชันยังคงใช้งานได้แม้ว่าส่วนประกอบบางส่วนล้มเหลว ซึ่งเป็นประเด็นหลักของความพร้อมใช้งานและความทนทาน (Availability and Resilience)"
+    },
+    {
+      "question": "Which pillar of the AWS Well-Architected Framework focuses on the ability to recover automatically from service Interruptions?",
+      "options": [
+        "Security",
+        "Performance efficiency",
+        "Operational excellence",
+        "Reliability"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Reliability\" คือความน่าเชื่อถือ, เน้นที่การ \"recover automatically\" หรือการกู้คืนอัตโนมัติจากปัญหาต่างๆ",
+      "keywords_for_highlighting": [
+        "recover automatically",
+        "service Interruptions"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเกี่ยวกับความสามารถในการกู้คืนจากเหตุการณ์ขัดข้องโดยอัตโนมัติ เป็นประเด็นหลักของความพร้อมใช้งานและความทนทาน (Availability and Resilience)"
+    },
+    {
+      "question": "An ecommerce company wants to use Amazon EC2 Auto Scaling to add and remove EC2 instances based on CPU utilization. Which AWS service or feature can initiate an Amazon EC2 Auto Scaling action to achieve this goal?",
+      "options": [
+        "Amazon Simple Queue Service (Amazon SQS)",
+        "Amazon Simple Notification Service (Amazon SNS)",
+        "AWS Systems Manager",
+        "Amazon CloudWatch alarm"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Auto Scaling ตาม CPU ต้องมีคนคอย*เฝ้าดู* (Watch) เพื่อแจ้งเตือนเมื่อถึงเกณฑ์\"",
+      "keywords_for_highlighting": [
+        "Auto Scaling",
+        "CPU utilization"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามนี้เกี่ยวข้องกับการใช้ Auto Scaling เพื่อให้ระบบมีความทนทานและปรับขนาดได้ตามความต้องการ ซึ่งเป็นส่วนหนึ่งของความพร้อมใช้งานและความทนทานของระบบ"
+    },
+    {
+      "question": "A company's workload can recover with minimal downtime when failures occur. Which AWS Cloud benefit does this scenario represent?",
+      "options": [
+        "Agility",
+        "Elasticity",
+        "Resiliency",
+        "Scalability"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Downtime น้อย\" เมื่อเกิดปัญหา = \"Resiliency\" (ความทนทาน/ฟื้นตัว)",
+      "keywords_for_highlighting": [
+        "recover",
+        "minimal downtime",
+        "failures"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามเกี่ยวกับความสามารถของ workload ในการกู้คืนจากความล้มเหลวโดยมี downtime น้อยที่สุด ซึ่งเป็นลักษณะสำคัญของความทนทาน (Resilience) และความพร้อมใช้งาน (Availability)"
+    },
+    {
+      "question": "A company wants its Amazon EC2 instances to be in different locations but share the same geographic area. The company also wants to use multiple power grids and independent networking connectivity for the EC2 instances. Which solution meets these requirements?",
+      "options": [
+        "Use EC2 instances in multiple edge locations in the same AWS Region.",
+        "Use EC2 instances in multiple Availability Zones in the same AWS Region.",
+        "Use EC2 instances in multiple Amazon Connect locations in the same AWS Region   530",
+        "Use EC2 instances in multiple AWS Artifact locations in the same AWS Region."
+      ],
+      "correctAnswer": 1,
+      "explanation": "ต้องการ EC2 ต่างที่, พื้นที่เดียวกัน, ใช้ไฟและเน็ตแยกกัน -> นึกถึง Availability Zones (AZs) ใน Region เดียว",
+      "keywords_for_highlighting": [
+        "different locations",
+        "same geographic area",
+        "multiple power grids",
+        "independent networking connectivity",
+        "EC2 instances"
+      ],
+      "assigned_category_id_by_gemini": 5,
+      "assigned_category_name_by_gemini": "ความพร้อมใช้งานและความทนทาน (Availability and Resilience)",
+      "gemini_category_justification": "คำถามนี้เน้นที่การกระจาย EC2 instances เพื่อให้มีความพร้อมใช้งานและความทนทานสูง โดยใช้ Availability Zones ซึ่งเป็นส่วนหนึ่งของโครงสร้างพื้นฐานของ AWS ที่ออกแบบมาเพื่อรองรับความล้มเหลวและเพิ่มความพร้อมใช้งานของแอปพลิเคชัน"
+    }
+  ]
+}
