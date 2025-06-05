@@ -12,9 +12,7 @@
       "correctAnswer": 1,
       "explanation": "\"In-memory\" (หน่วยความจำชั่วคราว) และ \"cache\" (แคช) คล้ายกันมาก! ถ้าโจทย์ถามหา data store ในหน่วยความจำ ให้มองหา Elasti**Cache**",
       "keywords_for_highlighting": [
-        "in-memory",
-        "data store",
-        "open source"
+        "in-memory data store"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -48,8 +46,7 @@
       "correctAnswer": 0,
       "explanation": "\"Object storage\" ที่ต้องการความทนทานสูง ให้จำ S3 เป็นที่เก็บ object ที่ทนทานที่สุดใน AWS",
       "keywords_for_highlighting": [
-        "object storage",
-        "highly durable"
+        "object storage"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -66,8 +63,7 @@
       "correctAnswer": 0,
       "explanation": "**\"Formation\" แปลว่า \"การสร้าง\" หรือ \"การก่อร่าง\" ให้จำว่า CloudFormation คือบริการที่ใช้สร้างและจัดการโครงสร้างพื้นฐานบน AWS**",
       "keywords_for_highlighting": [
-        "requirement",
-        "service"
+        "Formation"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -84,9 +80,7 @@
       "correctAnswer": 3,
       "explanation": "S3 เก็บข้อมูลได้ \"ไม่อั้น\" เหมือนท้องฟ้าที่ไม่มีขีดจำกัด",
       "keywords_for_highlighting": [
-        "total amount",
-        "storage",
-        "Amazon S3"
+        "storage offered by Amazon S3"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -103,8 +97,7 @@
       "correctAnswer": 2,
       "explanation": "\"Config\" เหมือน \"Configuration\" ที่แปลว่าการตั้งค่า ดังนั้น AWS Config จึงติดตามการเปลี่ยนแปลงการตั้งค่าทรัพยากร",
       "keywords_for_highlighting": [
-        "resource configurations",
-        "changed over time"
+        "resource configurations have changed"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -121,9 +114,7 @@
       "correctAnswer": 1,
       "explanation": "\"IDE บนคลาวด์\" ให้คิดถึง \"Cloud9\" ที่มีเลข 9 เหมือนตัว g ใน IDE (Inte**g**rated).",
       "keywords_for_highlighting": [
-        "development teams",
-        "cloud-based",
-        "integrated development environment (IDE)"
+        "cloud-based integrated development environment (IDE)"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -140,10 +131,7 @@
       "correctAnswer": 2,
       "explanation": "AMI เป็นเหมือน \"พิมพ์เขียว\" หรือ template ที่ใช้สร้าง EC2 instance ดังนั้นจึงใช้กำหนดค่าเริ่มต้นของ root volume ได้",
       "keywords_for_highlighting": [
-        "launch",
-        "EC2 instance",
-        "configure",
-        "root volume"
+        "configure the root volume of the EC2 instance"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -161,9 +149,7 @@
       "explanation": "ถ้าโจทย์ถามถึงการจัดการฐานข้อมูล MySQL แบบอัตโนมัติ (patch, backup) ให้เลือก Amazon RDS เพราะเป็นบริการจัดการฐานข้อมูลแบบ Managed Service ที่ AWS ดูแลให้",
       "keywords_for_highlighting": [
         "MySQL database",
-        "automatically",
-        "patch",
-        "backup"
+        "tasks will be completed automatically"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -180,9 +166,7 @@
       "correctAnswer": 2,
       "explanation": "\"NFS\" เชื่อมกับ \"file gateway\" เพราะ NFS เน้นการเข้าถึงไฟล์แบบดั้งเดิม ซึ่ง file gateway ทำหน้าที่เป็นตัวกลางเชื่อมต่อกับ S3",
       "keywords_for_highlighting": [
-        "NFS",
-        "store and retrieve objects",
-        "Amazon S3"
+        "NFS to store and retrieve objects in Amazon S3"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -221,9 +205,8 @@
       "correctAnswer": 2,
       "explanation": "\"Hardware on-premises\" และ \"same management\" บ่งบอกว่าต้องใช้ AWS Outposts เพื่อขยาย AWS ไปยังสถานที่ของคุณ",
       "keywords_for_highlighting": [
-        "hardware on premises",
-        "same management",
-        "control plane"
+        "hardware to remain on premises",
+        "same management and control plane"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -240,10 +223,8 @@
       "correctAnswer": 2,
       "explanation": "\"Python\", \"S3 bucket trigger\", และ \"operational overhead น้อยสุด\" ชี้ไปที่ Lambda เพราะไม่ต้องจัดการ Server เอง",
       "keywords_for_highlighting": [
-        "Python",
-        "S3 bucket",
-        "watermark",
-        "operational overhead"
+        "code will activate when new images are stored in an Amazon S3 bucket",
+        "LEAST amount of operational overhead"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -260,10 +241,9 @@
       "correctAnswer": 3,
       "explanation": "\"SQL, exabytes, data warehouse\" สามคำนี้มาด้วยกัน นึกถึง Redshift ทันที!",
       "keywords_for_highlighting": [
-        "SQL",
+        "standard SQL to query",
         "exabytes",
-        "data warehouse",
-        "data lake"
+        "data warehouse"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -280,9 +260,7 @@
       "correctAnswer": 1,
       "explanation": "\"History report\" และ \"modified\" สองคำนี้บอกใบ้ว่าเราต้องการเครื่องมือที่คอยบันทึกการเปลี่ยนแปลง (configuration) ของ resources ต่างๆ ใน AWS",
       "keywords_for_highlighting": [
-        "history report",
-        "modified",
-        "Amazon EC2 instances"
+        "history report about how its Amazon EC2 instances were modified"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -299,8 +277,7 @@
       "correctAnswer": 1,
       "explanation": "ต้องการ VM และ MySQL แบบไม่ต้องจัดการเองเยอะ เลือก Elastic Beanstalk ช่วยจัดการให้แทบทั้งหมด",
       "keywords_for_highlighting": [
-        "virtual machine",
-        "MySQL database",
+        "virtual machine (VM) and MySQL database",
         "LEAST operational effort"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -318,11 +295,7 @@
       "correctAnswer": 0,
       "explanation": "**\"EBS volume หาย\"** และต้องการรู้ **\"เมื่อไหร่\"** ที่หายไป ให้คิดถึง **\"Config\"** ที่คอย **\"Config\"** (กำหนดค่าและติดตาม) การเปลี่ยนแปลง",
       "keywords_for_highlighting": [
-        "EC2 instance",
-        "Amazon EBS",
-        "data volume",
-        "removed",
-        "when"
+        "determine when the EBS volume was removed"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -339,8 +312,7 @@
       "correctAnswer": 1,
       "explanation": "**CodePipeline เหมือนท่อส่งโค้ด (pipeline) อย่างต่อเนื่อง เพื่อส่งมอบและติดตั้งแอปพลิเคชันอัตโนมัติ**",
       "keywords_for_highlighting": [
-        "continuous delivery",
-        "deployment solution"
+        "continuous delivery and deployment solution"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -357,8 +329,7 @@
       "correctAnswer": 1,
       "explanation": "\"Time-series\" ในโจทย์ตรงกับ \"Timestream\" ในคำตอบ และ \"trillions of events\" บ่งบอกถึงความสามารถในการจัดการข้อมูลปริมาณมหาศาล",
       "keywords_for_highlighting": [
-        "time-series database",
-        "trillions of events"
+        "time-series database service"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -375,9 +346,7 @@
       "correctAnswer": 1,
       "explanation": "**iOS application development** ชี้ไปที่ **Mac instances** เพราะ iOS พัฒนาบน Mac",
       "keywords_for_highlighting": [
-        "iOS application development",
-        "build activities",
-        "AWS"
+        "iOS application development and build activities"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -411,8 +380,7 @@
       "correctAnswer": 2,
       "explanation": "**\"กราฟ\" ในโจทย์ เจอ \"Neptune\" ในตัวเลือก ตอบได้เลย!** (Neptune คือเทพแห่งท้องทะเล ซึ่งเป็นกราฟขนาดใหญ่)",
       "keywords_for_highlighting": [
-        "graph database",
-        "shopping recommendations"
+        "graph database"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -429,8 +397,7 @@
       "correctAnswer": 1,
       "explanation": "\"Relational database\" ชี้ไปที่ \"Redshift\" ซึ่งเป็น data warehouse ที่เน้นการจัดการข้อมูลแบบตาราง (relational)",
       "keywords_for_highlighting": [
-        "relational database",
-        "management system"
+        "relational database management system"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -448,8 +415,7 @@
       "explanation": "\"แชร์ไฟล์\" ทั้งใน \"on-premises\" และ \"AWS Cloud\" ต้องใช้ EFS เพราะเป็น File System ที่เข้าถึงได้จากทั้งสองที่",
       "keywords_for_highlighting": [
         "shared file system",
-        "on-premises",
-        "AWS Cloud"
+        "on-premises data center and in the AWS Cloud"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -466,8 +432,8 @@
       "correctAnswer": 1,
       "explanation": "ต้องการให้จัดการฐานข้อมูล MySQL แบบอัตโนมัติ (patch, backup) ให้เลือก RDS ซึ่งเป็นบริการจัดการฐานข้อมูลให้",
       "keywords_for_highlighting": [
-        "MySQL",
-        "automatically"
+        "MySQL database",
+        "tasks will be completed automatically"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -484,9 +450,8 @@
       "correctAnswer": 1,
       "explanation": "**\"เร็วและง่าย\"** นึกถึง Elastic Beanstalk ที่ช่วย deploy แอปฯ แบบรวดเร็ว ลดความซับซ้อนในการจัดการ resource",
       "keywords_for_highlighting": [
-        "deploy applications quickly",
-        "minimize complexity",
-        "management of AWS resources"
+        "deploy applications in the AWS Cloud as quickly as possible",
+        "minimize the complexity"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -503,8 +468,7 @@
       "correctAnswer": 3,
       "explanation": "\"Infrastructure as code\" นึกถึง \"CloudFormation\" ที่สร้างโครงสร้างพื้นฐานบนคลาวด์แบบอัตโนมัติ",
       "keywords_for_highlighting": [
-        "infrastructure as code",
-        "manage"
+        "manage infrastructure as code"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -522,8 +486,7 @@
       "explanation": "\"Recommendation engine\" และ \"least operational overhead\" ให้คิดถึง DynamoDB เพราะจัดการง่าย ไม่ต้องดูแลเยอะ",
       "keywords_for_highlighting": [
         "recommendation engine",
-        "store data",
-        "least operational overhead"
+        "LEAST operational overhead"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -541,7 +504,6 @@
       "explanation": "ต้องการแชร์ไฟล์ร่วมกันระหว่าง EC2 หลายตัวในหลาย AZ ต้องใช้ EFS เท่านั้น!",
       "keywords_for_highlighting": [
         "Linux Amazon EC2 instances",
-        "Availability Zones",
         "common set of files"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -564,7 +526,7 @@
       "explanation": "Aurora เน้น Open Source! จำไว้ว่า Aurora สนับสนุน MySQL และ PostgreSQL ซึ่งเป็นฐานข้อมูล Open Source ยอดนิยม",
       "keywords_for_highlighting": [
         "database engines",
-        "Amazon Aurora"
+        "Amazon Aurora support"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -581,8 +543,7 @@
       "correctAnswer": 1,
       "explanation": "\"Outposts\" เหมือน \"ด่านหน้า\" ที่ AWS เอาบริการไปตั้ง \"ข้างนอก\" (on-premises)",
       "keywords_for_highlighting": [
-        "run AWS services",
-        "on-premises data center"
+        "run AWS services in the company's on-premises data center"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -601,8 +562,8 @@
       "keywords_for_highlighting": [
         "MySQL database",
         "on-premises",
-        "AWS Cloud",
-        "database"
+        "run a copy",
+        "in the AWS Cloud"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -619,7 +580,7 @@
       "correctAnswer": 3,
       "explanation": "\"ElastiCache\" มีคำว่า \"Cache\" ซึ่งเชื่อมโยงกับ \"in-memory data store\" (ที่เก็บข้อมูลในหน่วยความจำ) ซึ่งเร็วกว่าการอ่านจากดิสก์",
       "keywords_for_highlighting": [
-        "in-memory data store"
+        "in-memory data store service"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -636,8 +597,8 @@
       "correctAnswer": 1,
       "explanation": "อยาก deploy แอป **เร็ว** และไม่ต้องสร้าง resources เอง? นึกถึง **Elastic Beanstalk** ที่ช่วยจัดการให้ทุกอย่างง่ายขึ้น",
       "keywords_for_highlighting": [
-        "deploy application quickly",
-        "without manually creating"
+        "deploy an application quickly",
+        "without manually creating the required resources"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -654,8 +615,7 @@
       "correctAnswer": 3,
       "explanation": "ถ้าเจอ \"MySQL-compatible\" และ \"fully managed database\" ให้ตอบ \"Aurora\" เพราะ Aurora คือ MySQL ที่ AWS ดูแลให้ทั้งหมด",
       "keywords_for_highlighting": [
-        "MySQL-compatible",
-        "fully managed database"
+        "fully managed MySQL-compatible database"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -672,10 +632,8 @@
       "correctAnswer": 0,
       "explanation": "\"NoSQL, Key-Value, Serverless\" สามคำนี้คือ DynamoDB!",
       "keywords_for_highlighting": [
-        "key-value",
-        "NoSQL",
-        "fully managed",
-        "serverless"
+        "key-value NoSQL database",
+        "fully managed and serverless"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -692,9 +650,8 @@
       "correctAnswer": 2,
       "explanation": "\"Serverless, SQL, S3\" สามสิ่งนี้คือ Athena! (ไม่ต้องดูแลเซิร์ฟเวอร์, ใช้ SQL ได้, และข้อมูลอยู่ใน S3)",
       "keywords_for_highlighting": [
-        "serverless",
-        "interactive query service",
-        "Amazon S3",
+        "serverless interactive query service",
+        "analyze data in Amazon S3",
         "standard SQL"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -714,7 +671,6 @@
       "keywords_for_highlighting": [
         "hybrid architecture",
         "extend AWS infrastructure",
-        "data centers",
         "on-premises facilities"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -736,10 +692,8 @@
       ],
       "explanation": "**\"เก็บโค้ด\"** ที่ CodeCommit และ **\"ปล่อยของ\"** เมื่อโค้ดเปลี่ยนด้วย CodeDeploy",
       "keywords_for_highlighting": [
-        "repository",
-        "source code",
-        "update",
-        "code changes"
+        "repository that stores source code",
+        "update the running software when the code changes"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -758,8 +712,7 @@
       "keywords_for_highlighting": [
         "shopping application",
         "records customer orders",
-        "AWS managed database service",
-        "store data"
+        "AWS managed database service"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -776,9 +729,8 @@
       "correctAnswer": 0,
       "explanation": "\"Dashboard\" และ \"Metrics\" คือสัญญาณเตือนภัย CloudWatch! นึกถึงแดชบอร์ดวัดผลแอปพลิเคชัน = CloudWatch",
       "keywords_for_highlighting": [
-        "custom dashboards",
-        "metrics",
-        "monitor applications"
+        "custom dashboards to collect metrics",
+        "monitor its applications"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -795,7 +747,6 @@
       "correctAnswer": 3,
       "explanation": "\"พนักงาน*ระยะไกล*ต้องการ*เดสก์ท็อป*เสมือน ให้ใช้ *Workspaces* เลย!\"",
       "keywords_for_highlighting": [
-        "remote employees",
         "virtual desktops"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -813,11 +764,8 @@
       "correctAnswer": 2,
       "explanation": "\"Docker บน EC2\" ที่ต้องการตัวช่วยจัดการคลัสเตอร์และงานต่างๆ ให้เลือก \"Fargate\" เพราะ Fargate ช่วยจัดการ Docker container โดยไม่ต้องดูแล infrastructure เอง",
       "keywords_for_highlighting": [
-        "Docker",
-        "EC2",
-        "manage cluster size",
-        "scheduling",
-        "environment maintenance"
+        "Docker environment",
+        "manage cluster size, scheduling, and environment maintenance"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -835,8 +783,7 @@
       "explanation": "\"นักพัฒนา*มือใหม่* อยากสร้างเว็บแอปง่ายๆ ให้เลือก Lightsail เพราะเป็นบริการที่ง่ายที่สุดสำหรับเริ่มต้น\"",
       "keywords_for_highlighting": [
         "no AWS Cloud experience",
-        "web application",
-        "start building"
+        "build a web application"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -853,9 +800,8 @@
       "correctAnswer": 3,
       "explanation": "\"กราฟ\" ในโจทย์ นึกถึง \"Neptune\" เทพแห่งท้องทะเลที่มีความเชื่อมโยงซับซ้อนเหมือนกราฟ",
       "keywords_for_highlighting": [
-        "graph database",
-        "scalable",
-        "highly available"
+        "graph database service",
+        "scalable and highly available"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -872,9 +818,7 @@
       "correctAnswer": 1,
       "explanation": "\"ไฟล์\" ที่ \"ยืดหยุ่น\" (Elastic) ใช้ \"ข้าม\" หลาย EC2 instance ได้ คือ EFS",
       "keywords_for_highlighting": [
-        "storage",
-        "mounted",
-        "multiple Amazon EC2 instances"
+        "storage that can be mounted across multiple Amazon EC2 instances"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -891,9 +835,8 @@
       "correctAnswer": 2,
       "explanation": "EC2 หายไปจากรายการ ให้มองหาประวัติการเปลี่ยนแปลงใน CloudTrail เพราะ CloudTrail บันทึกทุกการกระทำใน AWS account",
       "keywords_for_highlighting": [
-        "EC2 instance no longer running",
-        "EC2 instance is no longer on the list",
-        "recent history"
+        "EC2 instance is no longer running",
+        "generate a recent history"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -910,9 +853,9 @@
       "correctAnswer": 2,
       "explanation": "ต้องการประมวลผลข้อมูลและรันแอปพลิเคชันในสถานที่ของตัวเอง (โรงงาน) ที่ต้องการความหน่วงต่ำ ให้เลือก **Outposts** ที่นำ AWS มาไว้ที่ On-Premises",
       "keywords_for_highlighting": [
-        "factories",
+        "process data, store data, and run applications",
         "local system interdependencies",
-        "low latency"
+        "require low latency"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -929,9 +872,8 @@
       "correctAnswer": 3,
       "explanation": "\"เว็บไซต์แบบง่ายๆ\" นึกถึง \"Lightsail\" ที่แปลว่า \"ไฟส่องทาง\" สว่างและง่ายในการเริ่มต้น",
       "keywords_for_highlighting": [
-        "SIMPLEST",
-        "website",
-        "establish"
+        "SIMPLEST way",
+        "establish a website"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -948,10 +890,8 @@
       "correctAnswer": 1,
       "explanation": "ต้องการรันงานบางส่วนที่ On-Premises ตามข้อกำหนด และใช้ API เดียวกันทั้ง On-Premises และ Cloud -> นึกถึง **Outposts** ที่เชื่อมต่อ On-Premises กับ AWS Cloud ได้อย่างราบรื่น",
       "keywords_for_highlighting": [
-        "on premises",
-        "regulatory guidelines",
-        "same API calls",
-        "cloud workloads"
+        "workloads on premises",
+        "same API calls for the on-premises workloads and the cloud workloads"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -990,8 +930,7 @@
       "explanation": "ต้องการเก็บข้อมูลสำรองบนคลาวด์ แต่ยังเข้าถึงได้เร็วเหมือนอยู่ใกล้ๆ ตัว (locally cached) ให้คิดถึง **Storage Gateway** ที่เป็นเหมือนประตูเชื่อมโลกสองใบ",
       "keywords_for_highlighting": [
         "data backups",
-        "cloud-based",
-        "locally cached"
+        "cloud-based but locally cached"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1008,9 +947,7 @@
       "correctAnswer": 0,
       "explanation": "\"Serverless\" คู่กับ \"Lambda\" เสมอ! ถ้าโจทย์ถามหาบริการประมวลผลแบบไม่ต้องจัดการเซิร์ฟเวอร์ ให้ตอบ Lambda",
       "keywords_for_highlighting": [
-        "serverless",
-        "compute service",
-        "application"
+        "serverless compute service"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1027,9 +964,8 @@
       "correctAnswer": 3,
       "explanation": "\"On-premises\" + \"EC2\" = Outposts เพราะ Outposts คือ EC2 ที่รันใน Data Center ของคุณเอง",
       "keywords_for_highlighting": [
-        "on-premises",
-        "EC2",
-        "compliance requirement"
+        "application on Amazon EC2 instances",
+        "keep the application on-premises"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1047,8 +983,7 @@
       "explanation": "งานประมวลผลที่ใช้เวลานานหลายชั่วโมง (5 ชั่วโมง) ให้คิดถึง EC2 เพราะ Lambda เหมาะกับงานสั้นๆ",
       "keywords_for_highlighting": [
         "data processing",
-        "once a week",
-        "5 hours"
+        "5 hours to complete"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1065,8 +1000,7 @@
       "correctAnswer": 2,
       "explanation": "นักพัฒนาอยาก deploy app เอง **โดยไม่ต้อง provision infrastructure** ให้คิดถึง Elastic Beanstalk เพราะช่วยจัดการ infrastructure ให้เอง",
       "keywords_for_highlighting": [
-        "deploy applications",
-        "without having to provision the infrastructure themselves"
+        "deploy their applications without having to provision the infrastructure themselves"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1083,10 +1017,7 @@
       "correctAnswer": 0,
       "explanation": "\"พัฒนา\" (developer) ต้องการ \"เครื่องมือ\" (tool) เพื่อใส่ฟีเจอร์ AWS ลงในแอป = SDK (ชุดเครื่องมือพัฒนา).",
       "keywords_for_highlighting": [
-        "developer",
-        "integrate",
-        "AWS service features",
-        "application"
+        "integrate AWS service features directly into an application"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1104,10 +1035,7 @@
       "explanation": "\"Instance store\" มาพร้อม EC2 instance และหายไปพร้อมกันเมื่อ instance หยุดหรือถูกลบ (Ephemeral = ชั่วคราว, หายไป)",
       "keywords_for_highlighting": [
         "ephemeral",
-        "deleted",
-        "EC2 instance",
-        "stopped",
-        "terminated"
+        "deleted when an Amazon EC2 instance is stopped or terminated"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1124,11 +1052,8 @@
       "correctAnswer": 1,
       "explanation": "\"Glue\" เหมือนกาวที่ใช้ \"เชื่อม\" และ \"แปลง\" ข้อมูลในกระบวนการ ETL (Extract, Transform, Load)",
       "keywords_for_highlighting": [
-        "extract",
-        "transform",
-        "load",
-        "ETL",
-        "managed"
+        "managed AWS service",
+        "extract, transform, and load (ETL) data"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1145,9 +1070,8 @@
       "correctAnswer": 2,
       "explanation": "**PostgreSQL + OLTP = RDS** จำไว้ว่า RDS คือบริการฐานข้อมูลที่ครอบคลุม รองรับ PostgreSQL และเหมาะกับงาน OLTP",
       "keywords_for_highlighting": [
-        "PostgreSQL",
-        "online transaction processing (OLTP)",
-        "database"
+        "managed PostgreSQL database",
+        "online transaction processing (OLTP)"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1164,9 +1088,7 @@
       "correctAnswer": 3,
       "explanation": "\"Neptune\" เกี่ยวข้องกับเทพเจ้าแห่งทะเล ซึ่งเชื่อมโยงกับ \"graph\" ที่เหมือนใยแมงมุมใต้ทะเล และเป็น \"fully managed\" ทำให้ไม่ต้องดูแลเอง",
       "keywords_for_highlighting": [
-        "fully managed",
-        "graph database",
-        "service"
+        "fully managed graph database service"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1184,9 +1106,7 @@
       "explanation": "\"สร้างอิมเมจจากโค้ด + รันคอนเทนเนอร์แบบจัดการ = App Runner\" (นึกถึง App Runner เมื่อต้องการความง่ายในการ deploy container)",
       "keywords_for_highlighting": [
         "containerized application",
-        "automatically create container images from source code",
-        "deploy the containerized application",
-        "managed service"
+        "automatically create container images from source code and deploy"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1204,7 +1124,7 @@
       "explanation": "**NFS file system + AWS compute = EFS** (จำง่ายๆ ไฟล์แชร์ NFS บน AWS ต้อง EFS)",
       "keywords_for_highlighting": [
         "managed NFS file system",
-        "AWS compute"
+        "use with its AWS compute"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1221,7 +1141,7 @@
       "correctAnswer": 1,
       "explanation": "\"Command line\" ใน browser นึกถึง \"Shell\" ที่อยู่ใน Cloud เลย!",
       "keywords_for_highlighting": [
-        "command line",
+        "command line access",
         "web browser"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -1240,10 +1160,7 @@
       "explanation": "\"สร้าง, ทดสอบ, จัดการ\" รูป EC2 ต้องใช้ \"Image Builder\" ช่วยสร้างภาพให้สมบูรณ์",
       "keywords_for_highlighting": [
         "fully managed",
-        "creation",
-        "testing",
-        "management",
-        "custom Amazon EC2 images"
+        "creation, testing, and management of custom Amazon EC2 images"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1261,7 +1178,7 @@
       "explanation": "\"ส่งข้อความ\" ระหว่างแอป = \"คิว\" (Queue)",
       "keywords_for_highlighting": [
         "applications",
-        "send messages"
+        "send messages to each other"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1278,9 +1195,7 @@
       "correctAnswer": 0,
       "explanation": "ถ้าโจทย์ถามถึงการจัดการทรัพยากร AWS ผ่าน \"web interface\" ให้ตอบ \"AWS Management Console\" เพราะ Console คือหน้าเว็บสำหรับจัดการ AWS นั่นเอง",
       "keywords_for_highlighting": [
-        "manage",
-        "AWS Cloud resources",
-        "web interface"
+        "manage its AWS Cloud resources through a web interface"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1297,8 +1212,7 @@
       "correctAnswer": 2,
       "explanation": "\"Redshift\" มาจาก \"Red\" (สีแดง) ซึ่งมักใช้แทนข้อมูลขนาดใหญ่ และ \"Shift\" คือการเคลื่อนย้าย/ประมวลผลข้อมูล ดังนั้น Redshift คือบริการสำหรับจัดการข้อมูลขนาดใหญ่ใน data warehouse",
       "keywords_for_highlighting": [
-        "large amounts of data",
-        "data warehouse"
+        "data warehouse environment"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1319,9 +1233,8 @@
       ],
       "explanation": "**\"Windows virtual desktops\", \"remote employees\"** นึกถึง **AppStream 2.0 (แอปสตรีมมิ่ง)** และ **Workspaces (เดสก์ท็อปเสมือน)**",
       "keywords_for_highlighting": [
-        "Windows virtual desktops",
-        "remote employees",
-        "secure network connections"
+        "managed Windows virtual desktops and applications",
+        "remote employees"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1342,10 +1255,8 @@
       ],
       "explanation": "\"PostgreSQL\" และ \"managed AWS service\" นึกถึง RDS และ Aurora ที่เป็นบริการจัดการฐานข้อมูลที่รองรับ PostgreSQL ได้ทันที",
       "keywords_for_highlighting": [
-        "database",
-        "migrate",
         "managed AWS service",
-        "PostgreSQL"
+        "compatible with PostgreSQL"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1362,11 +1273,7 @@
       "correctAnswer": 0,
       "explanation": "ถ้าโจทย์พูดถึงการ **ส่งมอบ/แบ่งปันซอฟต์แวร์สำเร็จรูป (custom AMIs)** ให้ลูกค้า ให้คิดถึง **Marketplace** ที่เป็นตลาดซื้อขายซอฟต์แวร์",
       "keywords_for_highlighting": [
-        "independent software vendor",
-        "deliver",
-        "share",
-        "custom Amazon Machine images",
-        "prospective customers"
+        "deliver and share its custom Amazon Machine images (AMIs)"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1383,9 +1290,7 @@
       "correctAnswer": 0,
       "explanation": "ถ้าเจอคำว่า \"containers\" ในคำถาม ให้มองหาตัวเลือกที่มีคำว่า \"Container Service\" อยู่ด้วย",
       "keywords_for_highlighting": [
-        "compute",
-        "containers",
-        "scale"
+        "run containers at scale"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1421,10 +1326,7 @@
       "correctAnswer": 0,
       "explanation": "ถ้าเจอคำว่า \"developers access AWS services from application code\" ให้คิดถึง \"SDK\" ที่ช่วยให้นักพัฒนาเข้าถึงบริการ AWS จากโค้ดได้โดยตรง",
       "keywords_for_highlighting": [
-        "developers",
-        "access",
-        "AWS services",
-        "application code"
+        "access AWS services from application code"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1441,8 +1343,7 @@
       "correctAnswer": 3,
       "explanation": "\"Desktop environments\" หรือ \"สภาพแวดล้อมเดสก์ท็อป\" นึกถึง \"Workspaces\" ซึ่งเป็นพื้นที่ทำงานส่วนตัวบนคลาวด์",
       "keywords_for_highlighting": [
-        "desktop environments",
-        "employees"
+        "desktop environments"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1460,7 +1361,6 @@
       "explanation": "ข้อมูล \"unstructured\" และต้องการ \"query\" ง่ายๆ นึกถึง DynamoDB ที่เป็น NoSQL database ที่ยืดหยุ่นและเหมาะกับข้อมูลหลากหลายรูปแบบ",
       "keywords_for_highlighting": [
         "unstructured data",
-        "durable",
         "easy to query"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -1478,7 +1378,6 @@
       "correctAnswer": 3,
       "explanation": "SDK คือชุดเครื่องมือสำหรับนักพัฒนา (Developer) ที่ช่วยให้เขียนโปรแกรม (Programmatically) เพื่อเชื่อมต่อและจัดการทรัพยากรบน AWS ได้",
       "keywords_for_highlighting": [
-        "connect with AWS",
         "deploy resources programmatically"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -1496,14 +1395,7 @@
       "correctAnswer": 3,
       "explanation": "ต้องการปรับแต่งสเปคเครื่อง (CPU, Memory, Storage, Network) แบบละเอียด เลือก EC2 เพราะเหมือนเช่าเครื่องคอมพิวเตอร์มาใช้เอง",
       "keywords_for_highlighting": [
-        "migrate",
-        "custom marketing application",
-        "order-processing application",
-        "different types of instances",
-        "CPU",
-        "memory",
-        "storage",
-        "networking capacity"
+        "different types of instances with various configurations of CPU, memory, storage, and networking capacity"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1520,10 +1412,8 @@
       "correctAnswer": 1,
       "explanation": "\"Petabyte-scale data warehouse\" เห็นคำว่า \"data warehouse\" ให้ตอบ \"Redshift\" ทันที",
       "keywords_for_highlighting": [
-        "petabyte-scale",
-        "data warehouse",
-        "analyze",
-        "no manual hardware and software management"
+        "petabyte-scale data warehouse",
+        "not require manual hardware and software management"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1540,8 +1430,7 @@
       "correctAnswer": 3,
       "explanation": "**\"แชร์ไฟล์\" ระหว่าง EC2 หลายเครื่อง? นึกถึง EFS ที่ย่อมาจาก \"Elastic File System\" ระบบไฟล์ที่ยืดหยุ่นได้!**",
       "keywords_for_highlighting": [
-        "file sharing",
-        "Amazon EC2 Instances"
+        "file sharing between multiple Amazon EC2 Instances"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1576,8 +1465,7 @@
       "correctAnswer": 3,
       "explanation": "\"ปรับ EC2 อัตโนมัติ\" นึกถึง \"Auto Scaling\" ทันที!",
       "keywords_for_highlighting": [
-        "automatically add and remove",
-        "EC2 instances",
+        "automatically add and remove Amazon EC2 instances",
         "adjust to varying workloads dynamically"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -1595,9 +1483,8 @@
       "correctAnswer": 3,
       "explanation": "\"ไฟล์\", \"ดาวน์โหลด\", \"public URL\" ให้คิดถึง S3 เพราะ S3 เหมาะกับการเก็บไฟล์และให้ URL สาธารณะเพื่อดาวน์โหลดได้โดยตรง",
       "keywords_for_highlighting": [
-        "store files",
-        "download",
-        "public URL"
+        "store its files",
+        "download these files directly using a public URL"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1614,7 +1501,7 @@
       "correctAnswer": 1,
       "explanation": "\"Static content, infinite scale, lowest cost\" นึกถึง S3 เลย! S3 เหมาะกับข้อมูลที่ไม่ค่อยเปลี่ยนแปลง, ขยายได้ไม่จำกัด และราคาถูกที่สุด",
       "keywords_for_highlighting": [
-        "static content",
+        "durable storage for static content",
         "infinitely scalable",
         "lowest cost"
       ],
@@ -1635,7 +1522,6 @@
       "keywords_for_highlighting": [
         "remote locations",
         "no internet connectivity",
-        "capture the data in the field",
         "transfer it to the AWS Cloud later"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -1653,9 +1539,7 @@
       "correctAnswer": 0,
       "explanation": "อยากสร้างโครงสร้างพื้นฐาน (infrastructure) บน AWS แบบเดิมซ้ำๆ ด้วยเทมเพลต ให้คิดถึง \"CloudFormation\" ที่ช่วยสร้าง \"Formation\" หรือโครงสร้าง",
       "keywords_for_highlighting": [
-        "repeatable",
-        "deploy",
-        "identical",
+        "repeatable way to deploy identical AWS resources",
         "infrastructure templates"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -1673,10 +1557,9 @@
       "correctAnswer": 3,
       "explanation": "**Redshift + interactive dashboards + no upfront costs = QuickSight** (จำไว้ว่า Redshift ต้องการ dashboard แบบ interactive และ QuickSight ไม่ต้องจ่ายล่วงหน้า)",
       "keywords_for_highlighting": [
-        "business intelligence",
         "Amazon Redshift",
-        "interactive dashboards",
-        "no upfront costs"
+        "create interactive dashboards",
+        "not pay any upfront costs"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1693,11 +1576,8 @@
       "correctAnswer": 0,
       "explanation": "ถ้าโจทย์พูดถึง \"file share\" ที่ใช้ \"SMB protocol\" และต้องการใช้กับ \"Windows\" ให้เลือก Amazon FSx for Windows File Server เลย",
       "keywords_for_highlighting": [
-        "file share",
-        "SMB protocol",
-        "Windows",
-        "EC2 instances",
-        "mapped drive"
+        "file share across multiple Amazon EC2 instances",
+        "SMB protocol"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1714,8 +1594,7 @@
       "correctAnswer": 3,
       "explanation": "\"Data warehouse\" เหมือน \"โกดังข้อมูลขนาดใหญ่\" ให้คิดถึง \"Redshift\" ที่แปลว่า \"การเลื่อนไปทางแดง\" ซึ่งเป็นปรากฏการณ์ทางดาราศาสตร์ที่บ่งบอกถึงการขยายตัวของจักรวาล เปรียบเสมือนโกดังข้อมูลที่ขยายตัวได้ไม่จำกัด",
       "keywords_for_highlighting": [
-        "data warehouse",
-        "scalable"
+        "scalable data warehouse solution"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1732,10 +1611,8 @@
       "correctAnswer": 0,
       "explanation": "EC2 เปลี่ยนสถานะ (stopping) ต้องใช้ **EventBridge** ดักจับเหตุการณ์ (event)",
       "keywords_for_highlighting": [
-        "Lambda",
-        "EC2",
-        "stopping",
-        "invoke"
+        "invoke an AWS Lambda function",
+        "Amazon EC2 instance enters the \"stopping\" state"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1752,10 +1629,7 @@
       "correctAnswer": 3,
       "explanation": "\"สั่งรัน script บน EC2 แบบอัตโนมัติ? นึกถึง **Systems Manager** เลย!\"",
       "keywords_for_highlighting": [
-        "automatically run",
-        "operating system command scripts",
-        "Amazon EC2 instances",
-        "operationally efficient"
+        "automatically run operating system command scripts on Amazon EC2 instances"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1772,8 +1646,7 @@
       "correctAnswer": 3,
       "explanation": "S3 เก็บข้อมูลได้ \"แทบไม่จำกัด\" เหมือนท้องฟ้าที่กว้างใหญ่",
       "keywords_for_highlighting": [
-        "total volume",
-        "Amazon S3"
+        "total volume of data that can be stored in Amazon S3"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1794,8 +1667,7 @@
       ],
       "explanation": "\"Fargate\" กับ \"Lambda\" คือเพื่อนซี้ Serverless, จำ \"FL\" ไว้!",
       "keywords_for_highlighting": [
-        "serverless",
-        "AWS services"
+        "serverless"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1830,8 +1702,7 @@
       "correctAnswer": 2,
       "explanation": "\"Snowball Edge\" คือตู้เย็นเคลื่อนที่ที่ปรับแต่งได้ทั้งด้าน Storage (เก็บข้อมูลเยอะ) และ Compute (ประมวลผลเร็ว)",
       "keywords_for_highlighting": [
-        "storage-optimized",
-        "compute-optimized"
+        "storage-optimized and compute-optimized device"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1848,9 +1719,8 @@
       "correctAnswer": 2,
       "explanation": "\"สถานะ EC2 เปลี่ยน\" และ \"Workflow ทำงาน\" ให้คิดถึง EventBridge ที่เป็นเหมือนสะพานเชื่อมเหตุการณ์ต่างๆ ใน AWS",
       "keywords_for_highlighting": [
-        "EC2 instance state changes",
-        "RUNNING",
-        "AWS Step Functions workflow"
+        "invoke an AWS Step Functions workflow",
+        "Amazon EC2 instance state changes to RUNNING"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1867,9 +1737,7 @@
       "correctAnswer": 2,
       "explanation": "\"Programming languages\" ในโจทย์ ชี้ไปที่ CDK เพราะ CDK คือ \"Code\" Development Kit ที่ใช้ภาษาโปรแกรมมิ่งทั่วไป",
       "keywords_for_highlighting": [
-        "model",
-        "provision",
-        "programming languages"
+        "model and provision AWS resources using common programming languages"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1890,9 +1758,7 @@
       ],
       "explanation": "\"PostgreSQL\" ต้องใช้ฐานข้อมูล (Aurora) หรือเครื่องเสมือน (EC2) เพื่อรัน",
       "keywords_for_highlighting": [
-        "PostgreSQL",
-        "host",
-        "databases"
+        "host PostgreSQL databases"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1909,9 +1775,7 @@
       "correctAnswer": 0,
       "explanation": "\"พอร์ตโฟลิโอ\" และ \"จัดการบริการ IT\" นึกถึง `Service Catalog` ที่เหมือนแค็ตตาล็อกบริการให้เลือกใช้และจัดการ",
       "keywords_for_highlighting": [
-        "portfolio",
-        "central management",
-        "approved IT services"
+        "portfolio that provides central management of approved IT services"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1929,8 +1793,7 @@
       "explanation": "\"Relational database\" (ฐานข้อมูลเชิงสัมพันธ์) คู่กับ \"Aurora\" เสมอ! จำไว้ว่า Aurora คือฐานข้อมูลเชิงสัมพันธ์ของ AWS",
       "keywords_for_highlighting": [
         "web application",
-        "relational database",
-        "customer data"
+        "requires a relational database"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1947,8 +1810,7 @@
       "correctAnswer": 2,
       "explanation": "**NoSQL** เจอปุ๊บ นึกถึง **DynamoDB** ปั๊บ!",
       "keywords_for_highlighting": [
-        "fully managed",
-        "NoSQL database service"
+        "fully managed NoSQL database service"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1965,9 +1827,7 @@
       "correctAnswer": 3,
       "explanation": "\"Beanstalk\" เหมือนต้นไม้ที่คอย \"ปลูกและดูแล\" (deployment and management) แอปพลิเคชันให้เติบโตใน Cloud",
       "keywords_for_highlighting": [
-        "deployment",
-        "management",
-        "applications"
+        "deployment and management of applications"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1985,9 +1845,7 @@
       "explanation": "**\"กราฟ\" และ \"ความสัมพันธ์\" ต้องนึกถึง \"Neptune\" เทพแห่งท้องทะเลลึกที่เชื่อมโยงทุกสิ่ง**",
       "keywords_for_highlighting": [
         "graph applications",
-        "relationships",
-        "data points",
-        "milliseconds"
+        "analyze billions of relationships"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -2004,9 +1862,7 @@
       "correctAnswer": 1,
       "explanation": "ELB คือ \"ตัวแบ่ง\" ภาระงาน (Load) ดังนั้นจำไว้ว่า ELB ช่วย \"กระจาย\" ทราฟฟิกไปยังหลายๆ ที่",
       "keywords_for_highlighting": [
-        "Elastic Load Balancing (ELB)",
-        "applications",
-        "AWS Cloud"
+        "benefit of using an Elastic Load Balancing (ELB)"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -2041,9 +1897,8 @@
       "correctAnswer": 2,
       "explanation": "\"SQL Server\" + \"AWS handle administration\" = \"RDS\" (บริการจัดการฐานข้อมูลให้)",
       "keywords_for_highlighting": [
-        "SQL Server",
-        "migrate",
-        "AWS handle administration"
+        "on-premises SQL Server database",
+        "AWS to handle the day-to-day administration"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -2064,8 +1919,7 @@
       ],
       "explanation": "**Fargate** คือรันคอนเทนเนอร์แบบไม่ต้องจัดการเซิร์ฟเวอร์ และ **S3** คือที่เก็บข้อมูลแบบไม่ต้องดูแลโครงสร้างพื้นฐาน",
       "keywords_for_highlighting": [
-        "serverless",
-        "services"
+        "serverless"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -2083,9 +1937,8 @@
       "explanation": "**\"พัฒนาแอป\" ต้องใช้ \"SDKs\" เพื่อให้มีเครื่องมือและไลบรารีที่หลากหลายภาษา**",
       "keywords_for_highlighting": [
         "develop applications",
-        "libraries",
-        "development tools",
-        "programming languages"
+        "libraries and development tools",
+        "multiple programming languages"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -2102,9 +1955,7 @@
       "correctAnswer": 0,
       "explanation": "\"CloudFormation\" สร้าง \"โครงสร้าง\" (infrastructure) ที่ทำซ้ำได้เหมือน \"แบบฟอร์ม\" (formation)",
       "keywords_for_highlighting": [
-        "deploy",
-        "repeatable",
-        "infrastructure configurations"
+        "deploy highly repeatable infrastructure configurations"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -2121,10 +1972,8 @@
       "correctAnswer": 1,
       "explanation": "\"On-premises\" (ที่บริษัท) ต้องการเชื่อมต่อกับ AWS Cloud แบบ \"low-latency\" (ความหน่วงต่ำ) ให้คิดถึงประตูเชื่อมต่อ (Gateway) ที่ทำให้เข้าถึงข้อมูลได้เร็ว",
       "keywords_for_highlighting": [
-        "on-premises",
-        "low-latency",
-        "data",
-        "AWS Cloud"
+        "on-premises applications with low-latency access to data",
+        "stored in the AWS Cloud"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -2141,13 +1990,12 @@
       "correctAnswer": 0,
       "explanation": "ต้องการแพตช์ Windows EC2 แบบอัตโนมัติ นึกถึง \"System Manager\" ที่จัดการระบบให้เรา",
       "keywords_for_highlighting": [
-        "automatically patch",
-        "Windows instances",
-        "Amazon EC2"
+        "automatically patch its Windows instances",
+        "deployed on Amazon EC2"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ AWS ที่ใช้จัดการและดูแลรักษา EC2 instances ซึ่งเป็นบริการพื้นฐานของ AWS (Core Services)"
     }
   ]
-}
+} 
