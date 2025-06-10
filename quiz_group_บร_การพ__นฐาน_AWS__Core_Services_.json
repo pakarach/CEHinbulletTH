@@ -28,7 +28,9 @@
       ],
       "correctAnswer": 2,
       "explanation": "\"Redshift\" คล้าย \"red shift\" ในดาราศาสตร์ ซึ่งเกี่ยวข้องกับการวิเคราะห์ข้อมูลขนาดใหญ่จากจักรวาล ดังนั้นเมื่อเจอคำว่า \"analytical queries\" ให้เลือก Redshift",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "complex analytical queries"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้สำหรับวิเคราะห์ข้อมูล ซึ่งเป็นส่วนหนึ่งของความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS"
@@ -91,8 +93,7 @@
       "correctAnswer": 2,
       "explanation": "\"Config\" เหมือน \"Configuration\" ที่แปลว่าการตั้งค่า ดังนั้น AWS Config จึงติดตามการเปลี่ยนแปลงการตั้งค่าทรัพยากร",
       "keywords_for_highlighting": [
-        "configurations have changed",
-        "report how"
+        "configurations have changed"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -109,7 +110,7 @@
       "correctAnswer": 1,
       "explanation": "\"IDE บนคลาวด์\" ให้คิดถึง \"Cloud9\" ที่มีเลข 9 เหมือนตัว g ใน IDE (Inte**g**rated).",
       "keywords_for_highlighting": [
-        "IDE"
+        "integrated development environment"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -125,7 +126,9 @@
       ],
       "correctAnswer": 2,
       "explanation": "AMI เป็นเหมือน \"พิมพ์เขียว\" หรือ template ที่ใช้สร้าง EC2 instance ดังนั้นจึงใช้กำหนดค่าเริ่มต้นของ root volume ได้",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "configure the root volume"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้เกี่ยวกับ EC2 instance และการกำหนดค่า root volume ซึ่งเป็นส่วนหนึ่งของบริการพื้นฐานของ AWS"
@@ -141,8 +144,7 @@
       "correctAnswer": 1,
       "explanation": "ถ้าโจทย์ถามถึงการจัดการฐานข้อมูล MySQL แบบอัตโนมัติ (patch, backup) ให้เลือก Amazon RDS เพราะเป็นบริการจัดการฐานข้อมูลแบบ Managed Service ที่ AWS ดูแลให้",
       "keywords_for_highlighting": [
-        "MySQL",
-        "patch"
+        "MySQL database"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -159,7 +161,7 @@
       "correctAnswer": 2,
       "explanation": "\"NFS\" เชื่อมกับ \"file gateway\" เพราะ NFS เน้นการเข้าถึงไฟล์แบบดั้งเดิม ซึ่ง file gateway ทำหน้าที่เป็นตัวกลางเชื่อมต่อกับ S3",
       "keywords_for_highlighting": [
-        "NFS"
+        "protocols such as NFS"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -180,7 +182,7 @@
       ],
       "explanation": "\"Relational databases\" และ \"predefined schemas\" ให้คิดถึง Aurora และ RDS ซึ่งเป็นบริการฐานข้อมูลเชิงสัมพันธ์ที่รองรับ schema ที่กำหนดไว้ล่วงหน้า",
       "keywords_for_highlighting": [
-        "relational"
+        "predefined schemas"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -211,7 +213,9 @@
       ],
       "correctAnswer": 2,
       "explanation": "\"Python\", \"S3 bucket trigger\", และ \"operational overhead น้อยสุด\" ชี้ไปที่ Lambda เพราะไม่ต้องจัดการ Server เอง",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "code will activate when"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้เน้นการเลือกบริการ AWS ที่เหมาะสมที่สุด (AWS Lambda) เพื่อแก้ปัญหาเฉพาะ ซึ่งเป็นส่วนหนึ่งของการทำความเข้าใจบริการพื้นฐานของ AWS และการใช้งานของมัน"
@@ -226,9 +230,7 @@
       ],
       "correctAnswer": 3,
       "explanation": "\"SQL, exabytes, data warehouse\" สามคำนี้มาด้วยกัน นึกถึง Redshift ทันที!",
-      "keywords_for_highlighting": [
-        "data warehouse"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมกับการใช้งาน SQL เพื่อสืบค้นข้อมูลขนาดใหญ่ข้ามแหล่งข้อมูลต่างๆ ซึ่งเป็นเรื่องที่เกี่ยวข้องกับความเข้าใจในบริการพื้นฐานของ AWS ที่ใช้ในการจัดการและวิเคราะห์ข้อมูล"
@@ -259,7 +261,7 @@
       "correctAnswer": 1,
       "explanation": "ต้องการ VM และ MySQL แบบไม่ต้องจัดการเองเยอะ เลือก Elastic Beanstalk ช่วยจัดการให้แทบทั้งหมด",
       "keywords_for_highlighting": [
-        "MySQL"
+        "MySQL database"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -308,7 +310,7 @@
       "correctAnswer": 1,
       "explanation": "\"Time-series\" ในโจทย์ตรงกับ \"Timestream\" ในคำตอบ และ \"trillions of events\" บ่งบอกถึงความสามารถในการจัดการข้อมูลปริมาณมหาศาล",
       "keywords_for_highlighting": [
-        "time-series"
+        "time-series database"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -359,8 +361,7 @@
       "correctAnswer": 2,
       "explanation": "**\"กราฟ\" ในโจทย์ เจอ \"Neptune\" ในตัวเลือก ตอบได้เลย!** (Neptune คือเทพแห่งท้องทะเล ซึ่งเป็นกราฟขนาดใหญ่)",
       "keywords_for_highlighting": [
-        "graph",
-        "recommendation engine"
+        "graph"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -376,9 +377,7 @@
       ],
       "correctAnswer": 1,
       "explanation": "\"Relational database\" ชี้ไปที่ \"Redshift\" ซึ่งเป็น data warehouse ที่เน้นการจัดการข้อมูลแบบตาราง (relational)",
-      "keywords_for_highlighting": [
-        "relational"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เป็นระบบจัดการฐานข้อมูลเชิงสัมพันธ์ ซึ่งเป็นส่วนหนึ่งของบริการพื้นฐานที่ AWS นำเสนอ"
@@ -394,8 +393,8 @@
       "correctAnswer": 3,
       "explanation": "\"แชร์ไฟล์\" ทั้งใน \"on-premises\" และ \"AWS Cloud\" ต้องใช้ EFS เพราะเป็น File System ที่เข้าถึงได้จากทั้งสองที่",
       "keywords_for_highlighting": [
-        "file system",
-        "on-premises"
+        "on-premises",
+        "shared file system"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -412,8 +411,7 @@
       "correctAnswer": 1,
       "explanation": "ต้องการให้จัดการฐานข้อมูล MySQL แบบอัตโนมัติ (patch, backup) ให้เลือก RDS ซึ่งเป็นบริการจัดการฐานข้อมูลให้",
       "keywords_for_highlighting": [
-        "MySQL",
-        "patch"
+        "MySQL database"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -447,7 +445,7 @@
       "correctAnswer": 3,
       "explanation": "\"Infrastructure as code\" นึกถึง \"CloudFormation\" ที่สร้างโครงสร้างพื้นฐานบนคลาวด์แบบอัตโนมัติ",
       "keywords_for_highlighting": [
-        "infrastructure"
+        "manage infrastructure as code"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -463,9 +461,7 @@
       ],
       "correctAnswer": 1,
       "explanation": "\"Recommendation engine\" และ \"least operational overhead\" ให้คิดถึง DynamoDB เพราะจัดการง่าย ไม่ต้องดูแลเยอะ",
-      "keywords_for_highlighting": [
-        "recommendation engine"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมสำหรับการจัดเก็บข้อมูล ซึ่งเป็นหัวใจหลักของบริการพื้นฐานที่ AWS นำเสนอ"
@@ -499,7 +495,9 @@
         3
       ],
       "explanation": "Aurora เน้น Open Source! จำไว้ว่า Aurora สนับสนุน MySQL และ PostgreSQL ซึ่งเป็นฐานข้อมูล Open Source ยอดนิยม",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "database engines"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงความสามารถของ Amazon Aurora ซึ่งเป็นบริการฐานข้อมูลหลักของ AWS ดังนั้นจึงจัดอยู่ในหมวดบริการพื้นฐาน AWS"
@@ -532,7 +530,7 @@
       "correctAnswer": 0,
       "explanation": "ฐานข้อมูล MySQL ต้องการย้ายไป AWS ให้มองหา RDS เพราะเป็นบริการฐานข้อมูลเชิงสัมพันธ์ (Relational Database) ที่ AWS มีให้",
       "keywords_for_highlighting": [
-        "MySQL",
+        "MySQL database",
         "on-premises"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -566,9 +564,7 @@
       ],
       "correctAnswer": 1,
       "explanation": "อยาก deploy แอป **เร็ว** และไม่ต้องสร้าง resources เอง? นึกถึง **Elastic Beanstalk** ที่ช่วยจัดการให้ทุกอย่างง่ายขึ้น",
-      "keywords_for_highlighting": [
-        "developer"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ AWS ที่ช่วยให้นักพัฒนาสามารถ deploy application ได้อย่างรวดเร็วโดยไม่ต้องสร้าง resource เอง ซึ่งเป็นบริการพื้นฐานของ AWS ที่เกี่ยวข้องกับการ deploy และจัดการ application"
@@ -583,9 +579,7 @@
       ],
       "correctAnswer": 3,
       "explanation": "ถ้าเจอ \"MySQL-compatible\" และ \"fully managed database\" ให้ตอบ \"Aurora\" เพราะ Aurora คือ MySQL ที่ AWS ดูแลให้ทั้งหมด",
-      "keywords_for_highlighting": [
-        "MySQL"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการฐานข้อมูลของ AWS ซึ่งเป็นบริการพื้นฐานที่สำคัญในการใช้งาน AWS Cloud"
@@ -601,9 +595,7 @@
       "correctAnswer": 0,
       "explanation": "\"NoSQL, Key-Value, Serverless\" สามคำนี้คือ DynamoDB!",
       "keywords_for_highlighting": [
-        "NoSQL",
-        "serverless",
-        "serverless"
+        "NoSQL"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -620,8 +612,7 @@
       "correctAnswer": 2,
       "explanation": "\"Serverless, SQL, S3\" สามสิ่งนี้คือ Athena! (ไม่ต้องดูแลเซิร์ฟเวอร์, ใช้ SQL ได้, และข้อมูลอยู่ใน S3)",
       "keywords_for_highlighting": [
-        "serverless",
-        "serverless"
+        "interactive query service"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -638,7 +629,6 @@
       "correctAnswer": 2,
       "explanation": "\"ขยาย AWS ไปยัง data center ของตัวเอง\" ให้คิดถึง Outposts ที่ \"ตั้ง\" (post) อยู่ข้างนอก AWS Cloud",
       "keywords_for_highlighting": [
-        "infrastructure",
         "on-premises"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -725,7 +715,9 @@
       ],
       "correctAnswer": 2,
       "explanation": "\"Docker บน EC2\" ที่ต้องการตัวช่วยจัดการคลัสเตอร์และงานต่างๆ ให้เลือก \"Fargate\" เพราะ Fargate ช่วยจัดการ Docker container โดยไม่ต้องดูแล infrastructure เอง",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "Docker"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้จัดการ Docker environment ซึ่งเป็นบริการหลักที่เกี่ยวข้องกับการประมวลผล (Compute) และการจัดการคอนเทนเนอร์"
@@ -741,7 +733,7 @@
       "correctAnswer": 2,
       "explanation": "\"นักพัฒนา*มือใหม่* อยากสร้างเว็บแอปง่ายๆ ให้เลือก Lightsail เพราะเป็นบริการที่ง่ายที่สุดสำหรับเริ่มต้น\"",
       "keywords_for_highlighting": [
-        "developer"
+        "build a web application"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -790,7 +782,7 @@
       "correctAnswer": 2,
       "explanation": "EC2 หายไปจากรายการ ให้มองหาประวัติการเปลี่ยนแปลงใน CloudTrail เพราะ CloudTrail บันทึกทุกการกระทำใน AWS account",
       "keywords_for_highlighting": [
-        "developer"
+        "history of the EC2 instance"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -821,9 +813,7 @@
       ],
       "correctAnswer": 3,
       "explanation": "\"เว็บไซต์แบบง่ายๆ\" นึกถึง \"Lightsail\" ที่แปลว่า \"ไฟส่องทาง\" สว่างและง่ายในการเริ่มต้น",
-      "keywords_for_highlighting": [
-        "simplest way"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามถามถึงบริการ AWS ที่ง่ายที่สุดในการสร้างเว็บไซต์ ซึ่งเป็นเรื่องพื้นฐานเกี่ยวกับบริการหลักของ AWS ที่ใช้ในการสร้างโครงสร้างพื้นฐานบนคลาวด์"
@@ -839,7 +829,6 @@
       "correctAnswer": 1,
       "explanation": "ต้องการรันงานบางส่วนที่ On-Premises ตามข้อกำหนด และใช้ API เดียวกันทั้ง On-Premises และ Cloud -> นึกถึง **Outposts** ที่เชื่อมต่อ On-Premises กับ AWS Cloud ได้อย่างราบรื่น",
       "keywords_for_highlighting": [
-        "run workloads",
         "on-premises"
       ],
       "assigned_category_id_by_gemini": 1,
@@ -892,10 +881,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "\"Serverless\" คู่กับ \"Lambda\" เสมอ! ถ้าโจทย์ถามหาบริการประมวลผลแบบไม่ต้องจัดการเซิร์ฟเวอร์ ให้ตอบ Lambda",
-      "keywords_for_highlighting": [
-        "serverless",
-        "serverless"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เป็นพื้นฐาน (serverless compute) ซึ่งเป็นส่วนหนึ่งของบริการพื้นฐานของ AWS (Core Services)"
@@ -927,9 +913,7 @@
       ],
       "correctAnswer": 1,
       "explanation": "งานประมวลผลที่ใช้เวลานานหลายชั่วโมง (5 ชั่วโมง) ให้คิดถึง EC2 เพราะ Lambda เหมาะกับงานสั้นๆ",
-      "keywords_for_highlighting": [
-        "data processing"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมที่สุดสำหรับการประมวลผลข้อมูล ซึ่งเป็นเรื่องที่เกี่ยวข้องกับความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS และการใช้งานของบริการเหล่านั้น"
@@ -945,8 +929,7 @@
       "correctAnswer": 2,
       "explanation": "นักพัฒนาอยาก deploy app เอง **โดยไม่ต้อง provision infrastructure** ให้คิดถึง Elastic Beanstalk เพราะช่วยจัดการ infrastructure ให้เอง",
       "keywords_for_highlighting": [
-        "deploy applications",
-        "infrastructure"
+        "deploy applications"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -962,9 +945,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "\"พัฒนา\" (developer) ต้องการ \"เครื่องมือ\" (tool) เพื่อใส่ฟีเจอร์ AWS ลงในแอป = SDK (ชุดเครื่องมือพัฒนา).",
-      "keywords_for_highlighting": [
-        "developer"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงเครื่องมือที่ใช้ในการรวมฟีเจอร์ของบริการ AWS เข้ากับแอปพลิเคชัน ซึ่งเกี่ยวข้องโดยตรงกับความเข้าใจในบริการพื้นฐานของ AWS และวิธีการใช้งานบริการเหล่านั้น"
@@ -997,7 +978,7 @@
       "correctAnswer": 1,
       "explanation": "\"Glue\" เหมือนกาวที่ใช้ \"เชื่อม\" และ \"แปลง\" ข้อมูลในกระบวนการ ETL (Extract, Transform, Load)",
       "keywords_for_highlighting": [
-        "extract, transform, and load"
+        "ETL"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1013,9 +994,7 @@
       ],
       "correctAnswer": 2,
       "explanation": "**PostgreSQL + OLTP = RDS** จำไว้ว่า RDS คือบริการฐานข้อมูลที่ครอบคลุม รองรับ PostgreSQL และเหมาะกับงาน OLTP",
-      "keywords_for_highlighting": [
-        "PostgreSQL"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เฉพาะเจาะจง (Amazon RDS) และความสามารถในการใช้งานฐานข้อมูล PostgreSQL ซึ่งเป็นความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS"
@@ -1048,9 +1027,8 @@
       "correctAnswer": 2,
       "explanation": "\"สร้างอิมเมจจากโค้ด + รันคอนเทนเนอร์แบบจัดการ = App Runner\" (นึกถึง App Runner เมื่อต้องการความง่ายในการ deploy container)",
       "keywords_for_highlighting": [
-        "container",
-        "source code",
-        "containerized application"
+        "containerized application",
+        "source code"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1066,10 +1044,7 @@
       ],
       "correctAnswer": 3,
       "explanation": "**NFS file system + AWS compute = EFS** (จำง่ายๆ ไฟล์แชร์ NFS บน AWS ต้อง EFS)",
-      "keywords_for_highlighting": [
-        "file system",
-        "NFS"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ให้บริการ NFS file system ซึ่งเป็นบริการพื้นฐานด้าน storage ที่สำคัญของ AWS."
@@ -1101,7 +1076,9 @@
       ],
       "correctAnswer": 0,
       "explanation": "\"สร้าง, ทดสอบ, จัดการ\" รูป EC2 ต้องใช้ \"Image Builder\" ช่วยสร้างภาพให้สมบูรณ์",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "custom Amazon EC? Images"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้ในการสร้างและจัดการ Amazon Machine Images (AMIs) ซึ่งเป็นส่วนประกอบพื้นฐานของ EC2 และถือเป็นบริการหลักของ AWS"
@@ -1150,9 +1127,7 @@
       ],
       "correctAnswer": 2,
       "explanation": "\"Redshift\" มาจาก \"Red\" (สีแดง) ซึ่งมักใช้แทนข้อมูลขนาดใหญ่ และ \"Shift\" คือการเคลื่อนย้าย/ประมวลผลข้อมูล ดังนั้น Redshift คือบริการสำหรับจัดการข้อมูลขนาดใหญ่ใน data warehouse",
-      "keywords_for_highlighting": [
-        "data warehouse"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้สำหรับ Data Warehouse ซึ่งเป็นบริการหลักที่ AWS ให้บริการ"
@@ -1172,8 +1147,7 @@
       ],
       "explanation": "**\"Windows virtual desktops\", \"remote employees\"** นึกถึง **AppStream 2.0 (แอปสตรีมมิ่ง)** และ **Workspaces (เดสก์ท็อปเสมือน)**",
       "keywords_for_highlighting": [
-        "virtual desktops",
-        "Windows virtual desktops"
+        "virtual desktops"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1193,9 +1167,7 @@
         4
       ],
       "explanation": "\"PostgreSQL\" และ \"managed AWS service\" นึกถึง RDS และ Aurora ที่เป็นบริการจัดการฐานข้อมูลที่รองรับ PostgreSQL ได้ทันที",
-      "keywords_for_highlighting": [
-        "PostgreSQL"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เฉพาะเจาะจง (Amazon RDS และ Amazon Aurora) ที่สามารถใช้จัดการฐานข้อมูล PostgreSQL ได้ ซึ่งเป็นส่วนหนึ่งของบริการพื้นฐานที่ AWS นำเสนอ"
@@ -1242,7 +1214,9 @@
       ],
       "correctAnswer": 2,
       "explanation": "**Windows workloads + SMB protocol = FSx for Windows File Server** (จำง่ายๆ วินโดวส์ต้องคู่กับ FSx for Windows)",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "SMB protocol"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมกับการใช้งานเฉพาะเจาะจง ซึ่งเป็นการทดสอบความรู้เกี่ยวกับบริการพื้นฐานของ AWS โดยเฉพาะบริการจัดเก็บข้อมูล (Storage Services)"
@@ -1257,9 +1231,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "ถ้าเจอคำว่า \"developers access AWS services from application code\" ให้คิดถึง \"SDK\" ที่ช่วยให้นักพัฒนาเข้าถึงบริการ AWS จากโค้ดได้โดยตรง",
-      "keywords_for_highlighting": [
-        "access AWS services"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงวิธีการที่นักพัฒนาใช้ในการเข้าถึงบริการต่างๆ ของ AWS ซึ่งเกี่ยวข้องโดยตรงกับความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS และเครื่องมือที่ใช้ในการโต้ตอบกับบริการเหล่านั้น"
@@ -1289,9 +1261,7 @@
       ],
       "correctAnswer": 3,
       "explanation": "ข้อมูล \"unstructured\" และต้องการ \"query\" ง่ายๆ นึกถึง DynamoDB ที่เป็น NoSQL database ที่ยืดหยุ่นและเหมาะกับข้อมูลหลากหลายรูปแบบ",
-      "keywords_for_highlighting": [
-        "unstructured data"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงการเลือกบริการ AWS ที่เหมาะสมสำหรับการจัดเก็บข้อมูล ซึ่งเป็นหัวใจหลักของบริการพื้นฐานของ AWS ที่ผู้สอบต้องรู้จัก"
@@ -1321,7 +1291,9 @@
       ],
       "correctAnswer": 3,
       "explanation": "ต้องการปรับแต่งสเปคเครื่อง (CPU, Memory, Storage, Network) แบบละเอียด เลือก EC2 เพราะเหมือนเช่าเครื่องคอมพิวเตอร์มาใช้เอง",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "different types of instances"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมในการใช้งานแอปพลิเคชันที่มีความต้องการทรัพยากรที่แตกต่างกัน ซึ่งเป็นลักษณะของบริการพื้นฐานของ AWS โดยเฉพาะ Amazon EC2 ที่ให้ความยืดหยุ่นในการเลือกประเภทอินสแตนซ์ที่เหมาะสมกับความต้องการของแอปพลิเคชัน"
@@ -1336,9 +1308,7 @@
       ],
       "correctAnswer": 1,
       "explanation": "\"Petabyte-scale data warehouse\" เห็นคำว่า \"data warehouse\" ให้ตอบ \"Redshift\" ทันที",
-      "keywords_for_highlighting": [
-        "data warehouse"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมกับการใช้งาน data warehouse ขนาด petabyte โดยเน้นที่การไม่ต้องจัดการ hardware และ software เอง ซึ่งเป็นลักษณะของบริการหลักของ AWS ที่ช่วยลดภาระการจัดการโครงสร้างพื้นฐาน"
@@ -1368,9 +1338,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "**\"ฐานข้อมูลสัมพันธ์ ไม่ต้องจัดการ hardware\"** ให้คิดถึง **\"ECS\"** เพราะ ECS ช่วยจัดการ container ที่รัน database ให้เราได้โดยไม่ต้องดูแลเครื่องเอง",
-      "keywords_for_highlighting": [
-        "relational"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมในการจัดการฐานข้อมูลเชิงสัมพันธ์ โดยเน้นที่การไม่ต้องจัดการ hardware, resiliency และ replication ซึ่งเป็นคุณสมบัติของบริการหลักของ AWS ที่เกี่ยวข้องกับฐานข้อมูล"
@@ -1402,9 +1370,7 @@
       ],
       "correctAnswer": 3,
       "explanation": "\"ไฟล์\", \"ดาวน์โหลด\", \"public URL\" ให้คิดถึง S3 เพราะ S3 เหมาะกับการเก็บไฟล์และให้ URL สาธารณะเพื่อดาวน์โหลดได้โดยตรง",
-      "keywords_for_highlighting": [
-        "public URL"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้ในการจัดเก็บไฟล์และให้ผู้ใช้ดาวน์โหลดผ่าน URL สาธารณะ ซึ่งเป็นฟังก์ชันพื้นฐานที่เกี่ยวข้องกับบริการหลักของ AWS เช่น Amazon S3"
@@ -1419,10 +1385,7 @@
       ],
       "correctAnswer": 1,
       "explanation": "\"Static content, infinite scale, lowest cost\" นึกถึง S3 เลย! S3 เหมาะกับข้อมูลที่ไม่ค่อยเปลี่ยนแปลง, ขยายได้ไม่จำกัด และราคาถูกที่สุด",
-      "keywords_for_highlighting": [
-        "infrastructure",
-        "static content"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงการเลือกบริการ AWS ที่เหมาะสมสำหรับการจัดเก็บข้อมูล ซึ่งเป็นหัวใจหลักของบริการพื้นฐานของ AWS โดยเฉพาะอย่างยิ่ง Amazon S3 ที่เป็นบริการจัดเก็บข้อมูล object storage ที่มีความทนทานสูงและราคาถูก"
@@ -1438,7 +1401,7 @@
       "correctAnswer": 2,
       "explanation": "\"ข้อมูลที่เก็บจากที่ไกลๆ ไม่มีเน็ต ต้องขนส่งไป AWS Cloud นึกถึง **Snow** ที่เอาไว้ขนส่งของหนักๆ ในที่ห่างไกล\"",
       "keywords_for_highlighting": [
-        "remote locations"
+        "collect data at remote locations"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1454,9 +1417,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "อยากสร้างโครงสร้างพื้นฐาน (infrastructure) บน AWS แบบเดิมซ้ำๆ ด้วยเทมเพลต ให้คิดถึง \"CloudFormation\" ที่ช่วยสร้าง \"Formation\" หรือโครงสร้าง",
-      "keywords_for_highlighting": [
-        "infrastructure"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "AWS CloudFormation เป็นบริการหลักที่ใช้ในการจัดการโครงสร้างพื้นฐานในรูปแบบโค้ด (Infrastructure as Code) ซึ่งเป็นบริการพื้นฐานที่สำคัญในการใช้งาน AWS"
@@ -1473,7 +1434,7 @@
       "explanation": "**Redshift + interactive dashboards + no upfront costs = QuickSight** (จำไว้ว่า Redshift ต้องการ dashboard แบบ interactive และ QuickSight ไม่ต้องจ่ายล่วงหน้า)",
       "keywords_for_highlighting": [
         "dashboards",
-        "business intelligence"
+        "interactive dashboards"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1489,7 +1450,9 @@
       ],
       "correctAnswer": 0,
       "explanation": "ถ้าโจทย์พูดถึง \"file share\" ที่ใช้ \"SMB protocol\" และต้องการใช้กับ \"Windows\" ให้เลือก Amazon FSx for Windows File Server เลย",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "SMB protocol"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมสำหรับการใช้งาน file share ซึ่งเป็นบริการพื้นฐานที่ AWS มีให้"
@@ -1504,9 +1467,7 @@
       ],
       "correctAnswer": 3,
       "explanation": "\"Data warehouse\" เหมือน \"โกดังข้อมูลขนาดใหญ่\" ให้คิดถึง \"Redshift\" ที่แปลว่า \"การเลื่อนไปทางแดง\" ซึ่งเป็นปรากฏการณ์ทางดาราศาสตร์ที่บ่งบอกถึงการขยายตัวของจักรวาล เปรียบเสมือนโกดังข้อมูลที่ขยายตัวได้ไม่จำกัด",
-      "keywords_for_highlighting": [
-        "data warehouse"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เฉพาะเจาะจง (Amazon Redshift) ซึ่งเป็นบริการ data warehouse และเป็นส่วนหนึ่งของบริการพื้นฐานที่สำคัญของ AWS"
@@ -1521,9 +1482,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "EC2 เปลี่ยนสถานะ (stopping) ต้องใช้ **EventBridge** ดักจับเหตุการณ์ (event)",
-      "keywords_for_highlighting": [
-        "invoke"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงการใช้บริการ AWS พื้นฐาน (Lambda, EC2, EventBridge, SNS, Config, CloudFormation) เพื่อแก้ปัญหาเฉพาะ ซึ่งเป็นการประเมินความเข้าใจในบริการหลักของ AWS"
@@ -1538,7 +1497,9 @@
       ],
       "correctAnswer": 3,
       "explanation": "\"สั่งรัน script บน EC2 แบบอัตโนมัติ? นึกถึง **Systems Manager** เลย!\"",
-      "keywords_for_highlighting": [],
+      "keywords_for_highlighting": [
+        "command scripts"
+      ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้ในการจัดการและรันสคริปต์บน EC2 instances ซึ่งเป็นบริการพื้นฐานที่สำคัญของ AWS Cloud Computing"
@@ -1574,10 +1535,7 @@
         4
       ],
       "explanation": "\"Fargate\" กับ \"Lambda\" คือเพื่อนซี้ Serverless, จำ \"FL\" ไว้!",
-      "keywords_for_highlighting": [
-        "serverless",
-        "serverless"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เป็น serverless ซึ่งเป็นความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS ที่ผู้สอบ Cloud Practitioner ควรทราบ"
@@ -1607,9 +1565,7 @@
       ],
       "correctAnswer": 2,
       "explanation": "\"Snowball Edge\" คือตู้เย็นเคลื่อนที่ที่ปรับแต่งได้ทั้งด้าน Storage (เก็บข้อมูลเยอะ) และ Compute (ประมวลผลเร็ว)",
-      "keywords_for_highlighting": [
-        "storage-optimized"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เฉพาะเจาะจงและคุณสมบัติของบริการนั้น ซึ่งเป็นส่วนหนึ่งของความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS"
@@ -1625,7 +1581,7 @@
       "correctAnswer": 2,
       "explanation": "\"สถานะ EC2 เปลี่ยน\" และ \"Workflow ทำงาน\" ให้คิดถึง EventBridge ที่เป็นเหมือนสะพานเชื่อมเหตุการณ์ต่างๆ ใน AWS",
       "keywords_for_highlighting": [
-        "invoke"
+        "invoke an AWS Step Functions"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1642,7 +1598,7 @@
       "correctAnswer": 2,
       "explanation": "\"Programming languages\" ในโจทย์ ชี้ไปที่ CDK เพราะ CDK คือ \"Code\" Development Kit ที่ใช้ภาษาโปรแกรมมิ่งทั่วไป",
       "keywords_for_highlighting": [
-        "common programming languages"
+        "model and provision"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1662,9 +1618,7 @@
         2
       ],
       "explanation": "\"PostgreSQL\" ต้องใช้ฐานข้อมูล (Aurora) หรือเครื่องเสมือน (EC2) เพื่อรัน",
-      "keywords_for_highlighting": [
-        "PostgreSQL"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ AWS ที่ใช้ในการโฮสต์ฐานข้อมูล PostgreSQL ซึ่งเป็นความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS"
@@ -1680,7 +1634,7 @@
       "correctAnswer": 0,
       "explanation": "\"พอร์ตโฟลิโอ\" และ \"จัดการบริการ IT\" นึกถึง `Service Catalog` ที่เหมือนแค็ตตาล็อกบริการให้เลือกใช้และจัดการ",
       "keywords_for_highlighting": [
-        "portfolio"
+        "approved IT services"
       ],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
@@ -1696,9 +1650,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "\"Relational database\" (ฐานข้อมูลเชิงสัมพันธ์) คู่กับ \"Aurora\" เสมอ! จำไว้ว่า Aurora คือฐานข้อมูลเชิงสัมพันธ์ของ AWS",
-      "keywords_for_highlighting": [
-        "relational"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เหมาะสมสำหรับการใช้งานฐานข้อมูลเชิงสัมพันธ์ ซึ่งเป็นส่วนหนึ่งของบริการพื้นฐานของ AWS ที่ผู้เรียนควรรู้จัก"
@@ -1815,10 +1767,7 @@
         3
       ],
       "explanation": "**Fargate** คือรันคอนเทนเนอร์แบบไม่ต้องจัดการเซิร์ฟเวอร์ และ **S3** คือที่เก็บข้อมูลแบบไม่ต้องดูแลโครงสร้างพื้นฐาน",
-      "keywords_for_highlighting": [
-        "serverless",
-        "serverless"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่เป็น serverless ซึ่งเป็นความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS ที่ผู้สอบควรทราบ"
@@ -1848,9 +1797,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "\"CloudFormation\" สร้าง \"โครงสร้าง\" (infrastructure) ที่ทำซ้ำได้เหมือน \"แบบฟอร์ม\" (formation)",
-      "keywords_for_highlighting": [
-        "infrastructure"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้ถามถึงบริการ AWS ที่ใช้ในการ deploy infrastructure configurations ซึ่งเป็นบริการหลักที่ AWS ให้บริการ"
@@ -1882,9 +1829,7 @@
       ],
       "correctAnswer": 0,
       "explanation": "ต้องการแพตช์ Windows EC2 แบบอัตโนมัติ นึกถึง \"System Manager\" ที่จัดการระบบให้เรา",
-      "keywords_for_highlighting": [
-        "patch"
-      ],
+      "keywords_for_highlighting": [],
       "assigned_category_id_by_gemini": 1,
       "assigned_category_name_by_gemini": "บริการพื้นฐาน AWS (Core Services)",
       "gemini_category_justification": "คำถามนี้เกี่ยวกับบริการ AWS ที่ใช้จัดการและดูแลรักษา EC2 instances ซึ่งเป็นบริการพื้นฐานของ AWS (Core Services)"
